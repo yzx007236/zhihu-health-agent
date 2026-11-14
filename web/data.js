@@ -10019,6 +10019,66 @@ window.ZHIHU_DATA = {
 "card_kind": "curated"
 },
 {
+"knowledge_id": "K-TEXTBOOK-CM-102",
+"node_id": "textbook_explanation_q_cm_102",
+"title": "题目教材解析 Q-CM-102",
+"claim": "选 C。持续胸骨后压闷并伴出汗、恶心，应立即评估生命体征并完成心电图，优先识别急性冠脉综合征等危重病因；教材建议急性胸痛患者首次医疗接触后 10 分钟内记录心电图。A 的详细病史不能延误初始评估；B 直接等待胸部 CT 会延误心电图及危重病识别；D 单纯止痛和观察不能排除危重病。初次心电图正常也不能单独排除急性冠脉综合征，应结合病情复查并评估心肌损伤标志物。",
+"source": "《内科学》（第10版）",
+"source_location": "PDF 第 274、281 页",
+"textbook_reference": "《内科学》（第10版），PDF 第 274、281 页",
+"textbook_review": "AI 对照教材初核，待教师复核",
+"review_status": "AI初核待教师复核",
+"card_kind": "curated"
+},
+{
+"knowledge_id": "K-TEXTBOOK-CM-201",
+"node_id": "textbook_explanation_q_cm_201",
+"title": "题目教材解析 Q-CM-201",
+"claim": "选 B。突发严重呼吸困难、发绀且只能说出少量词句，提示可能存在危及生命的氧合或通气障碍，应立即评估气道和呼吸，给予适当氧疗、呼叫支援并监测生命体征；根据反应及时升级呼吸支持。A 先采集完整病史、C 先做检查都会推迟必要支持；D 单纯平卧观察也不安全，应根据患者呼吸状况选择合适体位。稳定生命体征的同时继续查找病因。",
+"source": "《内科学》（第10版）",
+"source_location": "PDF 第 183、184 页",
+"textbook_reference": "《内科学》（第10版），PDF 第 183、184 页",
+"textbook_review": "AI 对照教材初核，待教师复核",
+"review_status": "AI初核待教师复核",
+"card_kind": "curated"
+},
+{
+"knowledge_id": "K-TEXTBOOK-CM-223",
+"node_id": "textbook_explanation_q_cm_223",
+"title": "题目教材解析 Q-CM-223",
+"claim": "选 C。老年患者数小时内出现注意力不集中、定向障碍且症状波动，应首先考虑谵妄，及时评估并寻找感染、药物、代谢紊乱等诱因。A 将急性改变视为正常老化不妥；B 稳定期痴呆通常以较缓慢、持续的认知下降为主；D 先作精神科定性而推迟躯体评估可能延误可治疗的病因。谵妄还需结合基线认知、临床检查及必要的量表综合判断。",
+"source": "《诊断学》（第10版）",
+"source_location": "PDF 第 86、87 页",
+"textbook_reference": "《诊断学》（第10版），PDF 第 86、87 页",
+"textbook_review": "AI 对照教材初核，待教师复核",
+"review_status": "AI初核待教师复核",
+"card_kind": "curated"
+},
+{
+"knowledge_id": "K-TEXTBOOK-CM-301",
+"node_id": "textbook_explanation_q_cm_301",
+"title": "题目教材解析 Q-CM-301",
+"claim": "选 B。发热伴意识改变、低血压及乳酸升高，提示感染相关器官灌注不足，应高度警惕脓毒症及休克，立即评估和支持气道、呼吸、循环，启动紧急处置并尽快寻找感染灶。必要时在不明显延误抗菌治疗的前提下采集培养，及时给予抗菌药物及循环支持。A 等培养结果、C 先完成全部影像、D 单独退热观察都可能延误抢救；具体病因和休克类型仍需结合后续检查判断。",
+"source": "《外科学》（第10版）",
+"source_location": "PDF 第 74、95、96 页",
+"textbook_reference": "《外科学》（第10版），PDF 第 74、95、96 页",
+"textbook_review": "AI 对照教材初核，待教师复核",
+"review_status": "AI初核待教师复核",
+"card_kind": "curated"
+},
+{
+"knowledge_id": "K-TEXTBOOK-CM-305",
+"node_id": "textbook_explanation_q_cm_305",
+"title": "题目教材解析 Q-CM-305",
+"claim": "选 C。共同决策要求医生向有决策能力的患者说明病情和不确定性、检查的目的及可能获益与风险，了解其担忧和偏好，讨论可接受的替代方案和复诊警示。A 只强调后果不能支持自主决策；B 隐瞒风险损害知情权；D 在拒绝后不再沟通会遗漏风险解释和后续安排。医生还应核实患者理解并记录沟通及决定。",
+"source": "《医患沟通》（第3版）",
+"source_location": "PDF 第 72、73 页",
+"textbook_reference": "《医患沟通》（第3版），PDF 第 72、73 页",
+"textbook_review": "AI 对照教材初核，待教师复核",
+"review_status": "AI初核待教师复核",
+"card_kind": "curated"
+},
+{
 "knowledge_id": "K-WM-25-A-001",
 "node_id": "wm_physiology_2025_001",
 "major_id": "clinical_medicine",
@@ -17822,13 +17882,14 @@ window.ZHIHU_DATA = {
 "K-TEXTBOOK-CM-101"
 ],
 "chest_pain_red_flag": [
-"K-CLIN-111"
+"K-TEXTBOOK-CM-102"
 ],
 "preanalytical_check": [
 "K-CLIN-137"
 ],
 "emergency_abcde_sequence": [
-"K-CLIN-128",
+"K-TEXTBOOK-CM-201",
+"K-TEXTBOOK-CM-301",
 "K-TEXTBOOK-CM-401"
 ],
 "differential_reasoning": [
@@ -17956,7 +18017,7 @@ window.ZHIHU_DATA = {
 "K-EN-011"
 ],
 "delirium_recognition": [
-"K-EN-017"
+"K-TEXTBOOK-CM-223"
 ],
 "hemolyzed_specimen_review": [
 "K-MT-166"
@@ -17984,7 +18045,7 @@ window.ZHIHU_DATA = {
 "K-TEXTBOOK-CM-403"
 ],
 "shared_decision": [
-"K-CLIN-160",
+"K-TEXTBOOK-CM-305",
 "K-TEXTBOOK-CM-405"
 ],
 "imaging_critical_escalation": [
@@ -74301,7 +74362,7 @@ window.ZHIHU_DATA = {
 "answer": "C",
 "score": 1,
 "score_rule": "完全匹配标准答案得 1 分，否则 0 分",
-"explanation_ref": "K-CLIN-111"
+"explanation_ref": "K-TEXTBOOK-CM-102"
 },
 {
 "question_id": "Q-CM-103",
@@ -74341,7 +74402,7 @@ window.ZHIHU_DATA = {
 "answer": "B",
 "score": 1,
 "score_rule": "完全匹配标准答案得 1 分，否则 0 分",
-"explanation_ref": "K-CLIN-128"
+"explanation_ref": "K-TEXTBOOK-CM-201"
 },
 {
 "question_id": "Q-CM-202",
@@ -75692,7 +75753,7 @@ window.ZHIHU_DATA = {
 "answer": "C",
 "score": 1,
 "score_rule": "完全匹配标准答案得1分，否则0分",
-"explanation_ref": "K-EN-017",
+"explanation_ref": "K-TEXTBOOK-CM-223",
 "difficulty": "intermediate",
 "active": true,
 "quality_grade": "B",
@@ -75885,7 +75946,7 @@ window.ZHIHU_DATA = {
 "answer": "B",
 "score": 1,
 "score_rule": "完全匹配标准答案得1分，否则0分",
-"explanation_ref": "K-CLIN-128",
+"explanation_ref": "K-TEXTBOOK-CM-301",
 "active": true,
 "quality_grade": "B",
 "review_status": "restored_for_paper_minimum",
@@ -75981,7 +76042,7 @@ window.ZHIHU_DATA = {
 "answer": "C",
 "score": 1,
 "score_rule": "完全匹配标准答案得1分，否则0分",
-"explanation_ref": "K-CLIN-160",
+"explanation_ref": "K-TEXTBOOK-CM-305",
 "active": true,
 "quality_grade": "B",
 "review_status": "restored_for_paper_minimum",

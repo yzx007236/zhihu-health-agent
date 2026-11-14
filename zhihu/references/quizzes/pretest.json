@@ -356,7 +356,7 @@
       "answer": "C",
       "score": 1,
       "score_rule": "完全匹配标准答案得 1 分，否则 0 分",
-      "explanation_ref": "K-CLIN-111"
+      "explanation_ref": "K-TEXTBOOK-CM-102"
     },
     {
       "question_id": "Q-CM-103",
@@ -396,7 +396,7 @@
       "answer": "B",
       "score": 1,
       "score_rule": "完全匹配标准答案得 1 分，否则 0 分",
-      "explanation_ref": "K-CLIN-128"
+      "explanation_ref": "K-TEXTBOOK-CM-201"
     },
     {
       "question_id": "Q-CM-202",
@@ -1747,7 +1747,7 @@
       "answer": "C",
       "score": 1,
       "score_rule": "完全匹配标准答案得1分，否则0分",
-      "explanation_ref": "K-EN-017",
+      "explanation_ref": "K-TEXTBOOK-CM-223",
       "difficulty": "intermediate",
       "active": true,
       "quality_grade": "B",
