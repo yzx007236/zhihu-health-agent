@@ -28,7 +28,9 @@ class ClassroomTests(unittest.TestCase):
             self.assertEqual(classroom.request('status')['status'], 'ok')
 
     def setUp(self):
-        self.temp = tempfile.TemporaryDirectory(prefix="zhihu-course-test-")
+        # The real service rejects /tmp for course persistence. Keep isolated
+        # fixtures inside the checkout so Linux exercises the same storage rule.
+        self.temp = tempfile.TemporaryDirectory(prefix="zhihu-course-test-", dir=Path(__file__).parent)
         root = Path(self.temp.name)
         self.environment = patch.dict(os.environ, {
             "ZHIHU_CLASSROOM_STORE": str(root / "courses"),
