@@ -288,7 +288,7 @@ class ClassroomTests(unittest.TestCase):
         self.assertEqual(len(self.ok("dashboard", token=self.teacher_token)["progress"]), 400)
 
     def test_initial_setup_requires_password_and_cloud_setup_key(self):
-        with tempfile.TemporaryDirectory(prefix="zhihu-course-setup-") as root:
+        with tempfile.TemporaryDirectory(prefix="zhihu-course-setup-", dir=Path(__file__).parent) as root:
             with patch.dict(os.environ, {
                 "ZHIHU_CLASSROOM_STORE": root,
                 "ZHIHU_CLASSROOM_LOCAL_SETUP": "0",
