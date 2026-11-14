@@ -1,0 +1,128 @@
+{
+  "stored_total": 642,
+  "active_total": 548,
+  "inactive_total": 94,
+  "removed_original_total": 52,
+  "restored_original_b": 94,
+  "restored_original_c": 10,
+  "by_major_active": {
+    "medical_english": 13,
+    "other": 5,
+    "clinical_medicine": 427,
+    "medical_technology": 20,
+    "nursing": 22,
+    "traditional_chinese_medicine": 21,
+    "rehabilitation": 20,
+    "health_management": 20
+  },
+  "by_subject_active": {
+    "medical_english": 13,
+    "other": 5,
+    "clinical_medicine": 26,
+    "medical_technology": 20,
+    "nursing": 22,
+    "traditional_chinese_medicine": 21,
+    "rehabilitation": 20,
+    "health_management": 20,
+    "physiology": 61,
+    "biochemistry": 56,
+    "pathology": 55,
+    "internal_medicine": 142,
+    "surgery": 73,
+    "medical_humanities": 14
+  },
+  "by_difficulty_active": {
+    "basic": 193,
+    "intermediate": 175,
+    "advanced": 120,
+    "expert": 52,
+    "english": 8
+  },
+  "by_question_type_active": {
+    "single_choice": 487,
+    "multiple_choice": 61
+  },
+  "by_source_question_type_active": {
+    "original": 147,
+    "A": 286,
+    "B": 54,
+    "X": 61
+  },
+  "difficulty_percent": {
+    "basic": 35.22,
+    "intermediate": 31.93,
+    "advanced": 21.9,
+    "expert": 9.49,
+    "english": 1.46
+  },
+  "anti_guessing": {
+    "longest": {
+      "hits": 191,
+      "total": 487,
+      "accuracy": 0.3922,
+      "random_baseline": 0.25,
+      "excess_percentage_points": 14.22,
+      "risk": "high"
+    },
+    "most_detailed": {
+      "hits": 194,
+      "total": 487,
+      "accuracy": 0.3984,
+      "random_baseline": 0.25,
+      "excess_percentage_points": 14.84,
+      "risk": "high"
+    },
+    "terminology_density": {
+      "hits": 106,
+      "total": 487,
+      "accuracy": 0.2177,
+      "random_baseline": 0.25,
+      "excess_percentage_points": -3.23,
+      "risk": "normal"
+    },
+    "safest_wording": {
+      "hits": 121,
+      "total": 487,
+      "accuracy": 0.2485,
+      "random_baseline": 0.25,
+      "excess_percentage_points": -0.15,
+      "risk": "normal"
+    },
+    "fewest_absolute_words": {
+      "hits": 99,
+      "total": 487,
+      "accuracy": 0.2033,
+      "random_baseline": 0.25,
+      "excess_percentage_points": -4.67,
+      "risk": "normal"
+    },
+    "stem_option_overlap": {
+      "hits": 142,
+      "total": 487,
+      "accuracy": 0.2916,
+      "random_baseline": 0.25,
+      "excess_percentage_points": 4.16,
+      "risk": "normal"
+    },
+    "professional_expression": {
+      "hits": 186,
+      "total": 487,
+      "accuracy": 0.3819,
+      "random_baseline": 0.25,
+      "excess_percentage_points": 13.19,
+      "risk": "high"
+    },
+    "combined_surface_clues": {
+      "hits": 159,
+      "total": 487,
+      "accuracy": 0.3265,
+      "random_baseline": 0.25,
+      "excess_percentage_points": 7.65,
+      "risk": "normal"
+    }
+  },
+  "duplicates": {
+    "exact": 0,
+    "near": 2
+  }
+}

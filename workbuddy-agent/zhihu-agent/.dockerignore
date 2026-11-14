@@ -1,0 +1,8 @@
+.venv
+connector/server/.venv
+connector/.uv-cache
+connector/.zhihu-sessions
+connector/server/.zhihu-sessions
+connector/server/tests
+**/__pycache__
+**/*.pyc

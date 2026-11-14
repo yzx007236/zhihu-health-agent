@@ -1,0 +1,23 @@
+{
+  "mcpServers": {
+    "zhihu-training-runtime": {
+      "type": "stdio",
+      "command": "uv",
+      "args": [
+        "run",
+        "--project",
+        "server",
+        "python",
+        "server/server.py"
+      ],
+      "cwd": ".",
+      "env": {
+        "PYTHONUTF8": "1",
+        "PYTHONIOENCODING": "utf-8",
+        "UV_CACHE_DIR": ".uv-cache",
+        "ZHIHU_SESSION_STORE": ".zhihu-sessions"
+      },
+      "timeout": 30000
+    }
+  }
+}

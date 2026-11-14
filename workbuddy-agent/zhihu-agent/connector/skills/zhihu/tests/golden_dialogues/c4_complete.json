@@ -1,0 +1,107 @@
+{
+  "session_id": "GOLD-C4-001",
+  "case_id": "C4",
+  "rubric_version": "1.1.0",
+  "pretest_result": {
+    "score": 5,
+    "max_score": 5,
+    "percentage": 100,
+    "weak_nodes": []
+  },
+  "evidence_candidates": [
+    {
+      "item_id": "INQ-01",
+      "turn_id": 2,
+      "quote": "您在家测血压，一般是什么时候测？测之前有没有先安静坐一会儿？另外最近有没有在喝什么降压的茶或者保健品？",
+      "tags": [
+        "ask_open_question",
+        "ask_specific_fact",
+        "ask_measurement_timing",
+        "ask_rest_before_measurement",
+        "ask_non_drug_attempt"
+      ]
+    },
+    {
+      "item_id": "EMPATHY-01",
+      "turn_id": 3,
+      "quote": "我理解您是担心单位体检记录影响岗位。您现在最担心的是哪一件事？",
+      "tags": [
+        "ask_concern",
+        "acknowledge_concern",
+        "ask_specific_concern"
+      ]
+    },
+    {
+      "item_id": "MEAS-01",
+      "turn_id": 4,
+      "quote": "在家测之前要先安静坐 5 分钟，别刚起床、刚走路就测。",
+      "tags": [
+        "rest"
+      ]
+    },
+    {
+      "item_id": "MEAS-01",
+      "turn_id": 5,
+      "quote": "用经过验证的上臂式血压计，袖带直接绑在胳膊上、和心脏差不多高；每天固定在早上起床后和晚上睡前测。",
+      "tags": [
+        "device",
+        "cuff",
+        "posture",
+        "timing"
+      ]
+    },
+    {
+      "item_id": "MEAS-01",
+      "turn_id": 6,
+      "quote": "每个时段连测两次、中间隔 1 分钟，两次都记下来，还要写上日期、时间和脉搏。",
+      "tags": [
+        "repeat",
+        "record"
+      ]
+    },
+    {
+      "item_id": "INTERP-01",
+      "turn_id": 7,
+      "quote": "我们不看单独一次的数，而是看这几天的趋势；一次高或一次正常都不能说明长期情况。",
+      "tags": [
+        "use_trend",
+        "avoid_single_reading_conclusion"
+      ]
+    },
+    {
+      "item_id": "DIAG-01",
+      "turn_id": 8,
+      "quote": "目前需要考虑持续性血压升高，也要鉴别诊室环境和测量条件的影响；现有记录还不足以作最终判断，我会结合规范复测和后续检查再确认。",
+      "tags": [
+        "role_appropriate_judgement",
+        "state_evidence_limit"
+      ]
+    },
+    {
+      "item_id": "PLAIN-01",
+      "turn_id": 9,
+      "quote": "在家测和来医院测不是一回事，两边的标准也不一样，所以要拿完整的家庭记录给医生看，而不是只说一次紧张不紧张。",
+      "tags": [
+        "plain_language",
+        "explain_reason"
+      ]
+    },
+    {
+      "item_id": "CHECK-01",
+      "turn_id": 10,
+      "quote": "您用自己的话说一下，接下来在家测血压准备怎么做？",
+      "tags": [
+        "teach_back"
+      ]
+    },
+    {
+      "item_id": "ACTION-01",
+      "turn_id": 11,
+      "quote": "我们把这一周早晚的记录整理成一张表，您看周四带着这张表去找医生，这样安排行吗？",
+      "tags": [
+        "shared_decision",
+        "specific_next_step"
+      ]
+    }
+  ]
+}

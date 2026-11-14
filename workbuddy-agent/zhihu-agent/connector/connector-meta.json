@@ -1,0 +1,24 @@
+{
+  "name": "ZhiHu Training Runtime",
+  "name_zh": "知护训练运行时",
+  "name_en": "ZhiHu Training Runtime",
+  "description": "知护 MCP 运行时（v4.3.0）：16 个工具，覆盖 6 个专业具体课程，251 例合成病例、专家起步五档单选自测（含英语）、题解一一对应、职业身份 SP 四幕十二拍导演与动态病例变式。",
+  "description_zh": "为知护智能体提供自测换档、251 例合成病例、会话状态、知识检索、证据评分、复盘报告和变式重练工具，覆盖 6 个专业。",
+  "description_en": "Provides pretests, cases, persistent sessions, evidence validation, deterministic scoring, reports, and variant retraining for ZhiHu across four majors.",
+  "source": "zhihu-training-runtime",
+  "type": "mcp",
+  "version": "4.3.0",
+  "minWorkbuddyVersion": "4.22.15",
+  "examples_zh": [
+    "开始知护",
+    "我开始知护，我是护理学的",
+    "这组题太简单，再难一点",
+    "我想再练一遍刚才的病例"
+  ],
+  "examples_en": [
+    "Start the ZhiHu training session",
+    "Start — I study nursing",
+    "These questions are too easy, give me the advanced set",
+    "Let me retry the same case once more"
+  ]
+}

@@ -1,0 +1,2725 @@
+[
+  {
+    "question_id": "Q-BP-001",
+    "source_file": "pretest.json",
+    "difficulty": "basic",
+    "score": 94,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "正确项长度优势 1.90x"
+    ],
+    "veto": null,
+    "correct_length_ratio": 1.9,
+    "final_action": "为保证所属专业难度档可组成5题卷，按质量排序择优恢复"
+  },
+  {
+    "question_id": "Q-BP-002",
+    "source_file": "pretest.json",
+    "difficulty": "basic",
+    "score": 89,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "正确项长度优势 2.29x"
+    ],
+    "veto": null,
+    "correct_length_ratio": 2.286,
+    "final_action": "为保证所属专业难度档可组成5题卷，按质量排序择优恢复"
+  },
+  {
+    "question_id": "Q-BP-003",
+    "source_file": "pretest.json",
+    "difficulty": "basic",
+    "score": 89,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "正确项长度优势 2.00x"
+    ],
+    "veto": null,
+    "correct_length_ratio": 2.0,
+    "final_action": "为保证所属专业难度档可组成5题卷，按质量排序择优恢复"
+  },
+  {
+    "question_id": "Q-BP-004",
+    "source_file": "pretest.json",
+    "difficulty": "basic",
+    "score": 94,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "正确项长度优势 3.00x"
+    ],
+    "veto": null,
+    "correct_length_ratio": 3.0,
+    "final_action": "为保证所属专业难度档可组成5题卷，按质量排序择优恢复"
+  },
+  {
+    "question_id": "Q-BP-005",
+    "source_file": "pretest.json",
+    "difficulty": "basic",
+    "score": 94,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "正确项长度优势 3.17x"
+    ],
+    "veto": null,
+    "correct_length_ratio": 3.167,
+    "final_action": "为保证所属专业难度档可组成5题卷，按质量排序择优恢复"
+  },
+  {
+    "question_id": "Q-BP-101",
+    "source_file": "pretest.json",
+    "difficulty": "intermediate",
+    "score": 94,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "正确项长度优势 2.14x"
+    ],
+    "veto": null,
+    "correct_length_ratio": 2.143,
+    "final_action": "为保证所属专业难度档可组成5题卷，按质量排序择优恢复"
+  },
+  {
+    "question_id": "Q-BP-102",
+    "source_file": "pretest.json",
+    "difficulty": "intermediate",
+    "score": 94,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "正确项长度优势 3.10x"
+    ],
+    "veto": null,
+    "correct_length_ratio": 3.1,
+    "final_action": "为保证所属专业难度档可组成5题卷，按质量排序择优恢复"
+  },
+  {
+    "question_id": "Q-BP-103",
+    "source_file": "pretest.json",
+    "difficulty": "intermediate",
+    "score": 82,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "正确项长度优势 2.73x",
+      "提高档情境应用不足"
+    ],
+    "veto": null,
+    "correct_length_ratio": 2.727,
+    "final_action": "退出活动题库；未形成不改变医学事实的合格实质重写，按宁缺毋滥处理"
+  },
+  {
+    "question_id": "Q-BP-104",
+    "source_file": "pretest.json",
+    "difficulty": "intermediate",
+    "score": 82,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "正确项长度优势 3.81x",
+      "提高档情境应用不足"
+    ],
+    "veto": null,
+    "correct_length_ratio": 3.812,
+    "final_action": "退出活动题库；未形成不改变医学事实的合格实质重写，按宁缺毋滥处理"
+  },
+  {
+    "question_id": "Q-BP-105",
+    "source_file": "pretest.json",
+    "difficulty": "intermediate",
+    "score": 94,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "正确项长度优势 3.44x"
+    ],
+    "veto": null,
+    "correct_length_ratio": 3.444,
+    "final_action": "为保证所属专业难度档可组成5题卷，按质量排序择优恢复"
+  },
+  {
+    "question_id": "Q-CM-101",
+    "source_file": "pretest.json",
+    "difficulty": "basic",
+    "score": 100,
+    "grade": "A",
+    "action": "保留",
+    "issues": [],
+    "veto": null,
+    "correct_length_ratio": 1.074,
+    "final_action": "保留进入活动题库"
+  },
+  {
+    "question_id": "Q-CM-102",
+    "source_file": "pretest.json",
+    "difficulty": "basic",
+    "score": 100,
+    "grade": "A",
+    "action": "保留",
+    "issues": [],
+    "veto": null,
+    "correct_length_ratio": 1.125,
+    "final_action": "保留进入活动题库"
+  },
+  {
+    "question_id": "Q-CM-103",
+    "source_file": "pretest.json",
+    "difficulty": "basic",
+    "score": 100,
+    "grade": "A",
+    "action": "保留",
+    "issues": [],
+    "veto": null,
+    "correct_length_ratio": 1.04,
+    "final_action": "保留进入活动题库"
+  },
+  {
+    "question_id": "Q-CM-104",
+    "source_file": "pretest.json",
+    "difficulty": "basic",
+    "score": 94,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "正确项长度优势 1.82x"
+    ],
+    "veto": null,
+    "correct_length_ratio": 1.818,
+    "final_action": "退出活动题库；未形成不改变医学事实的合格实质重写，按宁缺毋滥处理"
+  },
+  {
+    "question_id": "Q-CM-105",
+    "source_file": "pretest.json",
+    "difficulty": "basic",
+    "score": 94,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "正确项长度优势 1.90x"
+    ],
+    "veto": null,
+    "correct_length_ratio": 1.905,
+    "final_action": "退出活动题库；未形成不改变医学事实的合格实质重写，按宁缺毋滥处理"
+  },
+  {
+    "question_id": "Q-CM-201",
+    "source_file": "pretest.json",
+    "difficulty": "intermediate",
+    "score": 100,
+    "grade": "A",
+    "action": "保留",
+    "issues": [],
+    "veto": null,
+    "correct_length_ratio": 1.154,
+    "final_action": "保留进入活动题库"
+  },
+  {
+    "question_id": "Q-CM-202",
+    "source_file": "pretest.json",
+    "difficulty": "intermediate",
+    "score": 100,
+    "grade": "A",
+    "action": "保留",
+    "issues": [],
+    "veto": null,
+    "correct_length_ratio": 1.148,
+    "final_action": "保留进入活动题库"
+  },
+  {
+    "question_id": "Q-CM-203",
+    "source_file": "pretest.json",
+    "difficulty": "intermediate",
+    "score": 94,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "正确项长度优势 2.09x"
+    ],
+    "veto": null,
+    "correct_length_ratio": 2.091,
+    "final_action": "退出活动题库；未形成不改变医学事实的合格实质重写，按宁缺毋滥处理"
+  },
+  {
+    "question_id": "Q-CM-204",
+    "source_file": "pretest.json",
+    "difficulty": "intermediate",
+    "score": 94,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "正确项长度优势 1.59x"
+    ],
+    "veto": null,
+    "correct_length_ratio": 1.591,
+    "final_action": "为保证所属专业难度档可组成5题卷，按质量排序择优恢复"
+  },
+  {
+    "question_id": "Q-CM-205",
+    "source_file": "pretest.json",
+    "difficulty": "intermediate",
+    "score": 86,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "正确项长度优势 2.22x",
+      "安全答案配合多个荒谬干扰项"
+    ],
+    "veto": null,
+    "correct_length_ratio": 2.217,
+    "final_action": "退出活动题库；未形成不改变医学事实的合格实质重写，按宁缺毋滥处理"
+  },
+  {
+    "question_id": "Q-MT-101",
+    "source_file": "pretest.json",
+    "difficulty": "basic",
+    "score": 97,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "正确项偏长 1.42x"
+    ],
+    "veto": null,
+    "correct_length_ratio": 1.417,
+    "final_action": "为保证所属专业难度档可组成5题卷，按质量排序择优恢复"
+  },
+  {
+    "question_id": "Q-MT-102",
+    "source_file": "pretest.json",
+    "difficulty": "basic",
+    "score": 89,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "正确项长度优势 1.73x"
+    ],
+    "veto": null,
+    "correct_length_ratio": 1.727,
+    "final_action": "为保证所属专业难度档可组成5题卷，按质量排序择优恢复"
+  },
+  {
+    "question_id": "Q-MT-103",
+    "source_file": "pretest.json",
+    "difficulty": "basic",
+    "score": 94,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "正确项长度优势 1.68x"
+    ],
+    "veto": null,
+    "correct_length_ratio": 1.684,
+    "final_action": "为保证所属专业难度档可组成5题卷，按质量排序择优恢复"
+  },
+  {
+    "question_id": "Q-MT-104",
+    "source_file": "pretest.json",
+    "difficulty": "basic",
+    "score": 95,
+    "grade": "A",
+    "action": "保留",
+    "issues": [],
+    "veto": null,
+    "correct_length_ratio": 1.043,
+    "final_action": "保留进入活动题库"
+  },
+  {
+    "question_id": "Q-MT-105",
+    "source_file": "pretest.json",
+    "difficulty": "basic",
+    "score": 94,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "正确项长度优势 1.83x"
+    ],
+    "veto": null,
+    "correct_length_ratio": 1.833,
+    "final_action": "为保证所属专业难度档可组成5题卷，按质量排序择优恢复"
+  },
+  {
+    "question_id": "Q-MT-201",
+    "source_file": "pretest.json",
+    "difficulty": "intermediate",
+    "score": 94,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "正确项长度优势 2.68x"
+    ],
+    "veto": null,
+    "correct_length_ratio": 2.68,
+    "final_action": "为保证所属专业难度档可组成5题卷，按质量排序择优恢复"
+  },
+  {
+    "question_id": "Q-MT-202",
+    "source_file": "pretest.json",
+    "difficulty": "intermediate",
+    "score": 94,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "正确项长度优势 1.63x"
+    ],
+    "veto": null,
+    "correct_length_ratio": 1.63,
+    "final_action": "为保证所属专业难度档可组成5题卷，按质量排序择优恢复"
+  },
+  {
+    "question_id": "Q-MT-203",
+    "source_file": "pretest.json",
+    "difficulty": "intermediate",
+    "score": 94,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "正确项长度优势 2.12x"
+    ],
+    "veto": null,
+    "correct_length_ratio": 2.125,
+    "final_action": "为保证所属专业难度档可组成5题卷，按质量排序择优恢复"
+  },
+  {
+    "question_id": "Q-MT-204",
+    "source_file": "pretest.json",
+    "difficulty": "intermediate",
+    "score": 86,
+    "grade": "C",
+    "action": "删除",
+    "issues": [
+      "正确项长度优势 2.00x",
+      "安全答案配合多个荒谬干扰项"
+    ],
+    "veto": "可凭安全措辞和荒谬干扰项猜中",
+    "correct_length_ratio": 2.0,
+    "final_action": "删除出活动题库"
+  },
+  {
+    "question_id": "Q-MT-205",
+    "source_file": "pretest.json",
+    "difficulty": "intermediate",
+    "score": 86,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "正确项长度优势 2.43x",
+      "提高档情境应用不足"
+    ],
+    "veto": null,
+    "correct_length_ratio": 2.429,
+    "final_action": "退出活动题库；未形成不改变医学事实的合格实质重写，按宁缺毋滥处理"
+  },
+  {
+    "question_id": "Q-NU-101",
+    "source_file": "pretest.json",
+    "difficulty": "basic",
+    "score": 94,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "正确项长度优势 2.52x"
+    ],
+    "veto": null,
+    "correct_length_ratio": 2.52,
+    "final_action": "退出活动题库；未形成不改变医学事实的合格实质重写，按宁缺毋滥处理"
+  },
+  {
+    "question_id": "Q-NU-102",
+    "source_file": "pretest.json",
+    "difficulty": "basic",
+    "score": 89,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "正确项长度优势 2.68x"
+    ],
+    "veto": null,
+    "correct_length_ratio": 2.682,
+    "final_action": "退出活动题库；未形成不改变医学事实的合格实质重写，按宁缺毋滥处理"
+  },
+  {
+    "question_id": "Q-NU-103",
+    "source_file": "pretest.json",
+    "difficulty": "basic",
+    "score": 86,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "正确项长度优势 2.70x",
+      "安全答案配合多个荒谬干扰项"
+    ],
+    "veto": null,
+    "correct_length_ratio": 2.696,
+    "final_action": "退出活动题库；未形成不改变医学事实的合格实质重写，按宁缺毋滥处理"
+  },
+  {
+    "question_id": "Q-NU-104",
+    "source_file": "pretest.json",
+    "difficulty": "basic",
+    "score": 94,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "正确项长度优势 2.48x"
+    ],
+    "veto": null,
+    "correct_length_ratio": 2.476,
+    "final_action": "退出活动题库；未形成不改变医学事实的合格实质重写，按宁缺毋滥处理"
+  },
+  {
+    "question_id": "Q-NU-105",
+    "source_file": "pretest.json",
+    "difficulty": "basic",
+    "score": 89,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "正确项长度优势 2.00x"
+    ],
+    "veto": null,
+    "correct_length_ratio": 2.0,
+    "final_action": "退出活动题库；未形成不改变医学事实的合格实质重写，按宁缺毋滥处理"
+  },
+  {
+    "question_id": "Q-NU-201",
+    "source_file": "pretest.json",
+    "difficulty": "intermediate",
+    "score": 94,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "正确项长度优势 1.87x"
+    ],
+    "veto": null,
+    "correct_length_ratio": 1.87,
+    "final_action": "为保证所属专业难度档可组成5题卷，按质量排序择优恢复"
+  },
+  {
+    "question_id": "Q-NU-202",
+    "source_file": "pretest.json",
+    "difficulty": "intermediate",
+    "score": 94,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "正确项长度优势 2.25x"
+    ],
+    "veto": null,
+    "correct_length_ratio": 2.25,
+    "final_action": "为保证所属专业难度档可组成5题卷，按质量排序择优恢复"
+  },
+  {
+    "question_id": "Q-NU-203",
+    "source_file": "pretest.json",
+    "difficulty": "intermediate",
+    "score": 94,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "正确项长度优势 2.17x"
+    ],
+    "veto": null,
+    "correct_length_ratio": 2.174,
+    "final_action": "为保证所属专业难度档可组成5题卷，按质量排序择优恢复"
+  },
+  {
+    "question_id": "Q-NU-204",
+    "source_file": "pretest.json",
+    "difficulty": "intermediate",
+    "score": 94,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "正确项长度优势 2.77x"
+    ],
+    "veto": null,
+    "correct_length_ratio": 2.773,
+    "final_action": "退出活动题库；未形成不改变医学事实的合格实质重写，按宁缺毋滥处理"
+  },
+  {
+    "question_id": "Q-NU-205",
+    "source_file": "pretest.json",
+    "difficulty": "intermediate",
+    "score": 94,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "正确项长度优势 3.62x"
+    ],
+    "veto": null,
+    "correct_length_ratio": 3.619,
+    "final_action": "退出活动题库；未形成不改变医学事实的合格实质重写，按宁缺毋滥处理"
+  },
+  {
+    "question_id": "Q-TCM-101",
+    "source_file": "pretest.json",
+    "difficulty": "basic",
+    "score": 97,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "正确项偏长 1.46x"
+    ],
+    "veto": null,
+    "correct_length_ratio": 1.458,
+    "final_action": "退出活动题库；未形成不改变医学事实的合格实质重写，按宁缺毋滥处理"
+  },
+  {
+    "question_id": "Q-TCM-102",
+    "source_file": "pretest.json",
+    "difficulty": "basic",
+    "score": 94,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "正确项长度优势 1.86x"
+    ],
+    "veto": null,
+    "correct_length_ratio": 1.857,
+    "final_action": "退出活动题库；未形成不改变医学事实的合格实质重写，按宁缺毋滥处理"
+  },
+  {
+    "question_id": "Q-TCM-103",
+    "source_file": "pretest.json",
+    "difficulty": "basic",
+    "score": 94,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "正确项长度优势 1.52x"
+    ],
+    "veto": null,
+    "correct_length_ratio": 1.522,
+    "final_action": "退出活动题库；未形成不改变医学事实的合格实质重写，按宁缺毋滥处理"
+  },
+  {
+    "question_id": "Q-TCM-104",
+    "source_file": "pretest.json",
+    "difficulty": "basic",
+    "score": 89,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "正确项长度优势 1.86x"
+    ],
+    "veto": null,
+    "correct_length_ratio": 1.864,
+    "final_action": "退出活动题库；未形成不改变医学事实的合格实质重写，按宁缺毋滥处理"
+  },
+  {
+    "question_id": "Q-TCM-105",
+    "source_file": "pretest.json",
+    "difficulty": "basic",
+    "score": 94,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "正确项长度优势 2.37x"
+    ],
+    "veto": null,
+    "correct_length_ratio": 2.368,
+    "final_action": "退出活动题库；未形成不改变医学事实的合格实质重写，按宁缺毋滥处理"
+  },
+  {
+    "question_id": "Q-TCM-201",
+    "source_file": "pretest.json",
+    "difficulty": "intermediate",
+    "score": 94,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "正确项长度优势 1.95x"
+    ],
+    "veto": null,
+    "correct_length_ratio": 1.952,
+    "final_action": "为保证所属专业难度档可组成5题卷，按质量排序择优恢复"
+  },
+  {
+    "question_id": "Q-TCM-202",
+    "source_file": "pretest.json",
+    "difficulty": "intermediate",
+    "score": 94,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "正确项长度优势 2.42x"
+    ],
+    "veto": null,
+    "correct_length_ratio": 2.417,
+    "final_action": "退出活动题库；未形成不改变医学事实的合格实质重写，按宁缺毋滥处理"
+  },
+  {
+    "question_id": "Q-TCM-203",
+    "source_file": "pretest.json",
+    "difficulty": "intermediate",
+    "score": 97,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "正确项偏长 1.36x"
+    ],
+    "veto": null,
+    "correct_length_ratio": 1.357,
+    "final_action": "为保证所属专业难度档可组成5题卷，按质量排序择优恢复"
+  },
+  {
+    "question_id": "Q-TCM-204",
+    "source_file": "pretest.json",
+    "difficulty": "intermediate",
+    "score": 94,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "正确项长度优势 2.05x"
+    ],
+    "veto": null,
+    "correct_length_ratio": 2.05,
+    "final_action": "为保证所属专业难度档可组成5题卷，按质量排序择优恢复"
+  },
+  {
+    "question_id": "Q-TCM-205",
+    "source_file": "pretest.json",
+    "difficulty": "intermediate",
+    "score": 94,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "正确项长度优势 2.30x"
+    ],
+    "veto": null,
+    "correct_length_ratio": 2.304,
+    "final_action": "为保证所属专业难度档可组成5题卷，按质量排序择优恢复"
+  },
+  {
+    "question_id": "Q-RH-101",
+    "source_file": "pretest.json",
+    "difficulty": "basic",
+    "score": 100,
+    "grade": "A",
+    "action": "保留",
+    "issues": [],
+    "veto": null,
+    "correct_length_ratio": 1.087,
+    "final_action": "保留进入活动题库"
+  },
+  {
+    "question_id": "Q-RH-102",
+    "source_file": "pretest.json",
+    "difficulty": "basic",
+    "score": 100,
+    "grade": "A",
+    "action": "保留",
+    "issues": [],
+    "veto": null,
+    "correct_length_ratio": 1.2,
+    "final_action": "保留进入活动题库"
+  },
+  {
+    "question_id": "Q-RH-103",
+    "source_file": "pretest.json",
+    "difficulty": "basic",
+    "score": 89,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "正确项长度优势 1.70x"
+    ],
+    "veto": null,
+    "correct_length_ratio": 1.7,
+    "final_action": "为保证所属专业难度档可组成5题卷，按质量排序择优恢复"
+  },
+  {
+    "question_id": "Q-RH-104",
+    "source_file": "pretest.json",
+    "difficulty": "basic",
+    "score": 97,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "正确项偏长 1.45x"
+    ],
+    "veto": null,
+    "correct_length_ratio": 1.45,
+    "final_action": "为保证所属专业难度档可组成5题卷，按质量排序择优恢复"
+  },
+  {
+    "question_id": "Q-RH-105",
+    "source_file": "pretest.json",
+    "difficulty": "basic",
+    "score": 94,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "正确项长度优势 1.55x"
+    ],
+    "veto": null,
+    "correct_length_ratio": 1.55,
+    "final_action": "为保证所属专业难度档可组成5题卷，按质量排序择优恢复"
+  },
+  {
+    "question_id": "Q-RH-201",
+    "source_file": "pretest.json",
+    "difficulty": "intermediate",
+    "score": 94,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "正确项长度优势 1.94x"
+    ],
+    "veto": null,
+    "correct_length_ratio": 1.944,
+    "final_action": "为保证所属专业难度档可组成5题卷，按质量排序择优恢复"
+  },
+  {
+    "question_id": "Q-RH-202",
+    "source_file": "pretest.json",
+    "difficulty": "intermediate",
+    "score": 94,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "正确项长度优势 1.76x"
+    ],
+    "veto": null,
+    "correct_length_ratio": 1.765,
+    "final_action": "为保证所属专业难度档可组成5题卷，按质量排序择优恢复"
+  },
+  {
+    "question_id": "Q-RH-203",
+    "source_file": "pretest.json",
+    "difficulty": "intermediate",
+    "score": 94,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "正确项长度优势 2.06x"
+    ],
+    "veto": null,
+    "correct_length_ratio": 2.059,
+    "final_action": "为保证所属专业难度档可组成5题卷，按质量排序择优恢复"
+  },
+  {
+    "question_id": "Q-RH-204",
+    "source_file": "pretest.json",
+    "difficulty": "intermediate",
+    "score": 94,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "正确项长度优势 2.28x"
+    ],
+    "veto": null,
+    "correct_length_ratio": 2.278,
+    "final_action": "为保证所属专业难度档可组成5题卷，按质量排序择优恢复"
+  },
+  {
+    "question_id": "Q-RH-205",
+    "source_file": "pretest.json",
+    "difficulty": "intermediate",
+    "score": 94,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "正确项长度优势 2.74x"
+    ],
+    "veto": null,
+    "correct_length_ratio": 2.737,
+    "final_action": "退出活动题库；未形成不改变医学事实的合格实质重写，按宁缺毋滥处理"
+  },
+  {
+    "question_id": "Q-HM-101",
+    "source_file": "pretest.json",
+    "difficulty": "basic",
+    "score": 94,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "正确项长度优势 1.73x"
+    ],
+    "veto": null,
+    "correct_length_ratio": 1.727,
+    "final_action": "为保证所属专业难度档可组成5题卷，按质量排序择优恢复"
+  },
+  {
+    "question_id": "Q-HM-102",
+    "source_file": "pretest.json",
+    "difficulty": "basic",
+    "score": 94,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "正确项长度优势 1.82x"
+    ],
+    "veto": null,
+    "correct_length_ratio": 1.818,
+    "final_action": "为保证所属专业难度档可组成5题卷，按质量排序择优恢复"
+  },
+  {
+    "question_id": "Q-HM-103",
+    "source_file": "pretest.json",
+    "difficulty": "basic",
+    "score": 94,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "正确项长度优势 2.30x"
+    ],
+    "veto": null,
+    "correct_length_ratio": 2.3,
+    "final_action": "为保证所属专业难度档可组成5题卷，按质量排序择优恢复"
+  },
+  {
+    "question_id": "Q-HM-104",
+    "source_file": "pretest.json",
+    "difficulty": "basic",
+    "score": 94,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "正确项长度优势 2.65x"
+    ],
+    "veto": null,
+    "correct_length_ratio": 2.65,
+    "final_action": "为保证所属专业难度档可组成5题卷，按质量排序择优恢复"
+  },
+  {
+    "question_id": "Q-HM-105",
+    "source_file": "pretest.json",
+    "difficulty": "basic",
+    "score": 94,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "正确项长度优势 2.35x"
+    ],
+    "veto": null,
+    "correct_length_ratio": 2.348,
+    "final_action": "为保证所属专业难度档可组成5题卷，按质量排序择优恢复"
+  },
+  {
+    "question_id": "Q-HM-201",
+    "source_file": "pretest.json",
+    "difficulty": "intermediate",
+    "score": 94,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "正确项长度优势 2.95x"
+    ],
+    "veto": null,
+    "correct_length_ratio": 2.952,
+    "final_action": "为保证所属专业难度档可组成5题卷，按质量排序择优恢复"
+  },
+  {
+    "question_id": "Q-HM-202",
+    "source_file": "pretest.json",
+    "difficulty": "intermediate",
+    "score": 94,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "正确项长度优势 2.08x"
+    ],
+    "veto": null,
+    "correct_length_ratio": 2.083,
+    "final_action": "为保证所属专业难度档可组成5题卷，按质量排序择优恢复"
+  },
+  {
+    "question_id": "Q-HM-203",
+    "source_file": "pretest.json",
+    "difficulty": "intermediate",
+    "score": 94,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "正确项长度优势 2.48x"
+    ],
+    "veto": null,
+    "correct_length_ratio": 2.478,
+    "final_action": "为保证所属专业难度档可组成5题卷，按质量排序择优恢复"
+  },
+  {
+    "question_id": "Q-HM-204",
+    "source_file": "pretest.json",
+    "difficulty": "intermediate",
+    "score": 94,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "正确项长度优势 4.05x"
+    ],
+    "veto": null,
+    "correct_length_ratio": 4.048,
+    "final_action": "退出活动题库；未形成不改变医学事实的合格实质重写，按宁缺毋滥处理"
+  },
+  {
+    "question_id": "Q-HM-205",
+    "source_file": "pretest.json",
+    "difficulty": "intermediate",
+    "score": 94,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "正确项长度优势 2.89x"
+    ],
+    "veto": null,
+    "correct_length_ratio": 2.895,
+    "final_action": "为保证所属专业难度档可组成5题卷，按质量排序择优恢复"
+  },
+  {
+    "question_id": "Q-CM-206",
+    "source_file": "pretest.json",
+    "difficulty": "basic",
+    "score": 95,
+    "grade": "A",
+    "action": "保留",
+    "issues": [],
+    "veto": null,
+    "correct_length_ratio": 0.833,
+    "final_action": "保留进入活动题库"
+  },
+  {
+    "question_id": "Q-CM-207",
+    "source_file": "pretest.json",
+    "difficulty": "basic",
+    "score": 84,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "正确项长度优势 2.00x"
+    ],
+    "veto": null,
+    "correct_length_ratio": 2.0,
+    "final_action": "退出活动题库；未形成不改变医学事实的合格实质重写，按宁缺毋滥处理"
+  },
+  {
+    "question_id": "Q-CM-208",
+    "source_file": "pretest.json",
+    "difficulty": "basic",
+    "score": 95,
+    "grade": "A",
+    "action": "保留",
+    "issues": [],
+    "veto": null,
+    "correct_length_ratio": 1.333,
+    "final_action": "保留进入活动题库"
+  },
+  {
+    "question_id": "Q-CM-209",
+    "source_file": "pretest.json",
+    "difficulty": "basic",
+    "score": 95,
+    "grade": "A",
+    "action": "保留",
+    "issues": [],
+    "veto": null,
+    "correct_length_ratio": 1.0,
+    "final_action": "保留进入活动题库"
+  },
+  {
+    "question_id": "Q-CM-210",
+    "source_file": "pretest.json",
+    "difficulty": "basic",
+    "score": 90,
+    "grade": "A",
+    "action": "保留",
+    "issues": [],
+    "veto": null,
+    "correct_length_ratio": 0.833,
+    "final_action": "保留进入活动题库"
+  },
+  {
+    "question_id": "Q-CM-211",
+    "source_file": "pretest.json",
+    "difficulty": "basic",
+    "score": 95,
+    "grade": "A",
+    "action": "保留",
+    "issues": [],
+    "veto": null,
+    "correct_length_ratio": 0.727,
+    "final_action": "保留进入活动题库"
+  },
+  {
+    "question_id": "Q-CM-212",
+    "source_file": "pretest.json",
+    "difficulty": "basic",
+    "score": 95,
+    "grade": "A",
+    "action": "保留",
+    "issues": [],
+    "veto": null,
+    "correct_length_ratio": 0.6,
+    "final_action": "保留进入活动题库"
+  },
+  {
+    "question_id": "Q-CM-213",
+    "source_file": "pretest.json",
+    "difficulty": "basic",
+    "score": 95,
+    "grade": "A",
+    "action": "保留",
+    "issues": [],
+    "veto": null,
+    "correct_length_ratio": 0.875,
+    "final_action": "保留进入活动题库"
+  },
+  {
+    "question_id": "Q-CM-214",
+    "source_file": "pretest.json",
+    "difficulty": "basic",
+    "score": 95,
+    "grade": "A",
+    "action": "保留",
+    "issues": [],
+    "veto": null,
+    "correct_length_ratio": 1.25,
+    "final_action": "保留进入活动题库"
+  },
+  {
+    "question_id": "Q-TCM-206",
+    "source_file": "pretest.json",
+    "difficulty": "basic",
+    "score": 95,
+    "grade": "A",
+    "action": "保留",
+    "issues": [],
+    "veto": null,
+    "correct_length_ratio": 1.125,
+    "final_action": "保留进入活动题库"
+  },
+  {
+    "question_id": "Q-TCM-207",
+    "source_file": "pretest.json",
+    "difficulty": "basic",
+    "score": 90,
+    "grade": "A",
+    "action": "保留",
+    "issues": [],
+    "veto": null,
+    "correct_length_ratio": 1.0,
+    "final_action": "保留进入活动题库"
+  },
+  {
+    "question_id": "Q-TCM-208",
+    "source_file": "pretest.json",
+    "difficulty": "basic",
+    "score": 90,
+    "grade": "A",
+    "action": "保留",
+    "issues": [],
+    "veto": null,
+    "correct_length_ratio": 1.0,
+    "final_action": "保留进入活动题库"
+  },
+  {
+    "question_id": "Q-TCM-209",
+    "source_file": "pretest.json",
+    "difficulty": "basic",
+    "score": 95,
+    "grade": "A",
+    "action": "保留",
+    "issues": [],
+    "veto": null,
+    "correct_length_ratio": 0.714,
+    "final_action": "保留进入活动题库"
+  },
+  {
+    "question_id": "Q-TCM-210",
+    "source_file": "pretest.json",
+    "difficulty": "basic",
+    "score": 95,
+    "grade": "A",
+    "action": "保留",
+    "issues": [],
+    "veto": null,
+    "correct_length_ratio": 1.0,
+    "final_action": "保留进入活动题库"
+  },
+  {
+    "question_id": "Q-TCM-211",
+    "source_file": "pretest.json",
+    "difficulty": "basic",
+    "score": 95,
+    "grade": "A",
+    "action": "保留",
+    "issues": [],
+    "veto": null,
+    "correct_length_ratio": 0.667,
+    "final_action": "保留进入活动题库"
+  },
+  {
+    "question_id": "Q-TCM-212",
+    "source_file": "pretest.json",
+    "difficulty": "basic",
+    "score": 84,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "正确项长度优势 1.78x"
+    ],
+    "veto": null,
+    "correct_length_ratio": 1.778,
+    "final_action": "退出活动题库；未形成不改变医学事实的合格实质重写，按宁缺毋滥处理"
+  },
+  {
+    "question_id": "Q-NU-206",
+    "source_file": "pretest.json",
+    "difficulty": "basic",
+    "score": 95,
+    "grade": "A",
+    "action": "保留",
+    "issues": [],
+    "veto": null,
+    "correct_length_ratio": 0.455,
+    "final_action": "保留进入活动题库"
+  },
+  {
+    "question_id": "Q-NU-207",
+    "source_file": "pretest.json",
+    "difficulty": "basic",
+    "score": 95,
+    "grade": "A",
+    "action": "保留",
+    "issues": [],
+    "veto": null,
+    "correct_length_ratio": 1.167,
+    "final_action": "保留进入活动题库"
+  },
+  {
+    "question_id": "Q-NU-208",
+    "source_file": "pretest.json",
+    "difficulty": "basic",
+    "score": 95,
+    "grade": "A",
+    "action": "保留",
+    "issues": [],
+    "veto": null,
+    "correct_length_ratio": 0.889,
+    "final_action": "保留进入活动题库"
+  },
+  {
+    "question_id": "Q-NU-209",
+    "source_file": "pretest.json",
+    "difficulty": "basic",
+    "score": 90,
+    "grade": "A",
+    "action": "保留",
+    "issues": [],
+    "veto": null,
+    "correct_length_ratio": 0.5,
+    "final_action": "保留进入活动题库"
+  },
+  {
+    "question_id": "Q-NU-210",
+    "source_file": "pretest.json",
+    "difficulty": "basic",
+    "score": 89,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "正确项长度优势 6.50x"
+    ],
+    "veto": null,
+    "correct_length_ratio": 6.5,
+    "final_action": "退出活动题库；未形成不改变医学事实的合格实质重写，按宁缺毋滥处理"
+  },
+  {
+    "question_id": "Q-NU-211",
+    "source_file": "pretest.json",
+    "difficulty": "basic",
+    "score": 87,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "正确项偏长 1.25x"
+    ],
+    "veto": null,
+    "correct_length_ratio": 1.25,
+    "final_action": "退出活动题库；未形成不改变医学事实的合格实质重写，按宁缺毋滥处理"
+  },
+  {
+    "question_id": "Q-NU-212",
+    "source_file": "pretest.json",
+    "difficulty": "basic",
+    "score": 89,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "正确项长度优势 1.50x"
+    ],
+    "veto": null,
+    "correct_length_ratio": 1.5,
+    "final_action": "退出活动题库；未形成不改变医学事实的合格实质重写，按宁缺毋滥处理"
+  },
+  {
+    "question_id": "Q-NU-213",
+    "source_file": "pretest.json",
+    "difficulty": "basic",
+    "score": 90,
+    "grade": "A",
+    "action": "保留",
+    "issues": [],
+    "veto": null,
+    "correct_length_ratio": 1.0,
+    "final_action": "保留进入活动题库"
+  },
+  {
+    "question_id": "Q-NU-214",
+    "source_file": "pretest.json",
+    "difficulty": "basic",
+    "score": 90,
+    "grade": "A",
+    "action": "保留",
+    "issues": [],
+    "veto": null,
+    "correct_length_ratio": 1.0,
+    "final_action": "保留进入活动题库"
+  },
+  {
+    "question_id": "Q-NU-215",
+    "source_file": "pretest.json",
+    "difficulty": "basic",
+    "score": 95,
+    "grade": "A",
+    "action": "保留",
+    "issues": [],
+    "veto": null,
+    "correct_length_ratio": 1.0,
+    "final_action": "保留进入活动题库"
+  },
+  {
+    "question_id": "Q-NU-216",
+    "source_file": "pretest.json",
+    "difficulty": "basic",
+    "score": 89,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "正确项长度优势 1.50x"
+    ],
+    "veto": null,
+    "correct_length_ratio": 1.5,
+    "final_action": "退出活动题库；未形成不改变医学事实的合格实质重写，按宁缺毋滥处理"
+  },
+  {
+    "question_id": "Q-NU-217",
+    "source_file": "pretest.json",
+    "difficulty": "basic",
+    "score": 89,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "正确项长度优势 2.50x"
+    ],
+    "veto": null,
+    "correct_length_ratio": 2.5,
+    "final_action": "退出活动题库；未形成不改变医学事实的合格实质重写，按宁缺毋滥处理"
+  },
+  {
+    "question_id": "Q-BP-111",
+    "source_file": "pretest.json",
+    "difficulty": "intermediate",
+    "score": 82,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "正确项长度优势 2.33x",
+      "提高档情境应用不足"
+    ],
+    "veto": null,
+    "correct_length_ratio": 2.333,
+    "final_action": "为保证所属专业难度档可组成5题卷，按质量排序择优恢复"
+  },
+  {
+    "question_id": "Q-BP-112",
+    "source_file": "pretest.json",
+    "difficulty": "intermediate",
+    "score": 94,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "正确项长度优势 1.50x"
+    ],
+    "veto": null,
+    "correct_length_ratio": 1.5,
+    "final_action": "为保证所属专业难度档可组成5题卷，按质量排序择优恢复"
+  },
+  {
+    "question_id": "Q-BP-113",
+    "source_file": "pretest.json",
+    "difficulty": "intermediate",
+    "score": 82,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "正确项长度优势 2.36x",
+      "提高档情境应用不足"
+    ],
+    "veto": null,
+    "correct_length_ratio": 2.364,
+    "final_action": "退出活动题库；未形成不改变医学事实的合格实质重写，按宁缺毋滥处理"
+  },
+  {
+    "question_id": "Q-CM-221",
+    "source_file": "pretest.json",
+    "difficulty": "intermediate",
+    "score": 94,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "正确项长度优势 1.56x"
+    ],
+    "veto": null,
+    "correct_length_ratio": 1.556,
+    "final_action": "为保证所属专业难度档可组成5题卷，按质量排序择优恢复"
+  },
+  {
+    "question_id": "Q-CM-222",
+    "source_file": "pretest.json",
+    "difficulty": "intermediate",
+    "score": 94,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "正确项长度优势 2.75x"
+    ],
+    "veto": null,
+    "correct_length_ratio": 2.75,
+    "final_action": "退出活动题库；未形成不改变医学事实的合格实质重写，按宁缺毋滥处理"
+  },
+  {
+    "question_id": "Q-CM-223",
+    "source_file": "pretest.json",
+    "difficulty": "intermediate",
+    "score": 94,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "正确项长度优势 1.70x"
+    ],
+    "veto": null,
+    "correct_length_ratio": 1.7,
+    "final_action": "为保证所属专业难度档可组成5题卷，按质量排序择优恢复"
+  },
+  {
+    "question_id": "Q-MT-221",
+    "source_file": "pretest.json",
+    "difficulty": "intermediate",
+    "score": 94,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "正确项长度优势 2.42x"
+    ],
+    "veto": null,
+    "correct_length_ratio": 2.417,
+    "final_action": "为保证所属专业难度档可组成5题卷，按质量排序择优恢复"
+  },
+  {
+    "question_id": "Q-MT-222",
+    "source_file": "pretest.json",
+    "difficulty": "intermediate",
+    "score": 94,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "正确项长度优势 2.36x"
+    ],
+    "veto": null,
+    "correct_length_ratio": 2.364,
+    "final_action": "为保证所属专业难度档可组成5题卷，按质量排序择优恢复"
+  },
+  {
+    "question_id": "Q-MT-223",
+    "source_file": "pretest.json",
+    "difficulty": "intermediate",
+    "score": 86,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "正确项长度优势 2.64x",
+      "提高档情境应用不足"
+    ],
+    "veto": null,
+    "correct_length_ratio": 2.636,
+    "final_action": "退出活动题库；未形成不改变医学事实的合格实质重写，按宁缺毋滥处理"
+  },
+  {
+    "question_id": "Q-NU-221",
+    "source_file": "pretest.json",
+    "difficulty": "intermediate",
+    "score": 86,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "正确项长度优势 2.40x",
+      "提高档情境应用不足"
+    ],
+    "veto": null,
+    "correct_length_ratio": 2.4,
+    "final_action": "退出活动题库；未形成不改变医学事实的合格实质重写，按宁缺毋滥处理"
+  },
+  {
+    "question_id": "Q-NU-222",
+    "source_file": "pretest.json",
+    "difficulty": "intermediate",
+    "score": 94,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "正确项长度优势 2.45x"
+    ],
+    "veto": null,
+    "correct_length_ratio": 2.455,
+    "final_action": "为保证所属专业难度档可组成5题卷，按质量排序择优恢复"
+  },
+  {
+    "question_id": "Q-NU-223",
+    "source_file": "pretest.json",
+    "difficulty": "intermediate",
+    "score": 94,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "正确项长度优势 1.55x"
+    ],
+    "veto": null,
+    "correct_length_ratio": 1.545,
+    "final_action": "为保证所属专业难度档可组成5题卷，按质量排序择优恢复"
+  },
+  {
+    "question_id": "Q-TCM-221",
+    "source_file": "pretest.json",
+    "difficulty": "intermediate",
+    "score": 94,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "正确项长度优势 3.00x"
+    ],
+    "veto": null,
+    "correct_length_ratio": 3.0,
+    "final_action": "退出活动题库；未形成不改变医学事实的合格实质重写，按宁缺毋滥处理"
+  },
+  {
+    "question_id": "Q-TCM-222",
+    "source_file": "pretest.json",
+    "difficulty": "intermediate",
+    "score": 94,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "正确项长度优势 2.20x"
+    ],
+    "veto": null,
+    "correct_length_ratio": 2.2,
+    "final_action": "为保证所属专业难度档可组成5题卷，按质量排序择优恢复"
+  },
+  {
+    "question_id": "Q-TCM-223",
+    "source_file": "pretest.json",
+    "difficulty": "intermediate",
+    "score": 86,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "正确项长度优势 2.21x",
+      "提高档情境应用不足"
+    ],
+    "veto": null,
+    "correct_length_ratio": 2.214,
+    "final_action": "退出活动题库；未形成不改变医学事实的合格实质重写，按宁缺毋滥处理"
+  },
+  {
+    "question_id": "Q-RH-221",
+    "source_file": "pretest.json",
+    "difficulty": "intermediate",
+    "score": 86,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "正确项长度优势 2.50x",
+      "提高档情境应用不足"
+    ],
+    "veto": null,
+    "correct_length_ratio": 2.5,
+    "final_action": "退出活动题库；未形成不改变医学事实的合格实质重写，按宁缺毋滥处理"
+  },
+  {
+    "question_id": "Q-RH-222",
+    "source_file": "pretest.json",
+    "difficulty": "intermediate",
+    "score": 94,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "正确项长度优势 2.31x"
+    ],
+    "veto": null,
+    "correct_length_ratio": 2.308,
+    "final_action": "退出活动题库；未形成不改变医学事实的合格实质重写，按宁缺毋滥处理"
+  },
+  {
+    "question_id": "Q-RH-223",
+    "source_file": "pretest.json",
+    "difficulty": "intermediate",
+    "score": 94,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "正确项长度优势 2.07x"
+    ],
+    "veto": null,
+    "correct_length_ratio": 2.071,
+    "final_action": "为保证所属专业难度档可组成5题卷，按质量排序择优恢复"
+  },
+  {
+    "question_id": "Q-HM-221",
+    "source_file": "pretest.json",
+    "difficulty": "intermediate",
+    "score": 86,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "正确项长度优势 2.91x",
+      "提高档情境应用不足"
+    ],
+    "veto": null,
+    "correct_length_ratio": 2.909,
+    "final_action": "退出活动题库；未形成不改变医学事实的合格实质重写，按宁缺毋滥处理"
+  },
+  {
+    "question_id": "Q-HM-222",
+    "source_file": "pretest.json",
+    "difficulty": "intermediate",
+    "score": 92,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "提高档情境应用不足"
+    ],
+    "veto": null,
+    "correct_length_ratio": 1.1,
+    "final_action": "退出活动题库；未形成不改变医学事实的合格实质重写，按宁缺毋滥处理"
+  },
+  {
+    "question_id": "Q-HM-223",
+    "source_file": "pretest.json",
+    "difficulty": "intermediate",
+    "score": 94,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "正确项长度优势 2.00x"
+    ],
+    "veto": null,
+    "correct_length_ratio": 2.0,
+    "final_action": "为保证所属专业难度档可组成5题卷，按质量排序择优恢复"
+  },
+  {
+    "question_id": "Q-CM-301",
+    "source_file": "pretest_hard.json",
+    "difficulty": "advanced",
+    "score": 94,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "正确项长度优势 2.12x"
+    ],
+    "veto": null,
+    "correct_length_ratio": 2.118,
+    "final_action": "为保证所属专业难度档可组成5题卷，按质量排序择优恢复"
+  },
+  {
+    "question_id": "Q-CM-302",
+    "source_file": "pretest_hard.json",
+    "difficulty": "advanced",
+    "score": 94,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "正确项长度优势 2.13x"
+    ],
+    "veto": null,
+    "correct_length_ratio": 2.133,
+    "final_action": "为保证所属专业难度档可组成5题卷，按质量排序择优恢复"
+  },
+  {
+    "question_id": "Q-CM-303",
+    "source_file": "pretest_hard.json",
+    "difficulty": "advanced",
+    "score": 94,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "正确项长度优势 2.25x"
+    ],
+    "veto": null,
+    "correct_length_ratio": 2.25,
+    "final_action": "为保证所属专业难度档可组成5题卷，按质量排序择优恢复"
+  },
+  {
+    "question_id": "Q-CM-304",
+    "source_file": "pretest_hard.json",
+    "difficulty": "advanced",
+    "score": 94,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "正确项长度优势 2.00x"
+    ],
+    "veto": null,
+    "correct_length_ratio": 2.0,
+    "final_action": "为保证所属专业难度档可组成5题卷，按质量排序择优恢复"
+  },
+  {
+    "question_id": "Q-CM-305",
+    "source_file": "pretest_hard.json",
+    "difficulty": "advanced",
+    "score": 94,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "正确项长度优势 2.56x"
+    ],
+    "veto": null,
+    "correct_length_ratio": 2.562,
+    "final_action": "为保证所属专业难度档可组成5题卷，按质量排序择优恢复"
+  },
+  {
+    "question_id": "Q-CM-401",
+    "source_file": "pretest_hard.json",
+    "difficulty": "expert",
+    "score": 100,
+    "grade": "A",
+    "action": "保留",
+    "issues": [],
+    "veto": null,
+    "correct_length_ratio": 0.929,
+    "final_action": "保留进入活动题库"
+  },
+  {
+    "question_id": "Q-CM-402",
+    "source_file": "pretest_hard.json",
+    "difficulty": "expert",
+    "score": 97,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "正确项偏长 1.33x"
+    ],
+    "veto": null,
+    "correct_length_ratio": 1.333,
+    "final_action": "为保证所属专业难度档可组成5题卷，按质量排序择优恢复"
+  },
+  {
+    "question_id": "Q-CM-403",
+    "source_file": "pretest_hard.json",
+    "difficulty": "expert",
+    "score": 94,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "正确项长度优势 1.73x"
+    ],
+    "veto": null,
+    "correct_length_ratio": 1.733,
+    "final_action": "为保证所属专业难度档可组成5题卷，按质量排序择优恢复"
+  },
+  {
+    "question_id": "Q-CM-404",
+    "source_file": "pretest_hard.json",
+    "difficulty": "expert",
+    "score": 95,
+    "grade": "A",
+    "action": "保留",
+    "issues": [],
+    "veto": null,
+    "correct_length_ratio": 1.0,
+    "final_action": "保留进入活动题库"
+  },
+  {
+    "question_id": "Q-CM-405",
+    "source_file": "pretest_hard.json",
+    "difficulty": "expert",
+    "score": 89,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "正确项长度优势 2.00x"
+    ],
+    "veto": null,
+    "correct_length_ratio": 2.0,
+    "final_action": "为保证所属专业难度档可组成5题卷，按质量排序择优恢复"
+  },
+  {
+    "question_id": "Q-MT-301",
+    "source_file": "pretest_hard.json",
+    "difficulty": "advanced",
+    "score": 94,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "正确项长度优势 2.64x"
+    ],
+    "veto": null,
+    "correct_length_ratio": 2.643,
+    "final_action": "为保证所属专业难度档可组成5题卷，按质量排序择优恢复"
+  },
+  {
+    "question_id": "Q-MT-302",
+    "source_file": "pretest_hard.json",
+    "difficulty": "advanced",
+    "score": 94,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "正确项长度优势 2.27x"
+    ],
+    "veto": null,
+    "correct_length_ratio": 2.273,
+    "final_action": "为保证所属专业难度档可组成5题卷，按质量排序择优恢复"
+  },
+  {
+    "question_id": "Q-MT-303",
+    "source_file": "pretest_hard.json",
+    "difficulty": "advanced",
+    "score": 94,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "正确项长度优势 1.64x"
+    ],
+    "veto": null,
+    "correct_length_ratio": 1.643,
+    "final_action": "为保证所属专业难度档可组成5题卷，按质量排序择优恢复"
+  },
+  {
+    "question_id": "Q-MT-304",
+    "source_file": "pretest_hard.json",
+    "difficulty": "advanced",
+    "score": 94,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "正确项长度优势 2.31x"
+    ],
+    "veto": null,
+    "correct_length_ratio": 2.308,
+    "final_action": "为保证所属专业难度档可组成5题卷，按质量排序择优恢复"
+  },
+  {
+    "question_id": "Q-MT-305",
+    "source_file": "pretest_hard.json",
+    "difficulty": "advanced",
+    "score": 85,
+    "grade": "C",
+    "action": "删除",
+    "issues": [
+      "正确项长度优势 2.64x",
+      "高难档缺少综合推理或定量要求"
+    ],
+    "veto": "高难档仅增加篇幅，区分度不足",
+    "correct_length_ratio": 2.636,
+    "final_action": "A/B题仍不足5题，为恢复所属专业难度档最少量补位恢复"
+  },
+  {
+    "question_id": "Q-MT-401",
+    "source_file": "pretest_hard.json",
+    "difficulty": "expert",
+    "score": 94,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "正确项长度优势 1.57x"
+    ],
+    "veto": null,
+    "correct_length_ratio": 1.571,
+    "final_action": "为保证所属专业难度档可组成5题卷，按质量排序择优恢复"
+  },
+  {
+    "question_id": "Q-MT-402",
+    "source_file": "pretest_hard.json",
+    "difficulty": "expert",
+    "score": 97,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "正确项偏长 1.33x"
+    ],
+    "veto": null,
+    "correct_length_ratio": 1.333,
+    "final_action": "为保证所属专业难度档可组成5题卷，按质量排序择优恢复"
+  },
+  {
+    "question_id": "Q-MT-403",
+    "source_file": "pretest_hard.json",
+    "difficulty": "expert",
+    "score": 85,
+    "grade": "C",
+    "action": "删除",
+    "issues": [
+      "正确项长度优势 1.60x",
+      "高难档缺少综合推理或定量要求"
+    ],
+    "veto": "高难档仅增加篇幅，区分度不足",
+    "correct_length_ratio": 1.6,
+    "final_action": "A/B题仍不足5题，为恢复所属专业难度档最少量补位恢复"
+  },
+  {
+    "question_id": "Q-MT-404",
+    "source_file": "pretest_hard.json",
+    "difficulty": "expert",
+    "score": 85,
+    "grade": "C",
+    "action": "删除",
+    "issues": [
+      "正确项长度优势 2.92x",
+      "高难档缺少综合推理或定量要求"
+    ],
+    "veto": "高难档仅增加篇幅，区分度不足",
+    "correct_length_ratio": 2.917,
+    "final_action": "A/B题仍不足5题，为恢复所属专业难度档最少量补位恢复"
+  },
+  {
+    "question_id": "Q-MT-405",
+    "source_file": "pretest_hard.json",
+    "difficulty": "expert",
+    "score": 89,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "正确项长度优势 1.88x"
+    ],
+    "veto": null,
+    "correct_length_ratio": 1.875,
+    "final_action": "为保证所属专业难度档可组成5题卷，按质量排序择优恢复"
+  },
+  {
+    "question_id": "Q-NU-301",
+    "source_file": "pretest_hard.json",
+    "difficulty": "advanced",
+    "score": 94,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "正确项长度优势 2.89x"
+    ],
+    "veto": null,
+    "correct_length_ratio": 2.889,
+    "final_action": "为保证所属专业难度档可组成5题卷，按质量排序择优恢复"
+  },
+  {
+    "question_id": "Q-NU-302",
+    "source_file": "pretest_hard.json",
+    "difficulty": "advanced",
+    "score": 85,
+    "grade": "C",
+    "action": "删除",
+    "issues": [
+      "正确项长度优势 3.67x",
+      "高难档缺少综合推理或定量要求"
+    ],
+    "veto": "高难档仅增加篇幅，区分度不足",
+    "correct_length_ratio": 3.667,
+    "final_action": "A/B题仍不足5题，为恢复所属专业难度档最少量补位恢复"
+  },
+  {
+    "question_id": "Q-NU-303",
+    "source_file": "pretest_hard.json",
+    "difficulty": "advanced",
+    "score": 94,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "正确项长度优势 2.25x"
+    ],
+    "veto": null,
+    "correct_length_ratio": 2.25,
+    "final_action": "为保证所属专业难度档可组成5题卷，按质量排序择优恢复"
+  },
+  {
+    "question_id": "Q-NU-304",
+    "source_file": "pretest_hard.json",
+    "difficulty": "advanced",
+    "score": 94,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "正确项长度优势 4.12x"
+    ],
+    "veto": null,
+    "correct_length_ratio": 4.125,
+    "final_action": "为保证所属专业难度档可组成5题卷，按质量排序择优恢复"
+  },
+  {
+    "question_id": "Q-NU-305",
+    "source_file": "pretest_hard.json",
+    "difficulty": "advanced",
+    "score": 94,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "正确项长度优势 3.55x"
+    ],
+    "veto": null,
+    "correct_length_ratio": 3.545,
+    "final_action": "为保证所属专业难度档可组成5题卷，按质量排序择优恢复"
+  },
+  {
+    "question_id": "Q-NU-401",
+    "source_file": "pretest_hard.json",
+    "difficulty": "expert",
+    "score": 94,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "正确项长度优势 2.64x"
+    ],
+    "veto": null,
+    "correct_length_ratio": 2.643,
+    "final_action": "为保证所属专业难度档可组成5题卷，按质量排序择优恢复"
+  },
+  {
+    "question_id": "Q-NU-402",
+    "source_file": "pretest_hard.json",
+    "difficulty": "expert",
+    "score": 94,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "正确项长度优势 2.77x"
+    ],
+    "veto": null,
+    "correct_length_ratio": 2.769,
+    "final_action": "为保证所属专业难度档可组成5题卷，按质量排序择优恢复"
+  },
+  {
+    "question_id": "Q-NU-403",
+    "source_file": "pretest_hard.json",
+    "difficulty": "expert",
+    "score": 94,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "正确项长度优势 3.80x"
+    ],
+    "veto": null,
+    "correct_length_ratio": 3.8,
+    "final_action": "为保证所属专业难度档可组成5题卷，按质量排序择优恢复"
+  },
+  {
+    "question_id": "Q-NU-404",
+    "source_file": "pretest_hard.json",
+    "difficulty": "expert",
+    "score": 94,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "正确项长度优势 3.09x"
+    ],
+    "veto": null,
+    "correct_length_ratio": 3.091,
+    "final_action": "为保证所属专业难度档可组成5题卷，按质量排序择优恢复"
+  },
+  {
+    "question_id": "Q-NU-405",
+    "source_file": "pretest_hard.json",
+    "difficulty": "expert",
+    "score": 94,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "正确项长度优势 4.11x"
+    ],
+    "veto": null,
+    "correct_length_ratio": 4.111,
+    "final_action": "为保证所属专业难度档可组成5题卷，按质量排序择优恢复"
+  },
+  {
+    "question_id": "Q-TCM-301",
+    "source_file": "pretest_hard.json",
+    "difficulty": "advanced",
+    "score": 94,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "正确项长度优势 2.45x"
+    ],
+    "veto": null,
+    "correct_length_ratio": 2.455,
+    "final_action": "为保证所属专业难度档可组成5题卷，按质量排序择优恢复"
+  },
+  {
+    "question_id": "Q-TCM-302",
+    "source_file": "pretest_hard.json",
+    "difficulty": "advanced",
+    "score": 94,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "正确项长度优势 2.60x"
+    ],
+    "veto": null,
+    "correct_length_ratio": 2.6,
+    "final_action": "为保证所属专业难度档可组成5题卷，按质量排序择优恢复"
+  },
+  {
+    "question_id": "Q-TCM-303",
+    "source_file": "pretest_hard.json",
+    "difficulty": "advanced",
+    "score": 94,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "正确项长度优势 2.43x"
+    ],
+    "veto": null,
+    "correct_length_ratio": 2.429,
+    "final_action": "为保证所属专业难度档可组成5题卷，按质量排序择优恢复"
+  },
+  {
+    "question_id": "Q-TCM-304",
+    "source_file": "pretest_hard.json",
+    "difficulty": "advanced",
+    "score": 94,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "正确项长度优势 3.33x"
+    ],
+    "veto": null,
+    "correct_length_ratio": 3.333,
+    "final_action": "为保证所属专业难度档可组成5题卷，按质量排序择优恢复"
+  },
+  {
+    "question_id": "Q-TCM-305",
+    "source_file": "pretest_hard.json",
+    "difficulty": "advanced",
+    "score": 94,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "正确项长度优势 3.20x"
+    ],
+    "veto": null,
+    "correct_length_ratio": 3.2,
+    "final_action": "为保证所属专业难度档可组成5题卷，按质量排序择优恢复"
+  },
+  {
+    "question_id": "Q-TCM-401",
+    "source_file": "pretest_hard.json",
+    "difficulty": "expert",
+    "score": 100,
+    "grade": "A",
+    "action": "保留",
+    "issues": [],
+    "veto": null,
+    "correct_length_ratio": 1.312,
+    "final_action": "保留进入活动题库"
+  },
+  {
+    "question_id": "Q-TCM-402",
+    "source_file": "pretest_hard.json",
+    "difficulty": "expert",
+    "score": 94,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "正确项长度优势 3.15x"
+    ],
+    "veto": null,
+    "correct_length_ratio": 3.154,
+    "final_action": "为保证所属专业难度档可组成5题卷，按质量排序择优恢复"
+  },
+  {
+    "question_id": "Q-TCM-403",
+    "source_file": "pretest_hard.json",
+    "difficulty": "expert",
+    "score": 94,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "正确项长度优势 2.62x"
+    ],
+    "veto": null,
+    "correct_length_ratio": 2.615,
+    "final_action": "为保证所属专业难度档可组成5题卷，按质量排序择优恢复"
+  },
+  {
+    "question_id": "Q-TCM-404",
+    "source_file": "pretest_hard.json",
+    "difficulty": "expert",
+    "score": 94,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "正确项长度优势 3.58x"
+    ],
+    "veto": null,
+    "correct_length_ratio": 3.583,
+    "final_action": "为保证所属专业难度档可组成5题卷，按质量排序择优恢复"
+  },
+  {
+    "question_id": "Q-TCM-405",
+    "source_file": "pretest_hard.json",
+    "difficulty": "expert",
+    "score": 94,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "正确项长度优势 3.00x"
+    ],
+    "veto": null,
+    "correct_length_ratio": 3.0,
+    "final_action": "为保证所属专业难度档可组成5题卷，按质量排序择优恢复"
+  },
+  {
+    "question_id": "Q-RH-301",
+    "source_file": "pretest_hard.json",
+    "difficulty": "advanced",
+    "score": 94,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "正确项长度优势 2.70x"
+    ],
+    "veto": null,
+    "correct_length_ratio": 2.7,
+    "final_action": "为保证所属专业难度档可组成5题卷，按质量排序择优恢复"
+  },
+  {
+    "question_id": "Q-RH-302",
+    "source_file": "pretest_hard.json",
+    "difficulty": "advanced",
+    "score": 94,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "正确项长度优势 2.33x"
+    ],
+    "veto": null,
+    "correct_length_ratio": 2.333,
+    "final_action": "为保证所属专业难度档可组成5题卷，按质量排序择优恢复"
+  },
+  {
+    "question_id": "Q-RH-303",
+    "source_file": "pretest_hard.json",
+    "difficulty": "advanced",
+    "score": 94,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "正确项长度优势 2.29x"
+    ],
+    "veto": null,
+    "correct_length_ratio": 2.286,
+    "final_action": "为保证所属专业难度档可组成5题卷，按质量排序择优恢复"
+  },
+  {
+    "question_id": "Q-RH-304",
+    "source_file": "pretest_hard.json",
+    "difficulty": "advanced",
+    "score": 94,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "正确项长度优势 3.27x"
+    ],
+    "veto": null,
+    "correct_length_ratio": 3.273,
+    "final_action": "为保证所属专业难度档可组成5题卷，按质量排序择优恢复"
+  },
+  {
+    "question_id": "Q-RH-305",
+    "source_file": "pretest_hard.json",
+    "difficulty": "advanced",
+    "score": 94,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "正确项长度优势 2.69x"
+    ],
+    "veto": null,
+    "correct_length_ratio": 2.692,
+    "final_action": "为保证所属专业难度档可组成5题卷，按质量排序择优恢复"
+  },
+  {
+    "question_id": "Q-RH-401",
+    "source_file": "pretest_hard.json",
+    "difficulty": "expert",
+    "score": 94,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "正确项长度优势 2.07x"
+    ],
+    "veto": null,
+    "correct_length_ratio": 2.067,
+    "final_action": "为保证所属专业难度档可组成5题卷，按质量排序择优恢复"
+  },
+  {
+    "question_id": "Q-RH-402",
+    "source_file": "pretest_hard.json",
+    "difficulty": "expert",
+    "score": 94,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "正确项长度优势 2.08x"
+    ],
+    "veto": null,
+    "correct_length_ratio": 2.083,
+    "final_action": "为保证所属专业难度档可组成5题卷，按质量排序择优恢复"
+  },
+  {
+    "question_id": "Q-RH-403",
+    "source_file": "pretest_hard.json",
+    "difficulty": "expert",
+    "score": 94,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "正确项长度优势 2.31x"
+    ],
+    "veto": null,
+    "correct_length_ratio": 2.308,
+    "final_action": "为保证所属专业难度档可组成5题卷，按质量排序择优恢复"
+  },
+  {
+    "question_id": "Q-RH-404",
+    "source_file": "pretest_hard.json",
+    "difficulty": "expert",
+    "score": 94,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "正确项长度优势 3.80x"
+    ],
+    "veto": null,
+    "correct_length_ratio": 3.8,
+    "final_action": "为保证所属专业难度档可组成5题卷，按质量排序择优恢复"
+  },
+  {
+    "question_id": "Q-RH-405",
+    "source_file": "pretest_hard.json",
+    "difficulty": "expert",
+    "score": 85,
+    "grade": "C",
+    "action": "删除",
+    "issues": [
+      "正确项长度优势 1.79x",
+      "高难档缺少综合推理或定量要求"
+    ],
+    "veto": "高难档仅增加篇幅，区分度不足",
+    "correct_length_ratio": 1.786,
+    "final_action": "A/B题仍不足5题，为恢复所属专业难度档最少量补位恢复"
+  },
+  {
+    "question_id": "Q-HM-301",
+    "source_file": "pretest_hard.json",
+    "difficulty": "advanced",
+    "score": 85,
+    "grade": "C",
+    "action": "删除",
+    "issues": [
+      "正确项长度优势 4.25x",
+      "高难档缺少综合推理或定量要求"
+    ],
+    "veto": "高难档仅增加篇幅，区分度不足",
+    "correct_length_ratio": 4.25,
+    "final_action": "A/B题仍不足5题，为恢复所属专业难度档最少量补位恢复"
+  },
+  {
+    "question_id": "Q-HM-302",
+    "source_file": "pretest_hard.json",
+    "difficulty": "advanced",
+    "score": 85,
+    "grade": "C",
+    "action": "删除",
+    "issues": [
+      "正确项长度优势 2.00x",
+      "高难档缺少综合推理或定量要求"
+    ],
+    "veto": "高难档仅增加篇幅，区分度不足",
+    "correct_length_ratio": 2.0,
+    "final_action": "A/B题仍不足5题，为恢复所属专业难度档最少量补位恢复"
+  },
+  {
+    "question_id": "Q-HM-303",
+    "source_file": "pretest_hard.json",
+    "difficulty": "advanced",
+    "score": 94,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "正确项长度优势 2.15x"
+    ],
+    "veto": null,
+    "correct_length_ratio": 2.154,
+    "final_action": "为保证所属专业难度档可组成5题卷，按质量排序择优恢复"
+  },
+  {
+    "question_id": "Q-HM-304",
+    "source_file": "pretest_hard.json",
+    "difficulty": "advanced",
+    "score": 85,
+    "grade": "C",
+    "action": "删除",
+    "issues": [
+      "正确项长度优势 2.67x",
+      "高难档缺少综合推理或定量要求"
+    ],
+    "veto": "高难档仅增加篇幅，区分度不足",
+    "correct_length_ratio": 2.667,
+    "final_action": "A/B题仍不足5题，为恢复所属专业难度档最少量补位恢复"
+  },
+  {
+    "question_id": "Q-HM-305",
+    "source_file": "pretest_hard.json",
+    "difficulty": "advanced",
+    "score": 85,
+    "grade": "C",
+    "action": "删除",
+    "issues": [
+      "正确项长度优势 2.70x",
+      "高难档缺少综合推理或定量要求"
+    ],
+    "veto": "高难档仅增加篇幅，区分度不足",
+    "correct_length_ratio": 2.7,
+    "final_action": "A/B题仍不足5题，为恢复所属专业难度档最少量补位恢复"
+  },
+  {
+    "question_id": "Q-HM-401",
+    "source_file": "pretest_hard.json",
+    "difficulty": "expert",
+    "score": 95,
+    "grade": "A",
+    "action": "保留",
+    "issues": [],
+    "veto": null,
+    "correct_length_ratio": 0.667,
+    "final_action": "保留进入活动题库"
+  },
+  {
+    "question_id": "Q-HM-402",
+    "source_file": "pretest_hard.json",
+    "difficulty": "expert",
+    "score": 95,
+    "grade": "A",
+    "action": "保留",
+    "issues": [],
+    "veto": null,
+    "correct_length_ratio": 1.0,
+    "final_action": "保留进入活动题库"
+  },
+  {
+    "question_id": "Q-HM-403",
+    "source_file": "pretest_hard.json",
+    "difficulty": "expert",
+    "score": 95,
+    "grade": "A",
+    "action": "保留",
+    "issues": [],
+    "veto": null,
+    "correct_length_ratio": 1.0,
+    "final_action": "保留进入活动题库"
+  },
+  {
+    "question_id": "Q-HM-404",
+    "source_file": "pretest_hard.json",
+    "difficulty": "expert",
+    "score": 85,
+    "grade": "C",
+    "action": "删除",
+    "issues": [
+      "正确项长度优势 2.14x",
+      "高难档缺少综合推理或定量要求"
+    ],
+    "veto": "高难档仅增加篇幅，区分度不足",
+    "correct_length_ratio": 2.143,
+    "final_action": "A/B题仍不足5题，为恢复所属专业难度档最少量补位恢复"
+  },
+  {
+    "question_id": "Q-HM-405",
+    "source_file": "pretest_hard.json",
+    "difficulty": "expert",
+    "score": 91,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "高难档缺少综合推理或定量要求"
+    ],
+    "veto": null,
+    "correct_length_ratio": 0.818,
+    "final_action": "为保证所属专业难度档可组成5题卷，按质量排序择优恢复"
+  },
+  {
+    "question_id": "Q-EN-001",
+    "source_file": "pretest_en.json",
+    "difficulty": "english",
+    "score": 92,
+    "grade": "A",
+    "action": "保留",
+    "issues": [],
+    "veto": null,
+    "correct_length_ratio": 0.816,
+    "final_action": "保留进入活动题库"
+  },
+  {
+    "question_id": "Q-EN-002",
+    "source_file": "pretest_en.json",
+    "difficulty": "english",
+    "score": 92,
+    "grade": "A",
+    "action": "保留",
+    "issues": [],
+    "veto": null,
+    "correct_length_ratio": 1.128,
+    "final_action": "保留进入活动题库"
+  },
+  {
+    "question_id": "Q-EN-003",
+    "source_file": "pretest_en.json",
+    "difficulty": "english",
+    "score": 92,
+    "grade": "A",
+    "action": "保留",
+    "issues": [],
+    "veto": null,
+    "correct_length_ratio": 1.082,
+    "final_action": "保留进入活动题库"
+  },
+  {
+    "question_id": "Q-EN-004",
+    "source_file": "pretest_en.json",
+    "difficulty": "english",
+    "score": 92,
+    "grade": "A",
+    "action": "保留",
+    "issues": [],
+    "veto": null,
+    "correct_length_ratio": 1.212,
+    "final_action": "保留进入活动题库"
+  },
+  {
+    "question_id": "Q-EN-005",
+    "source_file": "pretest_en.json",
+    "difficulty": "english",
+    "score": 89,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "正确项偏长 1.33x"
+    ],
+    "veto": null,
+    "correct_length_ratio": 1.327,
+    "final_action": "退出活动题库；未形成不改变医学事实的合格实质重写，按宁缺毋滥处理"
+  },
+  {
+    "question_id": "Q-EN-006",
+    "source_file": "pretest_en.json",
+    "difficulty": "english",
+    "score": 86,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "正确项长度优势 1.50x"
+    ],
+    "veto": null,
+    "correct_length_ratio": 1.5,
+    "final_action": "退出活动题库；未形成不改变医学事实的合格实质重写，按宁缺毋滥处理"
+  },
+  {
+    "question_id": "Q-EN-007",
+    "source_file": "pretest_en.json",
+    "difficulty": "english",
+    "score": 100,
+    "grade": "A",
+    "action": "保留",
+    "issues": [],
+    "veto": null,
+    "correct_length_ratio": 1.111,
+    "final_action": "保留进入活动题库"
+  },
+  {
+    "question_id": "Q-EN-008",
+    "source_file": "pretest_en.json",
+    "difficulty": "english",
+    "score": 86,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "正确项长度优势 1.50x"
+    ],
+    "veto": null,
+    "correct_length_ratio": 1.5,
+    "final_action": "退出活动题库；未形成不改变医学事实的合格实质重写，按宁缺毋滥处理"
+  },
+  {
+    "question_id": "Q-EN-009",
+    "source_file": "pretest_en.json",
+    "difficulty": "english",
+    "score": 86,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "正确项长度优势 2.26x"
+    ],
+    "veto": null,
+    "correct_length_ratio": 2.264,
+    "final_action": "退出活动题库；未形成不改变医学事实的合格实质重写，按宁缺毋滥处理"
+  },
+  {
+    "question_id": "Q-EN-010",
+    "source_file": "pretest_en.json",
+    "difficulty": "english",
+    "score": 86,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "正确项长度优势 1.60x"
+    ],
+    "veto": null,
+    "correct_length_ratio": 1.596,
+    "final_action": "退出活动题库；未形成不改变医学事实的合格实质重写，按宁缺毋滥处理"
+  },
+  {
+    "question_id": "Q-EN-011",
+    "source_file": "pretest_en.json",
+    "difficulty": "english",
+    "score": 94,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "正确项长度优势 2.15x"
+    ],
+    "veto": null,
+    "correct_length_ratio": 2.148,
+    "final_action": "退出活动题库；未形成不改变医学事实的合格实质重写，按宁缺毋滥处理"
+  },
+  {
+    "question_id": "Q-EN-012",
+    "source_file": "pretest_en.json",
+    "difficulty": "english",
+    "score": 86,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "正确项长度优势 1.84x"
+    ],
+    "veto": null,
+    "correct_length_ratio": 1.837,
+    "final_action": "退出活动题库；未形成不改变医学事实的合格实质重写，按宁缺毋滥处理"
+  },
+  {
+    "question_id": "Q-EN-013",
+    "source_file": "pretest_en.json",
+    "difficulty": "english",
+    "score": 86,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "正确项长度优势 1.91x"
+    ],
+    "veto": null,
+    "correct_length_ratio": 1.915,
+    "final_action": "退出活动题库；未形成不改变医学事实的合格实质重写，按宁缺毋滥处理"
+  },
+  {
+    "question_id": "Q-EN-014",
+    "source_file": "pretest_en.json",
+    "difficulty": "english",
+    "score": 92,
+    "grade": "A",
+    "action": "保留",
+    "issues": [],
+    "veto": null,
+    "correct_length_ratio": 1.209,
+    "final_action": "保留进入活动题库"
+  },
+  {
+    "question_id": "Q-EN-015",
+    "source_file": "pretest_en.json",
+    "difficulty": "english",
+    "score": 86,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "正确项长度优势 1.91x"
+    ],
+    "veto": null,
+    "correct_length_ratio": 1.906,
+    "final_action": "退出活动题库；未形成不改变医学事实的合格实质重写，按宁缺毋滥处理"
+  },
+  {
+    "question_id": "Q-EN-016",
+    "source_file": "pretest_en.json",
+    "difficulty": "english",
+    "score": 92,
+    "grade": "A",
+    "action": "保留",
+    "issues": [],
+    "veto": null,
+    "correct_length_ratio": 1.404,
+    "final_action": "保留进入活动题库"
+  },
+  {
+    "question_id": "Q-EN-017",
+    "source_file": "pretest_en.json",
+    "difficulty": "english",
+    "score": 89,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "正确项偏长 1.39x"
+    ],
+    "veto": null,
+    "correct_length_ratio": 1.387,
+    "final_action": "退出活动题库；未形成不改变医学事实的合格实质重写，按宁缺毋滥处理"
+  },
+  {
+    "question_id": "Q-EN-018",
+    "source_file": "pretest_en.json",
+    "difficulty": "english",
+    "score": 86,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "正确项长度优势 2.74x"
+    ],
+    "veto": null,
+    "correct_length_ratio": 2.738,
+    "final_action": "退出活动题库；未形成不改变医学事实的合格实质重写，按宁缺毋滥处理"
+  },
+  {
+    "question_id": "Q-EN-019",
+    "source_file": "pretest_en.json",
+    "difficulty": "english",
+    "score": 86,
+    "grade": "B",
+    "action": "实质重写后复评",
+    "issues": [
+      "正确项长度优势 1.52x"
+    ],
+    "veto": null,
+    "correct_length_ratio": 1.52,
+    "final_action": "退出活动题库；未形成不改变医学事实的合格实质重写，按宁缺毋滥处理"
+  },
+  {
+    "question_id": "Q-EN-020",
+    "source_file": "pretest_en.json",
+    "difficulty": "english",
+    "score": 92,
+    "grade": "A",
+    "action": "保留",
+    "issues": [],
+    "veto": null,
+    "correct_length_ratio": 2.889,
+    "final_action": "保留进入活动题库"
+  }
+]

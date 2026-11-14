@@ -1,0 +1,518 @@
+{
+  "schema_version": "1.1",
+  "content_status": "课程团队维护",
+  "synthetic_data": true,
+  "cases": [
+    {
+      "case_id": "D1",
+      "disease_id": "type_2_diabetes",
+      "disease_label": "2型糖尿病",
+      "title": "李叔叔的糖尿病随访困惑",
+      "recommended_majors": [],
+      "professional_focus": {
+        "clinical_medicine": "核对症状、既往诊疗与并发症筛查情况，不凭单次记录下结论",
+        "nursing": "核对自我监测和用药执行情况，用通俗语言完成健康教育",
+        "health_management": "建立连续随访计划，识别漏访原因并协调复诊资源",
+        "rehabilitation": "核对活动习惯及运动安全信息，不制定个体化医疗处方"
+      },
+      "public_profile": {
+        "name": "李叔叔",
+        "age": 58,
+        "setting": "社区慢病随访",
+        "notice": "全部资料均为合成"
+      },
+      "clinical_data": [
+        {
+          "day": "D1",
+          "time": "07:20",
+          "item": "空腹血糖记录",
+          "value": "8.1 mmol/L",
+          "note": "家用仪器自测"
+        },
+        {
+          "day": "D4",
+          "time": "07:15",
+          "item": "空腹血糖记录",
+          "value": "7.6 mmol/L",
+          "note": "家用仪器自测"
+        }
+      ],
+      "persona": {
+        "personality": "随和但怕麻烦",
+        "concern": "觉得没有明显不舒服就不必复诊",
+        "speech_style": "简短、常说差不多",
+        "initial_emotion": "放松"
+      },
+      "hidden_info": [
+        {
+          "id": "H1",
+          "value": "近两周有三次忘记按原医嘱用药",
+          "sensitivity": "synthetic"
+        },
+        {
+          "id": "H2",
+          "value": "半年没有完成并发症筛查",
+          "sensitivity": "synthetic"
+        }
+      ],
+      "release_conditions": {
+        "H1": [
+          "ask_medication_adherence_without_blame"
+        ],
+        "H2": [
+          "ask_followup_and_screening"
+        ]
+      },
+      "task": "核对连续记录、用药执行和复诊筛查情况，解释持续管理的意义，并共同制定可执行的复诊计划。",
+      "initial_state": {
+        "revealed_info": [],
+        "emotion": "放松",
+        "concern_acknowledged": false,
+        "boundary_bait_used": false
+      },
+      "must_cover": [
+        "specific_history",
+        "trend_interpretation",
+        "medication_boundary",
+        "followup_plan",
+        "teach_back"
+      ],
+      "variant_of": null,
+      "knowledge_refs": [
+        "K-DM-001",
+        "K-DM-002",
+        "K-COM-001"
+      ],
+      "review_status": "课程团队维护",
+      "boundary_behaviors": [
+        "diagnose_real_person",
+        "recommend_specific_drug_or_dose",
+        "suggest_stop_switch_adjust_medication"
+      ]
+    },
+    {
+      "case_id": "D1-V1",
+      "disease_id": "type_2_diabetes",
+      "disease_label": "2型糖尿病",
+      "title": "周阿姨的血糖记录和保健品选择",
+      "recommended_majors": [],
+      "professional_focus": {
+        "clinical_medicine": "核对记录条件和伴随表现，说明信息限制并建议规范评估",
+        "nursing": "识别自行替代治疗的风险，完成用药边界和理解确认",
+        "health_management": "查明随访中断原因，协调正规复诊和年度筛查",
+        "rehabilitation": "关注活动计划与监测衔接，不评价药物疗效"
+      },
+      "public_profile": {
+        "name": "周阿姨",
+        "age": 64,
+        "setting": "家庭随访",
+        "notice": "全部资料均为合成"
+      },
+      "clinical_data": [
+        {
+          "day": "D1",
+          "time": "06:50",
+          "item": "空腹血糖记录",
+          "value": "7.9 mmol/L",
+          "note": "未记录前一晚饮食"
+        },
+        {
+          "day": "D3",
+          "time": "07:30",
+          "item": "空腹血糖记录",
+          "value": "8.4 mmol/L",
+          "note": "测量时间不同"
+        }
+      ],
+      "persona": {
+        "personality": "谨慎、容易相信熟人经验",
+        "concern": "担心长期用药，想用保健品替代",
+        "speech_style": "反复确认能不能少吃药",
+        "initial_emotion": "犹豫"
+      },
+      "hidden_info": [
+        {
+          "id": "H1",
+          "value": "已自行减少一次用药",
+          "sensitivity": "synthetic"
+        },
+        {
+          "id": "H2",
+          "value": "购买了宣称可以降糖的保健品",
+          "sensitivity": "synthetic"
+        }
+      ],
+      "release_conditions": {
+        "H1": [
+          "ask_medication_adherence_without_blame"
+        ],
+        "H2": [
+          "ask_remedy_use",
+          "acknowledge_concern"
+        ]
+      },
+      "task": "澄清记录条件和真实顾虑，守住用药及保健品边界，并协商正规复诊与连续记录计划。",
+      "initial_state": {
+        "revealed_info": [],
+        "emotion": "犹豫",
+        "concern_acknowledged": false,
+        "boundary_bait_used": true
+      },
+      "must_cover": [
+        "specific_history",
+        "trend_interpretation",
+        "medication_boundary",
+        "remedy_boundary",
+        "shared_action"
+      ],
+      "variant_of": "D1",
+      "knowledge_refs": [
+        "K-DM-001",
+        "K-DM-002",
+        "K-COM-001"
+      ],
+      "review_status": "课程团队维护",
+      "boundary_behaviors": [
+        "diagnose_real_person",
+        "recommend_specific_drug_or_dose",
+        "suggest_stop_switch_adjust_medication",
+        "endorse_unverified_remedy"
+      ]
+    },
+    {
+      "case_id": "P1",
+      "disease_id": "copd",
+      "disease_label": "慢性阻塞性肺疾病",
+      "title": "赵师傅的吸入装置使用困难",
+      "recommended_majors": [
+        "nursing",
+        "clinical_medicine",
+        "health_management"
+      ],
+      "professional_focus": {
+        "clinical_medicine": "核对症状变化、依从性和装置使用，不直接把效果不佳归因于疾病进展",
+        "nursing": "请患者演示装置使用，分步纠正并采用回示法确认",
+        "health_management": "记录随访症状、依从性和转诊结果，安排复查",
+        "rehabilitation": "核对活动耐量变化和停止活动信号，不自行调整治疗"
+      },
+      "public_profile": {
+        "name": "赵师傅",
+        "age": 67,
+        "setting": "社区卫生服务中心随访",
+        "notice": "全部资料均为合成"
+      },
+      "clinical_data": [
+        {
+          "day": "本次随访",
+          "item": "主诉",
+          "value": "走快时气短",
+          "note": "近一月无明显突发加重"
+        },
+        {
+          "day": "本次随访",
+          "item": "吸入装置",
+          "value": "随身携带",
+          "note": "未现场演示"
+        }
+      ],
+      "persona": {
+        "personality": "认真但容易紧张",
+        "concern": "担心自己装置用错，又怕被责备",
+        "speech_style": "说话慢，愿意配合演示",
+        "initial_emotion": "忐忑"
+      },
+      "hidden_info": [
+        {
+          "id": "H1",
+          "value": "经常忘记完整完成吸入步骤",
+          "sensitivity": "synthetic"
+        },
+        {
+          "id": "H2",
+          "value": "从未在随访时被要求回示操作",
+          "sensitivity": "synthetic"
+        }
+      ],
+      "release_conditions": {
+        "H1": [
+          "ask_device_demonstration_without_blame"
+        ],
+        "H2": [
+          "ask_previous_training"
+        ]
+      },
+      "task": "核对症状与依从性，请患者演示吸入装置，使用分步指导和回示法确认，并安排复查。",
+      "initial_state": {
+        "revealed_info": [],
+        "emotion": "忐忑",
+        "concern_acknowledged": false,
+        "boundary_bait_used": false
+      },
+      "must_cover": [
+        "symptom_history",
+        "device_demonstration",
+        "adherence",
+        "teach_back",
+        "followup_plan"
+      ],
+      "variant_of": null,
+      "knowledge_refs": [
+        "K-COPD-001",
+        "K-COPD-002",
+        "K-COM-001"
+      ],
+      "review_status": "课程团队维护",
+      "boundary_behaviors": [
+        "diagnose_real_person",
+        "recommend_specific_drug_or_dose",
+        "suggest_stop_switch_adjust_medication"
+      ]
+    },
+    {
+      "case_id": "P1-V1",
+      "disease_id": "copd",
+      "disease_label": "慢性阻塞性肺疾病",
+      "title": "孙阿姨突然加重的呼吸困难",
+      "recommended_majors": [
+        "clinical_medicine",
+        "nursing",
+        "health_management"
+      ],
+      "professional_focus": {
+        "clinical_medicine": "快速核对急性变化和警示表现，明确及时转诊",
+        "nursing": "识别急性加重线索，停止常规宣教并优先执行安全分流",
+        "health_management": "完成转诊协调和后续追踪，不延迟处理",
+        "rehabilitation": "立即停止活动训练并按安全规则转介"
+      },
+      "public_profile": {
+        "name": "孙阿姨",
+        "age": 70,
+        "setting": "社区随访电话",
+        "notice": "全部资料均为合成"
+      },
+      "clinical_data": [
+        {
+          "day": "今天",
+          "item": "症状变化",
+          "value": "呼吸困难明显加重并伴胸闷",
+          "note": "说完整句子比平时困难"
+        },
+        {
+          "day": "近两天",
+          "item": "咳痰",
+          "value": "痰量增加",
+          "note": "尚未就医"
+        }
+      ],
+      "persona": {
+        "personality": "怕麻烦、想继续观察",
+        "concern": "担心去医院花时间",
+        "speech_style": "气短、回答简短",
+        "initial_emotion": "焦虑"
+      },
+      "hidden_info": [
+        {
+          "id": "H1",
+          "value": "家属在旁，可协助联系急救或就医",
+          "sensitivity": "synthetic"
+        }
+      ],
+      "release_conditions": {
+        "H1": [
+          "ask_available_support"
+        ]
+      },
+      "task": "识别明显急性加重线索，清楚说明不能继续等待，完成及时转介和家属协同。",
+      "initial_state": {
+        "revealed_info": [],
+        "emotion": "焦虑",
+        "concern_acknowledged": false,
+        "boundary_bait_used": false
+      },
+      "must_cover": [
+        "identify_warning",
+        "timely_referral",
+        "support_coordination",
+        "plain_explanation"
+      ],
+      "variant_of": "P1",
+      "knowledge_refs": [
+        "K-COPD-002",
+        "K-COM-001"
+      ],
+      "review_status": "课程团队维护",
+      "boundary_behaviors": [
+        "diagnose_real_person",
+        "delay_referral",
+        "recommend_specific_drug_or_dose"
+      ]
+    },
+    {
+      "case_id": "S1",
+      "disease_id": "stroke_rehabilitation",
+      "disease_label": "脑卒中康复",
+      "title": "陈伯伯出院后的居家康复顾虑",
+      "recommended_majors": [
+        "rehabilitation",
+        "nursing",
+        "health_management"
+      ],
+      "professional_focus": {
+        "clinical_medicine": "核对出院信息和新发症状，说明诊断与处置边界",
+        "nursing": "核对日常照护、跌倒风险和家属支持，完成安全宣教",
+        "health_management": "连接复诊、康复和社区资源，形成可追踪计划",
+        "rehabilitation": "围绕功能目标、活动安全和患者参与制定训练沟通方案"
+      },
+      "public_profile": {
+        "name": "陈伯伯",
+        "age": 69,
+        "setting": "卒中后居家康复首次访视",
+        "notice": "全部资料均为合成"
+      },
+      "clinical_data": [
+        {
+          "day": "出院后第10天",
+          "item": "活动情况",
+          "value": "室内短距离行走需家属陪同",
+          "note": "未出现新发神经症状"
+        },
+        {
+          "day": "本周",
+          "item": "康复执行",
+          "value": "因担心跌倒而减少练习",
+          "note": "家属希望了解安全边界"
+        }
+      ],
+      "persona": {
+        "personality": "谨慎、有挫败感",
+        "concern": "害怕跌倒后给家人添麻烦",
+        "speech_style": "语速慢，愿意表达目标",
+        "initial_emotion": "低落"
+      },
+      "hidden_info": [
+        {
+          "id": "H1",
+          "value": "最想恢复自己去卫生间",
+          "sensitivity": "synthetic"
+        },
+        {
+          "id": "H2",
+          "value": "家中走道有杂物且夜间照明不足",
+          "sensitivity": "synthetic"
+        }
+      ],
+      "release_conditions": {
+        "H1": [
+          "ask_personal_goal"
+        ],
+        "H2": [
+          "ask_home_safety_environment"
+        ]
+      },
+      "task": "了解患者最重视的功能目标和居家风险，与患者及家属协商安全、可执行的康复下一步。",
+      "initial_state": {
+        "revealed_info": [],
+        "emotion": "低落",
+        "concern_acknowledged": false,
+        "boundary_bait_used": false
+      },
+      "must_cover": [
+        "personal_goal",
+        "function_history",
+        "home_safety",
+        "shared_action",
+        "teach_back"
+      ],
+      "variant_of": null,
+      "knowledge_refs": [
+        "K-STROKE-001",
+        "K-COM-001"
+      ],
+      "review_status": "课程团队维护",
+      "boundary_behaviors": [
+        "diagnose_real_person",
+        "promise_recovery_outcome",
+        "prescribe_unsupervised_intensity"
+      ]
+    },
+    {
+      "case_id": "S1-V1",
+      "disease_id": "stroke_rehabilitation",
+      "disease_label": "脑卒中康复",
+      "title": "康复训练中突然出现的言语含糊",
+      "recommended_majors": [
+        "rehabilitation",
+        "nursing",
+        "clinical_medicine"
+      ],
+      "professional_focus": {
+        "clinical_medicine": "识别卒中警示表现，记录出现时间并立即启动急救转介",
+        "nursing": "停止训练、保障现场安全并协助呼叫120",
+        "health_management": "不以预约随访替代急救，协助联系家属和急救资源",
+        "rehabilitation": "立即停止训练，识别中风120线索并执行紧急分流"
+      },
+      "public_profile": {
+        "name": "刘阿姨",
+        "age": 66,
+        "setting": "社区康复训练室",
+        "notice": "全部资料均为合成"
+      },
+      "clinical_data": [
+        {
+          "day": "训练中",
+          "item": "突然变化",
+          "value": "说话含糊、一侧手臂无力",
+          "note": "约5分钟前出现"
+        },
+        {
+          "day": "当前",
+          "item": "意识",
+          "value": "能够回应",
+          "note": "家属在场"
+        }
+      ],
+      "persona": {
+        "personality": "想坚持训练、不愿麻烦别人",
+        "concern": "认为休息一下就会好",
+        "speech_style": "言语含糊",
+        "initial_emotion": "困惑"
+      },
+      "hidden_info": [
+        {
+          "id": "H1",
+          "value": "家属手机可立即拨打120",
+          "sensitivity": "synthetic"
+        }
+      ],
+      "release_conditions": {
+        "H1": [
+          "ask_available_support"
+        ]
+      },
+      "task": "立即停止训练，识别卒中警示表现和出现时间，清楚提示拨打120，不等待症状自行消失。",
+      "initial_state": {
+        "revealed_info": [],
+        "emotion": "困惑",
+        "concern_acknowledged": false,
+        "boundary_bait_used": false
+      },
+      "must_cover": [
+        "identify_warning",
+        "symptom_onset_time",
+        "call_emergency",
+        "do_not_delay"
+      ],
+      "variant_of": "S1",
+      "knowledge_refs": [
+        "K-STROKE-002",
+        "K-COM-001"
+      ],
+      "review_status": "课程团队维护",
+      "boundary_behaviors": [
+        "diagnose_real_person",
+        "delay_referral",
+        "recommend_specific_drug_or_dose"
+      ]
+    }
+  ]
+}

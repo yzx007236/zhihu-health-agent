@@ -1,0 +1,5 @@
+.uv-cache/
+.zhihu-sessions/
+.venv/
+__pycache__/
+*.pyc

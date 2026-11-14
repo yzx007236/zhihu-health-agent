@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title">
+  <title id="title">知护训练运行时</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0f766e"/>
+      <stop offset="1" stop-color="#2563eb"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="url(#bg)"/>
+  <path d="M256 108c-54 0-98 38-98 88 0 31 17 59 43 75v81h110v-81c26-16 43-44 43-75 0-50-44-88-98-88z" fill="#fff" opacity=".96"/>
+  <path d="M216 199h80M256 159v80" stroke="#0f766e" stroke-width="24" stroke-linecap="round"/>
+  <path d="M213 392h86" stroke="#fff" stroke-width="26" stroke-linecap="round"/>
+</svg>

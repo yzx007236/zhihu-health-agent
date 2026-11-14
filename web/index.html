@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="experience.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>知护 · 大健康学习与实践智能体</title>
+<meta name="description" content="知护面向医学、护理、康复、中医等专业学生的实践训练平台。测—讲—练—诊—再练，与虚拟标准化病人对话，生成证据化复盘报告。">
+<style>
+/* ============ 知护 设计 Token ============
+   主题：社区健康服务 + 中医药草本
+   主色「护青」：介于青绿与草木之间的沉稳绿，克制不跳
+   辅色「杏米」：温暖的浅米，来自药房与宣纸
+   强调「朱砂」：中医印章红，仅用于警示与红线
+   ======================================== */
+:root{
+  --hu-qing:#1f6f5c;        /* 主色 护青 */
+  --hu-qing-deep:#175a4a;   /* 深护青（悬停/文字） */
+  --hu-qing-soft:#e3f0ea;   /* 护青浅底 */
+  --hu-qing-ink:#0f3d33;    /* 近黑绿（标题） */
+  --hu-mi:#f6f1e6;          /* 杏米 底 */
+  --hu-mi-deep:#efe7d6;     /* 杏米 深 */
+  --hu-card:#fffefb;        /* 卡片 */
+  --hu-zhu:#b3483a;         /* 朱砂 警示/红线 */
+  --hu-zhu-soft:#fbece8;
+  --hu-amber:#a95f18;       /* 琥珀 待复核 */
+  --hu-amber-soft:#fdf1dd;
+  --hu-ink:#2a2f2c;         /* 正文 */
+  --hu-muted:#6b726e;       /* 次要 */
+  --hu-line:#e4e0d5;        /* 分隔线 */
+  --hu-radius:18px;
+  --hu-shadow:0 6px 24px rgba(23,90,74,.08);
+  --font-sans:"PingFang SC","Microsoft YaHei","Hiragino Sans GB",system-ui,-apple-system,sans-serif;
+  --font-display:"STKaiti","KaiTi","FangSong","PingFang SC",serif;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{
+  background:var(--hu-mi);
+  color:var(--hu-ink);
+  font:15px/1.7 var(--font-sans);
+  -webkit-font-smoothing:antialiased;
+}
+a{color:var(--hu-qing);text-decoration:none}
+button{font-family:inherit;cursor:pointer}
+/* 顶部声明条 */
+.topbar{
+  position:sticky;top:0;z-index:50;
+  background:var(--hu-qing-ink);color:#eaf3ef;
+  padding:9px 5vw;display:flex;align-items:center;gap:10px;
+  font-size:12.5px;letter-spacing:.02em;
+}
+.topbar .dot{width:7px;height:7px;border-radius:50%;background:#7fd0b4;flex:none}
+.topbar strong{color:#fff;font-weight:700}
+/* 主容器 */
+.shell{max-width:1120px;margin:0 auto;padding:0 18px 90px}
+/* 头部 hero */
+.hero{padding:34px 4px 8px;display:flex;align-items:flex-start;gap:18px}
+.brand{display:flex;align-items:center;gap:14px}
+.mascot{
+  width:64px;height:64px;border-radius:22px;flex:none;
+  background:linear-gradient(160deg,#2f8a70,#1f6f5c);
+  display:flex;align-items:center;justify-content:center;
+  box-shadow:var(--hu-shadow);position:relative;overflow:hidden;
+}
+.mascot .face{color:#fff;font-size:30px;line-height:1}
+.mascot::after{content:"+";position:absolute;right:8px;top:8px;color:#d7efe6;font-size:16px;font-weight:900;opacity:.85}
+.brand h1{
+  margin:0;font-family:var(--font-display);font-weight:700;
+  font-size:30px;color:var(--hu-qing-ink);letter-spacing:.04em;
+}
+.brand .sub{margin-top:2px;font-size:13px;color:var(--hu-muted)}
+/* 吉祥物气泡 */
+.bubble{
+  margin-left:auto;max-width:320px;align-self:center;
+  background:var(--hu-card);border:1px solid var(--hu-line);
+  border-radius:16px 16px 16px 4px;padding:12px 16px;
+  box-shadow:var(--hu-shadow);font-size:14px;color:var(--hu-ink);
+  position:relative;
+}
+/* 阶段进度条 */
+.steps{display:flex;gap:6px;margin:18px 0 6px;flex-wrap:wrap}
+.step{
+  flex:1;min-width:64px;text-align:center;padding:8px 4px;border-radius:10px;
+  font-size:12px;color:var(--hu-muted);background:var(--hu-card);
+  border:1px solid var(--hu-line);transition:all .2s;
+}
+.step.on{background:var(--hu-qing);color:#fff;border-color:var(--hu-qing);font-weight:600}
+.step.done{background:var(--hu-qing-soft);color:var(--hu-qing-deep);border-color:var(--hu-qing-soft)}
+.step .k{display:block;font-size:10px;opacity:.7;margin-bottom:1px}
+/* 卡片 */
+.card{
+  background:var(--hu-card);border:1px solid var(--hu-line);
+  border-radius:var(--hu-radius);box-shadow:var(--hu-shadow);
+  padding:24px;margin-top:18px;
+}
+.card h2{margin:0 0 6px;font-size:19px;color:var(--hu-qing-ink);font-family:var(--font-display);letter-spacing:.02em}
+.card .lead{color:var(--hu-muted);font-size:14px;margin:0 0 18px}
+/* 主按钮 */
+.btn{
+  display:inline-flex;align-items:center;gap:8px;justify-content:center;
+  background:var(--hu-qing);color:#fff;border:none;border-radius:12px;
+  padding:12px 22px;font-size:15px;font-weight:600;transition:background .15s,transform .05s;
+}
+.btn:hover{background:var(--hu-qing-deep)}
+.btn:active{transform:translateY(1px)}
+.btn:disabled{opacity:.5;cursor:not-allowed}
+.btn.ghost{background:transparent;color:var(--hu-qing);border:1px solid var(--hu-qing)}
+.btn.ghost:hover{background:var(--hu-qing-soft)}
+.btn.zhu{background:var(--hu-zhu)}
+.btn.sm{padding:8px 16px;font-size:13px;border-radius:10px}
+.btn.block{width:100%}
+/* 输入 */
+.input{
+  width:100%;padding:13px 16px;border:1px solid var(--hu-line);border-radius:12px;
+  font-size:15px;font-family:inherit;background:#fff;color:var(--hu-ink);
+  transition:border .15s,box-shadow .15s;
+}
+.input:focus{outline:none;border-color:var(--hu-qing);box-shadow:0 0 0 3px var(--hu-qing-soft)}
+/* 专业卡片网格 */
+.major-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:12px}
+.major-card{
+  text-align:left;padding:16px;border:1.5px solid var(--hu-line);border-radius:16px;
+  background:#fff;transition:all .15s;position:relative;
+}
+.major-card:hover{border-color:var(--hu-qing)}
+.major-card.on{border-color:var(--hu-qing);background:var(--hu-qing-soft);box-shadow:0 0 0 3px var(--hu-qing-soft)}
+.major-card .m-name{font-weight:700;font-size:15px;color:var(--hu-qing-ink)}
+.major-card .m-hint{font-size:12.5px;color:var(--hu-muted);margin-top:3px;line-height:1.5}
+.major-card .check{position:absolute;right:12px;top:12px;width:20px;height:20px;border-radius:50%;background:var(--hu-qing);color:#fff;display:none;align-items:center;justify-content:center;font-size:13px}
+.major-card.on .check{display:flex}
+.q-case-options{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0}
+.q-case-options .q-case-id{font-size:11px;font-weight:500;color:var(--hu-muted)}
+.qcase-question{padding:14px 0;border-top:1px solid var(--hu-line)}
+.qcase-question h4{margin:0 0 8px;font-size:14px;line-height:1.65;overflow-wrap:anywhere}
+.qcase-question p{margin:6px 0;line-height:1.65}
+.q-case-training section{margin:18px 0;padding:14px 0;border-top:1px solid var(--hu-line)}
+.qcase-stage{display:flex;flex-direction:column;gap:8px;margin:18px 0}
+.qcase-stage b{color:var(--hu-qing-deep)}
+.qcase-stage textarea{box-sizing:border-box;width:100%;max-width:100%;min-height:112px;padding:12px;border:1px solid var(--hu-line);border-radius:8px;font:inherit;resize:vertical}
+.qcase-stage textarea:focus{outline:2px solid var(--hu-qing-soft);border-color:var(--hu-qing)}
+.qcase-reference{margin-top:22px;padding-top:16px;border-top:2px solid var(--hu-qing)}
+/* 选项（自测） */
+.q-options{display:flex;flex-direction:column;gap:10px;margin-top:14px}
+.q-opt{
+  text-align:left;padding:13px 16px;border:1.5px solid var(--hu-line);border-radius:12px;
+  background:#fff;font-size:14.5px;transition:all .15s;display:flex;gap:12px;align-items:flex-start;
+}
+.q-opt:hover{border-color:var(--hu-qing)}
+.q-opt.sel{border-color:var(--hu-qing);background:var(--hu-qing-soft)}
+.q-opt .tag{font-weight:700;color:var(--hu-qing);flex:none;width:18px}
+.q-opt.correct{border-color:var(--hu-qing);background:var(--hu-qing-soft)}
+.q-opt.wrong{border-color:var(--hu-zhu);background:var(--hu-zhu-soft)}
+/* 对话区 */
+.chat{display:flex;flex-direction:column;gap:14px;max-height:52vh;overflow-y:auto;padding:6px 4px}
+.msg{display:flex;gap:10px;max-width:86%}
+.msg .av{width:34px;height:34px;border-radius:12px;flex:none;display:flex;align-items:center;justify-content:center;font-size:17px;background:var(--hu-qing-soft)}
+.msg .body{background:var(--hu-card);border:1px solid var(--hu-line);border-radius:14px;padding:11px 15px;font-size:14.5px;box-shadow:0 2px 8px rgba(23,90,74,.05)}
+.msg.me{flex-direction:row-reverse;margin-left:auto}
+.msg.me .av{background:var(--hu-qing);color:#fff}
+.msg.me .body{background:var(--hu-qing);border-color:var(--hu-qing);color:#fff}
+.msg .who{font-size:11.5px;color:var(--hu-muted);margin-bottom:3px;font-weight:600}
+.msg.me .who{color:#cde7dd;text-align:right}
+.msg .body p{margin:6px 0}
+.msg .body p:first-child{margin-top:0}
+.msg .body p:last-child{margin-bottom:0}
+.chatbar{display:flex;gap:10px;margin-top:16px}
+.chatbar .input{flex:1}
+/* 病例数据表 */
+.clinical-table{width:100%;border-collapse:collapse;font-size:13.5px;margin-top:8px}
+.clinical-table th,.clinical-table td{padding:8px 10px;border-bottom:1px solid var(--hu-line);text-align:left}
+.clinical-table th{color:var(--hu-muted);font-weight:600;font-size:12px;background:var(--hu-qing-soft)}
+/* 知识卡 */
+.kcard{border-left:3px solid var(--hu-qing);background:var(--hu-qing-soft);padding:14px 16px;border-radius:0 12px 12px 0;margin-top:12px}
+.kcard .k-title{font-weight:700;color:var(--hu-qing-ink);font-size:14.5px}
+.kcard .k-claim{margin-top:6px;font-size:14px}
+.kcard .k-src{margin-top:8px;font-size:12px;color:var(--hu-muted)}
+.kcard .k-src a{color:var(--hu-qing)}
+.kcard .k-mis{margin-top:8px;font-size:12.5px;color:var(--hu-amber)}
+/* 报告 */
+.score-hero{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.score-box{background:var(--hu-qing-soft);border-radius:14px;padding:18px;text-align:center}
+.score-box .n{font-size:34px;font-weight:800;color:var(--hu-qing-deep);line-height:1.1}
+.score-box .l{font-size:12.5px;color:var(--hu-muted);margin-top:4px}
+.dim-bar{height:8px;background:#e8eeea;border-radius:5px;overflow:hidden;margin-top:6px}
+.dim-bar i{display:block;height:100%;background:var(--hu-qing)}
+.pill{display:inline-block;padding:2px 10px;border-radius:999px;font-size:12px;background:#edf1ee;color:var(--hu-muted)}
+.pill.bad{background:var(--hu-zhu-soft);color:var(--hu-zhu)}
+.pill.warn{background:var(--hu-amber-soft);color:var(--hu-amber)}
+.pill.ok{background:var(--hu-qing-soft);color:var(--hu-qing-deep)}
+blockquote{margin:8px 0;padding:10px 14px;border-left:3px solid var(--hu-qing);background:#f6faf7;border-radius:0 8px 8px 0;font-size:14px}
+/* 分隔 */
+.divider{height:1px;background:var(--hu-line);margin:18px 0}
+/* 合规声明卡 */
+.notice{
+  background:var(--hu-amber-soft);color:#6b4a12;border:1px solid #eed9a8;
+  border-radius:12px;padding:12px 16px;font-size:13px;margin-top:14px;
+}
+/* 模块导航（移动端顶部 pill） */
+.module-nav{display:flex;gap:8px;overflow-x:auto;margin:14px 0;padding-bottom:4px}
+.module-nav a{flex:none;padding:7px 14px;border-radius:999px;background:var(--hu-card);border:1px solid var(--hu-line);font-size:13px;color:var(--hu-muted);transition:all .15s}
+.module-nav a.on{background:var(--hu-qing);color:#fff;border-color:var(--hu-qing)}
+/* 空状态 / 建设中 */
+.building{border:1.5px dashed var(--hu-line);border-radius:16px;padding:34px;text-align:center;color:var(--hu-muted)}
+/* 页脚 */
+.footer{text-align:center;color:var(--hu-muted);font-size:12px;margin-top:36px;padding-bottom:20px}
+/* WorkBuddy 通道状态块 */
+.wb-chip{
+  margin-left:auto;display:inline-flex;align-items:center;gap:7px;
+  background:rgba(255,255,255,.08);color:#eaf3ef;border:1px solid rgba(255,255,255,.18);
+  border-radius:999px;padding:5px 12px;font-size:12px;line-height:1.4;transition:background .15s;
+}
+.wb-chip:hover{background:rgba(255,255,255,.16)}
+.wb-chip .wb-dot{width:7px;height:7px;border-radius:50%;background:#c9d3ce;flex:none;transition:background .2s}
+.wb-chip.ok .wb-dot{background:#7fd0b4;box-shadow:0 0 0 3px rgba(127,208,180,.22)}
+.wb-chip.warn .wb-dot{background:#e6b96b}
+.wb-chip.err .wb-dot{background:#e0837a}
+.wb-panel{
+  position:fixed;right:18px;top:46px;z-index:60;width:min(392px,calc(100vw - 36px));
+  background:var(--hu-card);border:1px solid var(--hu-line);border-radius:14px;
+  box-shadow:0 12px 36px rgba(15,61,51,.18);padding:16px 18px;font-size:13px;
+}
+.wb-panel[hidden]{display:none}
+.wb-panel h4{margin:0 0 10px;font-size:14px;color:var(--hu-qing-ink);font-family:var(--font-display);letter-spacing:.02em}
+.wb-row{display:flex;gap:12px;justify-content:space-between;align-items:flex-start;padding:6px 0;border-bottom:1px dashed var(--hu-line)}
+.wb-row:last-of-type{border-bottom:none}
+.wb-row span{color:var(--hu-muted);flex:none;font-size:12.5px}
+.wb-row code{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:12px;color:var(--hu-qing-deep);word-break:break-all;text-align:right}
+.wb-note{margin-top:10px;font-size:11.5px;color:var(--hu-muted);line-height:1.65}
+/* 批改结果与考点讲解 */
+.graded-sum{padding:14px 16px;border-radius:12px;background:rgba(241,246,239,.9);border:1px solid var(--hu-line);line-height:1.7;font-size:14px}
+.legend{display:flex;gap:16px;flex-wrap:wrap;font-size:12.5px;color:var(--hu-muted);margin-top:8px}
+.legend .dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:5px;vertical-align:1px}
+.legend .dot.ok{background:var(--hu-qing)}
+.legend .dot.bad{background:var(--hu-zhu)}
+.q-opt .opt-mark{margin-left:auto;font-size:12px;font-weight:600;white-space:nowrap;flex:none}
+.q-opt .opt-mark.correct{color:var(--hu-qing-deep)}
+.q-opt .opt-mark.wrong{color:var(--hu-zhu)}
+.graded-line{margin-top:10px;font-size:13px;font-weight:600}
+.graded-line.ok{color:var(--hu-qing-deep)}
+.graded-line.bad{color:var(--hu-zhu)}
+.exp-box{margin-top:12px;padding:12px 14px;border:1px dashed var(--hu-line);border-radius:10px;background:rgba(243,247,241,.75)}
+.exp-head{display:flex;gap:8px;align-items:center;font-weight:700;font-size:13px;margin-bottom:6px}
+.exp-body{font-size:13.5px;line-height:1.78}
+.exp-row{margin-top:8px;font-size:13px;line-height:1.72}
+.exp-label{display:inline-block;min-width:62px;color:var(--hu-muted);font-weight:600}
+.exp-ref{margin-top:10px;padding-top:8px;border-top:1px dotted var(--hu-line);font-size:12px;color:var(--hu-muted);line-height:1.65}
+.exp-ref b{font-weight:600}
+.point-head{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.point-head .k-title{margin:0}
+.point-no{background:var(--hu-qing);color:#fff;font-size:12px;font-weight:700;padding:2px 9px;border-radius:999px;white-space:nowrap}
+.point-badge{margin-left:auto;background:var(--hu-zhu-soft);color:var(--hu-zhu);font-size:12px;font-weight:600;padding:2px 9px;border-radius:999px;white-space:nowrap}
+/* ===== v4.3：学习档案 / 知识点答疑 / 问诊采集 ===== */
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0}
+.chip{display:inline-flex;align-items:center;gap:6px;padding:7px 12px;border-radius:999px;border:1px solid var(--hu-line);background:#fff;font-size:13px;color:var(--hu-muted);cursor:pointer;transition:all .15s;font-family:inherit}
+.chip:hover{border-color:var(--hu-qing)}
+.chip span{font-size:11.5px;color:var(--hu-muted)}
+.chip.on{border-color:var(--hu-qing);background:var(--hu-qing-soft);color:var(--hu-qing-deep);font-weight:600}
+.chip.on span{color:var(--hu-qing)}
+.hint{font-size:12.5px;color:var(--hu-muted);line-height:1.7}
+.hint-inline{font-size:12px;color:var(--hu-muted);font-weight:400;margin-left:6px}
+.sec-h{font-size:15px;margin:20px 0 10px;color:var(--hu-qing-ink)}
+.field{margin-top:14px}
+.field>label{display:block;font-size:13.5px;font-weight:600;margin-bottom:6px;color:var(--hu-qing-ink)}
+.field .input{width:100%;box-sizing:border-box}
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.stack-btns{display:flex;gap:10px;flex-wrap:wrap}
+.level-bar{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:0 0 16px}
+.level-bar .lv-best{font-size:11px;opacity:.75;margin-left:5px}
+.level-bar .lv-hint{flex:1 1 100%;font-size:12px;color:var(--hu-muted);margin-top:2px}
+/* 汇总块 */
+.digest{border:1px solid var(--hu-line);background:rgba(243,247,241,.85);border-radius:14px;padding:14px 16px;margin-bottom:16px;font-size:13.5px}
+.digest-h{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;align-items:baseline;margin-bottom:8px}
+.weak-list{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0}
+.weak-item{display:inline-flex;flex-direction:column;gap:2px;padding:8px 12px;border-radius:10px;background:#fff;border:1px solid var(--hu-line);font-size:12.5px;max-width:100%}
+.weak-item b{font-size:13px;color:var(--hu-zhu)}
+.weak-item span{color:var(--hu-muted);font-size:11.5px}
+/* 档案页 */
+.stat-row{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.stat{background:var(--hu-qing-soft);border-radius:12px;padding:14px;text-align:center}
+.stat b{display:block;font-size:24px;color:var(--hu-qing-deep);line-height:1.2}
+.stat span{font-size:12px;color:var(--hu-muted)}
+.radar-wrap{display:flex;justify-content:center;padding:4px 0}
+.radar{width:100%;max-width:320px;height:auto}
+.weak-table{width:100%;border-collapse:collapse;font-size:13px}
+.weak-table th,.weak-table td{padding:8px 6px;border-bottom:1px solid var(--hu-line);text-align:left}
+.weak-table th{font-size:12px;color:var(--hu-muted);font-weight:600}
+.review-list{margin:0;padding-left:20px;font-size:13.5px;line-height:1.9}
+.review-list li span{display:block;margin-top:2px}
+.wrong-row{padding:12px 0;border-bottom:1px dashed var(--hu-line);font-size:13.5px;display:flex;flex-direction:column;gap:6px;align-items:flex-start}
+/* 三率 / 踩分点 / 流程 */
+.rate-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:16px}
+.rate-card{border:1px solid var(--hu-line);border-radius:12px;padding:12px 14px;background:#fff}
+.rate-h{display:flex;justify-content:space-between;align-items:baseline;font-size:13.5px}
+.rate-h span{font-weight:700;color:var(--hu-qing-deep)}
+.must-grid{display:flex;flex-wrap:wrap;gap:8px}
+.step-list{display:flex;flex-wrap:wrap;gap:8px}
+.step-item{display:inline-flex;align-items:baseline;gap:6px;padding:7px 11px;border-radius:10px;border:1px solid var(--hu-line);font-size:12.5px;color:var(--hu-muted);background:#fff}
+.step-item.on{border-color:var(--hu-qing);background:var(--hu-qing-soft);color:var(--hu-qing-deep)}
+.step-item b{font-weight:700}
+/* 病例卡 */
+.case-tags{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:8px}
+.info-table{width:100%;border-collapse:collapse;font-size:13.5px;margin:6px 0 10px}
+.info-table th{width:78px;text-align:left;font-weight:600;color:var(--hu-muted);padding:7px 6px;border-bottom:1px solid var(--hu-line);font-size:12.5px}
+.info-table td{width:auto;padding:7px 6px;border-bottom:1px solid var(--hu-line)}
+.quote-box{border-left:3px solid var(--hu-qing);background:var(--hu-qing-soft);border-radius:0 12px 12px 0;padding:12px 16px;font-size:13.5px}
+.quote-box p{margin:6px 0;line-height:1.75}
+.quote-note{font-size:11.5px;color:var(--hu-muted);margin-top:6px}
+.step-note{font-size:12.5px;color:var(--hu-muted);line-height:1.7;margin-top:12px;padding-top:10px;border-top:1px dashed var(--hu-line)}
+/* 采集页 */
+.cov-bar{margin:12px 0 4px}
+.cov-line{font-size:13.5px;display:flex;gap:10px;align-items:baseline;flex-wrap:wrap}
+.cov-sub{font-size:12px;color:var(--hu-muted)}
+.collect-row{border-bottom:1px solid var(--hu-line)}
+.collect-head{display:flex;gap:10px;align-items:flex-start;width:100%;padding:11px 4px;background:none;border:0;text-align:left;font-family:inherit;font-size:13.5px;cursor:pointer;color:var(--hu-qing-ink)}
+.collect-head:hover{background:rgba(31,111,92,.03)}
+.collect-row.on .collect-head{background:rgba(31,111,92,.045)}
+.collect-row.na .collect-head{opacity:.75}
+.collect-head .cx{flex:none;width:16px;color:var(--hu-qing);font-weight:700}
+.collect-head .ch{flex:none;width:120px;font-weight:600;color:var(--hu-qing-deep)}
+.collect-head .cv{flex:1;color:var(--hu-muted);line-height:1.6}
+.collect-row.on .collect-head .cv{color:var(--hu-ink)}
+.ros-note{font-size:13px;line-height:1.7;color:var(--hu-ink);background:rgba(31,111,92,.05);border-left:3px solid var(--hu-qing);border-radius:0 8px 8px 0;padding:8px 12px;margin:8px 0}
+.ros-note b{color:var(--hu-qing-deep);margin-right:4px}
+/* 问答 */
+.qa-entry{display:flex;justify-content:space-between;gap:14px;align-items:center;flex-wrap:wrap;border:1px dashed var(--hu-line);border-radius:12px;padding:12px 16px;margin:14px 0;background:rgba(243,247,241,.7);font-size:13.5px}
+.qa-modal{position:fixed;inset:0;background:rgba(18,32,28,.42);display:flex;align-items:center;justify-content:center;padding:18px;z-index:80}
+.qa-panel{background:#fff;border-radius:16px;max-width:620px;width:100%;max-height:86vh;display:flex;flex-direction:column;box-shadow:0 18px 50px rgba(18,40,34,.22);overflow:hidden}
+.qa-head{display:flex;justify-content:space-between;align-items:center;padding:14px 18px;border-bottom:1px solid var(--hu-line);font-size:15px;color:var(--hu-qing-ink)}
+.qa-body{padding:14px 18px 18px;overflow-y:auto}
+.qa-ask{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:8px}
+.qa-ask .input{min-width:0}
+.qa-ask #qa-send{min-width:88px}
+.qa-result{margin-top:14px}
+.qa-llm{border-left:3px solid var(--hu-zhu);background:var(--hu-zhu-soft);border-radius:0 10px 10px 0;padding:10px 14px;margin-bottom:12px;font-size:13.5px;line-height:1.75}
+.qa-rel{margin-top:12px;border-top:1px dashed var(--hu-line);padding-top:10px;font-size:13px}
+.qa-rel-row{display:flex;gap:10px;justify-content:space-between;align-items:center;padding:6px 0;border-bottom:1px dotted var(--hu-line)}
+.kcard-h{display:flex;justify-content:space-between;gap:8px;align-items:baseline;flex-wrap:wrap;margin-bottom:6px}
+.kcard-h b{font-size:14px;color:var(--hu-qing-ink)}
+.kcard-src{margin-top:8px;font-size:11.5px;color:var(--hu-muted);line-height:1.6}
+/* 响应式 */
+@media(max-width:640px){
+  .hero{flex-direction:column;gap:12px}
+  .bubble{margin-left:0;max-width:100%}
+  .score-hero{grid-template-columns:1fr}
+  .msg{max-width:94%}
+  .qa-modal{padding:10px}
+  .qa-panel{max-height:92vh}
+  .qa-body{padding:12px}
+  .qa-ask{grid-template-columns:1fr}
+  .qa-ask #qa-send{width:100%}
+}
+</style>
+<link rel="stylesheet" href="textbooks.css">
+<link rel="stylesheet" href="care-ui.css?v=20261114">
+<link rel="stylesheet" href="studio.css?v=20261114-studio">
+<link rel="stylesheet" href="mascot.css?v=20261114-studio">
+<link rel="stylesheet" href="mobile-care.css?v=20261114-mobile">
+</head>
+<body>
+<a class="skip-link" href="#app">跳转到学习内容</a>
+<button class="mobile-backdrop" id="mobile-backdrop" aria-label="关闭导航" tabindex="-1"></button>
+<aside class="care-sidebar" id="care-sidebar" aria-label="学习空间导航">
+  <a class="care-brand" href="index.html"><img src="care-brand.svg" alt=""><span><strong>知护</strong><small>ZHIHU CARE</small></span></a>
+  <div class="nav-caption">LEARN &amp; PRACTICE</div>
+  <nav class="module-nav" id="module-nav" aria-label="学习模块"><a href="#workbench" data-m="workbench" class="on" aria-current="page"><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="6" height="6" rx="1"/><rect x="15" y="3" width="6" height="6" rx="1"/><rect x="3" y="15" width="6" height="6" rx="1"/><rect x="15" y="15" width="6" height="6" rx="1"/></svg><span>学习工作台</span></a>
+<a href="#quiz" data-m="quiz"><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2h8l5 5v15H6zM14 2v6h5M9 12h7M9 16h7"/></svg><span>答题自测</span></a>
+<a href="#weak" data-m="weak"><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5C8 2 4 3 2 4v16c3-2 7-2 10 0 3-2 7-2 10 0V4c-3-1-6-2-10 1Zm0 0v15"/></svg><span>薄弱讲解</span></a>
+<a href="#summary" data-m="summary"><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="6"/><path d="m8 13-2 9 6-3 6 3-2-9"/></svg><span>学习档案</span></a>
+<a href="#cases" data-m="cases"><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 3v7a5 5 0 0 0 10 0V3M2 3h4M12 3h4M9 15v2a5 5 0 0 0 10 0v-3"/><circle cx="19" cy="11" r="3"/></svg><span>病例研读</span></a>
+<a href="#analysis" data-m="analysis"><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2 3 7 7 3-7 3-3 7-3-7-7-3 7-3Z"/></svg><span>初步分析</span></a>
+<a href="#dialogue" data-m="dialogue"><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h12a4 4 0 0 1 4 4v7a4 4 0 0 1-4 4h-8l-6 4v-5a4 4 0 0 1-2-3V7a4 4 0 0 1 4-4ZM6 8h12M6 12h8"/></svg><span>居民对话</span></a>
+<a href="#review" data-m="review"><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m3 19 6-6 4 3 8-11M15 5h6v6"/></svg><span>评分复盘</span></a>
+    <div class="nav-divider" aria-hidden="true"></div><div class="nav-caption">KNOWLEDGE &amp; CLASS</div>
+    <a href="#resources" data-m="resources"><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5C8 2 4 3 2 4v16c3-2 7-2 10 0 3-2 7-2 10 0V4c-3-1-6-2-10 1Zm0 0v15"/></svg><span>学习资源</span></a>
+    <a href="classroom.html"><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="6" r="3"/><path d="M4 22v-3a8 8 0 0 1 16 0v3"/></svg><span>课程空间</span></a>
+  </nav>
+  <div class="sidebar-note">让每一次练习，<br>更靠近真实的临床。<small>QUIET INTELLIGENCE</small></div>
+  <button class="wb-chip" id="wb-chip" type="button" aria-expanded="false" title="查看 WorkBuddy 后端连通状态">
+    <span class="wb-dot"></span>
+    <span id="wb-chip-text">WorkBuddy · 检测中</span>
+  </button>
+</aside>
+<header class="topbar">
+  <button class="menu-toggle" id="menu-toggle" aria-label="打开学习导航" aria-expanded="false" aria-controls="care-sidebar"><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
+  <div class="care-breadcrumb"><strong>学习空间</strong><span>/ &nbsp; <span id="page-breadcrumb">学习工作台</span></span></div>
+  <button class="header-search" id="header-resources" title="打开学习资源"><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="10" cy="10" r="6"/><path d="m15 15 7 7"/></svg><span class="search-label">查阅教材、指南与知识点</span></button>
+  <div class="header-profile"><span>自由学习</span><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="6" r="3"/><path d="M4 22v-3a8 8 0 0 1 16 0v3"/></svg><span>学习者</span></div>
+</header>
+<div class="wb-panel" id="wb-panel" hidden>
+  <h4>WorkBuddy 后端连通状态</h4>
+  <div class="wb-row"><span>后端服务</span><code id="wb-svc">检测中…</code></div>
+  <div class="wb-row"><span>Agent</span><code id="wb-agent">—</code></div>
+  <div class="wb-row"><span>对话模型</span><code id="wb-model">—</code></div>
+  <div class="wb-row"><span>会话 SessionId</span><code id="wb-session">未创建</code></div>
+  <div class="wb-row"><span>请求 RequestId</span><code id="wb-request">—</code></div>
+  <div style="margin-top:12px;display:flex;gap:8px">
+    <button class="btn sm" type="button" id="wb-create">创建 WorkBuddy 会话</button>
+  </div>
+  <div class="wb-note">本页对话由 CloudBase HTTP 云函数 <code>zhihu-agent</code> 代理调用大模型，密钥不下发到浏览器；上面的 SessionId 由腾讯云 WorkBuddy 企业版接口 <code>CreateAgentSession</code> 真实返回，用于验证「网页 → 云函数 → WorkBuddy 智能体」链路已打通。</div>
+</div>
+<div class="shell">
+  <header class="hero"><div class="bubble" id="mascot-bubble" role="status" aria-live="polite">选择专业与训练方式，开始今天的学习。</div></header>
+  <section class="page-heading" aria-labelledby="page-title"><div class="page-eyebrow" id="page-eyebrow">MY LEARNING STUDIO</div><h1 id="page-title">让学习，从一次真实的练习开始。</h1><p id="page-subtitle">选择你的专业和训练方式，循着自己的节奏，把知识用在情境里。</p></section>
+  <div class="steps" id="steps">
+    <div class="step on" data-s="welcome"><span class="k">01</span>开始</div>
+    <div class="step" data-s="major"><span class="k">02</span>专业</div>
+    <div class="step" data-s="pretest"><span class="k">03</span>自测</div>
+    <div class="step" data-s="explain"><span class="k">04</span>讲解</div>
+    <div class="step" data-s="case"><span class="k">05</span>病例</div>
+    <div class="step" data-s="dialogue"><span class="k">06</span>对话</div>
+    <div class="step" data-s="review"><span class="k">07</span>复盘</div>
+  </div>
+  <main id="app" tabindex="-1"></main>
+  <footer class="footer"><span>知护 · AI 情境实训与可追溯评价</span><span>教学模拟病例，仅用于学习训练 · 不构成医疗建议</span></footer>
+</div>
+<nav class="mobile-nav" aria-label="常用学习入口"><button type="button" data-mobile-page="workbench"><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="6" height="6" rx="1"/><rect x="15" y="3" width="6" height="6" rx="1"/><rect x="3" y="15" width="6" height="6" rx="1"/><rect x="15" y="15" width="6" height="6" rx="1"/></svg><span>工作台</span></button><button type="button" data-mobile-page="quiz"><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2h8l5 5v15H6zM14 2v6h5M9 12h7M9 16h7"/></svg><span>自测</span></button><button type="button" data-mobile-page="cases"><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 3v7a5 5 0 0 0 10 0V3M2 3h4M12 3h4M9 15v2a5 5 0 0 0 10 0v-3"/><circle cx="19" cy="11" r="3"/></svg><span>病例</span></button><button type="button" data-mobile-page="summary"><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="6"/><path d="m8 13-2 9 6-3 6 3-2-9"/></svg><span>档案</span></button></nav>
+
+<script src="https://cdn.jsdelivr.net/npm/@tencent-ai/workbuddy-cloud-sdk@dev/lib/index.global.js"></script>
+<script src="data.js"></script>
+<script src="engine.js"></script>
+<script src="classroom.js?v=20261114-studio"></script>
+<script src="store.js"></script>
+<script src="qa.js"></script>
+<script src="experience.js"></script>
+<script src="textbooks.js"></script>
+<script src="app.js?v=20261114-studio"></script>
+<script src="care-ui.js?v=20261114"></script>
+<script src="mascot.js?v=20261114-studio"></script>
+</body>
+</html>

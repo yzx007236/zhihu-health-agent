@@ -1,0 +1,23 @@
+{
+  "schema_version":"3.0",
+  "majors":[
+    {"major_id":"clinical_medicine","major_label":"临床医学","goal":"完成从问题表征、鉴别诊断到检查和处置的临床推理。","courses":[
+      {"course_id":"clin_diagnostics","course_label":"诊断学","scope_terms":["病史采集","体格信息","诊断推理","岗位模拟"]},{"course_id":"clin_internal","course_label":"内科学","scope_terms":["常见症状综合分析","酸碱分析","合理用药"]},{"course_id":"clin_surgery","course_label":"外科学","scope_terms":["内外妇儿基础场景","急危重症识别"]},{"course_id":"clin_obgyn_pediatrics","course_label":"妇产科学与儿科学","scope_terms":["内外妇儿基础场景"]},{"course_id":"clin_emergency","course_label":"急诊医学","scope_terms":["急危重症识别"]},{"course_id":"clin_lab_imaging","course_label":"实验诊断学与医学影像学","scope_terms":["检验影像信息整合"]},{"course_id":"clin_communication","course_label":"医学伦理与医患沟通","scope_terms":["医患沟通与知情说明","诊断边界"]}
+    ]},
+    {"major_id":"medical_technology","major_label":"医学技术","goal":"围绕检验、影像和功能检查建立全过程质量控制与结果解释能力。","courses":[
+      {"course_id":"mt_basic_lab","course_label":"临床基础检验学技术","scope_terms":["检验前患者准备","标本采集与转运","检验前质量"]},{"course_id":"mt_biochemistry","course_label":"临床生物化学检验技术","scope_terms":["检验质量控制","方法学评价"]},{"course_id":"mt_hematology","course_label":"临床血液学检验技术","scope_terms":["标本采集与转运","异常结果复核"]},{"course_id":"mt_microbiology","course_label":"临床微生物学检验技术","scope_terms":["标本采集与转运","异常结果复核"]},{"course_id":"mt_quality","course_label":"临床实验室质量管理","scope_terms":["检验质量控制","质量控制","方法学评价"]},{"course_id":"mt_imaging","course_label":"医学影像检查技术","scope_terms":["影像检查准备","放射防护"]},{"course_id":"mt_ultrasound_ecg","course_label":"超声与心电检查技术","scope_terms":["超声与心电检查沟通"]},{"course_id":"mt_reporting","course_label":"检验与影像结果报告","scope_terms":["异常结果复核与报告边界"]}
+    ]},
+    {"major_id":"nursing","major_label":"护理学","goal":"形成健康评估、护理判断、授权操作、连续监测和协作升级能力。","courses":[
+      {"course_id":"nur_assessment","course_label":"健康评估","scope_terms":["整体护理评估","生命体征","恶化识别"]},{"course_id":"nur_fundamentals","course_label":"基础护理学","scope_terms":["基础护理与操作规范"]},{"course_id":"nur_internal","course_label":"内科护理学","scope_terms":["慢病与出院教育","病情观察"]},{"course_id":"nur_surgery","course_label":"外科护理学","scope_terms":["围手术期护理"]},{"course_id":"nur_emergency","course_label":"急危重症护理学","scope_terms":["恶化识别","生命体征与病情观察"]},{"course_id":"nur_medication","course_label":"护理药理与用药安全","scope_terms":["给药与输液安全","用药安全"]},{"course_id":"nur_safety","course_label":"患者安全与护理质量","scope_terms":["跌倒压伤误吸预防","岗位权限"]},{"course_id":"nur_communication","course_label":"护理沟通与交接","scope_terms":["心理支持与交接班"]}
+    ]},
+    {"major_id":"traditional_chinese_medicine","major_label":"中医学","goal":"以四诊和辨证证据为核心，同时完成中药安全与现代医学风险识别。","courses":[
+      {"course_id":"tcm_foundations","course_label":"中医基础理论","scope_terms":["中医基础理论"]},{"course_id":"tcm_diagnostics","course_label":"中医诊断学","scope_terms":["望闻问切","辨证思维","四诊","辨证推理"]},{"course_id":"tcm_materia_medica","course_label":"中药学","scope_terms":["用药安全","中西医协同"]},{"course_id":"tcm_formula","course_label":"方剂学","scope_terms":["常见证候沟通","中西医协同"]},{"course_id":"tcm_internal","course_label":"中医内科学","scope_terms":["常见证候沟通","辨证思维"]},{"course_id":"tcm_acupuncture","course_label":"针灸学","scope_terms":["针灸推拿安全边界"]},{"course_id":"tcm_prevention","course_label":"中医养生与治未病","scope_terms":["中医体质辨识","情志饮食起居调护"]},{"course_id":"tcm_integrative_emergency","course_label":"中西医结合急症","scope_terms":["中西医协同与急症转诊"]}
+    ]},
+    {"major_id":"rehabilitation","major_label":"康复治疗","goal":"以标准化功能评定为依据制定、监测和调整康复方案。","courses":[
+      {"course_id":"rh_assessment","course_label":"康复评定学","scope_terms":["结局测量","功能评定"]},{"course_id":"rh_exercise","course_label":"运动疗法技术学","scope_terms":["训练剂量","运动疗法"]},{"course_id":"rh_occupational","course_label":"作业治疗学","scope_terms":["作业治疗","日常生活活动"]},{"course_id":"rh_dysphagia","course_label":"言语与吞咽康复","scope_terms":["吞咽安全","言语吞咽"]},{"course_id":"rh_neurology","course_label":"神经康复学","scope_terms":["神经康复","卒中康复"]},{"course_id":"rh_cardiopulmonary","course_label":"心肺康复学","scope_terms":["心肺康复","训练剂量"]},{"course_id":"rh_musculoskeletal","course_label":"肌肉骨骼康复学","scope_terms":["肌骨康复","疼痛与功能"]}
+    ]},
+    {"major_id":"health_management","major_label":"健康服务与管理","goal":"使用流行病学、统计学和项目管理方法完成风险评估与服务评价。","courses":[
+      {"course_id":"hm_epidemiology","course_label":"流行病学","scope_terms":["筛查评价","偏倚","因果"]},{"course_id":"hm_statistics","course_label":"卫生统计学","scope_terms":["统计分析","效应量","置信区间"]},{"course_id":"hm_risk","course_label":"健康风险评估","scope_terms":["风险评估","筛查评价"]},{"course_id":"hm_education","course_label":"健康教育与健康促进","scope_terms":["健康教育","行为改变"]},{"course_id":"hm_chronic","course_label":"慢性病健康管理","scope_terms":["慢病管理","随访"]},{"course_id":"hm_program","course_label":"卫生项目管理与评价","scope_terms":["项目评价","干预评价"]},{"course_id":"hm_informatics","course_label":"健康信息管理","scope_terms":["健康信息","数据质量"]}
+    ]}
+  ]
+}

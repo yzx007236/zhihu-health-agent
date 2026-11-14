@@ -1,0 +1,1326 @@
+{
+  "version": "4.3.1",
+  "note": "医院门诊结构化病例（⑧ 分专业默认场景 / ⑪⑫ 问诊-查体-辅助检查三段数据 / ⑬ 病例类型+疾病分型双标签）。人物均为合成，不指向真实患者。",
+  "cases": [
+    {
+      "case_id": "CL-O1",
+      "disease_id": "acute_chest_pain",
+      "disease_label": "胸痛待查（急性冠脉综合征待排）",
+      "title": "胸痛 2 小时：压榨样胸闷向左肩放射",
+      "professional_focus": {
+        "clinical_medicine": "按胸痛时间轴、放射部位、伴随症状与危险因素完成问诊，先排除 ACS 等致命病因",
+        "nursing": "识别胸痛红旗征（持续>20分钟、大汗、晕厥）并立即呼叫上级，不自行判断病因",
+        "medical_technology": "优先完成心电图与肌钙蛋白，核对采血时间窗与标本处理",
+        "health_management": "识别高危胸痛的转诊指征，记录转诊去向与随访节点"
+      },
+      "recommended_majors": [
+        "clinical_medicine"
+      ],
+      "public_profile": {
+        "name": "郑建国",
+        "sex": "男",
+        "age": 56,
+        "setting": "市医院心血管内科门诊（胸痛专病门诊）",
+        "reliability": "可靠（本人陈述）",
+        "history_source": "authored",
+        "history_statement": "今天早上买菜的时候，胸口突然像被石头压住一样闷，喘不上气，还往左边肩膀串，大概十几分钟才缓过来。刚才又犯了一次，比早上还重，我有点怕了，就赶紧来医院。",
+        "notice": "合成病例，仅用于教学演练"
+      },
+      "case_type": "初诊",
+      "disease_pattern": "胸痛·心源性（ACS 待排）",
+      "pattern_options": [
+        "心源性胸痛（ACS 待排）",
+        "非心源性胸痛（肋软骨/食管源性）",
+        "肺栓塞",
+        "主动脉夹层",
+        "暂不能明确"
+      ],
+      "pattern_answer": "心源性胸痛（ACS 待排）",
+      "scene_group": "门诊",
+      "clinical_data": [
+        {
+          "item": "主诉",
+          "value": "反复胸闷 1 天，加重 2 小时",
+          "note": "患者自述"
+        },
+        {
+          "item": "现病史",
+          "value": "今晨买菜时出现胸骨后压榨样闷痛，向左肩放射，持续约 15 分钟，休息后缓解；2 小时前再次发作，程度加重，伴大汗",
+          "note": "关键时间轴"
+        },
+        {
+          "item": "既往史",
+          "value": "高血压 8 年，服药不规律；吸烟 30 年",
+          "note": "危险因素"
+        },
+        {
+          "item": "家族史",
+          "value": "父亲 50 岁时心肌梗死",
+          "note": "早发心血管病家族史"
+        }
+      ],
+      "structured": {
+        "authored": true,
+        "history": {
+          "chief_complaint": "反复胸闷 1 天，加重 2 小时",
+          "present_illness": "今晨 7 时许买菜时出现胸骨后压榨样闷痛，向左肩及左上臂内侧放射，伴出汗、气短，持续约 15 分钟，停止活动并休息后缓解。2 小时前（约 14 时）静坐时再次发作，程度较前加重，持续约 20 分钟未完全缓解，遂来院。发作时无晕厥、无咯血、无撕裂样背痛。",
+          "past_history": "高血压 8 年，最高 160/100 mmHg，服药不规律，未规律监测；否认糖尿病、脑卒中、消化道出血史。",
+          "review_of_systems": {
+            "呼吸系统": "偶有活动后气短，无咳嗽、咳痰、咯血",
+            "循环系统": "偶有心悸，无夜间阵发性呼吸困难、无下肢水肿",
+            "消化系统": "无反酸、烧心，无黑便",
+            "泌尿系统": "无异常",
+            "造血系统": "无异常",
+            "内分泌代谢": "无多饮多尿，体重近 1 年增加 3 kg",
+            "神经精神": "无晕厥、无肢体无力",
+            "肌肉骨骼": "无胸壁压痛，无关节痛"
+          },
+          "personal_history": "吸烟 20 支/日 × 30 年，未戒；饮酒少量，每周 1–2 次；久坐，运动少。",
+          "marital_history": "已婚，育有一子，家庭关系和睦。",
+          "family_history": "父亲 50 岁心肌梗死，母亲高血压。"
+        },
+        "exam": [
+          {
+            "item": "体温",
+            "finding": "36.7 ℃",
+            "normal": true
+          },
+          {
+            "item": "血压",
+            "finding": "152/94 mmHg（双上肢对称）",
+            "normal": false
+          },
+          {
+            "item": "心率",
+            "finding": "96 次/分",
+            "normal": false
+          },
+          {
+            "item": "心律",
+            "finding": "齐，未闻及早搏",
+            "normal": true
+          },
+          {
+            "item": "一般情况",
+            "finding": "神清，痛苦面容，额头及掌心出汗，平卧位尚能配合",
+            "normal": false
+          },
+          {
+            "item": "皮肤黏膜",
+            "finding": "无苍白、发绀、黄染，无皮疹",
+            "normal": true
+          },
+          {
+            "item": "淋巴结",
+            "finding": "颈部、腋下、腹股沟未触及肿大",
+            "normal": true
+          },
+          {
+            "item": "头部及其他器官",
+            "finding": "双瞳等大等圆，对光反射灵敏；口唇无发绀",
+            "normal": true
+          },
+          {
+            "item": "颈部",
+            "finding": "颈静脉无怒张，气管居中，甲状腺不大",
+            "normal": true
+          },
+          {
+            "item": "胸部",
+            "finding": "胸廓对称，胸壁无压痛，无皮下气肿",
+            "normal": true
+          },
+          {
+            "item": "肺脏",
+            "finding": "双肺呼吸音清，未闻及干湿啰音",
+            "normal": true
+          },
+          {
+            "item": "心脏",
+            "finding": "心界不大，心音稍低钝，各瓣膜听诊区未闻及杂音，未闻及心包摩擦音",
+            "normal": false
+          },
+          {
+            "item": "周围血管",
+            "finding": "双侧桡动脉、足背动脉搏动对称，无水冲脉",
+            "normal": true
+          },
+          {
+            "item": "腹部",
+            "finding": "软，无压痛及反跳痛，肝脾未触及",
+            "normal": true
+          },
+          {
+            "item": "肛门直肠外生殖器",
+            "finding": "未查（本例无相关主诉）",
+            "normal": true
+          },
+          {
+            "item": "脊柱四肢",
+            "finding": "无畸形，双下肢无水肿",
+            "normal": true
+          },
+          {
+            "item": "神经系统",
+            "finding": "四肢肌力 5 级，病理征阴性",
+            "normal": true
+          }
+        ],
+        "special_exam": [
+          {
+            "item": "胸壁压痛试验",
+            "finding": "阴性（不支持肋软骨炎）"
+          },
+          {
+            "item": "双上肢血压差",
+            "finding": "差值 < 10 mmHg（不支持主动脉夹层）"
+          }
+        ],
+        "labs": [
+          {
+            "item": "心电图（即刻）",
+            "finding": "窦性心律，V4–V6 导联 ST 段压低 0.1 mV，T 波倒置；与 1 小时前对比无动态演变",
+            "available": true
+          },
+          {
+            "item": "心肌肌钙蛋白 I",
+            "finding": "0.08 ng/mL（参考值 < 0.04），已复查",
+            "available": true
+          },
+          {
+            "item": "血常规（三大常规）",
+            "finding": "白细胞 9.8×10⁹/L，中性 72%，血红蛋白 148 g/L",
+            "available": true
+          },
+          {
+            "item": "血液生化",
+            "finding": "LDL-C 3.8 mmol/L，肌酐 82 μmol/L，血钾 4.1 mmol/L",
+            "available": true
+          },
+          {
+            "item": "凝血功能 + D-二聚体",
+            "finding": "D-二聚体 0.42 mg/L（正常范围）",
+            "available": true
+          },
+          {
+            "item": "胸部 X 线",
+            "finding": "暂无（门诊未开具）",
+            "available": false
+          },
+          {
+            "item": "心脏超声",
+            "finding": "暂无（已预约，需排队）",
+            "available": false
+          }
+        ]
+      },
+      "persona": {
+        "personality": "性子急、话不多，被追问细节时容易不耐烦",
+        "concern": "怕自己是心梗，又怕住院耽误工作",
+        "speech_style": "短句，先问结论",
+        "initial_emotion": "焦虑、隐忍"
+      },
+      "hidden_info": [
+        {
+          "id": "H1",
+          "value": "昨晚爬三楼时也闷过一次，几分钟就好了，当时没当回事。",
+          "sensitivity": "medium",
+          "release_round": 2
+        },
+        {
+          "id": "H2",
+          "value": "我父亲 50 岁那年心梗走的，我一直有点怕。",
+          "sensitivity": "high",
+          "release_round": 4
+        }
+      ],
+      "release_conditions": {
+        "H1": [
+          "ask_timeline",
+          "ask_prior_episode"
+        ],
+        "H2": [
+          "ask_family_history",
+          "ask_worry"
+        ]
+      },
+      "task": "接诊一位胸痛 2 小时的 56 岁男性：完成重点问诊（时间轴、放射、伴随症状、危险因素）、查体与必要辅助检查申请，写出病例摘要、初步诊断与分型，并与患者完成一次沟通。",
+      "initial_state": "waiting",
+      "must_cover": [
+        "CLIN-CORE",
+        "RISK-01",
+        "DIAG-01",
+        "TIMELINE",
+        "RADIATION",
+        "ECG_NOW"
+      ],
+      "knowledge_refs": [
+        "K-CARDIO-ACS-001"
+      ],
+      "review_status": "reviewed",
+      "boundary_behaviors": [
+        "患者不会主动说'压榨样'，只会说'像石头压着'",
+        "被问到'是不是心梗'时，患者会反问'我这是不是要放支架？'",
+        "若被直接告知'你就是心梗'，患者会明显紧张，需安抚"
+      ],
+      "variant_of": null
+    },
+    {
+      "case_id": "IM-O2",
+      "disease_id": "community_acquired_pneumonia",
+      "disease_label": "社区获得性肺炎",
+      "title": "发热咳嗽 5 天：黄痰伴右侧胸痛",
+      "professional_focus": {
+        "clinical_medicine": "采集发热、咳嗽咳痰性状与呼吸系统伴随症状，结合查体与胸片判断社区获得性肺炎",
+        "nursing": "监测体温、呼吸频率与血氧，落实气道与补液观察，及时上报病情变化",
+        "medical_technology": "核对痰培养标本合格性、血常规与 CRP/PCT 的采血与报告时效",
+        "health_management": "评估居家观察条件与复诊指征，明确抗感染疗程的随访要求"
+      },
+      "recommended_majors": [
+        "clinical_medicine"
+      ],
+      "public_profile": {
+        "name": "李慧",
+        "sex": "女",
+        "age": 34,
+        "setting": "市医院呼吸内科门诊",
+        "reliability": "可靠（本人陈述）",
+        "history_source": "authored",
+        "history_statement": "我发烧五天了，一开始以为感冒，吃了退烧药能退，过几个小时又烧起来。这两天咳得厉害，痰是黄的，右边胸口一咳就疼。",
+        "notice": "合成病例，仅用于教学演练"
+      },
+      "case_type": "初诊",
+      "disease_pattern": "肺炎·社区获得性（右下肺）",
+      "pattern_options": [
+        "社区获得性肺炎",
+        "急性支气管炎",
+        "上呼吸道感染",
+        "肺结核",
+        "支气管哮喘急性发作"
+      ],
+      "pattern_answer": "社区获得性肺炎",
+      "scene_group": "门诊",
+      "clinical_data": [
+        {
+          "item": "主诉",
+          "value": "发热 5 天，咳嗽、咳黄痰 3 天，右侧胸痛 1 天",
+          "note": "患者自述"
+        },
+        {
+          "item": "现病史",
+          "value": "5 天前受凉后发热，最高 39.2 ℃，退热药可暂退；3 天前出现咳嗽、黄脓痰，1 天前咳嗽时右侧胸痛",
+          "note": "关键时间轴"
+        },
+        {
+          "item": "既往史",
+          "value": "体健，无慢性病；不吸烟",
+          "note": "无基础病"
+        },
+        {
+          "item": "用药史",
+          "value": "自服布洛芬、连花清瘟，未用抗生素",
+          "note": "院外用药"
+        }
+      ],
+      "structured": {
+        "authored": true,
+        "history": {
+          "chief_complaint": "发热 5 天，咳嗽、咳黄痰 3 天，右侧胸痛 1 天",
+          "present_illness": "5 天前受凉后出现发热，最高 39.2 ℃，伴畏寒、乏力，自服布洛芬后可降至正常，4–6 小时后复升。3 天前出现阵发性咳嗽，咳黄色脓痰，每日约 20 余口，无咯血。1 天前咳嗽时出现右侧胸痛，深呼吸及咳嗽时加重。无夜间盗汗、无消瘦，无腹痛腹泻。",
+          "past_history": "既往体健，否认高血压、糖尿病、结核、肝炎。无手术史。",
+          "review_of_systems": {
+            "呼吸系统": "咳嗽、黄痰、右侧胸痛，无咯血、无呼吸困难",
+            "循环系统": "无胸闷、心悸",
+            "消化系统": "食欲差，无恶心呕吐、无腹泻",
+            "泌尿系统": "无尿频尿急",
+            "造血系统": "无异常",
+            "内分泌代谢": "无多饮多尿",
+            "神经精神": "头痛，睡眠差",
+            "肌肉骨骼": "全身酸痛"
+          },
+          "personal_history": "不吸烟不饮酒；办公室职员；近期无旅行史，无禽类接触。",
+          "marital_history": "已婚，未育。",
+          "family_history": "父母体健，无结核及肺部肿瘤家族史。"
+        },
+        "exam": [
+          {
+            "item": "体温",
+            "finding": "38.6 ℃",
+            "normal": false
+          },
+          {
+            "item": "血压",
+            "finding": "112/70 mmHg",
+            "normal": true
+          },
+          {
+            "item": "心率",
+            "finding": "104 次/分",
+            "normal": false
+          },
+          {
+            "item": "心律",
+            "finding": "齐",
+            "normal": true
+          },
+          {
+            "item": "一般情况",
+            "finding": "神清，急性病容，面色潮红",
+            "normal": false
+          },
+          {
+            "item": "皮肤黏膜",
+            "finding": "无皮疹、无出血点",
+            "normal": true
+          },
+          {
+            "item": "淋巴结",
+            "finding": "颈部未触及肿大淋巴结",
+            "normal": true
+          },
+          {
+            "item": "头部及其他器官",
+            "finding": "咽部充血，扁桃体不大",
+            "normal": false
+          },
+          {
+            "item": "颈部",
+            "finding": "气管居中，颈静脉无怒张",
+            "normal": true
+          },
+          {
+            "item": "胸部",
+            "finding": "呼吸运动对称，右下胸呼吸动度稍减弱",
+            "normal": false
+          },
+          {
+            "item": "肺脏",
+            "finding": "右下肺可闻及湿啰音，语音震颤稍增强；左肺呼吸音清",
+            "normal": false
+          },
+          {
+            "item": "心脏",
+            "finding": "心界不大，心率 104 次/分，律齐，无杂音",
+            "normal": false
+          },
+          {
+            "item": "周围血管",
+            "finding": "无异常",
+            "normal": true
+          },
+          {
+            "item": "腹部",
+            "finding": "软，无压痛",
+            "normal": true
+          },
+          {
+            "item": "肛门直肠外生殖器",
+            "finding": "未查",
+            "normal": true
+          },
+          {
+            "item": "脊柱四肢",
+            "finding": "无畸形",
+            "normal": true
+          },
+          {
+            "item": "神经系统",
+            "finding": "病理征阴性",
+            "normal": true
+          }
+        ],
+        "special_exam": [
+          {
+            "item": "血氧饱和度",
+            "finding": "95%（未吸氧）"
+          },
+          {
+            "item": "CURB-65 评分",
+            "finding": "1 分（可门诊治疗）"
+          }
+        ],
+        "labs": [
+          {
+            "item": "血常规",
+            "finding": "白细胞 13.6×10⁹/L，中性粒细胞 84%，血红蛋白 126 g/L",
+            "available": true
+          },
+          {
+            "item": "C 反应蛋白",
+            "finding": "86 mg/L",
+            "available": true
+          },
+          {
+            "item": "胸部 X 线",
+            "finding": "右下肺片状浸润影，右侧肋膈角变钝",
+            "available": true
+          },
+          {
+            "item": "痰涂片 + 培养",
+            "finding": "已送检，初步涂片见革兰阳性球菌",
+            "available": true
+          },
+          {
+            "item": "血液生化",
+            "finding": "肝肾功能正常，血钠 134 mmol/L",
+            "available": true
+          },
+          {
+            "item": "胸部 CT",
+            "finding": "暂无（X 线已明确，暂不重复）",
+            "available": false
+          },
+          {
+            "item": "肺炎支原体抗体",
+            "finding": "暂无（待痰培养结果）",
+            "available": false
+          }
+        ]
+      },
+      "persona": {
+        "personality": "配合、话多，容易跑题讲家里的事",
+        "concern": "怕拖成肺炎要住院，孩子还小没人带",
+        "speech_style": "絮叨，喜欢补充细节",
+        "initial_emotion": "疲惫、担忧"
+      },
+      "hidden_info": [
+        {
+          "id": "H1",
+          "value": "我这两天夜里咳得睡不着，还出虚汗，不知道是不是烧的。",
+          "sensitivity": "medium",
+          "release_round": 2
+        },
+        {
+          "id": "H2",
+          "value": "上个月我女儿也肺炎住了院，会不会是传染的？",
+          "sensitivity": "medium",
+          "release_round": 3
+        }
+      ],
+      "release_conditions": {
+        "H1": [
+          "ask_night_symptom"
+        ],
+        "H2": [
+          "ask_family_recent"
+        ]
+      },
+      "task": "接诊一位发热咳嗽 5 天的患者：问清热型与痰的性状、评估重症风险（CURB-65）、开具必要检查，完成病例摘要、初步诊断与分型，并交代用药与复诊。",
+      "initial_state": "waiting",
+      "must_cover": [
+        "CLIN-CORE",
+        "RISK-01",
+        "DIAG-01",
+        "CURB65",
+        "SPUTUM"
+      ],
+      "knowledge_refs": [
+        "K-RESP-CAP-001"
+      ],
+      "review_status": "reviewed",
+      "boundary_behaviors": [
+        "患者不会主动说'脓痰'，会说'痰是黄稠的'",
+        "问到是否住院时会明显焦虑，反复问'能不能不住院'",
+        "不应在未看胸片时断言'肯定不是结核'"
+      ],
+      "variant_of": null
+    },
+    {
+      "case_id": "GI-O3",
+      "disease_id": "upper_gi_bleeding",
+      "disease_label": "上消化道出血（消化性溃疡可能）",
+      "title": "黑便 2 天：柏油样便伴头晕",
+      "professional_focus": {
+        "clinical_medicine": "按黑便/呕血、循环状态与用药史评估上消化道出血，判断是否需要急诊内镜",
+        "nursing": "评估出血量与循环灌注，落实禁食、静脉通路与生命体征监测",
+        "medical_technology": "核对血常规、凝血与交叉配血的标本与报告时效",
+        "health_management": "识别需立即转诊的出血征象，记录转诊与随访安排"
+      },
+      "recommended_majors": [
+        "clinical_medicine"
+      ],
+      "public_profile": {
+        "name": "王志强",
+        "sex": "男",
+        "age": 45,
+        "setting": "市医院消化内科门诊",
+        "reliability": "可靠（本人陈述）",
+        "history_source": "authored",
+        "history_statement": "这两天大便发黑，像柏油一样，站起来有点晕。我最近腰疼，一直在吃止痛药。",
+        "notice": "合成病例，仅用于教学演练"
+      },
+      "case_type": "初诊",
+      "disease_pattern": "上消化道出血·溃疡相关（NSAIDs）",
+      "pattern_options": [
+        "上消化道出血（溃疡相关）",
+        "下消化道出血",
+        "咯血咽下",
+        "铁剂/铋剂所致黑便",
+        "暂不能明确"
+      ],
+      "pattern_answer": "上消化道出血（溃疡相关）",
+      "scene_group": "门诊",
+      "clinical_data": [
+        {
+          "item": "主诉",
+          "value": "黑便 2 天，伴头晕、乏力",
+          "note": "患者自述"
+        },
+        {
+          "item": "现病史",
+          "value": "2 天前排柏油样便 3 次，量约 300 g，无呕血；起身时头晕、心慌",
+          "note": "出血量与体位症状"
+        },
+        {
+          "item": "用药史",
+          "value": "近 1 个月因腰痛每日服布洛芬 2 片",
+          "note": "NSAIDs 是重要诱因"
+        },
+        {
+          "item": "既往史",
+          "value": "5 年前胃镜示'胃溃疡'，未复查",
+          "note": "溃疡病史"
+        }
+      ],
+      "structured": {
+        "authored": true,
+        "history": {
+          "chief_complaint": "黑便 2 天，伴头晕、乏力",
+          "present_illness": "2 天前无明显诱因排柏油样黑便 3 次，每次约 100 g，成形偏稀，无鲜血、无呕血。伴头晕、起身时心慌、出冷汗，无晕厥。今晨再次黑便 1 次。近 1 个月因腰痛每日口服布洛芬 2 片（0.3 g/片），未服胃药。",
+          "past_history": "5 年前胃镜提示胃溃疡，未规律复查；否认肝病、凝血疾病史；否认饮酒。",
+          "review_of_systems": {
+            "呼吸系统": "无咳嗽、咯血",
+            "循环系统": "活动后心慌，无胸痛",
+            "消化系统": "上腹隐痛、反酸，无呕吐、无腹泻",
+            "泌尿系统": "尿量正常，尿色偏深",
+            "造血系统": "面色发白，无皮下出血",
+            "内分泌代谢": "无异常",
+            "神经精神": "头晕，无意识丧失",
+            "肌肉骨骼": "腰痛（服止痛药原因）"
+          },
+          "personal_history": "吸烟 10 年，每日 10 支；不饮酒；饮食不规律，常吃辛辣。",
+          "marital_history": "已婚，育有一女。",
+          "family_history": "父亲有十二指肠溃疡史。"
+        },
+        "exam": [
+          {
+            "item": "体温",
+            "finding": "36.5 ℃",
+            "normal": true
+          },
+          {
+            "item": "血压",
+            "finding": "96/62 mmHg（卧位），站立 3 分钟后 84/56 mmHg",
+            "normal": false
+          },
+          {
+            "item": "心率",
+            "finding": "108 次/分",
+            "normal": false
+          },
+          {
+            "item": "心律",
+            "finding": "齐",
+            "normal": true
+          },
+          {
+            "item": "一般情况",
+            "finding": "神清，面色苍白，皮肤湿冷",
+            "normal": false
+          },
+          {
+            "item": "皮肤黏膜",
+            "finding": "睑结膜苍白，无黄染、无出血点",
+            "normal": false
+          },
+          {
+            "item": "淋巴结",
+            "finding": "未触及肿大",
+            "normal": true
+          },
+          {
+            "item": "头部及其他器官",
+            "finding": "口唇苍白，无口腔溃疡",
+            "normal": false
+          },
+          {
+            "item": "颈部",
+            "finding": "气管居中，无颈静脉怒张",
+            "normal": true
+          },
+          {
+            "item": "胸部",
+            "finding": "对称，无压痛",
+            "normal": true
+          },
+          {
+            "item": "肺脏",
+            "finding": "双肺呼吸音清",
+            "normal": true
+          },
+          {
+            "item": "心脏",
+            "finding": "心率 108 次/分，心尖部可闻及 2/6 级收缩期杂音",
+            "normal": false
+          },
+          {
+            "item": "周围血管",
+            "finding": "脉搏细速，毛细血管再充盈 3 秒",
+            "normal": false
+          },
+          {
+            "item": "腹部",
+            "finding": "上腹轻压痛，无反跳痛及肌紧张，肝脾未触及，移动性浊音阴性",
+            "normal": false
+          },
+          {
+            "item": "肛门直肠外生殖器",
+            "finding": "肛门指检：指套染黑色粪便，未触及肿物",
+            "normal": false
+          },
+          {
+            "item": "脊柱四肢",
+            "finding": "双下肢无水肿",
+            "normal": true
+          },
+          {
+            "item": "神经系统",
+            "finding": "病理征阴性",
+            "normal": true
+          }
+        ],
+        "special_exam": [
+          {
+            "item": "休克指数",
+            "finding": "心率/收缩压 ≈ 1.13（提示失血较多，需尽快评估）"
+          },
+          {
+            "item": "体位性低血压",
+            "finding": "阳性（卧立位收缩压下降 > 20 mmHg）"
+          }
+        ],
+        "labs": [
+          {
+            "item": "血常规（三大常规）",
+            "finding": "血红蛋白 82 g/L，红细胞 2.9×10¹²/L，白细胞 8.2×10⁹/L，血小板 210×10⁹/L",
+            "available": true
+          },
+          {
+            "item": "粪便隐血",
+            "finding": "阳性（+++）",
+            "available": true
+          },
+          {
+            "item": "血液生化",
+            "finding": "尿素氮 12.8 mmol/L，肌酐 88 μmol/L，白蛋白 36 g/L",
+            "available": true
+          },
+          {
+            "item": "凝血功能",
+            "finding": "PT 12.5 s，INR 1.05",
+            "available": true
+          },
+          {
+            "item": "心电图",
+            "finding": "窦性心动过速，未见 ST-T 改变",
+            "available": true
+          },
+          {
+            "item": "胃镜",
+            "finding": "暂无（已开急诊胃镜，需先补液稳定）",
+            "available": false
+          },
+          {
+            "item": "腹部 B 超",
+            "finding": "暂无",
+            "available": false
+          }
+        ]
+      },
+      "persona": {
+        "personality": "硬撑型，觉得'这点事不用来医院'",
+        "concern": "怕做胃镜，也怕耽误送货的活",
+        "speech_style": "直来直去，语速快",
+        "initial_emotion": "强作镇定"
+      },
+      "hidden_info": [
+        {
+          "id": "H1",
+          "value": "其实昨天蹲下再站起来时眼前黑了一下，扶着墙才没倒。",
+          "sensitivity": "high",
+          "release_round": 2
+        },
+        {
+          "id": "H2",
+          "value": "我爸当年就是吐血走的，我心里有点发怵。",
+          "sensitivity": "high",
+          "release_round": 4
+        }
+      ],
+      "release_conditions": {
+        "H1": [
+          "ask_dizziness",
+          "ask_syncope"
+        ],
+        "H2": [
+          "ask_family_history",
+          "ask_worry"
+        ]
+      },
+      "task": "接诊一位黑便 2 天的患者：评估出血量与循环状态、追溯 NSAIDs 与溃疡史、安排急诊胃镜与补液，完成病例摘要、初步诊断与分型，并做好胃镜前沟通。",
+      "initial_state": "waiting",
+      "must_cover": [
+        "CLIN-CORE",
+        "RISK-01",
+        "DIAG-01",
+        "NSAIDS",
+        "SHOCK_INDEX",
+        "ENDOSCOPY"
+      ],
+      "knowledge_refs": [
+        "K-GI-UGIB-001"
+      ],
+      "review_status": "reviewed",
+      "boundary_behaviors": [
+        "患者会淡化头晕，需追问体位变化时的症状",
+        "被建议住院时会讨价还价，问'能不能开点药回家吃'",
+        "不得在未评估循环前让患者独自去缴费、排队"
+      ],
+      "variant_of": null
+    },
+    {
+      "case_id": "EN-O4",
+      "disease_id": "new_onset_diabetes",
+      "disease_label": "2 型糖尿病（新诊断）",
+      "title": "多饮多尿 3 个月：体重下降 5 kg",
+      "professional_focus": {
+        "clinical_medicine": "采集多饮多尿体重下降等典型症状，结合血糖与酮体判断新发糖尿病及分型线索",
+        "nursing": "完成血糖监测与低血糖识别教育，落实胰岛素注射与足部护理指导",
+        "health_management": "建立慢病建档、饮食运动处方与随访计划，识别依从性风险",
+        "medical_technology": "核对糖化血红蛋白、尿酮体与生化标本的采集与报告要求"
+      },
+      "recommended_majors": [
+        "clinical_medicine"
+      ],
+      "public_profile": {
+        "name": "陈秀兰",
+        "sex": "女",
+        "age": 52,
+        "setting": "市医院内分泌科门诊",
+        "reliability": "部分可靠（口述含糊，需家属补充）",
+        "history_source": "authored",
+        "history_statement": "这三个月老是口渴，一晚上要起来上三四趟厕所，人还瘦了。我姐说我这可能是血糖高。",
+        "notice": "合成病例，仅用于教学演练"
+      },
+      "case_type": "初诊",
+      "disease_pattern": "糖尿病·2 型（新诊断，待分型确认）",
+      "pattern_options": [
+        "2 型糖尿病",
+        "1 型糖尿病",
+        "妊娠期糖尿病",
+        "应激性高血糖",
+        "暂不能明确"
+      ],
+      "pattern_answer": "2 型糖尿病",
+      "scene_group": "门诊",
+      "clinical_data": [
+        {
+          "item": "主诉",
+          "value": "多饮、多尿 3 个月，体重下降 5 kg",
+          "note": "患者自述"
+        },
+        {
+          "item": "现病史",
+          "value": "3 个月来口干多饮，每日饮水约 3000 mL，夜尿 3–4 次；食欲好但体重由 68 kg 降至 63 kg",
+          "note": "三多一少"
+        },
+        {
+          "item": "既往史",
+          "value": "高血压 3 年，服氨氯地平；无胰腺炎史",
+          "note": "代谢综合征背景"
+        },
+        {
+          "item": "家族史",
+          "value": "母亲及姐姐均患 2 型糖尿病",
+          "note": "强家族史"
+        }
+      ],
+      "structured": {
+        "authored": true,
+        "history": {
+          "chief_complaint": "多饮、多尿 3 个月，体重下降 5 kg",
+          "present_illness": "3 个月前无明显诱因出现口干、多饮，每日饮水约 3000 mL，夜尿 3–4 次，尿量增多。食欲较前增加，但体重由 68 kg 降至 63 kg。伴乏力、视物偶有模糊，无恶心呕吐、无腹痛、无肢端麻木。近 1 个月未测血糖。",
+          "past_history": "高血压 3 年，服氨氯地平 5 mg/日，血压控制在 130/80 mmHg 左右；否认胰腺炎、甲状腺疾病、长期激素使用史。",
+          "review_of_systems": {
+            "呼吸系统": "无咳嗽",
+            "循环系统": "无胸闷、心悸，双下肢无水肿",
+            "消化系统": "食欲增加，无腹痛腹泻",
+            "泌尿系统": "夜尿增多，无尿痛、无血尿",
+            "造血系统": "无异常",
+            "内分泌代谢": "多饮多尿、体重下降，怕热多汗不明显",
+            "神经精神": "乏力，视物偶模糊，无肢端麻木",
+            "肌肉骨骼": "无关节痛"
+          },
+          "personal_history": "久坐，运动少；喜甜食；不吸烟，偶尔饮酒。",
+          "marital_history": "已婚，育有一子。",
+          "family_history": "母亲、姐姐均患 2 型糖尿病；父亲高血压。"
+        },
+        "exam": [
+          {
+            "item": "体温",
+            "finding": "36.6 ℃",
+            "normal": true
+          },
+          {
+            "item": "血压",
+            "finding": "138/86 mmHg",
+            "normal": false
+          },
+          {
+            "item": "心率",
+            "finding": "78 次/分",
+            "normal": true
+          },
+          {
+            "item": "心律",
+            "finding": "齐",
+            "normal": true
+          },
+          {
+            "item": "一般情况",
+            "finding": "神清，体型偏胖，BMI 26.8",
+            "normal": false
+          },
+          {
+            "item": "皮肤黏膜",
+            "finding": "皮肤干燥，无皮疹、无黑棘皮征",
+            "normal": false
+          },
+          {
+            "item": "淋巴结",
+            "finding": "未触及肿大",
+            "normal": true
+          },
+          {
+            "item": "头部及其他器官",
+            "finding": "双瞳等大，眼底未查（需眼科）",
+            "normal": true
+          },
+          {
+            "item": "颈部",
+            "finding": "甲状腺不大，无血管杂音",
+            "normal": true
+          },
+          {
+            "item": "胸部",
+            "finding": "对称",
+            "normal": true
+          },
+          {
+            "item": "肺脏",
+            "finding": "双肺呼吸音清",
+            "normal": true
+          },
+          {
+            "item": "心脏",
+            "finding": "心界不大，律齐，无杂音",
+            "normal": true
+          },
+          {
+            "item": "周围血管",
+            "finding": "双足背动脉搏动可，足部皮肤完整，无溃疡",
+            "normal": true
+          },
+          {
+            "item": "腹部",
+            "finding": "软，无压痛，肝脾未触及",
+            "normal": true
+          },
+          {
+            "item": "肛门直肠外生殖器",
+            "finding": "未查",
+            "normal": true
+          },
+          {
+            "item": "脊柱四肢",
+            "finding": "双下肢无水肿",
+            "normal": true
+          },
+          {
+            "item": "神经系统",
+            "finding": "双足 10 g 尼龙丝触觉正常，振动觉正常",
+            "normal": true
+          }
+        ],
+        "special_exam": [
+          {
+            "item": "BMI / 腰围",
+            "finding": "26.8 kg/m²；腰围 88 cm（腹型肥胖）"
+          },
+          {
+            "item": "足背动脉与足部皮肤",
+            "finding": "搏动可，无胼胝、无溃疡（糖尿病足筛查低危）"
+          }
+        ],
+        "labs": [
+          {
+            "item": "空腹血糖",
+            "finding": "11.2 mmol/L",
+            "available": true
+          },
+          {
+            "item": "糖化血红蛋白",
+            "finding": "9.1%",
+            "available": true
+          },
+          {
+            "item": "尿常规（三大常规）",
+            "finding": "尿糖 +++，尿酮体阴性，尿蛋白阴性",
+            "available": true
+          },
+          {
+            "item": "血脂",
+            "finding": "总胆固醇 6.2 mmol/L，LDL-C 4.1 mmol/L，甘油三酯 2.6 mmol/L",
+            "available": true
+          },
+          {
+            "item": "肾功能",
+            "finding": "肌酐 72 μmol/L，eGFR 92 mL/min/1.73m²",
+            "available": true
+          },
+          {
+            "item": "胰岛素/C 肽释放试验",
+            "finding": "暂无（待空腹血糖复查后安排）",
+            "available": false
+          },
+          {
+            "item": "眼底检查",
+            "finding": "暂无（已转诊眼科）",
+            "available": false
+          }
+        ]
+      },
+      "persona": {
+        "personality": "温和、配合，但对'糖尿病'三个字很敏感",
+        "concern": "怕以后要长期打针，也怕遗传给孩子",
+        "speech_style": "缓慢，常先叹气",
+        "initial_emotion": "不安、回避"
+      },
+      "hidden_info": [
+        {
+          "id": "H1",
+          "value": "我妈糖尿病十几年，后来脚上烂了个口子一直不好，我看着害怕。",
+          "sensitivity": "high",
+          "release_round": 3
+        },
+        {
+          "id": "H2",
+          "value": "我最近总觉得眼睛花，看东西一阵清楚一阵模糊。",
+          "sensitivity": "medium",
+          "release_round": 2
+        }
+      ],
+      "release_conditions": {
+        "H1": [
+          "ask_family_history",
+          "ask_worry"
+        ],
+        "H2": [
+          "ask_vision"
+        ]
+      },
+      "task": "接诊一位多饮多尿 3 个月的患者：确认三多一少、排查 1 型/继发性糖尿病线索、评估并发症与合并症，完成病例摘要、初步诊断与分型，并给出生活方式与用药教育。",
+      "initial_state": "waiting",
+      "must_cover": [
+        "CLIN-CORE",
+        "RISK-01",
+        "DIAG-01",
+        "WEIGHT_LOSS",
+        "FAMILY_HX",
+        "COMPLICATION_SCREEN"
+      ],
+      "knowledge_refs": [
+        "K-ENDO-DM-001"
+      ],
+      "review_status": "reviewed",
+      "boundary_behaviors": [
+        "患者不会主动说体重具体下降多少，需具体追问",
+        "被提到'可能要打胰岛素'时会明显抵触，反复问'能不能只吃药'",
+        "不得在未查酮体的情况下排除 1 型糖尿病"
+      ],
+      "variant_of": null
+    },
+    {
+      "case_id": "RM-O5",
+      "disease_id": "rheumatoid_arthritis",
+      "disease_label": "类风湿关节炎（待评估活动度）",
+      "title": "双手小关节肿痛 4 个月：晨僵 1 小时",
+      "professional_focus": {
+        "clinical_medicine": "采集关节肿痛分布、晨僵时间与系统症状，结合抗体与影像判断类风湿关节炎",
+        "nursing": "评估疼痛与关节功能，落实用药依从性与功能锻炼指导",
+        "rehabilitation": "评估关节活动度与肌力，制定安全的功能训练与辅助器具建议，不调整药物",
+        "medical_technology": "核对类风湿因子、抗 CCP 与影像检查的标本与报告规范"
+      },
+      "recommended_majors": [
+        "clinical_medicine"
+      ],
+      "public_profile": {
+        "name": "赵敏",
+        "sex": "女",
+        "age": 48,
+        "setting": "市医院风湿免疫科门诊",
+        "reliability": "可靠（本人陈述）",
+        "history_source": "authored",
+        "history_statement": "两边手指关节肿了四个月，早上起来僵硬，得活动一个多小时才松快，最近拧毛巾都费劲。",
+        "notice": "合成病例，仅用于教学演练"
+      },
+      "case_type": "初诊",
+      "disease_pattern": "类风湿关节炎·对称性多关节（活动期）",
+      "pattern_options": [
+        "类风湿关节炎",
+        "骨关节炎",
+        "痛风性关节炎",
+        "银屑病关节炎",
+        "暂不能明确"
+      ],
+      "pattern_answer": "类风湿关节炎",
+      "scene_group": "门诊",
+      "clinical_data": [
+        {
+          "item": "主诉",
+          "value": "双手近端指间关节、掌指关节肿痛 4 个月，晨僵约 1 小时",
+          "note": "患者自述"
+        },
+        {
+          "item": "现病史",
+          "value": "4 个月前起双手对称性肿痛，晨僵 >1 小时，活动后减轻；近 1 个月拧毛巾、系扣子困难",
+          "note": "对称+晨僵+功能受限"
+        },
+        {
+          "item": "既往史",
+          "value": "体健；无银屑病、无肝炎结核史",
+          "note": "鉴别用"
+        },
+        {
+          "item": "家族史",
+          "value": "母亲有'风湿'病史",
+          "note": "家族倾向"
+        }
+      ],
+      "structured": {
+        "authored": true,
+        "history": {
+          "chief_complaint": "双手近端指间关节、掌指关节肿痛 4 个月，晨僵约 1 小时",
+          "present_illness": "4 个月前无明显诱因出现双手第 2–3 近端指间关节及掌指关节肿胀、疼痛，呈对称性，晨起僵硬约 60 分钟，活动后减轻。近 1 个月症状加重，拧毛巾、系纽扣困难，握力下降。伴午后低热（37.5 ℃ 左右）、乏力，无皮疹、无口腔溃疡、无脱发、无腰背痛。自服'布洛芬'可部分缓解。",
+          "past_history": "既往体健；否认银屑病、炎症性肠病、肝炎、结核；无外伤史。",
+          "review_of_systems": {
+            "呼吸系统": "无咳嗽、胸闷",
+            "循环系统": "无胸闷、心悸",
+            "消化系统": "无腹痛腹泻",
+            "泌尿系统": "无尿频尿急",
+            "造血系统": "无皮下出血",
+            "内分泌代谢": "无多饮多尿",
+            "神经精神": "无肢端麻木",
+            "肌肉骨骼": "双手小关节对称性肿痛、晨僵，无腰背痛、无足跟痛"
+          },
+          "personal_history": "不吸烟，偶尔饮酒；办公室职员；无特殊职业暴露。",
+          "marital_history": "已婚，育有一女。",
+          "family_history": "母亲有类风湿关节炎病史。"
+        },
+        "exam": [
+          {
+            "item": "体温",
+            "finding": "37.4 ℃",
+            "normal": false
+          },
+          {
+            "item": "血压",
+            "finding": "118/74 mmHg",
+            "normal": true
+          },
+          {
+            "item": "心率",
+            "finding": "84 次/分",
+            "normal": true
+          },
+          {
+            "item": "心律",
+            "finding": "齐",
+            "normal": true
+          },
+          {
+            "item": "一般情况",
+            "finding": "神清，精神稍差",
+            "normal": false
+          },
+          {
+            "item": "皮肤黏膜",
+            "finding": "无皮疹、无皮下结节、无银屑病样皮损",
+            "normal": true
+          },
+          {
+            "item": "淋巴结",
+            "finding": "双侧腋下可触及黄豆大小淋巴结，活动",
+            "normal": false
+          },
+          {
+            "item": "头部及其他器官",
+            "finding": "口腔无溃疡，双眼无红肿",
+            "normal": true
+          },
+          {
+            "item": "颈部",
+            "finding": "甲状腺不大",
+            "normal": true
+          },
+          {
+            "item": "胸部",
+            "finding": "对称",
+            "normal": true
+          },
+          {
+            "item": "肺脏",
+            "finding": "双肺呼吸音清",
+            "normal": true
+          },
+          {
+            "item": "心脏",
+            "finding": "律齐，无杂音",
+            "normal": true
+          },
+          {
+            "item": "周围血管",
+            "finding": "无雷诺现象",
+            "normal": true
+          },
+          {
+            "item": "腹部",
+            "finding": "软，无压痛",
+            "normal": true
+          },
+          {
+            "item": "肛门直肠外生殖器",
+            "finding": "未查",
+            "normal": true
+          },
+          {
+            "item": "脊柱四肢",
+            "finding": "双手第 2、3 近端指间关节及掌指关节肿胀、压痛（双侧对称），腕关节轻压痛；双膝、双踝无肿胀；脊柱活动正常",
+            "normal": false
+          },
+          {
+            "item": "神经系统",
+            "finding": "双手握力减弱，无感觉异常",
+            "normal": false
+          }
+        ],
+        "special_exam": [
+          {
+            "item": "关节压痛数 / 肿胀数",
+            "finding": "压痛 8 个，肿胀 6 个（28 关节计数）"
+          },
+          {
+            "item": "晨僵时间",
+            "finding": "约 60 分钟"
+          },
+          {
+            "item": "DAS28 评估",
+            "finding": "初步计算约 4.6（中高疾病活动度），待 ESR/CRP 回报后复核"
+          }
+        ],
+        "labs": [
+          {
+            "item": "血常规（三大常规）",
+            "finding": "血红蛋白 108 g/L，白细胞 6.4×10⁹/L，血小板 320×10⁹/L",
+            "available": true
+          },
+          {
+            "item": "红细胞沉降率（ESR）",
+            "finding": "48 mm/h",
+            "available": true
+          },
+          {
+            "item": "C 反应蛋白",
+            "finding": "22 mg/L",
+            "available": true
+          },
+          {
+            "item": "类风湿因子（RF）",
+            "finding": "阳性（128 IU/mL）",
+            "available": true
+          },
+          {
+            "item": "抗 CCP 抗体",
+            "finding": "阳性（>200 U/mL）",
+            "available": true
+          },
+          {
+            "item": "双手 X 线",
+            "finding": "双手近端指间关节周围软组织肿胀，关节间隙稍变窄，未见明显骨侵蚀",
+            "available": true
+          },
+          {
+            "item": "肝功能、肾功能",
+            "finding": "谷丙转氨酶 26 U/L，肌酐 62 μmol/L（用药前基线）",
+            "available": true
+          },
+          {
+            "item": "结核感染 T 细胞检测（T-SPOT）",
+            "finding": "暂无（生物制剂前需筛查）",
+            "available": false
+          }
+        ]
+      },
+      "persona": {
+        "personality": "细致、爱查资料，会主动问'是不是治不好'",
+        "concern": "怕关节变形、怕长期吃药伤肝",
+        "speech_style": "条理清楚，喜欢确认细节",
+        "initial_emotion": "焦虑、略带沮丧"
+      },
+      "hidden_info": [
+        {
+          "id": "H1",
+          "value": "我早上刷牙都握不住牙刷，梳头也费劲，这些我都没好意思说。",
+          "sensitivity": "medium",
+          "release_round": 2
+        },
+        {
+          "id": "H2",
+          "value": "我妈后来手指都变形了，我一想到这个就睡不着。",
+          "sensitivity": "high",
+          "release_round": 3
+        }
+      ],
+      "release_conditions": {
+        "H1": [
+          "ask_function",
+          "ask_adl"
+        ],
+        "H2": [
+          "ask_family_history",
+          "ask_worry"
+        ]
+      },
+      "task": "接诊一位双手小关节肿痛 4 个月的患者：确认对称性、晨僵与功能受限，安排 RF/抗 CCP/炎性指标与影像，评估疾病活动度，完成病例摘要、初步诊断与分型，并交代慢作用药的起效时间与监测。",
+      "initial_state": "waiting",
+      "must_cover": [
+        "CLIN-CORE",
+        "RISK-01",
+        "DIAG-01",
+        "MORNING_STIFFNESS",
+        "SYMMETRY",
+        "DAS28"
+      ],
+      "knowledge_refs": [
+        "K-RHEUM-RA-001"
+      ],
+      "review_status": "reviewed",
+      "boundary_behaviors": [
+        "患者会先描述'肿'，需追问晨僵时长与是否对称",
+        "听到'要长期吃药'时会反复确认副作用，需给出监测计划",
+        "不得把'类风湿因子阳性'直接等同于确诊"
+      ],
+      "variant_of": null
+    }
+  ]
+}

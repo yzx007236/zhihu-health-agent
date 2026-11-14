@@ -1,0 +1,308 @@
+{
+  "schema_version": 1,
+  "page_numbering": "PDF页序，从1开始；非印刷页码",
+  "book_count": 30,
+  "page_count": 11835,
+  "books": [
+    {
+      "book_id": "B01",
+      "title": "《中医学》（第10版）",
+      "bytes": 22741219,
+      "sha256": "e8c630b1a1612f3fec299498d962016c3aacd42c0f2d0a898ab04ce3be8c6c46",
+      "pdf_pages": 402,
+      "text_status": "可提取正文",
+      "pdf_file": "pdf/B01.pdf",
+      "ocr": false
+    },
+    {
+      "book_id": "B02",
+      "title": "《临床流行病学与循证医学》（第6版）",
+      "bytes": 34005439,
+      "sha256": "90f6c7bbfff9dbfd7a777ef404a7fa30f39690098ab988b40ac2e5605c46a052",
+      "pdf_pages": 258,
+      "text_status": "可提取正文",
+      "pdf_file": "pdf/B02.pdf",
+      "ocr": false
+    },
+    {
+      "book_id": "B03",
+      "title": "《人体寄生虫学》（第10版）",
+      "bytes": 181968850,
+      "sha256": "2ff29babfa1c7377b4b17f9a88bc879bd390620d9ea544ded28cdf72c2b9666a",
+      "pdf_pages": 323,
+      "text_status": "本机OCR完成323页，待对照原页校对",
+      "pdf_file": "pdf/B03.pdf",
+      "ocr": true
+    },
+    {
+      "book_id": "B04",
+      "title": "《儿科学》（第10版）",
+      "bytes": 25060575,
+      "sha256": "f7a625ecbcdbb29fc9fe09952b7b4f2d47c7918337ebe6dd59c670956573082e",
+      "pdf_pages": 498,
+      "text_status": "可提取正文",
+      "pdf_file": "pdf/B04.pdf",
+      "ocr": false
+    },
+    {
+      "book_id": "B05",
+      "title": "《内科学》（第10版）",
+      "bytes": 185645792,
+      "sha256": "31b711a940ad7b089571b2c23d3676fce0c3ff5b9238feea927eda6597500fec",
+      "pdf_pages": 982,
+      "text_status": "可提取正文",
+      "pdf_file": "pdf/B05.pdf",
+      "ocr": false
+    },
+    {
+      "book_id": "B06",
+      "title": "《医学微生物学》（第10版）",
+      "bytes": 34157478,
+      "sha256": "acf637f17bcfb694eac3dcd28d78f779f6d8c091961d5afafc4829ade769097f",
+      "pdf_pages": 386,
+      "text_status": "可提取正文",
+      "pdf_file": "pdf/B06.pdf",
+      "ocr": false
+    },
+    {
+      "book_id": "B07",
+      "title": "《医学心理学》（第8版）",
+      "bytes": 29497458,
+      "sha256": "d8c5efc4b3eb8cfdda9b1111786fe44c1f1c9144fef76d3670567e8cd9daf4dd",
+      "pdf_pages": 226,
+      "text_status": "可提取正文",
+      "pdf_file": "pdf/B07.pdf",
+      "ocr": false
+    },
+    {
+      "book_id": "B08",
+      "title": "《医学生物学》（第10版）",
+      "bytes": 19976283,
+      "sha256": "1aedc9c5f3475ab304b6c495d4b6434a9b3ac12bac0c8216f1caf10bac90bd07",
+      "pdf_pages": 258,
+      "text_status": "可提取正文",
+      "pdf_file": "pdf/B08.pdf",
+      "ocr": false
+    },
+    {
+      "book_id": "B09",
+      "title": "《医学统计学》（第8版）",
+      "bytes": 32009817,
+      "sha256": "2a488963c5cb9dfd608d23f5b71ab9eb2c082f19b5f22e73f099191be1a71dbd",
+      "pdf_pages": 226,
+      "text_status": "可提取正文",
+      "pdf_file": "pdf/B09.pdf",
+      "ocr": false
+    },
+    {
+      "book_id": "B10",
+      "title": "《医学遗传学》（第8版）",
+      "bytes": 21819773,
+      "sha256": "e5553bcb774c2f1f7a39c5d237260fc2cdf1a71e959bee3e8d71157108e10b97",
+      "pdf_pages": 274,
+      "text_status": "可提取正文",
+      "pdf_file": "pdf/B10.pdf",
+      "ocr": false
+    },
+    {
+      "book_id": "B11",
+      "title": "《医患沟通》（第3版）",
+      "bytes": 17058355,
+      "sha256": "f5b42353c49b77d80ead89cfd6ce197f0f4d4289b1947c4a62bb12a23d651030",
+      "pdf_pages": 208,
+      "text_status": "可提取正文",
+      "pdf_file": "pdf/B11.pdf",
+      "ocr": false
+    },
+    {
+      "book_id": "B12",
+      "title": "《医用高等数学》（第8版）",
+      "bytes": 34687147,
+      "sha256": "2859a56d223419cf5f3dfc52a88b39ea7f013ee0770c9ae64b064544c0ac78ba",
+      "pdf_pages": 290,
+      "text_status": "可提取正文",
+      "pdf_file": "pdf/B12.pdf",
+      "ocr": false
+    },
+    {
+      "book_id": "B13",
+      "title": "《基础化学》（第10版）",
+      "bytes": 37834746,
+      "sha256": "af60fa3e5b93aa6666d2936f4049a50180fd3e53f3365f4a982c1567bfcee821",
+      "pdf_pages": 339,
+      "text_status": "可提取正文",
+      "pdf_file": "pdf/B13.pdf",
+      "ocr": false
+    },
+    {
+      "book_id": "B14",
+      "title": "《外科学》（第10版）",
+      "bytes": 166098218,
+      "sha256": "d8666a030e0ab328317d587c80e8b3a3ec7b64d3a28b57285b5e434deb4d661a",
+      "pdf_pages": 834,
+      "text_status": "可提取正文",
+      "pdf_file": "pdf/B14.pdf",
+      "ocr": false
+    },
+    {
+      "book_id": "B15",
+      "title": "《妇产科学》（第10版）",
+      "bytes": 40392906,
+      "sha256": "cb2b0a63bc6c4a80562dedd29941d9875ae51cba281ae3ab3a6b1bea1ff32374",
+      "pdf_pages": 511,
+      "text_status": "可提取正文",
+      "pdf_file": "pdf/B15.pdf",
+      "ocr": false
+    },
+    {
+      "book_id": "B16",
+      "title": "《有机化学》（第10版）",
+      "bytes": 61119864,
+      "sha256": "74995becf0720645b7c5a15ddc15f6f491ae986f2d4596c027abe5c8212f7afa",
+      "pdf_pages": 289,
+      "text_status": "可提取正文",
+      "pdf_file": "pdf/B16.pdf",
+      "ocr": false
+    },
+    {
+      "book_id": "B17",
+      "title": "《法医学》（第8版）",
+      "bytes": 46205552,
+      "sha256": "be052cd52bb951b717602e081f623fac330d83b8cccd253af0fe402fd68a870c",
+      "pdf_pages": 230,
+      "text_status": "可提取正文",
+      "pdf_file": "pdf/B17.pdf",
+      "ocr": false
+    },
+    {
+      "book_id": "B18",
+      "title": "《生物化学与分子生物学》（第10版）",
+      "bytes": 55057883,
+      "sha256": "2eb4432b6d8876c539d55875679d0f40998ee3bc92393ac9bede20a273874fe6",
+      "pdf_pages": 577,
+      "text_status": "可提取正文",
+      "pdf_file": "pdf/B18.pdf",
+      "ocr": false
+    },
+    {
+      "book_id": "B19",
+      "title": "《生理学》（第10版）",
+      "bytes": 32880059,
+      "sha256": "63675d737616aeffd6732afd94bd6b53483ff00f45186ccfb0d158374d3b2661",
+      "pdf_pages": 450,
+      "text_status": "可提取正文",
+      "pdf_file": "pdf/B19.pdf",
+      "ocr": false
+    },
+    {
+      "book_id": "B20",
+      "title": "《病理学（第10版）》",
+      "bytes": 40411233,
+      "sha256": "ab05b412123d4f7d71379adc39d0c96fbc300d8339b71a52407d6560872f19a1",
+      "pdf_pages": 418,
+      "text_status": "可提取正文",
+      "pdf_file": "pdf/B20.pdf",
+      "ocr": false
+    },
+    {
+      "book_id": "B21",
+      "title": "《病理生理学》（第10版）",
+      "bytes": 66504661,
+      "sha256": "8d6c06b96388f8de787757003ff8d7692e10e2c318d8075a46e7144f8e4672bb",
+      "pdf_pages": 291,
+      "text_status": "可提取正文",
+      "pdf_file": "pdf/B21.pdf",
+      "ocr": false
+    },
+    {
+      "book_id": "B22",
+      "title": "《皮肤性病学》（第10版）",
+      "bytes": 37150693,
+      "sha256": "49313784a7b20ea26e41e456b8b407aa67ee4192a96324517ce1a8a0d0fc926c",
+      "pdf_pages": 258,
+      "text_status": "可提取正文",
+      "pdf_file": "pdf/B22.pdf",
+      "ocr": false
+    },
+    {
+      "book_id": "B23",
+      "title": "《眼科学》（第10版）",
+      "bytes": 30665539,
+      "sha256": "ec9672cc571b5eaaec83621d6897106804516b860c73dd844cbdf8781a6294de",
+      "pdf_pages": 322,
+      "text_status": "可提取正文",
+      "pdf_file": "pdf/B23.pdf",
+      "ocr": false
+    },
+    {
+      "book_id": "B24",
+      "title": "《神经病学》（第9版）",
+      "bytes": 36270518,
+      "sha256": "f32b2a1048846081e4889043e49dcc28965fe249166349f17c4bacc98ad4d478",
+      "pdf_pages": 450,
+      "text_status": "可提取正文",
+      "pdf_file": "pdf/B24.pdf",
+      "ocr": false
+    },
+    {
+      "book_id": "B25",
+      "title": "《系统解剖学》（第10版）",
+      "bytes": 45133897,
+      "sha256": "5f418507eb80ec75f97eb6a44041d5e8365f832c5713ef529c977e168e7b136b",
+      "pdf_pages": 450,
+      "text_status": "可提取正文",
+      "pdf_file": "pdf/B25.pdf",
+      "ocr": false
+    },
+    {
+      "book_id": "B26",
+      "title": "《组织学与胚胎学》（ 第10版） ",
+      "bytes": 437865172,
+      "sha256": "1e6796f85a0aa06ce26edc5c59e92acffe72375677bc5b7c8279cea641b615b2",
+      "pdf_pages": 319,
+      "text_status": "可提取正文",
+      "pdf_file": "pdf/B26.pdf",
+      "ocr": false
+    },
+    {
+      "book_id": "B27",
+      "title": "《药理学》（第10版）",
+      "bytes": 40351277,
+      "sha256": "2f3a2d7eef0eb8eed03d1c22d4912038f8cfbc135fff5b9d91ab5ed5289ea76a",
+      "pdf_pages": 528,
+      "text_status": "可提取正文",
+      "pdf_file": "pdf/B27.pdf",
+      "ocr": false
+    },
+    {
+      "book_id": "B28",
+      "title": "《诊断学》（第10版）",
+      "bytes": 43722410,
+      "sha256": "5c5198d99664db5bfe46029702d5e67f6be4b0fac8fe4f6ca986754b2c46b96d",
+      "pdf_pages": 626,
+      "text_status": "可提取正文",
+      "pdf_file": "pdf/B28.pdf",
+      "ocr": false
+    },
+    {
+      "book_id": "B29",
+      "title": "《预防医学》（第8版）",
+      "bytes": 21067915,
+      "sha256": "f4036e341c893d17cf081dc409efa85427be582a06c3a84f2fe0ea0b14c08134",
+      "pdf_pages": 290,
+      "text_status": "可提取正文",
+      "pdf_file": "pdf/B29.pdf",
+      "ocr": false
+    },
+    {
+      "book_id": "B30",
+      "title": "《麻醉学》（第5版）",
+      "bytes": 150097713,
+      "sha256": "a53b1e06659759772b5a94d0e2329faf7d4678a2602a34305ec97f98e51efc6d",
+      "pdf_pages": 322,
+      "text_status": "可提取正文",
+      "pdf_file": "pdf/B30.pdf",
+      "ocr": false
+    }
+  ]
+}

@@ -1,0 +1,810 @@
+{
+  "schema_version": "1.0",
+  "content_status": "课程团队维护",
+  "synthetic_data": true,
+  "cases": [
+    {
+      "case_id": "C1",
+      "title": "王阿姨的用药顾虑",
+      "public_profile": {
+        "name": "王阿姨",
+        "age": 62,
+        "setting": "社区健康教育",
+        "notice": "全部资料均为合成"
+      },
+      "persona": {
+        "personality": "谨慎、固执，重视熟人经验",
+        "concern": "担心长期服药伤身体",
+        "speech_style": "口语化，偶尔反问",
+        "initial_emotion": "戒备"
+      },
+      "bp_log": [
+        {
+          "day": "D1",
+          "time": "07:10",
+          "systolic": 151,
+          "diastolic": 92,
+          "pulse": 76,
+          "note": "早餐前，坐位"
+        },
+        {
+          "day": "D2",
+          "time": "07:05",
+          "systolic": 148,
+          "diastolic": 90,
+          "pulse": 74,
+          "note": "早餐前，坐位"
+        }
+      ],
+      "hidden_info": [
+        {
+          "id": "H1",
+          "value": "近一周自行漏服两次",
+          "sensitivity": "synthetic"
+        },
+        {
+          "id": "H2",
+          "value": "真正担心的是邻居说长期服药伤肾",
+          "sensitivity": "synthetic"
+        }
+      ],
+      "release_conditions": {
+        "H1": [
+          "ask_medication_adherence_without_blame"
+        ],
+        "H2": [
+          "acknowledge_concern",
+          "ask_specific_concern"
+        ]
+      },
+      "task": "了解顾虑和服药情况，解释规范记录的意义，守住用药边界，并协商咨询医务人员的下一步。",
+      "initial_state": {
+        "revealed_info": [],
+        "emotion": "戒备",
+        "concern_acknowledged": false,
+        "boundary_bait_used": false
+      },
+      "must_cover": [
+        "concern_response",
+        "medication_history",
+        "medication_boundary",
+        "shared_action"
+      ],
+      "variant_of": null,
+      "knowledge_refs": [
+        "K-BP-003",
+        "K-BP-004",
+        "K-COM-001"
+      ],
+      "review_status": "课程团队维护",
+      "boundary_behaviors": [
+        "diagnose_real_person",
+        "recommend_specific_drug_or_dose",
+        "suggest_stop_switch_adjust_medication"
+      ],
+      "recommended_majors": [
+        "other"
+      ]
+    },
+    {
+      "case_id": "C1-V1",
+      "title": "王阿姨担心费用",
+      "public_profile": {
+        "name": "王阿姨",
+        "age": 62,
+        "setting": "社区健康教育",
+        "notice": "全部资料均为合成"
+      },
+      "persona": {
+        "personality": "节俭、顾虑多",
+        "concern": "担心复诊和长期用药费用",
+        "speech_style": "口语化",
+        "initial_emotion": "犹豫"
+      },
+      "bp_log": [],
+      "hidden_info": [
+        {
+          "id": "H1",
+          "value": "曾因费用问题少服药",
+          "sensitivity": "synthetic"
+        }
+      ],
+      "release_conditions": {
+        "H1": [
+          "acknowledge_concern",
+          "ask_specific_concern"
+        ]
+      },
+      "task": "识别费用顾虑，不擅自调整治疗，协商向医务人员或正规服务渠道咨询。",
+      "initial_state": {
+        "revealed_info": [],
+        "emotion": "犹豫"
+      },
+      "must_cover": [
+        "concern_response",
+        "medication_boundary",
+        "shared_action"
+      ],
+      "variant_of": "C1",
+      "knowledge_refs": [
+        "K-BP-004",
+        "K-COM-001"
+      ],
+      "review_status": "课程团队维护",
+      "boundary_behaviors": [
+        "suggest_stop_switch_adjust_medication"
+      ],
+      "recommended_majors": [
+        "other"
+      ]
+    },
+    {
+      "case_id": "C2",
+      "title": "李叔觉得血压计不准",
+      "public_profile": {
+        "name": "李叔",
+        "age": 55,
+        "setting": "家庭血压监测指导",
+        "notice": "全部资料均为合成"
+      },
+      "persona": {
+        "personality": "直率、疑心重",
+        "concern": "读数波动，怀疑设备",
+        "speech_style": "短句、喜欢举反例",
+        "initial_emotion": "不耐烦"
+      },
+      "bp_log": [
+        {
+          "day": "D1",
+          "time": "21:20",
+          "systolic": 139,
+          "diastolic": 86,
+          "pulse": 82,
+          "note": "饭后立即测量"
+        },
+        {
+          "day": "D2",
+          "time": "07:40",
+          "systolic": 128,
+          "diastolic": 79,
+          "pulse": 72,
+          "note": "休息后测量"
+        },
+        {
+          "day": "D3",
+          "time": "22:10",
+          "systolic": 146,
+          "diastolic": 91,
+          "pulse": 88,
+          "note": "刚上楼，边说话边测"
+        }
+      ],
+      "hidden_info": [
+        {
+          "id": "H1",
+          "value": "常在上楼或吃饭后立即测量",
+          "sensitivity": "synthetic"
+        },
+        {
+          "id": "H2",
+          "value": "袖带有时隔着毛衣",
+          "sensitivity": "synthetic"
+        }
+      ],
+      "release_conditions": {
+        "H1": [
+          "ask_measurement_timing",
+          "ask_rest_before_measurement"
+        ],
+        "H2": [
+          "ask_cuff_placement"
+        ]
+      },
+      "task": "问清测量全过程，指导设备、姿势、时段和重复测量，解释单次波动与连续记录。",
+      "initial_state": {
+        "revealed_info": [],
+        "emotion": "不耐烦"
+      },
+      "must_cover": [
+        "measurement_process",
+        "measurement_instruction",
+        "trend_explanation",
+        "teach_back"
+      ],
+      "variant_of": null,
+      "knowledge_refs": [
+        "K-BP-001",
+        "K-BP-002",
+        "K-BP-003",
+        "K-COM-001"
+      ],
+      "review_status": "课程团队维护",
+      "boundary_behaviors": [
+        "diagnose_from_single_reading",
+        "recommend_medication_adjustment"
+      ],
+      "recommended_majors": [
+        "nursing",
+        "rehabilitation"
+      ]
+    },
+    {
+      "case_id": "C2-V1",
+      "title": "李叔只在头晕时测量",
+      "public_profile": {
+        "name": "李叔",
+        "age": 55,
+        "setting": "家庭血压监测指导",
+        "notice": "全部资料均为合成"
+      },
+      "persona": {
+        "personality": "怕麻烦",
+        "concern": "觉得没感觉就不用测",
+        "speech_style": "随意",
+        "initial_emotion": "轻视"
+      },
+      "bp_log": [],
+      "hidden_info": [
+        {
+          "id": "H1",
+          "value": "只在觉得头晕时测，平时不记录",
+          "sensitivity": "synthetic"
+        }
+      ],
+      "release_conditions": {
+        "H1": [
+          "ask_measurement_schedule"
+        ]
+      },
+      "task": "了解记录习惯，解释固定条件和连续记录的意义，协商可执行计划。",
+      "initial_state": {
+        "revealed_info": [],
+        "emotion": "轻视"
+      },
+      "must_cover": [
+        "measurement_schedule",
+        "trend_explanation",
+        "shared_action"
+      ],
+      "variant_of": "C2",
+      "knowledge_refs": [
+        "K-BP-002",
+        "K-BP-003",
+        "K-COM-001"
+      ],
+      "review_status": "课程团队维护",
+      "boundary_behaviors": [
+        "diagnose_from_symptom_only"
+      ],
+      "recommended_majors": [
+        "nursing",
+        "rehabilitation"
+      ]
+    },
+    {
+      "case_id": "C3",
+      "title": "张奶奶的警示记录",
+      "public_profile": {
+        "name": "张奶奶",
+        "age": 78,
+        "setting": "社区随访模拟",
+        "notice": "全部资料均为合成"
+      },
+      "persona": {
+        "personality": "要强，不愿麻烦家人",
+        "concern": "担心去医院给孩子添麻烦",
+        "speech_style": "慢、会淡化不适",
+        "initial_emotion": "回避"
+      },
+      "bp_log": [
+        {
+          "day": "D1",
+          "time": "06:50",
+          "systolic": 172,
+          "diastolic": 101,
+          "pulse": 78,
+          "note": "晨起，自述头晕"
+        },
+        {
+          "day": "D2",
+          "time": "06:45",
+          "systolic": 184,
+          "diastolic": 110,
+          "pulse": 80,
+          "note": "晨起，重复测量仍高；本条由病例配置标记为 warning"
+        }
+      ],
+      "hidden_info": [
+        {
+          "id": "H1",
+          "value": "三天前因担心副作用自行停药",
+          "sensitivity": "synthetic"
+        },
+        {
+          "id": "H2",
+          "value": "今天头晕比昨天明显",
+          "sensitivity": "synthetic"
+        },
+        {
+          "id": "H3",
+          "value": "女儿住得不远但不愿联系",
+          "sensitivity": "synthetic"
+        }
+      ],
+      "release_conditions": {
+        "H1": [
+          "ask_medication_adherence_without_blame"
+        ],
+        "H2": [
+          "ask_symptom_change"
+        ],
+        "H3": [
+          "ask_support_person"
+        ]
+      },
+      "task": "识别病例配置的警示信息，询问症状变化和用药情况，及时转介，不自行调药，并讨论可联系的家属或社区支持。",
+      "initial_state": {
+        "revealed_info": [],
+        "emotion": "回避",
+        "case_warning": true
+      },
+      "must_cover": [
+        "risk_identification",
+        "timely_referral",
+        "medication_boundary",
+        "support_coordination"
+      ],
+      "variant_of": null,
+      "knowledge_refs": [
+        "K-BP-004",
+        "K-BP-005",
+        "K-COM-001"
+      ],
+      "review_status": "课程团队维护",
+      "boundary_behaviors": [
+        "delay_referral",
+        "suggest_stop_switch_adjust_medication",
+        "reassure_without_basis"
+      ],
+      "recommended_majors": [
+        "clinical_medicine",
+        "rehabilitation",
+        "health_management"
+      ]
+    },
+    {
+      "case_id": "C3-V1",
+      "title": "张奶奶拒绝联系家属",
+      "public_profile": {
+        "name": "张奶奶",
+        "age": 78,
+        "setting": "社区随访模拟",
+        "notice": "全部资料均为合成"
+      },
+      "persona": {
+        "personality": "坚持独立",
+        "concern": "坚决不愿打扰家属",
+        "speech_style": "反复说没事",
+        "initial_emotion": "抗拒"
+      },
+      "bp_log": [
+        {
+          "day": "D1",
+          "time": "06:40",
+          "systolic": 182,
+          "diastolic": 108,
+          "pulse": 82,
+          "note": "病例配置标记为 warning，伴不适"
+        }
+      ],
+      "hidden_info": [
+        {
+          "id": "H1",
+          "value": "愿意联系社区医务人员，但不愿联系女儿",
+          "sensitivity": "synthetic"
+        }
+      ],
+      "release_conditions": {
+        "H1": [
+          "respect_preference",
+          "offer_support_options"
+        ]
+      },
+      "task": "在尊重意愿的同时完成风险转介，协商可接受的支持方式。",
+      "initial_state": {
+        "revealed_info": [],
+        "emotion": "抗拒",
+        "case_warning": true
+      },
+      "must_cover": [
+        "risk_identification",
+        "timely_referral",
+        "support_coordination"
+      ],
+      "variant_of": "C3",
+      "knowledge_refs": [
+        "K-BP-005",
+        "K-COM-001"
+      ],
+      "review_status": "课程团队维护",
+      "boundary_behaviors": [
+        "delay_referral",
+        "coerce_or_shame"
+      ],
+      "recommended_majors": [
+        "clinical_medicine",
+        "rehabilitation",
+        "health_management"
+      ]
+    },
+    {
+      "case_id": "C4",
+      "title": "陈先生诊室里的读数",
+      "public_profile": {
+        "name": "陈先生",
+        "age": 46,
+        "setting": "社区卫生服务中心全科诊室",
+        "notice": "全部资料均为合成"
+      },
+      "persona": {
+        "personality": "急性子、讲效率，想要一个明确说法",
+        "concern": "担心被判定为高血压，影响岗位和单位体检记录",
+        "speech_style": "短句、直接追问结论",
+        "initial_emotion": "焦虑"
+      },
+      "bp_log": [
+        {
+          "day": "D1",
+          "time": "09:20",
+          "systolic": 148,
+          "diastolic": 93,
+          "pulse": 88,
+          "note": "诊室候诊约 5 分钟后测量，自述一路小跑上楼"
+        },
+        {
+          "day": "D2",
+          "time": "07:00",
+          "systolic": 132,
+          "diastolic": 84,
+          "pulse": 76,
+          "note": "家中，起床后马上测量"
+        },
+        {
+          "day": "D3",
+          "time": "07:05",
+          "systolic": 134,
+          "diastolic": 85,
+          "pulse": 78,
+          "note": "家中，起床后马上测量"
+        }
+      ],
+      "hidden_info": [
+        {
+          "id": "H1",
+          "value": "在家测量都是起床后马上测，没有先安静坐一会儿",
+          "sensitivity": "synthetic"
+        },
+        {
+          "id": "H2",
+          "value": "真正担心的是单位体检记录会影响岗位",
+          "sensitivity": "synthetic"
+        },
+        {
+          "id": "H3",
+          "value": "近一个月在喝亲戚推荐的降压茶，没有告诉医生",
+          "sensitivity": "synthetic"
+        }
+      ],
+      "release_conditions": {
+        "H1": [
+          "ask_rest_before_measurement",
+          "ask_measurement_timing"
+        ],
+        "H2": [
+          "acknowledge_concern",
+          "ask_specific_concern"
+        ],
+        "H3": [
+          "ask_non_drug_attempt"
+        ]
+      },
+      "task": "问清诊室与家庭两次测量的条件，说明两类记录的意义和不同参考标准，不代替医生下诊断结论，回应岗位顾虑，并协商家庭测量与就诊的下一步。",
+      "initial_state": {
+        "revealed_info": [],
+        "emotion": "焦虑"
+      },
+      "must_cover": [
+        "concern_response",
+        "clinic_home_comparison",
+        "measurement_instruction",
+        "diagnosis_boundary",
+        "shared_action"
+      ],
+      "variant_of": null,
+      "knowledge_refs": [
+        "K-BP-001",
+        "K-BP-002",
+        "K-BP-003",
+        "K-BP-006",
+        "K-COM-001"
+      ],
+      "review_status": "课程团队维护",
+      "boundary_behaviors": [
+        "diagnose_real_person",
+        "explain_away_clinic_reading",
+        "recommend_specific_drug_or_dose",
+        "endorse_unverified_remedy"
+      ],
+      "recommended_majors": [
+        "clinical_medicine"
+      ]
+    },
+    {
+      "case_id": "C4-V1",
+      "title": "陈先生坚持要一个说法",
+      "public_profile": {
+        "name": "陈先生",
+        "age": 46,
+        "setting": "社区卫生服务中心全科诊室",
+        "notice": "全部资料均为合成"
+      },
+      "persona": {
+        "personality": "执着、反复追问同一件事",
+        "concern": "想要一句明确结论好回去向单位交代",
+        "speech_style": "反复追问、会把话题拉回结论",
+        "initial_emotion": "执拗"
+      },
+      "bp_log": [
+        {
+          "day": "D1",
+          "time": "08:40",
+          "systolic": 140,
+          "diastolic": 88,
+          "pulse": 82,
+          "note": "诊室，安静休息后测量"
+        },
+        {
+          "day": "D2",
+          "time": "07:10",
+          "systolic": 136,
+          "diastolic": 86,
+          "pulse": 78,
+          "note": "家中，起床后马上测量"
+        }
+      ],
+      "hidden_info": [
+        {
+          "id": "H1",
+          "value": "已预约上级医院下周的号，但担心请假耽误工作",
+          "sensitivity": "synthetic"
+        },
+        {
+          "id": "H2",
+          "value": "如果听说问题不大，就打算把这次预约退掉",
+          "sensitivity": "synthetic"
+        }
+      ],
+      "release_conditions": {
+        "H1": [
+          "acknowledge_concern",
+          "ask_specific_concern"
+        ],
+        "H2": [
+          "acknowledge_concern",
+          "ask_specific_concern"
+        ]
+      },
+      "task": "在被反复追问结论时守住不下诊断、不劝阻就医，把判断交回医务人员，并协商可执行的就诊与记录安排。",
+      "initial_state": {
+        "revealed_info": [],
+        "emotion": "执拗"
+      },
+      "must_cover": [
+        "concern_response",
+        "diagnosis_boundary",
+        "referral_encouragement",
+        "shared_action"
+      ],
+      "variant_of": "C4",
+      "knowledge_refs": [
+        "K-BP-003",
+        "K-BP-006",
+        "K-COM-001"
+      ],
+      "review_status": "课程团队维护",
+      "boundary_behaviors": [
+        "diagnose_real_person",
+        "reassure_without_basis",
+        "discourage_visit"
+      ],
+      "recommended_majors": [
+        "clinical_medicine"
+      ]
+    },
+    {
+      "case_id": "C5",
+      "title": "刘阿姨在服务站问药",
+      "public_profile": {
+        "name": "刘阿姨",
+        "age": 67,
+        "setting": "社区卫生服务站取药后咨询",
+        "notice": "全部资料均为合成"
+      },
+      "persona": {
+        "personality": "热心、爱聊天，容易把街坊经验当依据",
+        "concern": "觉得血压测出来不高就可以把药停了",
+        "speech_style": "爱举例、常说「我们小区老李说」",
+        "initial_emotion": "轻松"
+      },
+      "bp_log": [
+        {
+          "day": "D1",
+          "time": "07:10",
+          "systolic": 128,
+          "diastolic": 79,
+          "pulse": 70,
+          "note": "家中，服药后，自述感觉很好"
+        },
+        {
+          "day": "D2",
+          "time": "07:15",
+          "systolic": 131,
+          "diastolic": 82,
+          "pulse": 72,
+          "note": "家中，服药后"
+        },
+        {
+          "day": "D3",
+          "time": "07:05",
+          "systolic": 134,
+          "diastolic": 84,
+          "pulse": 74,
+          "note": "家中，服药后，起床后马上测量"
+        }
+      ],
+      "hidden_info": [
+        {
+          "id": "H1",
+          "value": "近两周有时忘记吃，觉得不难受就不吃",
+          "sensitivity": "synthetic"
+        },
+        {
+          "id": "H2",
+          "value": "打算等血压再正常一点就把药停掉",
+          "sensitivity": "synthetic"
+        },
+        {
+          "id": "H3",
+          "value": "儿子在外地，平时一个人住",
+          "sensitivity": "synthetic"
+        }
+      ],
+      "release_conditions": {
+        "H1": [
+          "ask_medication_adherence_without_blame"
+        ],
+        "H2": [
+          "acknowledge_concern",
+          "ask_specific_concern"
+        ],
+        "H3": [
+          "ask_support_person"
+        ]
+      },
+      "task": "了解服药和漏服情况，说明规范记录与坚持按医嘱服药的意义，不自行停药换药、不给出治愈结论，并协商与医务人员沟通的下一步。",
+      "initial_state": {
+        "revealed_info": [],
+        "emotion": "轻松"
+      },
+      "must_cover": [
+        "concern_response",
+        "medication_history",
+        "medication_boundary",
+        "diagnosis_boundary",
+        "shared_action"
+      ],
+      "variant_of": null,
+      "knowledge_refs": [
+        "K-BP-001",
+        "K-BP-003",
+        "K-BP-004",
+        "K-BP-006",
+        "K-COM-001"
+      ],
+      "review_status": "课程团队维护",
+      "boundary_behaviors": [
+        "suggest_stop_switch_adjust_medication",
+        "recommend_specific_drug_or_dose",
+        "endorse_unverified_remedy",
+        "confirm_cure_conclusion"
+      ],
+      "recommended_majors": [
+        "nursing",
+        "health_management"
+      ]
+    },
+    {
+      "case_id": "C5-V1",
+      "title": "刘阿姨想换成降压茶",
+      "public_profile": {
+        "name": "刘阿姨",
+        "age": 67,
+        "setting": "社区卫生服务站取药后咨询",
+        "notice": "全部资料均为合成"
+      },
+      "persona": {
+        "personality": "易被熟人说服，怕长期吃药伤身",
+        "concern": "想用邻居推荐的降压茶代替降压药",
+        "speech_style": "反复说「人家说这个没副作用」",
+        "initial_emotion": "期待"
+      },
+      "bp_log": [
+        {
+          "day": "D1",
+          "time": "07:20",
+          "systolic": 133,
+          "diastolic": 83,
+          "pulse": 72,
+          "note": "家中，服药后"
+        },
+        {
+          "day": "D2",
+          "time": "07:25",
+          "systolic": 138,
+          "diastolic": 87,
+          "pulse": 76,
+          "note": "家中，服药后，起床后马上测量"
+        }
+      ],
+      "hidden_info": [
+        {
+          "id": "H1",
+          "value": "已经买了两盒降压茶，还没敢喝",
+          "sensitivity": "synthetic"
+        },
+        {
+          "id": "H2",
+          "value": "真正的原因是怕长期吃药伤身体",
+          "sensitivity": "synthetic"
+        }
+      ],
+      "release_conditions": {
+        "H1": [
+          "ask_non_drug_attempt"
+        ],
+        "H2": [
+          "acknowledge_concern",
+          "ask_specific_concern"
+        ]
+      },
+      "task": "了解替代疗法的尝试与顾虑，说明保健品或偏方不能替代正规治疗，不自行停药换药，并协商向医务人员咨询的下一步。",
+      "initial_state": {
+        "revealed_info": [],
+        "emotion": "期待"
+      },
+      "must_cover": [
+        "concern_response",
+        "medication_boundary",
+        "diagnosis_boundary",
+        "shared_action"
+      ],
+      "variant_of": "C5",
+      "knowledge_refs": [
+        "K-BP-003",
+        "K-BP-004",
+        "K-BP-006",
+        "K-COM-001"
+      ],
+      "review_status": "课程团队维护",
+      "boundary_behaviors": [
+        "suggest_stop_switch_adjust_medication",
+        "endorse_unverified_remedy",
+        "confirm_cure_conclusion"
+      ],
+      "recommended_majors": [
+        "nursing",
+        "health_management"
+      ]
+    }
+  ]
+}

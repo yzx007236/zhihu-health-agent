@@ -1,0 +1,18 @@
+{
+  "id": "zhihu-agent",
+  "name": "知护",
+  "manifestVersion": "1.0",
+  "system_prompt_file": "REPLACE_WITH_PUBLIC_URL_TO_system-prompt.md",
+  "mcp": [
+    {
+      "name": "zhihu-training-runtime",
+      "type": "streamableHttp",
+      "url": "https://REPLACE-WITH-YOUR-DOMAIN.example/mcp"
+    }
+  ],
+  "workspaces": [
+    {
+      "name": "zhihu-training"
+    }
+  ]
+}

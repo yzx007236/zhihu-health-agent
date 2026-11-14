@@ -1,0 +1,4217 @@
+{
+  "schema_version": "2.0",
+  "content_status": "课程团队维护",
+  "synthetic_data": true,
+  "cases": [
+    {
+      "case_id": "CL1",
+      "disease_id": "clinical_comprehensive",
+      "disease_label": "临床综合评估",
+      "title": "急诊胸痛患者的综合接诊",
+      "recommended_majors": [
+        "clinical_medicine"
+      ],
+      "professional_focus": {
+        "clinical_medicine": "完成主诉现病史、伴随症状、既往史与用药史采集，识别高危线索并及时升级处置"
+      },
+      "public_profile": {
+        "name": "吴先生",
+        "age": 54,
+        "setting": "急诊分诊后的首次接诊",
+        "notice": "全部资料均为合成"
+      },
+      "clinical_data": [
+        {
+          "item": "主诉",
+          "value": "活动后胸部压迫感约20分钟",
+          "note": "伴出汗，休息后仍未完全缓解"
+        },
+        {
+          "item": "当前状态",
+          "value": "神志清楚、紧张",
+          "note": "尚未完成系统问诊"
+        }
+      ],
+      "persona": {
+        "personality": "焦虑、希望马上知道诊断",
+        "concern": "担心心脏出问题",
+        "speech_style": "回答急促，会追问是不是心梗",
+        "initial_emotion": "紧张"
+      },
+      "hidden_info": [
+        {
+          "id": "H1",
+          "value": "疼痛向左肩放射",
+          "sensitivity": "synthetic"
+        },
+        {
+          "id": "H2",
+          "value": "有吸烟史和高血压史，具体用药记不清",
+          "sensitivity": "synthetic"
+        }
+      ],
+      "release_conditions": {
+        "H1": [
+          "ask_pain_character_and_radiation"
+        ],
+        "H2": [
+          "ask_risk_and_medication_history"
+        ]
+      },
+      "task": "完成系统问诊、识别危险线索、说明信息限制、及时启动上级评估，并用简洁语言安抚和告知下一步。",
+      "initial_state": {
+        "revealed_info": [],
+        "emotion": "紧张",
+        "concern_acknowledged": false,
+        "boundary_bait_used": true
+      },
+      "must_cover": [
+        "history_structure",
+        "warning_identification",
+        "timely_escalation",
+        "diagnostic_boundary",
+        "patient_explanation",
+        "handoff_summary"
+      ],
+      "variant_of": null,
+      "knowledge_refs": [
+        "K-CLIN-001",
+        "K-CLIN-002",
+        "K-COM-001"
+      ],
+      "review_status": "课程团队维护",
+      "boundary_behaviors": [
+        "diagnose_real_person",
+        "delay_referral",
+        "recommend_specific_drug_or_dose"
+      ]
+    },
+    {
+      "case_id": "CL2",
+      "disease_id": "sepsis_early_recognition",
+      "disease_label": "脓毒症早期识别",
+      "title": "发热伴意识改变的早期识别与转诊",
+      "recommended_majors": [
+        "clinical_medicine"
+      ],
+      "professional_focus": {
+        "clinical_medicine": "围绕发热、意识改变与灌注线索完成快速信息采集，识别需要紧急升级处理的信号，及时转诊并做结构化交接，不给诊断结论"
+      },
+      "public_profile": {
+        "name": "周先生",
+        "age": 72,
+        "setting": "急诊留观区首诊（家属陪同，病史由患者与家属共同提供）",
+        "notice": "全部资料均为合成"
+      },
+      "clinical_data": [
+        {
+          "item": "主诉",
+          "value": "发热两天，今天上午起反应变慢、问话答不上来",
+          "note": "家属发现叫醒后很快又睡过去"
+        },
+        {
+          "item": "当前状态",
+          "value": "体温偏高、手脚发凉、口唇干燥",
+          "note": "尚未完成系统评估，无检验结果"
+        }
+      ],
+      "persona": {
+        "personality": "反应迟钝、回答断续，家属着急",
+        "concern": "担心是不是脑子出了问题",
+        "speech_style": "以家属代述为主，反复问要不要做很多检查",
+        "initial_emotion": "焦急"
+      },
+      "hidden_info": [
+        {
+          "id": "H1",
+          "value": "近一天尿量明显减少，家属说半天没有排尿",
+          "sensitivity": "synthetic",
+          "release_round": 3
+        },
+        {
+          "id": "H2",
+          "value": "两周前做过一次小手术，身上还留着管路，家属没有主动提",
+          "sensitivity": "synthetic",
+          "release_round": 5
+        }
+      ],
+      "release_conditions": {
+        "H1": [
+          "ask_urine_output_and_fluid_intake"
+        ],
+        "H2": [
+          "ask_recent_procedure_and_indwelling_lines"
+        ]
+      },
+      "task": "在有限时间内完成关键信息采集，识别意识改变与灌注不足线索，说明现有信息不能下结论，启动紧急评估并向接诊医师做结构化交接。",
+      "initial_state": {
+        "revealed_info": [],
+        "emotion": "焦急",
+        "concern_acknowledged": false,
+        "boundary_bait_used": true
+      },
+      "must_cover": [
+        "CLIN-CORE",
+        "RISK-01",
+        "DIAG-01"
+      ],
+      "variant_of": null,
+      "knowledge_refs": [
+        "K-CLIN-110",
+        "K-CLIN-129",
+        "K-CLIN-130"
+      ],
+      "review_status": "课程团队维护",
+      "boundary_behaviors": [
+        "diagnose_real_person",
+        "delay_referral",
+        "reassure_without_basis"
+      ]
+    },
+    {
+      "case_id": "CL3",
+      "disease_id": "acute_abdomen_red_flags",
+      "disease_label": "急性腹痛",
+      "title": "急性腹痛的危险信号识别与转诊判断",
+      "recommended_majors": [
+        "clinical_medicine"
+      ],
+      "professional_focus": {
+        "clinical_medicine": "按时间轴与转移特点采集腹痛信息，识别腹膜炎与全身受累线索，判断是否需要急诊转诊，不替医师下诊断"
+      },
+      "public_profile": {
+        "name": "罗先生",
+        "age": 40,
+        "setting": "社区全科门诊（腹痛首诊）",
+        "notice": "全部资料均为合成"
+      },
+      "clinical_data": [
+        {
+          "item": "主诉",
+          "value": "上腹隐痛一天，六小时前转到右下腹，越来越疼",
+          "note": "走路时加重，不敢直腰"
+        },
+        {
+          "item": "当前状态",
+          "value": "体温 38.0 ℃ 左右，面色发红，躺着不敢动",
+          "note": "尚未查血，未做影像检查"
+        }
+      ],
+      "persona": {
+        "personality": "能忍、怕耽误工作",
+        "concern": "想开点止痛药先回去上班",
+        "speech_style": "反复问能不能先吃药观察两天",
+        "initial_emotion": "烦躁"
+      },
+      "hidden_info": [
+        {
+          "id": "H1",
+          "value": "昨晚吐过一次后疼痛短暂缓解，今早按下去更疼、松手也疼",
+          "sensitivity": "synthetic",
+          "release_round": 3
+        },
+        {
+          "id": "H2",
+          "value": "上个月有过一次类似腹痛，自己好了，没有就诊",
+          "sensitivity": "synthetic",
+          "release_round": 5
+        }
+      ],
+      "release_conditions": {
+        "H1": [
+          "ask_vomiting_and_abdominal_palpation_findings"
+        ],
+        "H2": [
+          "ask_previous_similar_episodes"
+        ]
+      },
+      "task": "完成腹痛时间轴与转移特点采集，识别需要急诊评估的危险信号，说明不能用止痛药掩盖病情，安排转诊并做交接。",
+      "initial_state": {
+        "revealed_info": [],
+        "emotion": "烦躁",
+        "concern_acknowledged": false,
+        "boundary_bait_used": true
+      },
+      "must_cover": [
+        "CLIN-CORE",
+        "RISK-01",
+        "DIAG-01"
+      ],
+      "variant_of": null,
+      "knowledge_refs": [
+        "K-CLIN-113",
+        "K-CLIN-153",
+        "K-CLIN-154"
+      ],
+      "review_status": "课程团队维护",
+      "boundary_behaviors": [
+        "diagnose_real_person",
+        "delay_referral",
+        "recommend_specific_drug_or_dose"
+      ]
+    },
+    {
+      "case_id": "CL4",
+      "disease_id": "pediatric_fever_dehydration",
+      "disease_label": "儿童发热伴脱水",
+      "title": "儿童发热伴脱水的家长沟通与就医指征",
+      "recommended_majors": [
+        "clinical_medicine"
+      ],
+      "professional_focus": {
+        "clinical_medicine": "向家长采集患儿进食、排尿与精神状态，评估脱水线索和就医指征，用家长能懂的语言说明并确认理解"
+      },
+      "public_profile": {
+        "name": "小宇（母亲代述）",
+        "age": 2,
+        "setting": "儿科门诊（母亲抱患儿就诊）",
+        "notice": "全部资料均为合成"
+      },
+      "clinical_data": [
+        {
+          "item": "主诉",
+          "value": "发热一天半，今天不爱喝水、没精神",
+          "note": "母亲说退热后也不见好转"
+        },
+        {
+          "item": "当前状态",
+          "value": "患儿先烦躁后转安静，口唇偏干，尿布半天没有湿",
+          "note": "未补液，未查血"
+        }
+      ],
+      "persona": {
+        "personality": "紧张、反复自责",
+        "concern": "怕孩子脱水要住院",
+        "speech_style": "语速快，反复问要不要打针输液",
+        "initial_emotion": "焦虑"
+      },
+      "hidden_info": [
+        {
+          "id": "H1",
+          "value": "昨天开始拒食，只在喂药时喝几口水，尿量明显比平时少",
+          "sensitivity": "synthetic",
+          "release_round": 3
+        },
+        {
+          "id": "H2",
+          "value": "家里还留着上次生病剩下的药，母亲想问能不能直接给孩子吃",
+          "sensitivity": "synthetic",
+          "release_round": 5
+        }
+      ],
+      "release_conditions": {
+        "H1": [
+          "ask_intake_urine_and_mental_state"
+        ],
+        "H2": [
+          "ask_current_and_leftover_medication"
+        ]
+      },
+      "task": "向家长系统采集进食、排尿与精神状态，识别脱水与需要就医的指征，用简单语言解释原因，说明不代替医师判断并确认家长理解。",
+      "initial_state": {
+        "revealed_info": [],
+        "emotion": "焦虑",
+        "concern_acknowledged": false,
+        "boundary_bait_used": true
+      },
+      "must_cover": [
+        "CLIN-CORE",
+        "EMPATHY-01",
+        "CHECK-01",
+        "ACTION-01"
+      ],
+      "variant_of": null,
+      "knowledge_refs": [
+        "K-CLIN-121",
+        "K-CLIN-122",
+        "K-CLIN-110"
+      ],
+      "review_status": "课程团队维护",
+      "boundary_behaviors": [
+        "recommend_specific_drug_or_dose",
+        "assume_understanding",
+        "reassure_without_basis"
+      ]
+    },
+    {
+      "case_id": "CL5",
+      "disease_id": "dyspnea_exacerbation",
+      "disease_label": "呼吸困难急性加重",
+      "title": "呼吸困难急性加重的识别与处理边界",
+      "recommended_majors": [
+        "clinical_medicine"
+      ],
+      "professional_focus": {
+        "clinical_medicine": "评估呼吸困难程度、体位与夜间症状线索，识别需要紧急处理的表现，守住不自行加药并及时转诊的边界"
+      },
+      "public_profile": {
+        "name": "孙阿姨",
+        "age": 67,
+        "setting": "社区卫生服务站（步行前来，坐下后仍喘）",
+        "notice": "全部资料均为合成"
+      },
+      "clinical_data": [
+        {
+          "item": "主诉",
+          "value": "喘了三天，昨晚躺下更憋，今天走几步就喘",
+          "note": "说话要停顿换气"
+        },
+        {
+          "item": "当前状态",
+          "value": "呼吸偏快，只能坐着，不能平卧",
+          "note": "随身带来吸入药，名称说不清"
+        }
+      ],
+      "persona": {
+        "personality": "要强、不愿麻烦别人",
+        "concern": "怕被转去大医院花钱",
+        "speech_style": "一句一停，反复说没事",
+        "initial_emotion": "疲惫"
+      },
+      "hidden_info": [
+        {
+          "id": "H1",
+          "value": "最近一周夜里要坐起来才能喘匀，昨晚几乎没睡",
+          "sensitivity": "synthetic",
+          "release_round": 3
+        },
+        {
+          "id": "H2",
+          "value": "自己把吸入药加用了好几次，还翻出以前剩的口服药吃过",
+          "sensitivity": "synthetic",
+          "release_round": 5
+        }
+      ],
+      "release_conditions": {
+        "H1": [
+          "ask_night_symptoms_and_posture"
+        ],
+        "H2": [
+          "ask_inhaler_and_leftover_medication_use"
+        ]
+      },
+      "task": "快速评估呼吸困难程度、体位与夜间症状，识别需要紧急处理的表现，说明不能自行加药，安排转诊并做交接。",
+      "initial_state": {
+        "revealed_info": [],
+        "emotion": "疲惫",
+        "concern_acknowledged": false,
+        "boundary_bait_used": true
+      },
+      "must_cover": [
+        "CLIN-CORE",
+        "RISK-01",
+        "BOUND-01"
+      ],
+      "variant_of": null,
+      "knowledge_refs": [
+        "K-CLIN-112",
+        "K-CLIN-134",
+        "K-CLIN-154"
+      ],
+      "review_status": "课程团队维护",
+      "boundary_behaviors": [
+        "delay_referral",
+        "suggest_stop_switch_adjust_medication",
+        "recommend_specific_drug_or_dose"
+      ]
+    },
+    {
+      "case_id": "CL6",
+      "disease_id": "elderly_syncope_fall",
+      "disease_label": "老年晕厥与跌倒",
+      "title": "老年跌倒后评估与复发风险",
+      "recommended_majors": [
+        "clinical_medicine"
+      ],
+      "professional_focus": {
+        "clinical_medicine": "采集跌倒或晕厥的现场经过、体位变化与全部用药，评估复发与受伤风险，安排进一步评估，不替患者调整药物"
+      },
+      "public_profile": {
+        "name": "陶爷爷",
+        "age": 81,
+        "setting": "社区随访（家中，跌倒后第二天）",
+        "notice": "全部资料均为合成"
+      },
+      "clinical_data": [
+        {
+          "item": "主诉",
+          "value": "昨天从椅子上站起来时眼前发黑，摔了一下",
+          "note": "没有骨折，左侧手臂有淤青"
+        },
+        {
+          "item": "当前状态",
+          "value": "能说清经过，起身时仍诉头晕",
+          "note": "家属不在家，本次未测血压"
+        }
+      ],
+      "persona": {
+        "personality": "好强、觉得小题大做",
+        "concern": "怕被说老了不中用",
+        "speech_style": "轻描淡写，总说没事",
+        "initial_emotion": "抵触"
+      },
+      "hidden_info": [
+        {
+          "id": "H1",
+          "value": "半年来已有两次差点摔倒，都没告诉家人",
+          "sensitivity": "synthetic",
+          "release_round": 3
+        },
+        {
+          "id": "H2",
+          "value": "同时在吃几种药，最近觉得自己血压偏高，把其中一种自己加量了，也没复查",
+          "sensitivity": "synthetic",
+          "release_round": 5
+        }
+      ],
+      "release_conditions": {
+        "H1": [
+          "ask_previous_near_falls_without_blame"
+        ],
+        "H2": [
+          "ask_all_medications_and_recent_changes"
+        ]
+      },
+      "task": "采集跌倒现场经过、体位变化与全部用药，识别复发与受伤风险，说明不能自行调整药物，安排进一步评估与随访。",
+      "initial_state": {
+        "revealed_info": [],
+        "emotion": "抵触",
+        "concern_acknowledged": false,
+        "boundary_bait_used": true
+      },
+      "must_cover": [
+        "CLIN-CORE",
+        "RISK-01",
+        "BOUND-01"
+      ],
+      "variant_of": null,
+      "knowledge_refs": [
+        "K-CLIN-117",
+        "K-CLIN-125",
+        "K-CLIN-103"
+      ],
+      "review_status": "课程团队维护",
+      "boundary_behaviors": [
+        "ignore_fall_risk",
+        "suggest_stop_switch_adjust_medication",
+        "blame_patient"
+      ]
+    },
+    {
+      "case_id": "CL7",
+      "disease_id": "polypharmacy_conflict",
+      "disease_label": "多病共存多重用药",
+      "title": "多病共存患者的重复用药核对",
+      "recommended_majors": [
+        "clinical_medicine"
+      ],
+      "professional_focus": {
+        "clinical_medicine": "逐盒核对患者自带药物的名称、成分与开方来源，识别重复成分和联用风险，只做记录与转诊，不给剂量也不建议停药"
+      },
+      "public_profile": {
+        "name": "韩阿姨",
+        "age": 76,
+        "setting": "全科门诊用药咨询（自带五种药）",
+        "notice": "全部资料均为合成"
+      },
+      "clinical_data": [
+        {
+          "item": "主诉",
+          "value": "头晕、乏力两周，想让医生看看是不是药吃重了",
+          "note": "药是不同医院分别开的"
+        },
+        {
+          "item": "当前状态",
+          "value": "神志清楚，走路略不稳",
+          "note": "五盒药中有两盒名称看起来很像"
+        }
+      ],
+      "persona": {
+        "personality": "谨慎、记性不好",
+        "concern": "怕药吃重了伤身体",
+        "speech_style": "反复说自己也记不清哪个治什么",
+        "initial_emotion": "困惑"
+      },
+      "hidden_info": [
+        {
+          "id": "H1",
+          "value": "两个药盒上写的是同一种成分，她一直两种一起吃",
+          "sensitivity": "synthetic",
+          "release_round": 3
+        },
+        {
+          "id": "H2",
+          "value": "还在吃别人推荐的一种活血中成药，没带来，也没告诉开药的医生",
+          "sensitivity": "synthetic",
+          "release_round": 5
+        }
+      ],
+      "release_conditions": {
+        "H1": [
+          "ask_to_read_labels_and_compare_ingredients"
+        ],
+        "H2": [
+          "ask_otc_and_tcm_supplements"
+        ]
+      },
+      "task": "逐项核对自带药物的名称、成分与开方来源，识别重复成分和联用风险，说明不自行停药或加量，把核对结果交回医师并安排随访。",
+      "initial_state": {
+        "revealed_info": [],
+        "emotion": "困惑",
+        "concern_acknowledged": false,
+        "boundary_bait_used": true
+      },
+      "must_cover": [
+        "CLIN-CORE",
+        "BOUND-01",
+        "ACTION-01"
+      ],
+      "variant_of": null,
+      "knowledge_refs": [
+        "K-CLIN-103",
+        "K-CLIN-149",
+        "K-CLIN-151"
+      ],
+      "review_status": "课程团队维护",
+      "boundary_behaviors": [
+        "suggest_stop_switch_adjust_medication",
+        "recommend_specific_drug_or_dose",
+        "endorse_unverified_remedy"
+      ]
+    },
+    {
+      "case_id": "HM1",
+      "disease_id": "health_check_abnormality",
+      "disease_label": "体检指标异常",
+      "title": "体检报告里好几项箭头，她想问「是不是糖尿病」",
+      "recommended_majors": [
+        "health_management"
+      ],
+      "professional_focus": {
+        "health_management": "按风险分层处理体检异常，说明信息不足与复查时间点，协调就诊与随访，不替医生下结论"
+      },
+      "public_profile": {
+        "name": "郑阿姨",
+        "age": 52,
+        "setting": "社区卫生服务中心健康管理门诊（体检报告解读随访）",
+        "notice": "全部资料均为合成"
+      },
+      "clinical_data": [
+        {
+          "item": "体检报告",
+          "value": "空腹血糖 7.4 mmol/L，报告标注「偏高」",
+          "note": "单位体检，仅测一次，未复查"
+        },
+        {
+          "item": "体检报告",
+          "value": "血压 148/92 mmHg",
+          "note": "单次测量，未记录测量前是否休息"
+        },
+        {
+          "item": "体检报告",
+          "value": "低密度脂蛋白 4.2 mmol/L，肝脏超声提示「轻度脂肪肝」",
+          "note": "报告建议「专科随诊」"
+        },
+        {
+          "item": "本次主诉",
+          "value": "想知道自己是不是已经得了糖尿病",
+          "note": "反复追问，希望当场得到结论"
+        }
+      ],
+      "persona": {
+        "personality": "性子急、要答案",
+        "concern": "怕被贴上「糖尿病人」的标签，也怕复查花钱耽误上班",
+        "speech_style": "语速快，反复问「你就说是不是吧」",
+        "initial_emotion": "急切"
+      },
+      "hidden_info": [
+        {
+          "id": "H1",
+          "value": "近一个月常口干、夜里起夜两次，以为是「上火」没在意",
+          "sensitivity": "synthetic",
+          "release_round": 3
+        },
+        {
+          "id": "H2",
+          "value": "母亲有糖尿病史，自己一直回避复查，怕真查出来",
+          "sensitivity": "synthetic",
+          "release_round": 5
+        }
+      ],
+      "release_conditions": {
+        "H1": [
+          "ask_symptom_change"
+        ],
+        "H2": [
+          "ask_risk_and_medication_history"
+        ]
+      },
+      "task": "把多项体检异常按尽快就诊、限期复查、生活方式调整分层说明，讲清单次结果与信息不足的限制，回应她对标签和花费的顾虑，共同定下就诊与复查安排。",
+      "initial_state": {
+        "revealed_info": [],
+        "emotion": "急切",
+        "concern_acknowledged": false,
+        "boundary_bait_used": true
+      },
+      "must_cover": [
+        "INQ-01",
+        "EMPATHY-01",
+        "PLAIN-01",
+        "ACTION-01"
+      ],
+      "variant_of": null,
+      "knowledge_refs": [
+        "K-CLIN-153",
+        "K-CLIN-159",
+        "K-NUR-162"
+      ],
+      "review_status": "课程团队维护",
+      "boundary_behaviors": [
+        "diagnose_real_person",
+        "tell_patient_diagnosis",
+        "reassure_without_basis",
+        "discourage_visit",
+        "delay_referral"
+      ]
+    },
+    {
+      "case_id": "HM2",
+      "disease_id": "tobacco_dependence",
+      "disease_label": "烟草依赖",
+      "title": "何师傅想戒烟，又怕戒了更难受",
+      "recommended_majors": [
+        "health_management"
+      ],
+      "professional_focus": {
+        "health_management": "量化吸烟史与依赖线索，了解既往尝试与复吸原因，协商分阶段戒烟计划并衔接戒烟门诊"
+      },
+      "public_profile": {
+        "name": "何师傅",
+        "age": 45,
+        "setting": "社区卫生服务中心戒烟咨询门诊（首次咨询）",
+        "notice": "全部资料均为合成"
+      },
+      "clinical_data": [
+        {
+          "item": "吸烟史",
+          "value": "每天约 20 支，烟龄 22 年",
+          "note": "自述「早上一睁眼就想抽」"
+        },
+        {
+          "item": "既往尝试",
+          "value": "自行减量两次，都在一周内复吸",
+          "note": "未用过戒烟门诊或专业帮助"
+        },
+        {
+          "item": "本次主诉",
+          "value": "想戒烟，但担心变胖、脾气变差",
+          "note": "单位体检提示肺功能下降"
+        },
+        {
+          "item": "工作与应酬",
+          "value": "长期夜班，同事聚餐多",
+          "note": "自述「一喝酒就想抽」"
+        }
+      ],
+      "persona": {
+        "personality": "直爽、有点抵触说教",
+        "concern": "怕戒烟后胖一圈、怕在同事面前控制不住脾气被笑话",
+        "speech_style": "语速快，常说「我意志力不行」",
+        "initial_emotion": "半信半疑"
+      },
+      "hidden_info": [
+        {
+          "id": "H1",
+          "value": "上次戒烟三个月胖了 8 斤，还因为烦躁和爱人吵过架，这次不敢下决心",
+          "sensitivity": "synthetic",
+          "release_round": 3
+        },
+        {
+          "id": "H2",
+          "value": "这半年一直用电子烟替代纸烟，每天仍在抽，觉得电子烟没什么危害",
+          "sensitivity": "synthetic",
+          "release_round": 5
+        }
+      ],
+      "release_conditions": {
+        "H1": [
+          "ask_specific_concern"
+        ],
+        "H2": [
+          "ask_non_drug_attempt"
+        ]
+      },
+      "task": "量化吸烟量与依赖线索，了解既往尝试和复吸原因，回应怕胖怕烦躁的顾虑，共同制定含戒烟日、触发情境应对和复吸后重启的计划，并转介戒烟门诊。",
+      "initial_state": {
+        "revealed_info": [],
+        "emotion": "半信半疑",
+        "concern_acknowledged": false,
+        "boundary_bait_used": false
+      },
+      "must_cover": [
+        "INQ-01",
+        "EMPATHY-01",
+        "CHECK-01",
+        "ACTION-01"
+      ],
+      "variant_of": null,
+      "knowledge_refs": [
+        "K-CLIN-105",
+        "K-TCM-152",
+        "K-COM-001"
+      ],
+      "review_status": "课程团队维护",
+      "boundary_behaviors": [
+        "endorse_unverified_remedy",
+        "blame_patient",
+        "coerce_or_shame",
+        "recommend_specific_drug_or_dose"
+      ]
+    },
+    {
+      "case_id": "HM3",
+      "disease_id": "geriatric_comprehensive_assessment",
+      "disease_label": "老年综合评估",
+      "title": "吴奶奶说「老了都这样」，可她已经摔过两次",
+      "recommended_majors": [
+        "health_management"
+      ],
+      "professional_focus": {
+        "health_management": "完成跌倒、多重用药与独居支持的老年综合评估，形成分层转介清单并约定随访"
+      },
+      "public_profile": {
+        "name": "吴奶奶",
+        "age": 79,
+        "setting": "社区卫生服务中心老年人健康管理年度评估（入户）",
+        "notice": "全部资料均为合成"
+      },
+      "clinical_data": [
+        {
+          "item": "用药情况",
+          "value": "同时在用 5 种药，分别由两家机构开具",
+          "note": "药盒混放，说不清哪种治什么"
+        },
+        {
+          "item": "跌倒史",
+          "value": "近一年跌倒 2 次，最近一次是上月夜里去厕所",
+          "note": "没有就医，自己擦了药酒"
+        },
+        {
+          "item": "居住情况",
+          "value": "独居，子女在外地",
+          "note": "日常自己做饭，白天邻居偶尔来坐"
+        },
+        {
+          "item": "本次主诉",
+          "value": "「老了都这样，不用麻烦孩子」",
+          "note": "愿意配合评估，但回答很短"
+        }
+      ],
+      "persona": {
+        "personality": "客气、怕麻烦别人",
+        "concern": "怕被说「不中用了」，更怕子女知道后被接去外地",
+        "speech_style": "反复说「没事，我自己能行」",
+        "initial_emotion": "平淡中带防备"
+      },
+      "hidden_info": [
+        {
+          "id": "H1",
+          "value": "夜里怕开灯摔倒，常憋尿、少喝水；卫生间没有扶手，过道堆着杂物",
+          "sensitivity": "synthetic",
+          "release_round": 3
+        },
+        {
+          "id": "H2",
+          "value": "助眠药是邻居转赠的，来源不明，也没告诉过医生",
+          "sensitivity": "synthetic",
+          "release_round": 5
+        }
+      ],
+      "release_conditions": {
+        "H1": [
+          "ask_home_environment_safety"
+        ],
+        "H2": [
+          "ask_full_medication_list_including_otc"
+        ]
+      },
+      "task": "完成跌倒、多重用药与独居支持的评估，形成分层转介清单（请医师复核用药、居家防跌倒改造、社区与社工资源），并约定随访方式。",
+      "initial_state": {
+        "revealed_info": [],
+        "emotion": "平淡中带防备",
+        "concern_acknowledged": false,
+        "boundary_bait_used": false
+      },
+      "must_cover": [
+        "INQ-01",
+        "EMPATHY-01",
+        "PLAIN-01",
+        "ACTION-01"
+      ],
+      "variant_of": null,
+      "knowledge_refs": [
+        "K-CLIN-125",
+        "K-NUR-107",
+        "K-NUR-137"
+      ],
+      "review_status": "课程团队维护",
+      "boundary_behaviors": [
+        "ignore_fall_risk",
+        "suggest_stop_switch_adjust_medication",
+        "recommend_medication_adjustment",
+        "blame_patient"
+      ]
+    },
+    {
+      "case_id": "HM4",
+      "disease_id": "vaccination_consultation",
+      "disease_label": "疫苗接种咨询",
+      "title": "「到底能不能打」，徐女士想要一句准话",
+      "recommended_majors": [
+        "health_management"
+      ],
+      "professional_focus": {
+        "health_management": "说明接种前需核对的适应证、禁忌与暂缓情形，把可否接种的判断交给接种医生并给出可执行流程"
+      },
+      "public_profile": {
+        "name": "徐女士",
+        "age": 34,
+        "setting": "社区卫生服务中心预防接种咨询台",
+        "notice": "全部资料均为合成"
+      },
+      "clinical_data": [
+        {
+          "item": "咨询事项",
+          "value": "想给自己和 2 岁孩子安排季节性流感疫苗接种",
+          "note": "孩子准备入托，时间比较紧"
+        },
+        {
+          "item": "过敏史",
+          "value": "本人曾用某种抗生素后起皮疹，药名记不清",
+          "note": "孩子有鸡蛋过敏史，家长不确定是否影响接种"
+        },
+        {
+          "item": "本次诉求",
+          "value": "希望当场得到「能打」或「不能打」的答复",
+          "note": "情绪焦虑，反复追问"
+        }
+      ],
+      "persona": {
+        "personality": "谨慎、信息焦虑",
+        "concern": "怕接种后出事，又怕耽误孩子入托",
+        "speech_style": "语速快，连问「到底能不能打」",
+        "initial_emotion": "焦虑"
+      },
+      "hidden_info": [
+        {
+          "id": "H1",
+          "value": "孩子这两天体温 37.8℃、流鼻涕，还在吃感冒药",
+          "sensitivity": "synthetic",
+          "release_round": 3
+        },
+        {
+          "id": "H2",
+          "value": "本人上次接种后出现全身风团，目前仍在哺乳",
+          "sensitivity": "synthetic",
+          "release_round": 5
+        }
+      ],
+      "release_conditions": {
+        "H1": [
+          "ask_symptom_change"
+        ],
+        "H2": [
+          "ask_special_population_and_pregnancy_possibility_respectfully"
+        ]
+      },
+      "task": "说明接种前必须核对的适应证、禁忌与暂缓情形（急性感染期、过敏史、特殊人群），把可否接种的判断交给接种医生，给出到场评估流程与接种后观察要求，并回应她对风险的担心。",
+      "initial_state": {
+        "revealed_info": [],
+        "emotion": "焦虑",
+        "concern_acknowledged": false,
+        "boundary_bait_used": true
+      },
+      "must_cover": [
+        "INQ-01",
+        "EMPATHY-01",
+        "PLAIN-01",
+        "ACTION-01"
+      ],
+      "variant_of": null,
+      "knowledge_refs": [
+        "K-CLIN-148",
+        "K-CLIN-159",
+        "K-CLIN-160"
+      ],
+      "review_status": "课程团队维护",
+      "boundary_behaviors": [
+        "guarantee_zero_risk",
+        "ignore_special_population",
+        "tell_patient_treatment_decision",
+        "reassure_without_basis"
+      ]
+    },
+    {
+      "case_id": "HM5",
+      "disease_id": "overweight_obesity",
+      "disease_label": "超重与肥胖",
+      "title": "蒋先生想一个月瘦十斤",
+      "recommended_majors": [
+        "health_management"
+      ],
+      "professional_focus": {
+        "health_management": "量化体重与生活方式，管理减重预期不承诺斤数，协商可执行的行为计划并安排代谢指标复查"
+      },
+      "public_profile": {
+        "name": "蒋先生",
+        "age": 38,
+        "setting": "社区卫生服务中心体重管理门诊（首次咨询）",
+        "notice": "全部资料均为合成"
+      },
+      "clinical_data": [
+        {
+          "item": "体格测量",
+          "value": "身高 172 cm，体重 88 kg，腰围 98 cm",
+          "note": "自测，未空腹，未复测"
+        },
+        {
+          "item": "生活方式",
+          "value": "每周外卖 5 次以上，久坐约 10 小时，几乎不运动",
+          "note": "常熬夜到凌晨 1 点"
+        },
+        {
+          "item": "本次诉求",
+          "value": "希望一个月瘦 10 斤",
+          "note": "同事用代餐瘦得快，想照着做"
+        },
+        {
+          "item": "情绪状态",
+          "value": "说「这次一定坚持住」",
+          "note": "此前多次下决心，都没坚持下来"
+        }
+      ],
+      "persona": {
+        "personality": "急躁、要结果",
+        "concern": "怕坚持不下来被家人说「不自律」，也怕体检再出问题",
+        "speech_style": "直接，反复问「多久能瘦多少」",
+        "initial_emotion": "兴奋又怀疑"
+      },
+      "hidden_info": [
+        {
+          "id": "H1",
+          "value": "之前用网购代餐粉替代两餐，停用后体重反弹 6 kg",
+          "sensitivity": "synthetic",
+          "release_round": 3
+        },
+        {
+          "id": "H2",
+          "value": "去年体检提示血脂偏高、脂肪肝，半年多没复查，也没告诉家人",
+          "sensitivity": "synthetic",
+          "release_round": 5
+        }
+      ],
+      "release_conditions": {
+        "H1": [
+          "ask_remedy_use"
+        ],
+        "H2": [
+          "ask_followup_and_screening"
+        ]
+      },
+      "task": "量化体重、腰围与生活方式，回应「一个月瘦十斤」的期待，说明合理速度与个体差异、不承诺具体斤数，共同制定饮食、活动与作息的可执行计划，安排代谢指标复查。",
+      "initial_state": {
+        "revealed_info": [],
+        "emotion": "兴奋又怀疑",
+        "concern_acknowledged": false,
+        "boundary_bait_used": true
+      },
+      "must_cover": [
+        "INQ-01",
+        "EMPATHY-01",
+        "CHECK-01",
+        "ACTION-01"
+      ],
+      "variant_of": null,
+      "knowledge_refs": [
+        "K-NUR-105",
+        "K-TCM-149",
+        "K-COM-001"
+      ],
+      "review_status": "课程团队维护",
+      "boundary_behaviors": [
+        "promise_recovery_outcome",
+        "prescribe_unsupervised_intensity",
+        "endorse_unverified_remedy",
+        "blame_patient"
+      ]
+    },
+    {
+      "case_id": "HM6",
+      "disease_id": "sleep_and_mood_screening",
+      "disease_label": "睡眠与情绪问题",
+      "title": "罗阿姨照顾父亲半年，先垮的是她自己",
+      "recommended_majors": [
+        "health_management"
+      ],
+      "professional_focus": {
+        "health_management": "规范使用筛查量表并说明其局限，识别睡眠与情绪风险，直接询问自伤念头并及时转介心理精神专科"
+      },
+      "public_profile": {
+        "name": "罗阿姨",
+        "age": 46,
+        "setting": "社区卫生服务中心慢病随访中的睡眠与情绪筛查",
+        "notice": "全部资料均为合成"
+      },
+      "clinical_data": [
+        {
+          "item": "本次主诉",
+          "value": "近两个月入睡困难、凌晨早醒，白天没精神",
+          "note": "自购助眠保健品，效果不明显"
+        },
+        {
+          "item": "筛查结果",
+          "value": "睡眠自评提示中度问题，情绪自评低落评分偏高",
+          "note": "量表仅用于筛查，不作为诊断依据"
+        },
+        {
+          "item": "照护情况",
+          "value": "独自照顾中风卧床的父亲半年",
+          "note": "几乎没有自己的休息时间"
+        },
+        {
+          "item": "本次追问",
+          "value": "问「我是不是抑郁了」",
+          "note": "希望得到一个明确答案"
+        }
+      ],
+      "persona": {
+        "personality": "克制、习惯照顾别人",
+        "concern": "怕被贴「精神病」标签，更怕不能继续照顾父亲",
+        "speech_style": "声音低，先讲父亲再讲自己",
+        "initial_emotion": "疲惫低落"
+      },
+      "hidden_info": [
+        {
+          "id": "H1",
+          "value": "睡眠问题已持续两个月，白天注意力差，上周骑车差点撞到人",
+          "sensitivity": "synthetic",
+          "release_round": 3
+        },
+        {
+          "id": "H2",
+          "value": "近两周有过「不如一了百了」的念头，没有具体计划，也没告诉任何人",
+          "sensitivity": "synthetic",
+          "release_round": 5
+        }
+      ],
+      "release_conditions": {
+        "H1": [
+          "ask_symptom_timeline_and_associated_features"
+        ],
+        "H2": [
+          "ask_specific_concern",
+          "ask_warning_sign_understanding"
+        ]
+      },
+      "task": "规范使用筛查量表并说明其局限，评估睡眠、情绪与照护负担，直接询问自伤念头，明确转介心理/精神专科与照护支持，不做诊断、不承诺保密。",
+      "initial_state": {
+        "revealed_info": [],
+        "emotion": "疲惫低落",
+        "concern_acknowledged": false,
+        "boundary_bait_used": true
+      },
+      "must_cover": [
+        "INQ-01",
+        "EMPATHY-01",
+        "PLAIN-01",
+        "ACTION-01"
+      ],
+      "variant_of": null,
+      "knowledge_refs": [
+        "K-NUR-165",
+        "K-NUR-167",
+        "K-COM-001"
+      ],
+      "review_status": "课程团队维护",
+      "boundary_behaviors": [
+        "diagnose_real_person",
+        "tell_patient_diagnosis",
+        "reassure_without_basis",
+        "delay_referral"
+      ]
+    },
+    {
+      "case_id": "MT1",
+      "disease_id": "laboratory_medicine",
+      "disease_label": "医学检验",
+      "title": "检验标本信息不一致的处理",
+      "recommended_majors": [
+        "medical_technology"
+      ],
+      "professional_focus": {
+        "medical_technology": "核对申请、患者、容器、采集时间和运输条件，识别检验前质量风险并完成沟通记录"
+      },
+      "public_profile": {
+        "name": "合成受检者A",
+        "age": 46,
+        "setting": "临床检验标本接收窗口",
+        "notice": "全部资料均为合成"
+      },
+      "clinical_data": [
+        {
+          "item": "申请单",
+          "value": "姓名与试管标签有一字不同",
+          "note": "检验项目为血液生化"
+        },
+        {
+          "item": "标本",
+          "value": "采集时间未填写",
+          "note": "运输条件不明确"
+        }
+      ],
+      "persona": {
+        "personality": "着急取结果",
+        "concern": "不想重新采集",
+        "speech_style": "不断催促",
+        "initial_emotion": "不耐烦"
+      },
+      "hidden_info": [
+        {
+          "id": "H1",
+          "value": "送检人员无法当场确认标签是谁书写",
+          "sensitivity": "synthetic"
+        },
+        {
+          "id": "H2",
+          "value": "标本曾在室温放置较长时间但无记录",
+          "sensitivity": "synthetic"
+        }
+      ],
+      "release_conditions": {
+        "H1": [
+          "ask_identity_traceability"
+        ],
+        "H2": [
+          "ask_collection_and_transport_conditions"
+        ]
+      },
+      "task": "完成身份和标本全流程核对，识别前处理风险，说明不能直接放行的原因，并形成规范记录和沟通方案。",
+      "initial_state": {
+        "revealed_info": [],
+        "emotion": "不耐烦",
+        "concern_acknowledged": false,
+        "boundary_bait_used": false
+      },
+      "must_cover": [
+        "identity_check",
+        "specimen_integrity",
+        "preanalytic_factors",
+        "quality_boundary",
+        "communication_record"
+      ],
+      "variant_of": null,
+      "knowledge_refs": [
+        "K-MT-001",
+        "K-MT-002",
+        "K-COM-001"
+      ],
+      "review_status": "课程团队维护",
+      "boundary_behaviors": [
+        "release_unverified_result",
+        "alter_specimen_record",
+        "ignore_identity_mismatch"
+      ]
+    },
+    {
+      "case_id": "MT2",
+      "disease_id": "laboratory_medicine",
+      "disease_label": "医学检验",
+      "title": "生化危急值的电话通知与闭环确认",
+      "recommended_majors": [
+        "medical_technology"
+      ],
+      "professional_focus": {
+        "medical_technology": "复核危急值结果，按流程通知临床并完成接收人回读确认与记录闭环"
+      },
+      "public_profile": {
+        "name": "合成受检者C",
+        "age": 63,
+        "setting": "检验科值班台（下午班）",
+        "notice": "全部资料均为合成"
+      },
+      "clinical_data": [
+        {
+          "item": "检验结果",
+          "value": "血清钾 6.8 mmol/L，标红为危急值",
+          "note": "同一标本常规生化同步出结果"
+        },
+        {
+          "item": "既往结果",
+          "value": "三天前血钾 4.3 mmol/L",
+          "note": "无溶血、无黄疸提示"
+        }
+      ],
+      "persona": {
+        "personality": "语速快、怕耽误事",
+        "concern": "担心被投诉报告慢",
+        "speech_style": "边接电话边催你快点说",
+        "initial_emotion": "着急"
+      },
+      "hidden_info": [
+        {
+          "id": "H1",
+          "value": "来电护士只想口头记下数值，表示不用回读也不用写记录",
+          "sensitivity": "synthetic"
+        },
+        {
+          "id": "H2",
+          "value": "患者当日输过含钾液体，但病历里没有及时更新",
+          "sensitivity": "synthetic"
+        }
+      ],
+      "release_conditions": {
+        "H1": [
+          "ask_receiver_identity_and_readback_willingness"
+        ],
+        "H2": [
+          "ask_recent_infusion_and_sample_timing"
+        ]
+      },
+      "task": "先复核危急值（复测/核对标本），按流程电话通知临床，要求对方回读确认并记录时间、接收人与处理意见，不越界解释病情或给出治疗决定。",
+      "initial_state": {
+        "revealed_info": [],
+        "emotion": "着急",
+        "concern_acknowledged": false,
+        "boundary_bait_used": true
+      },
+      "must_cover": [
+        "quality_check",
+        "technical_risk_control",
+        "scope_boundary"
+      ],
+      "variant_of": null,
+      "knowledge_refs": [
+        "K-MT-164",
+        "K-MT-172",
+        "K-COM-001"
+      ],
+      "review_status": "课程团队维护",
+      "boundary_behaviors": [
+        "release_unverified_result",
+        "tell_patient_treatment_decision",
+        "omit_critical_value_record"
+      ]
+    },
+    {
+      "case_id": "MT3",
+      "disease_id": "medical_imaging",
+      "disease_label": "医学影像",
+      "title": "影像危急发现的即时沟通",
+      "recommended_majors": [
+        "medical_technology"
+      ],
+      "professional_focus": {
+        "medical_technology": "识别影像危急发现，按流程即时上报并推动临床处理，不向受检者下诊断"
+      },
+      "public_profile": {
+        "name": "合成受检者D",
+        "age": 71,
+        "setting": "CT 检查室（检查刚结束）",
+        "notice": "全部资料均为合成"
+      },
+      "clinical_data": [
+        {
+          "item": "检查",
+          "value": "头颅 CT（因突发言语不清送检）",
+          "note": "图像已上传，未见正式报告"
+        },
+        {
+          "item": "受检者状态",
+          "value": "神志清、说话略含糊",
+          "note": "家属在门外等候"
+        }
+      ],
+      "persona": {
+        "personality": "紧张、想赶紧回家",
+        "concern": "怕耽误接孙子",
+        "speech_style": "反复问结果出来没有",
+        "initial_emotion": "焦虑"
+      },
+      "hidden_info": [
+        {
+          "id": "H1",
+          "value": "图像提示疑似颅内出血，需要立即通知临床",
+          "sensitivity": "synthetic"
+        },
+        {
+          "id": "H2",
+          "value": "家属提到老人长期服用抗凝药",
+          "sensitivity": "synthetic"
+        }
+      ],
+      "release_conditions": {
+        "H1": [
+          "ask_about_suspicious_finding_on_image"
+        ],
+        "H2": [
+          "ask_anticoagulant_use_and_recent_falls"
+        ]
+      },
+      "task": "发现疑似危急影像表现后立即按流程上报并联系临床，同时安抚受检者、说明下一步由医师判断，不自行告知诊断结论。",
+      "initial_state": {
+        "revealed_info": [],
+        "emotion": "焦虑",
+        "concern_acknowledged": false,
+        "boundary_bait_used": true
+      },
+      "must_cover": [
+        "quality_check",
+        "technical_risk_control",
+        "scope_boundary"
+      ],
+      "variant_of": null,
+      "knowledge_refs": [
+        "K-MT-168",
+        "K-MT-169",
+        "K-COM-001"
+      ],
+      "review_status": "课程团队维护",
+      "boundary_behaviors": [
+        "tell_patient_diagnosis",
+        "delay_critical_finding_report",
+        "release_unverified_result"
+      ]
+    },
+    {
+      "case_id": "MT4",
+      "disease_id": "transfusion_compatibility",
+      "disease_label": "输血相容性检测",
+      "title": "输血相容性疑难结果的紧急发血沟通",
+      "recommended_majors": [
+        "medical_technology"
+      ],
+      "professional_focus": {
+        "medical_technology": "复核抗体筛查与配血结果，按紧急发血流程沟通并留痕，不擅自放行未完成配血的血袋"
+      },
+      "public_profile": {
+        "name": "合成受检者E",
+        "age": 52,
+        "setting": "输血科配血室（急诊用血申请后）",
+        "notice": "全部资料均为合成"
+      },
+      "clinical_data": [
+        {
+          "item": "用血申请",
+          "value": "急诊申请悬浮红细胞，申请理由为活动性出血",
+          "note": "申请单标注需要尽快发血"
+        },
+        {
+          "item": "相容性检测",
+          "value": "抗体筛查阳性，主侧配血不合",
+          "note": "本次申请单未写明既往输血史"
+        }
+      ],
+      "persona": {
+        "personality": "急躁、怕担责任",
+        "concern": "担心复核耽误抢救被追责",
+        "speech_style": "反复追问能不能先发一袋",
+        "initial_emotion": "着急"
+      },
+      "hidden_info": [
+        {
+          "id": "H1",
+          "value": "数年前在外院输过血，可能已产生同种抗体，本次申请单未记录",
+          "sensitivity": "synthetic",
+          "release_round": 3
+        },
+        {
+          "id": "H2",
+          "value": "临床来电提出先发未配血单位、记录事后补写，并希望检验科口头保证安全",
+          "sensitivity": "synthetic",
+          "release_round": 5
+        }
+      ],
+      "release_conditions": {
+        "H1": [
+          "ask_prior_transfusion_and_pregnancy_history"
+        ],
+        "H2": [
+          "ask_emergency_release_procedure_and_who_decides"
+        ]
+      },
+      "task": "复核抗体筛查与配血结果，说明紧急发血与替代流程，按流程通知临床并完整记录，不擅自放行未完成配血的血袋，不口头承诺安全，把是否用血交回临床决定。",
+      "initial_state": {
+        "revealed_info": [],
+        "emotion": "着急",
+        "concern_acknowledged": false,
+        "boundary_bait_used": true
+      },
+      "must_cover": [
+        "MT-QUALITY",
+        "INQ-01",
+        "PLAIN-01",
+        "ACTION-01"
+      ],
+      "variant_of": null,
+      "knowledge_refs": [
+        "K-MT-101",
+        "K-MT-164",
+        "K-MT-172"
+      ],
+      "review_status": "课程团队维护",
+      "boundary_behaviors": [
+        "release_unverified_result",
+        "omit_critical_value_record",
+        "tell_patient_treatment_decision"
+      ]
+    },
+    {
+      "case_id": "MT5",
+      "disease_id": "microbial_culture_report",
+      "disease_label": "微生物培养与耐药预警",
+      "title": "多重耐药菌培养结果的预警与临床沟通",
+      "recommended_majors": [
+        "medical_technology"
+      ],
+      "professional_focus": {
+        "medical_technology": "复核培养阳性报警与涂片信息，按预警流程反馈临床并登记，不解释治疗方案"
+      },
+      "public_profile": {
+        "name": "合成受检者F",
+        "age": 39,
+        "setting": "微生物室结果复核台（上午报告时段）",
+        "notice": "全部资料均为合成"
+      },
+      "clinical_data": [
+        {
+          "item": "培养结果",
+          "value": "血培养报警阳性，涂片示革兰阴性杆菌",
+          "note": "药敏试验尚未完成"
+        },
+        {
+          "item": "预警信息",
+          "value": "系统提示可能为多重耐药菌，需按预警流程处理",
+          "note": "预警对象为临床科室，不面向患者本人"
+        }
+      ],
+      "persona": {
+        "personality": "语速快、怕被追责",
+        "concern": "担心预警报晚了被投诉",
+        "speech_style": "一边接电话一边催你快点定要不要报",
+        "initial_emotion": "着急"
+      },
+      "hidden_info": [
+        {
+          "id": "H1",
+          "value": "同一患者另一侧采集的第二套血培养也报警阳性，两套采集时间接近",
+          "sensitivity": "synthetic",
+          "release_round": 3
+        },
+        {
+          "id": "H2",
+          "value": "患者近期用过抗菌药物，申请单未注明，可能影响结果判读",
+          "sensitivity": "synthetic",
+          "release_round": 5
+        }
+      ],
+      "release_conditions": {
+        "H1": [
+          "ask_number_of_sets_and_collection_time"
+        ],
+        "H2": [
+          "ask_recent_antimicrobial_use"
+        ]
+      },
+      "task": "复核阳性报警与涂片信息，按多重耐药菌预警流程通知临床并登记接收人与时间，说明药敏未完成、结果意义由临床判断，不解释治疗方案、不向患者下诊断。",
+      "initial_state": {
+        "revealed_info": [],
+        "emotion": "着急",
+        "concern_acknowledged": false,
+        "boundary_bait_used": true
+      },
+      "must_cover": [
+        "MT-QUALITY",
+        "INQ-01",
+        "EMPATHY-01",
+        "ACTION-01"
+      ],
+      "variant_of": null,
+      "knowledge_refs": [
+        "K-MT-116",
+        "K-MT-164",
+        "K-MT-172"
+      ],
+      "review_status": "课程团队维护",
+      "boundary_behaviors": [
+        "tell_patient_diagnosis",
+        "tell_patient_treatment_decision",
+        "omit_critical_value_record"
+      ]
+    },
+    {
+      "case_id": "MT6",
+      "disease_id": "coagulation_testing",
+      "disease_label": "凝血功能检测",
+      "title": "凝血结果异常与标本量不足的复核",
+      "recommended_majors": [
+        "medical_technology"
+      ],
+      "professional_focus": {
+        "medical_technology": "按抗凝比例与采集过程复核凝血结果，判定标本不合格并拒收重采，按流程更正报告"
+      },
+      "public_profile": {
+        "name": "合成受检者G",
+        "age": 67,
+        "setting": "检验科凝血岗位（术前评估标本复核）",
+        "notice": "全部资料均为合成"
+      },
+      "clinical_data": [
+        {
+          "item": "检测结果",
+          "value": "凝血酶原时间与活化部分凝血活酶时间同步延长",
+          "note": "申请理由为术前评估，与结果不符"
+        },
+        {
+          "item": "标本状态",
+          "value": "枸橼酸钠抗凝管液面明显低于管壁刻度",
+          "note": "标签与采集时间填写齐全"
+        }
+      ],
+      "persona": {
+        "personality": "谨慎、怕出错又想快点发报告",
+        "concern": "担心报告延迟耽误手术安排",
+        "speech_style": "反复问会不会是患者本身凝血有问题",
+        "initial_emotion": "为难"
+      },
+      "hidden_info": [
+        {
+          "id": "H1",
+          "value": "该管由实习人员采集，采血过程不顺，曾从另一管回抽补足血量",
+          "sensitivity": "synthetic",
+          "release_round": 3
+        },
+        {
+          "id": "H2",
+          "value": "临床已按该结果开始术前准备，希望先出报告、重采以后再说",
+          "sensitivity": "synthetic",
+          "release_round": 5
+        }
+      ],
+      "release_conditions": {
+        "H1": [
+          "ask_collection_process_and_difficulty"
+        ],
+        "H2": [
+          "ask_whether_clinical_has_acted_on_result"
+        ]
+      },
+      "task": "按抗凝比例与采集过程复核凝血结果，判定标本不合格需重采，按流程拒收并通知临床、必要时按流程出具更正或补充说明，不擅自改结果、不补写记录、不替临床决定手术安排。",
+      "initial_state": {
+        "revealed_info": [],
+        "emotion": "为难",
+        "concern_acknowledged": false,
+        "boundary_bait_used": true
+      },
+      "must_cover": [
+        "MT-QUALITY",
+        "INQ-01",
+        "CHECK-01",
+        "ACTION-01"
+      ],
+      "variant_of": null,
+      "knowledge_refs": [
+        "K-MT-111",
+        "K-MT-118",
+        "K-MT-170"
+      ],
+      "review_status": "课程团队维护",
+      "boundary_behaviors": [
+        "release_unverified_result",
+        "alter_specimen_record",
+        "omit_critical_value_record"
+      ]
+    },
+    {
+      "case_id": "MT7",
+      "disease_id": "clinical_biochemistry",
+      "disease_label": "临床生化检验",
+      "title": "生化结果与临床表现不符的复核顺序",
+      "recommended_majors": [
+        "medical_technology"
+      ],
+      "professional_focus": {
+        "medical_technology": "按身份、标本质量、仪器质控、生理干扰的顺序复核不符结果，注明已复核再报告"
+      },
+      "public_profile": {
+        "name": "合成受检者H",
+        "age": 74,
+        "setting": "生化室复核岗（门诊报告审核前）",
+        "notice": "全部资料均为合成"
+      },
+      "clinical_data": [
+        {
+          "item": "生化结果",
+          "value": "血肌酐明显升高、血钾偏低",
+          "note": "与申请单描述的常规随访、一般情况好不符"
+        },
+        {
+          "item": "既往结果",
+          "value": "两周前同类项目结果在参考范围内",
+          "note": "同一采血点采集"
+        }
+      ],
+      "persona": {
+        "personality": "认真但习惯先下判断",
+        "concern": "怕被说报告出得慢",
+        "speech_style": "常说这肯定是标本问题",
+        "initial_emotion": "疑惑"
+      },
+      "hidden_info": [
+        {
+          "id": "H1",
+          "value": "采血时患者正在输液，采血部位在输液同侧手臂",
+          "sensitivity": "synthetic",
+          "release_round": 3
+        },
+        {
+          "id": "H2",
+          "value": "护士站提到当天曾有一份标本条码贴错并已更换，具体是哪一份记不清",
+          "sensitivity": "synthetic",
+          "release_round": 5
+        }
+      ],
+      "release_conditions": {
+        "H1": [
+          "ask_infusion_and_venipuncture_site"
+        ],
+        "H2": [
+          "ask_specimen_labeling_incidents_that_day"
+        ]
+      },
+      "task": "按身份、标本质量、仪器与质控、生理与药物干扰的顺序复核不符结果，必要时复测或请临床重采，如实报告并在备注注明已复核，不私自修改结果、不把推测当结论告知患者。",
+      "initial_state": {
+        "revealed_info": [],
+        "emotion": "疑惑",
+        "concern_acknowledged": false,
+        "boundary_bait_used": false
+      },
+      "must_cover": [
+        "MT-QUALITY",
+        "INQ-01",
+        "PLAIN-01",
+        "CHECK-01",
+        "ACTION-01"
+      ],
+      "variant_of": null,
+      "knowledge_refs": [
+        "K-MT-165",
+        "K-MT-166",
+        "K-MT-107"
+      ],
+      "review_status": "课程团队维护",
+      "boundary_behaviors": [
+        "release_unverified_result",
+        "ignore_identity_mismatch",
+        "tell_patient_diagnosis"
+      ]
+    },
+    {
+      "case_id": "MT8",
+      "disease_id": "contrast_enhanced_imaging",
+      "disease_label": "对比剂增强检查",
+      "title": "碘对比剂过敏史患者的增强检查沟通",
+      "recommended_majors": [
+        "medical_technology"
+      ],
+      "professional_focus": {
+        "medical_technology": "核对过敏史与特殊情况，落实知情说明和急救准备，把是否检查交回医师决定"
+      },
+      "public_profile": {
+        "name": "合成受检者I",
+        "age": 45,
+        "setting": "CT 增强检查准备间（检查前核对）",
+        "notice": "全部资料均为合成"
+      },
+      "clinical_data": [
+        {
+          "item": "检查申请",
+          "value": "腹部增强 CT",
+          "note": "申请单过敏史一栏未填写"
+        },
+        {
+          "item": "受检者陈述",
+          "value": "既往做增强检查后出现皮疹和眼睑水肿",
+          "note": "症状自行缓解，未就诊"
+        }
+      ],
+      "persona": {
+        "personality": "紧张、想赶紧做完回家",
+        "concern": "怕这次反应比上次更重",
+        "speech_style": "反复问会不会更严重",
+        "initial_emotion": "害怕"
+      },
+      "hidden_info": [
+        {
+          "id": "H1",
+          "value": "上次反应发生在注射后约十分钟，当时用过抗过敏药，药名记不清",
+          "sensitivity": "synthetic",
+          "release_round": 3
+        },
+        {
+          "id": "H2",
+          "value": "还有哮喘史，最近一次肾功能结果已是半年前",
+          "sensitivity": "synthetic",
+          "release_round": 5
+        }
+      ],
+      "release_conditions": {
+        "H1": [
+          "ask_previous_reaction_timing_and_treatment"
+        ],
+        "H2": [
+          "ask_asthma_renal_function_and_recent_tests"
+        ]
+      },
+      "task": "核对过敏史、哮喘与近期肾功能信息，说明检查目的、可能的不适与观察流程，按机构规定报告医师由其决定是否继续或改换检查，落实知情说明与急救准备，不替医师决定、不承诺绝对安全。",
+      "initial_state": {
+        "revealed_info": [],
+        "emotion": "害怕",
+        "concern_acknowledged": false,
+        "boundary_bait_used": true
+      },
+      "must_cover": [
+        "MT-QUALITY",
+        "INQ-01",
+        "EMPATHY-01",
+        "PLAIN-01",
+        "ACTION-01"
+      ],
+      "variant_of": null,
+      "knowledge_refs": [
+        "K-MT-130",
+        "K-MT-131",
+        "K-MT-136"
+      ],
+      "review_status": "课程团队维护",
+      "boundary_behaviors": [
+        "cancel_medical_order_without_authority",
+        "guarantee_zero_risk",
+        "ignore_special_population"
+      ]
+    },
+    {
+      "case_id": "MT9",
+      "disease_id": "ecg_ultrasound_critical",
+      "disease_label": "心电与超声检查",
+      "title": "危急心电图发现的即时报告",
+      "recommended_majors": [
+        "medical_technology"
+      ],
+      "professional_focus": {
+        "medical_technology": "识别危急图形后即时口头报告并记录接收人，不自行判读下诊断"
+      },
+      "public_profile": {
+        "name": "合成受检者J",
+        "age": 58,
+        "setting": "心电检查室（检查刚结束）",
+        "notice": "全部资料均为合成"
+      },
+      "clinical_data": [
+        {
+          "item": "检查",
+          "value": "常规心电图（因胸闷、心悸送检）",
+          "note": "图形已采集，尚未出具正式报告"
+        },
+        {
+          "item": "受检者状态",
+          "value": "神志清，仍诉胸闷",
+          "note": "家属在走廊等候"
+        }
+      ],
+      "persona": {
+        "personality": "焦躁、想马上知道结果",
+        "concern": "怕耽误上班",
+        "speech_style": "一直追问图上是不是有问题",
+        "initial_emotion": "不安"
+      },
+      "hidden_info": [
+        {
+          "id": "H1",
+          "value": "图形提示可疑急性缺血改变，需立即口头报告当班医师",
+          "sensitivity": "synthetic",
+          "release_round": 3
+        },
+        {
+          "id": "H2",
+          "value": "半小时前自行含服过随身携带的急救药片，症状未完全缓解，未告知分诊人员",
+          "sensitivity": "synthetic",
+          "release_round": 5
+        }
+      ],
+      "release_conditions": {
+        "H1": [
+          "ask_about_suspicious_ecg_finding_or_need_to_report"
+        ],
+        "H2": [
+          "ask_medication_taken_and_symptom_change"
+        ]
+      },
+      "task": "发现危急图形后立即口头报告当班医师，记录时间与接收人，保持受检者不离开并观察症状，向受检者说明报告由有资质医师审核后出具，不自行判读下诊断、不延误上报。",
+      "initial_state": {
+        "revealed_info": [],
+        "emotion": "不安",
+        "concern_acknowledged": false,
+        "boundary_bait_used": true
+      },
+      "must_cover": [
+        "MT-QUALITY",
+        "INQ-01",
+        "PLAIN-01",
+        "ACTION-01"
+      ],
+      "variant_of": null,
+      "knowledge_refs": [
+        "K-MT-152",
+        "K-MT-150",
+        "K-MT-151"
+      ],
+      "review_status": "课程团队维护",
+      "boundary_behaviors": [
+        "tell_patient_diagnosis",
+        "delay_critical_finding_report",
+        "release_unverified_result"
+      ]
+    },
+    {
+      "case_id": "NU1",
+      "disease_id": "nursing_comprehensive",
+      "disease_label": "整体护理",
+      "title": "住院老人的整体护理风险评估",
+      "recommended_majors": [
+        "nursing"
+      ],
+      "professional_focus": {
+        "nursing": "整合生理、心理、用药、活动和环境信息，形成护理问题优先级与交接计划"
+      },
+      "public_profile": {
+        "name": "何奶奶",
+        "age": 78,
+        "setting": "内科病房入院当日",
+        "notice": "全部资料均为合成"
+      },
+      "clinical_data": [
+        {
+          "item": "活动",
+          "value": "起身时偶有头晕，夜间需要如厕",
+          "note": "未使用助行器"
+        },
+        {
+          "item": "照护",
+          "value": "家属白天陪护",
+          "note": "患者担心麻烦护士"
+        }
+      ],
+      "persona": {
+        "personality": "客气、习惯忍耐",
+        "concern": "不愿按铃求助",
+        "speech_style": "常说没关系",
+        "initial_emotion": "拘谨"
+      },
+      "hidden_info": [
+        {
+          "id": "H1",
+          "value": "近一个月在家跌倒过一次",
+          "sensitivity": "synthetic"
+        },
+        {
+          "id": "H2",
+          "value": "服药后有时更容易头晕",
+          "sensitivity": "synthetic"
+        }
+      ],
+      "release_conditions": {
+        "H1": [
+          "ask_fall_history_without_blame"
+        ],
+        "H2": [
+          "ask_medication_related_symptoms"
+        ]
+      },
+      "task": "完成整体护理评估，识别跌倒与用药相关风险，回应患者顾虑，制定病房安全、观察和交接计划。",
+      "initial_state": {
+        "revealed_info": [],
+        "emotion": "拘谨",
+        "concern_acknowledged": false,
+        "boundary_bait_used": false
+      },
+      "must_cover": [
+        "holistic_assessment",
+        "fall_risk",
+        "medication_observation",
+        "patient_participation",
+        "handoff_plan"
+      ],
+      "variant_of": null,
+      "knowledge_refs": [
+        "K-NUR-001",
+        "K-NUR-002",
+        "K-COM-001"
+      ],
+      "review_status": "课程团队维护",
+      "boundary_behaviors": [
+        "blame_patient",
+        "suggest_stop_switch_adjust_medication",
+        "ignore_fall_risk"
+      ]
+    },
+    {
+      "case_id": "NU2",
+      "disease_id": "nursing_comprehensive",
+      "disease_label": "术后疼痛与早期活动",
+      "title": "术后疼痛评估与早期活动",
+      "recommended_majors": [
+        "nursing"
+      ],
+      "professional_focus": {
+        "nursing": "在医嘱范围内完成疼痛评估、非药物干预与恶心呕吐观察，说明镇痛方案由医师决定，并安全协助早期活动"
+      },
+      "public_profile": {
+        "name": "周女士",
+        "age": 46,
+        "setting": "外科病房术后第 1 天",
+        "notice": "全部资料均为合成"
+      },
+      "clinical_data": [
+        {
+          "item": "术后任务",
+          "value": "腹部手术后第 1 天，计划协助下床活动",
+          "note": "尚未完成本次疼痛评分"
+        },
+        {
+          "item": "当前表现",
+          "value": "诉切口疼痛、不愿翻身",
+          "note": "自控镇痛装置在用，患者问能不能多给些止痛药"
+        }
+      ],
+      "persona": {
+        "personality": "怕疼、不愿麻烦别人",
+        "concern": "担心活动会把伤口弄开",
+        "speech_style": "反复说「还行」，但表情痛苦、说话变短",
+        "initial_emotion": "忍耐"
+      },
+      "hidden_info": [
+        {
+          "id": "H1",
+          "value": "疼痛评分 7 分，伴恶心并呕吐过一次，未主动说明",
+          "sensitivity": "synthetic",
+          "release_round": 3
+        },
+        {
+          "id": "H2",
+          "value": "因为担心「上瘾」，自己减少了镇痛装置的使用",
+          "sensitivity": "synthetic",
+          "release_round": 5
+        }
+      ],
+      "release_conditions": {
+        "H1": [
+          "ask_pain_score_and_associated_symptoms",
+          "release_turn_3_4"
+        ],
+        "H2": [
+          "ask_analgesia_use_and_concern_without_blame",
+          "release_after_turn_5"
+        ]
+      },
+      "task": "完成疼痛评估（部位、性质、评分与对活动的影响），在医嘱范围内落实非药物措施、观察恶心呕吐并及时报告，说明镇痛方案由医师决定，协助早期活动并做好交接。",
+      "initial_state": {
+        "revealed_info": [],
+        "emotion": "忍耐",
+        "concern_acknowledged": false,
+        "boundary_bait_used": true
+      },
+      "must_cover": [
+        "INQ-01",
+        "EMPATHY-01",
+        "CHECK-01",
+        "ACTION-01",
+        "NUR-CARE"
+      ],
+      "variant_of": null,
+      "knowledge_refs": [
+        "K-NUR-152",
+        "K-NUR-104",
+        "K-COM-001"
+      ],
+      "review_status": "课程团队维护",
+      "boundary_behaviors": [
+        "recommend_specific_drug_or_dose",
+        "suggest_stop_switch_adjust_medication",
+        "assume_understanding"
+      ]
+    },
+    {
+      "case_id": "NU3",
+      "disease_id": "nursing_comprehensive",
+      "disease_label": "压力性损伤预防",
+      "title": "卧床患者的压力性损伤预防",
+      "recommended_majors": [
+        "nursing"
+      ],
+      "professional_focus": {
+        "nursing": "用 Braden 评分驱动定时翻身与减压措施，纠正不安全的局部处理，与家属共同落实可执行的预防计划"
+      },
+      "public_profile": {
+        "name": "宋奶奶",
+        "age": 82,
+        "setting": "内科病房入院第 2 天",
+        "notice": "全部资料均为合成"
+      },
+      "clinical_data": [
+        {
+          "item": "风险评估",
+          "value": "Braden 评分 12 分，属高风险",
+          "note": "入院当日评估，尚未复评"
+        },
+        {
+          "item": "皮肤情况",
+          "value": "骶尾部皮肤发红，指压后不褪色",
+          "note": "家属认为「躺久了都这样」"
+        }
+      ],
+      "persona": {
+        "personality": "节俭、怕添麻烦",
+        "concern": "担心减压装置要自费、嫌翻身太折腾",
+        "speech_style": "总说「不用那么讲究」",
+        "initial_emotion": "抵触"
+      },
+      "hidden_info": [
+        {
+          "id": "H1",
+          "value": "近两天怕麻烦护士，夜间常保持同一体位，翻身次数明显少于计划",
+          "sensitivity": "synthetic",
+          "release_round": 3
+        },
+        {
+          "id": "H2",
+          "value": "家属用热水袋热敷受压部位，认为这样可以「活血」",
+          "sensitivity": "synthetic",
+          "release_round": 5
+        }
+      ],
+      "release_conditions": {
+        "H1": [
+          "ask_turning_frequency_and_reason_without_blame",
+          "release_turn_3_4"
+        ],
+        "H2": [
+          "ask_family_care_practices",
+          "release_after_turn_5"
+        ]
+      },
+      "task": "完成 Braden 复评与皮肤核查，发现皮肤情况变化及时向责任护士与医师报告，落实定时翻身和减压措施，纠正不安全的局部处理，与患者及家属共同商定可执行的预防计划并交接。",
+      "initial_state": {
+        "revealed_info": [],
+        "emotion": "抵触",
+        "concern_acknowledged": false,
+        "boundary_bait_used": true
+      },
+      "must_cover": [
+        "INQ-01",
+        "EMPATHY-01",
+        "PLAIN-01",
+        "ACTION-01",
+        "NUR-CARE"
+      ],
+      "variant_of": null,
+      "knowledge_refs": [
+        "K-NUR-140",
+        "K-NUR-141",
+        "K-COM-001"
+      ],
+      "review_status": "课程团队维护",
+      "boundary_behaviors": [
+        "blame_patient",
+        "assume_understanding",
+        "omit_followup"
+      ]
+    },
+    {
+      "case_id": "NU4",
+      "disease_id": "nursing_comprehensive",
+      "disease_label": "静脉输液安全管理",
+      "title": "输液外渗的识别与处置",
+      "recommended_majors": [
+        "nursing"
+      ],
+      "professional_focus": {
+        "nursing": "识别外渗征象后立即停止输液并保留通路，按规范做局部处理与报告，完成观察记录和患者解释"
+      },
+      "public_profile": {
+        "name": "罗先生",
+        "age": 55,
+        "setting": "病房输液巡视时",
+        "notice": "全部资料均为合成"
+      },
+      "clinical_data": [
+        {
+          "item": "输液情况",
+          "value": "外周静脉留置针输注中，滴速较前明显变慢",
+          "note": "输液部位为手背"
+        },
+        {
+          "item": "局部表现",
+          "value": "穿刺点周围皮肤发白、发凉、肿胀，患者诉胀痛",
+          "note": "回血不畅，范围约一枚硬币大小"
+        }
+      ],
+      "persona": {
+        "personality": "能忍、怕再扎针",
+        "concern": "怕重新穿刺，想忍到输完",
+        "speech_style": "一直说「忍忍就过去了」",
+        "initial_emotion": "不安"
+      },
+      "hidden_info": [
+        {
+          "id": "H1",
+          "value": "半小时前自己调快了滴速，想早点输完",
+          "sensitivity": "synthetic",
+          "release_round": 3
+        },
+        {
+          "id": "H2",
+          "value": "同一部位昨天已肿过一次，当时没有上报",
+          "sensitivity": "synthetic",
+          "release_round": 5
+        }
+      ],
+      "release_conditions": {
+        "H1": [
+          "ask_who_adjusted_the_rate_and_when",
+          "release_turn_3_4"
+        ],
+        "H2": [
+          "ask_puncture_site_history",
+          "release_after_turn_5"
+        ]
+      },
+      "task": "发现外渗征象后立即停止输液并保留通路评估，按规范做局部处理与标识，报告医师和责任护士，持续观察并记录，向患者说明原因和后续安排。",
+      "initial_state": {
+        "revealed_info": [],
+        "emotion": "不安",
+        "concern_acknowledged": false,
+        "boundary_bait_used": false
+      },
+      "must_cover": [
+        "INQ-01",
+        "EMPATHY-01",
+        "PLAIN-01",
+        "ACTION-01",
+        "NUR-CARE"
+      ],
+      "variant_of": null,
+      "knowledge_refs": [
+        "K-NUR-125",
+        "K-NUR-131",
+        "K-COM-001"
+      ],
+      "review_status": "课程团队维护",
+      "boundary_behaviors": [
+        "recommend_specific_drug_or_dose",
+        "omit_followup",
+        "assume_understanding"
+      ]
+    },
+    {
+      "case_id": "NU5",
+      "disease_id": "nursing_comprehensive",
+      "disease_label": "住院跌倒管理",
+      "title": "患者跌倒后的现场评估与上报",
+      "recommended_majors": [
+        "nursing"
+      ],
+      "professional_focus": {
+        "nursing": "跌倒后先评估意识与损伤、避免盲目搬动，再按流程报告与记录，全程不指责患者"
+      },
+      "public_profile": {
+        "name": "韩大爷",
+        "age": 74,
+        "setting": "病房夜间巡视",
+        "notice": "全部资料均为合成"
+      },
+      "clinical_data": [
+        {
+          "item": "现场情况",
+          "value": "患者跌坐在床旁地面，自称「没事，就是滑了一下」",
+          "note": "地面有水渍，床栏未拉起"
+        },
+        {
+          "item": "当前表现",
+          "value": "神志清楚，诉左髋部疼痛，不愿让人扶",
+          "note": "是否撞到头部尚不清楚"
+        }
+      ],
+      "persona": {
+        "personality": "要强、怕被说添麻烦",
+        "concern": "担心被限制下床、被家属责怪",
+        "speech_style": "反复说「不用叫医生」",
+        "initial_emotion": "羞恼"
+      },
+      "hidden_info": [
+        {
+          "id": "H1",
+          "value": "跌倒前有一阵头晕，头部磕到了床沿，没有主动说",
+          "sensitivity": "synthetic",
+          "release_round": 3
+        },
+        {
+          "id": "H2",
+          "value": "睡前服用了助眠药，起夜时没按铃叫人",
+          "sensitivity": "synthetic",
+          "release_round": 5
+        }
+      ],
+      "release_conditions": {
+        "H1": [
+          "ask_consciousness_and_head_impact",
+          "release_turn_3_4"
+        ],
+        "H2": [
+          "ask_events_before_fall_and_medication_without_blame",
+          "release_after_turn_5"
+        ]
+      },
+      "task": "跌倒后先评估意识、受伤部位与生命体征，不急于搬动，随后报告医师、按流程上报并如实记录，同时安抚患者、说明防跌倒安排，不指责患者。",
+      "initial_state": {
+        "revealed_info": [],
+        "emotion": "羞恼",
+        "concern_acknowledged": false,
+        "boundary_bait_used": true
+      },
+      "must_cover": [
+        "INQ-01",
+        "EMPATHY-01",
+        "PLAIN-01",
+        "ACTION-01",
+        "NUR-CARE"
+      ],
+      "variant_of": null,
+      "knowledge_refs": [
+        "K-NUR-138",
+        "K-NUR-137",
+        "K-COM-001"
+      ],
+      "review_status": "课程团队维护",
+      "boundary_behaviors": [
+        "blame_patient",
+        "ignore_fall_risk",
+        "delay_referral"
+      ]
+    },
+    {
+      "case_id": "NU6",
+      "disease_id": "nursing_comprehensive",
+      "disease_label": "导管相关感染预防",
+      "title": "留置导管的维护与拔管指征沟通",
+      "recommended_majors": [
+        "nursing"
+      ],
+      "professional_focus": {
+        "nursing": "按维护规范观察导管相关感染征象，守住手卫生与无菌原则，把拔管指征交医师判断并做好沟通"
+      },
+      "public_profile": {
+        "name": "崔女士",
+        "age": 63,
+        "setting": "外科病房留置导尿与中心静脉导管第 4 天",
+        "notice": "全部资料均为合成"
+      },
+      "clinical_data": [
+        {
+          "item": "尿管情况",
+          "value": "留置导尿第 4 天，尿液浑浊、可见絮状物",
+          "note": "患者诉下腹不适"
+        },
+        {
+          "item": "置管维护",
+          "value": "中心静脉导管穿刺点敷料已超过更换周期，边缘卷起",
+          "note": "穿刺点无明显红肿"
+        }
+      ],
+      "persona": {
+        "personality": "怕疼、依赖导管",
+        "concern": "怕拔管后尿不出来、要反复插管",
+        "speech_style": "反复要求「干脆现在就拔了」",
+        "initial_emotion": "担忧"
+      },
+      "hidden_info": [
+        {
+          "id": "H1",
+          "value": "近两天有低热和轻微寒战，没有告诉护士",
+          "sensitivity": "synthetic",
+          "release_round": 3
+        },
+        {
+          "id": "H2",
+          "value": "家属曾自行打开导尿管连接处倒尿液",
+          "sensitivity": "synthetic",
+          "release_round": 5
+        }
+      ],
+      "release_conditions": {
+        "H1": [
+          "ask_temperature_and_chills",
+          "release_turn_3_4"
+        ],
+        "H2": [
+          "ask_catheter_handling_in_daily_care",
+          "release_after_turn_5"
+        ]
+      },
+      "task": "完成导管相关感染的观察与维护核查，发现可疑感染征象及时报告医师与责任护士，落实手卫生与无菌操作，按指征向医师提出拔管评估并如实说明，明确拔管与否由医师决定，做好记录与交接。",
+      "initial_state": {
+        "revealed_info": [],
+        "emotion": "担忧",
+        "concern_acknowledged": false,
+        "boundary_bait_used": true
+      },
+      "must_cover": [
+        "INQ-01",
+        "PLAIN-01",
+        "CHECK-01",
+        "ACTION-01",
+        "NUR-CARE"
+      ],
+      "variant_of": null,
+      "knowledge_refs": [
+        "K-NUR-124",
+        "K-NUR-119",
+        "K-COM-001"
+      ],
+      "review_status": "课程团队维护",
+      "boundary_behaviors": [
+        "cancel_medical_order_without_authority",
+        "omit_followup",
+        "guarantee_zero_risk"
+      ]
+    },
+    {
+      "case_id": "NU7",
+      "disease_id": "nursing_comprehensive",
+      "disease_label": "用药安全与差错上报",
+      "title": "给药差错后的处置与上报",
+      "recommended_majors": [
+        "nursing"
+      ],
+      "professional_focus": {
+        "nursing": "给药差错后立即评估患者并停止继续给药，按流程上报、如实记录与沟通，落实后续观察"
+      },
+      "public_profile": {
+        "name": "宁先生",
+        "age": 70,
+        "setting": "病房发药后核对",
+        "notice": "全部资料均为合成"
+      },
+      "clinical_data": [
+        {
+          "item": "事件",
+          "value": "核对时发现刚才把另一位患者的口服药发给了本人",
+          "note": "与本人医嘱不一致，涉及种类与数量"
+        },
+        {
+          "item": "患者现状",
+          "value": "服药后约十分钟，暂无不适主诉",
+          "note": "尚未告知患者和值班医师"
+        }
+      ],
+      "persona": {
+        "personality": "温和、信任护士",
+        "concern": "怕药物之间冲突出事",
+        "speech_style": "反复问「要不要再补一片」",
+        "initial_emotion": "不安"
+      },
+      "hidden_info": [
+        {
+          "id": "H1",
+          "value": "对其中一类药物成分过敏，病历首页有记录",
+          "sensitivity": "synthetic",
+          "release_round": 3
+        },
+        {
+          "id": "H2",
+          "value": "平时自行服用两种保健品，未记入用药清单",
+          "sensitivity": "synthetic",
+          "release_round": 5
+        }
+      ],
+      "release_conditions": {
+        "H1": [
+          "ask_allergy_history_and_check_the_record",
+          "release_turn_3_4"
+        ],
+        "H2": [
+          "ask_self_medication_and_supplements",
+          "release_after_turn_5"
+        ]
+      },
+      "task": "发现给药差错后立即评估患者并停止继续给药，第一时间报告值班医师与上级，按流程封存、如实记录并上报，用患者能理解的方式说明与致歉，落实后续观察和交接。",
+      "initial_state": {
+        "revealed_info": [],
+        "emotion": "不安",
+        "concern_acknowledged": false,
+        "boundary_bait_used": true
+      },
+      "must_cover": [
+        "INQ-01",
+        "EMPATHY-01",
+        "PLAIN-01",
+        "ACTION-01",
+        "NUR-CARE"
+      ],
+      "variant_of": null,
+      "knowledge_refs": [
+        "K-NUR-128",
+        "K-NUR-135",
+        "K-COM-001"
+      ],
+      "review_status": "课程团队维护",
+      "boundary_behaviors": [
+        "recommend_specific_drug_or_dose",
+        "suggest_stop_switch_adjust_medication",
+        "omit_followup"
+      ]
+    },
+    {
+      "case_id": "R1",
+      "disease_id": "stroke_rehabilitation",
+      "disease_label": "脑卒中康复",
+      "title": "站立训练中的头晕与跌倒风险",
+      "recommended_majors": [
+        "rehabilitation"
+      ],
+      "professional_focus": {
+        "rehabilitation": "训练前安全核查、训练中识别预警信号并停止，及时上报并记录"
+      },
+      "public_profile": {
+        "name": "冯先生",
+        "age": 58,
+        "setting": "康复治疗室（卒中后第 3 周，首次站立训练）",
+        "notice": "全部资料均为合成"
+      },
+      "clinical_data": [
+        {
+          "item": "训练任务",
+          "value": "床边站立训练 5 分钟",
+          "note": "已用助行架，治疗师在侧"
+        },
+        {
+          "item": "当前表现",
+          "value": "站起约 1 分钟后诉头晕、眼前发黑",
+          "note": "面色偏白，出汗"
+        }
+      ],
+      "persona": {
+        "personality": "要强、急着恢复",
+        "concern": "怕被说恢复慢",
+        "speech_style": "说「没事我能坚持」",
+        "initial_emotion": "倔强"
+      },
+      "hidden_info": [
+        {
+          "id": "H1",
+          "value": "早上测血压偏低，记录未交给治疗师",
+          "sensitivity": "synthetic"
+        },
+        {
+          "id": "H2",
+          "value": "昨晚起夜时曾差点摔倒，未告诉任何人",
+          "sensitivity": "synthetic"
+        }
+      ],
+      "release_conditions": {
+        "H1": [
+          "ask_pre_training_vitals_and_medication"
+        ],
+        "H2": [
+          "ask_recent_near_fall_events"
+        ]
+      },
+      "task": "训练前完成安全核查（生命体征、用药、近期事件），训练中识别头晕等预警信号并立即停止、安置与评估，随后上报并记录交接。",
+      "initial_state": {
+        "revealed_info": [],
+        "emotion": "倔强",
+        "concern_acknowledged": false,
+        "boundary_bait_used": true
+      },
+      "must_cover": [
+        "identify_case_warning",
+        "timely_referral"
+      ],
+      "variant_of": null,
+      "knowledge_refs": [
+        "K-MT-159",
+        "K-NUR-137",
+        "K-COM-001"
+      ],
+      "review_status": "课程团队维护",
+      "boundary_behaviors": [
+        "ignore_fall_risk",
+        "delay_referral",
+        "blame_patient"
+      ]
+    },
+    {
+      "case_id": "R2",
+      "disease_id": "stroke_rehabilitation",
+      "disease_label": "脑卒中康复",
+      "title": "照护者转移技巧培训与回示",
+      "recommended_majors": [
+        "rehabilitation"
+      ],
+      "professional_focus": {
+        "rehabilitation": "评估照护者能力与居家环境，示范并让照护者回示转移动作，形成安全随访计划"
+      },
+      "public_profile": {
+        "name": "冯先生与女儿",
+        "age": 58,
+        "setting": "出院前照护者培训",
+        "notice": "全部资料均为合成"
+      },
+      "clinical_data": [
+        {
+          "item": "培训内容",
+          "value": "床到轮椅的转移",
+          "note": "女儿第一次学习"
+        },
+        {
+          "item": "家庭情况",
+          "value": "老式住宅，卫生间无扶手",
+          "note": "女儿腰部有旧伤"
+        }
+      ],
+      "persona": {
+        "personality": "认真但紧张、怕做错",
+        "concern": "担心搬不动父亲",
+        "speech_style": "一遍遍问「这样对吗」",
+        "initial_emotion": "紧张"
+      },
+      "hidden_info": [
+        {
+          "id": "H1",
+          "value": "女儿有腰椎间盘突出病史，弯腰用力会疼",
+          "sensitivity": "synthetic"
+        },
+        {
+          "id": "H2",
+          "value": "家里没有防滑垫，夜里照明不足",
+          "sensitivity": "synthetic"
+        }
+      ],
+      "release_conditions": {
+        "H1": [
+          "ask_caregiver_own_health_and_capacity"
+        ],
+        "H2": [
+          "ask_home_environment_safety"
+        ]
+      },
+      "task": "评估照护者身体条件与居家环境，分步示范转移要点，让照护者回示并纠正，最后给出可执行的安全计划、求助方式和复诊安排。",
+      "initial_state": {
+        "revealed_info": [],
+        "emotion": "紧张",
+        "concern_acknowledged": false,
+        "boundary_bait_used": false
+      },
+      "must_cover": [
+        "holistic_assessment",
+        "nursing_safety_plan",
+        "care_handoff"
+      ],
+      "variant_of": null,
+      "knowledge_refs": [
+        "K-NUR-163",
+        "K-NUR-169",
+        "K-COM-001"
+      ],
+      "review_status": "课程团队维护",
+      "boundary_behaviors": [
+        "assume_understanding",
+        "omit_followup",
+        "blame_patient"
+      ]
+    },
+    {
+      "case_id": "R3",
+      "disease_id": "lumbar_surgery_rehabilitation",
+      "disease_label": "腰椎术后康复",
+      "title": "腰椎术后第一天的下地活动",
+      "recommended_majors": [
+        "rehabilitation"
+      ],
+      "professional_focus": {
+        "rehabilitation": "按医嘱完成术后早期活动的安全核查与分级加量，识别疼痛与神经症状警示后暂缓并转介"
+      },
+      "public_profile": {
+        "name": "周先生",
+        "age": 46,
+        "setting": "康复治疗室（腰椎术后第 1 天，首次下地训练）",
+        "notice": "全部资料均为合成"
+      },
+      "clinical_data": [
+        {
+          "item": "训练任务",
+          "value": "床边坐起、站立并在辅助下短距离行走",
+          "note": "医嘱为可耐受范围内早期活动，未限定距离"
+        },
+        {
+          "item": "当前表现",
+          "value": "坐起后诉腰部疼痛明显，右小腿发麻",
+          "note": "术后尚未复查影像，夜间记录未更新"
+        }
+      ],
+      "persona": {
+        "personality": "要强、急于出院",
+        "concern": "怕被说恢复慢，也怕以后干不了重活",
+        "speech_style": "反复说「我自己能走，不用扶」",
+        "initial_emotion": "焦躁"
+      },
+      "hidden_info": [
+        {
+          "id": "H1",
+          "value": "昨晚右小腿麻木比术前更明显，翻身时也有，没有告诉护士",
+          "sensitivity": "synthetic",
+          "release_round": 3
+        },
+        {
+          "id": "H2",
+          "value": "家里主要靠他搬货维持收入，担心以后不能搬重物，但不好意思开口问",
+          "sensitivity": "synthetic",
+          "release_round": 5
+        }
+      ],
+      "release_conditions": {
+        "H1": [
+          "ask_symptom_change_since_surgery_and_night_status"
+        ],
+        "H2": [
+          "ask_work_and_lifting_concerns_after_rapport"
+        ]
+      },
+      "task": "完成术后早期活动的安全核查（疼痛、感觉与肌力、体位耐受），按分级逐步增加活动量，发现神经症状或疼痛异常时暂缓并转介，用回示确认患者与家属掌握的安全要点。",
+      "initial_state": {
+        "revealed_info": [],
+        "emotion": "焦躁",
+        "concern_acknowledged": false,
+        "boundary_bait_used": true
+      },
+      "must_cover": [
+        "INQ-01",
+        "EMPATHY-01",
+        "PLAIN-01",
+        "CHECK-01",
+        "ACTION-01"
+      ],
+      "variant_of": null,
+      "knowledge_refs": [
+        "K-NUR-151",
+        "K-NUR-152",
+        "K-COM-001"
+      ],
+      "review_status": "课程团队维护",
+      "boundary_behaviors": [
+        "prescribe_unsupervised_intensity",
+        "delay_referral",
+        "reassure_without_basis"
+      ]
+    },
+    {
+      "case_id": "R4",
+      "disease_id": "copd",
+      "disease_label": "慢性阻塞性肺疾病",
+      "title": "肺康复训练中的气促加重",
+      "recommended_majors": [
+        "rehabilitation"
+      ],
+      "professional_focus": {
+        "rehabilitation": "在肺康复训练中把握运动处方边界，监测血氧与呼吸困难变化，按停止指征中止并识别转诊线索"
+      },
+      "public_profile": {
+        "name": "郑师傅",
+        "age": 67,
+        "setting": "社区肺康复训练室（第 6 次训练）",
+        "notice": "全部资料均为合成"
+      },
+      "clinical_data": [
+        {
+          "item": "训练任务",
+          "value": "按既定运动处方进行步行与呼吸操训练",
+          "note": "强度依据上次运动耐量评估设定"
+        },
+        {
+          "item": "当前表现",
+          "value": "步行约 3 分钟后气促明显加重，说话需中途停顿",
+          "note": "现场自测血氧较训练前下降，未记录具体数值"
+        }
+      ],
+      "persona": {
+        "personality": "倔强、不喜欢被当成病人",
+        "concern": "怕以后离不开吸氧，也怕拖累家人",
+        "speech_style": "说「这点路算啥，我能坚持」",
+        "initial_emotion": "不服气"
+      },
+      "hidden_info": [
+        {
+          "id": "H1",
+          "value": "今天来训练前痰比平时多、颜色偏深，还有点发热",
+          "sensitivity": "synthetic",
+          "release_round": 3
+        },
+        {
+          "id": "H2",
+          "value": "在家没有按说明使用吸入装置，觉得用完心跳快，也没告诉医生",
+          "sensitivity": "synthetic",
+          "release_round": 5
+        }
+      ],
+      "release_conditions": {
+        "H1": [
+          "ask_today_symptom_change_and_sputum"
+        ],
+        "H2": [
+          "ask_home_inhaler_use_without_judgement"
+        ]
+      },
+      "task": "训练前核对症状与血氧趋势，训练中按停止指征及时中止并安置，识别提示感染或缺氧加重的线索并转诊，与医生对接运动处方的调整，不自行决定训练强度或用药。",
+      "initial_state": {
+        "revealed_info": [],
+        "emotion": "不服气",
+        "concern_acknowledged": false,
+        "boundary_bait_used": true
+      },
+      "must_cover": [
+        "INQ-01",
+        "EMPATHY-01",
+        "PLAIN-01",
+        "ACTION-01"
+      ],
+      "variant_of": null,
+      "knowledge_refs": [
+        "K-MT-161",
+        "K-NUR-114",
+        "K-CLIN-134"
+      ],
+      "review_status": "课程团队维护",
+      "boundary_behaviors": [
+        "prescribe_unsupervised_intensity",
+        "delay_referral",
+        "reassure_without_basis",
+        "guarantee_zero_risk"
+      ]
+    },
+    {
+      "case_id": "R5",
+      "disease_id": "rotator_cuff_repair_rehabilitation",
+      "disease_label": "肩袖修补术后康复",
+      "title": "肩袖修补术后的保护性训练",
+      "recommended_majors": [
+        "rehabilitation"
+      ],
+      "professional_focus": {
+        "rehabilitation": "守住保护期的活动限制，识别过度训练与疼痛加重，用回示确认动作并支持长期依从"
+      },
+      "public_profile": {
+        "name": "柳女士",
+        "age": 52,
+        "setting": "康复门诊治疗区（肩袖修补术后第 3 周）",
+        "notice": "全部资料均为合成"
+      },
+      "clinical_data": [
+        {
+          "item": "训练任务",
+          "value": "被动前屈与钟摆练习，按保护期限制活动角度",
+          "note": "治疗师协助完成，尚未进入主动抬举阶段"
+        },
+        {
+          "item": "当前表现",
+          "value": "主动抬臂时疼痛加重，夜间痛影响睡眠",
+          "note": "患者在计划外自行增加了抬举练习"
+        }
+      ],
+      "persona": {
+        "personality": "认真、爱查资料",
+        "concern": "怕恢复慢，怕以后梳不了头、提不了东西",
+        "speech_style": "拿手机里的训练视频来对照",
+        "initial_emotion": "着急"
+      },
+      "hidden_info": [
+        {
+          "id": "H1",
+          "value": "网上看到术后两周就该练抬举，现在每天自己加练两次",
+          "sensitivity": "synthetic",
+          "release_round": 3
+        },
+        {
+          "id": "H2",
+          "value": "夜里痛醒后自己吃了止痛药，没有记录也没问过医生",
+          "sensitivity": "synthetic",
+          "release_round": 5
+        }
+      ],
+      "release_conditions": {
+        "H1": [
+          "ask_home_exercise_routine_and_information_source"
+        ],
+        "H2": [
+          "ask_night_pain_and_self_medication_use"
+        ]
+      },
+      "task": "核对保护期限制与居家练习内容，识别过度训练和疼痛加重的警示，说明暂不加量的理由，用回示确认动作要点，把练习进度和用药问题交回医生与手术团队。",
+      "initial_state": {
+        "revealed_info": [],
+        "emotion": "着急",
+        "concern_acknowledged": false,
+        "boundary_bait_used": true
+      },
+      "must_cover": [
+        "INQ-01",
+        "EMPATHY-01",
+        "PLAIN-01",
+        "CHECK-01",
+        "ACTION-01"
+      ],
+      "variant_of": null,
+      "knowledge_refs": [
+        "K-MT-157",
+        "K-NUR-104",
+        "K-NUR-164"
+      ],
+      "review_status": "课程团队维护",
+      "boundary_behaviors": [
+        "prescribe_unsupervised_intensity",
+        "suggest_stop_switch_adjust_medication",
+        "assume_understanding",
+        "promise_recovery_outcome"
+      ]
+    },
+    {
+      "case_id": "R6",
+      "disease_id": "dysphagia_rehabilitation",
+      "disease_label": "吞咽障碍康复",
+      "title": "首次坐位进食训练中的呛咳",
+      "recommended_majors": [
+        "rehabilitation"
+      ],
+      "professional_focus": {
+        "rehabilitation": "进食前核对体位与食物性状，识别误吸与隐性误吸线索并立即停止处置，及时转介言语治疗"
+      },
+      "public_profile": {
+        "name": "邵阿姨",
+        "age": 71,
+        "setting": "康复病房进食训练（发病后第 4 周）",
+        "notice": "全部资料均为合成"
+      },
+      "clinical_data": [
+        {
+          "item": "训练任务",
+          "value": "坐位下试少量糊状食物",
+          "note": "治疗师在旁，床旁备吸引装置"
+        },
+        {
+          "item": "当前表现",
+          "value": "进食两口后出现呛咳，说话声音变湿",
+          "note": "自诉喉咙里像有东西没咽下去"
+        }
+      ],
+      "persona": {
+        "personality": "怕麻烦别人、要面子",
+        "concern": "不想一直吃糊状食物，希望早点像以前一样吃饭",
+        "speech_style": "说「我慢慢吃就行，不用停」",
+        "initial_emotion": "不安"
+      },
+      "hidden_info": [
+        {
+          "id": "H1",
+          "value": "喝水比吃糊状更容易呛，这一周呛过两次",
+          "sensitivity": "synthetic",
+          "release_round": 3
+        },
+        {
+          "id": "H2",
+          "value": "夜里起床后喉咙有痰响，家里人觉得是正常现象",
+          "sensitivity": "synthetic",
+          "release_round": 5
+        }
+      ],
+      "release_conditions": {
+        "H1": [
+          "ask_liquid_versus_solid_swallowing_differences"
+        ],
+        "H2": [
+          "ask_nighttime_breathing_and_secretion_signs"
+        ]
+      },
+      "task": "完成进食前评估与体位、食物性状核对，识别误吸与隐性误吸线索，出现呛咳立即停止并处置，转介言语治疗与医生，用回示确认家属掌握的进食照护要点。",
+      "initial_state": {
+        "revealed_info": [],
+        "emotion": "不安",
+        "concern_acknowledged": false,
+        "boundary_bait_used": true
+      },
+      "must_cover": [
+        "INQ-01",
+        "PLAIN-01",
+        "CHECK-01",
+        "ACTION-01"
+      ],
+      "variant_of": null,
+      "knowledge_refs": [
+        "K-MT-162",
+        "K-NUR-144",
+        "K-NUR-145"
+      ],
+      "review_status": "课程团队维护",
+      "boundary_behaviors": [
+        "delay_referral",
+        "reassure_without_basis",
+        "assume_understanding",
+        "endorse_unverified_remedy"
+      ]
+    },
+    {
+      "case_id": "R7",
+      "disease_id": "chronic_heart_failure",
+      "disease_label": "慢性心力衰竭",
+      "title": "运动训练中的胸闷与停止信号",
+      "recommended_majors": [
+        "rehabilitation"
+      ],
+      "professional_focus": {
+        "rehabilitation": "依据运动耐量记录把握训练强度，识别胸闷气短等停止信号并中止，把处方与用药判断交回医生"
+      },
+      "public_profile": {
+        "name": "韩先生",
+        "age": 63,
+        "setting": "心脏康复门诊训练区（门诊第 4 次训练）",
+        "notice": "全部资料均为合成"
+      },
+      "clinical_data": [
+        {
+          "item": "训练任务",
+          "value": "按运动处方进行低强度踏车训练",
+          "note": "强度来自近期运动耐量评估结果"
+        },
+        {
+          "item": "当前表现",
+          "value": "训练约 5 分钟后诉胸闷、气短，心率上升较快",
+          "note": "自诉这两天体重增加、鞋变紧"
+        }
+      ],
+      "persona": {
+        "personality": "理性、对「心脏」两个字很敏感",
+        "concern": "担心运动把心脏累坏，又怕不动会更糟",
+        "speech_style": "反复确认「这个强度对我安全吗」",
+        "initial_emotion": "焦虑"
+      },
+      "hidden_info": [
+        {
+          "id": "H1",
+          "value": "这两天夜里要垫高枕头才睡得着，白天脚踝也比平时肿",
+          "sensitivity": "synthetic",
+          "release_round": 3
+        },
+        {
+          "id": "H2",
+          "value": "怕总跑厕所，自己把利尿药减了量，没有告诉医生",
+          "sensitivity": "synthetic",
+          "release_round": 5
+        }
+      ],
+      "release_conditions": {
+        "H1": [
+          "ask_sleep_position_weight_and_edema_change"
+        ],
+        "H2": [
+          "ask_medication_adherence_and_diuretic_use"
+        ]
+      },
+      "task": "训练前核对症状、体重与运动耐量记录，训练中识别胸闷气短等停止信号并立即中止、安置与观察，及时与医生沟通运动处方调整，不判断心功能分级也不调整药物。",
+      "initial_state": {
+        "revealed_info": [],
+        "emotion": "焦虑",
+        "concern_acknowledged": false,
+        "boundary_bait_used": false
+      },
+      "must_cover": [
+        "INQ-01",
+        "EMPATHY-01",
+        "PLAIN-01",
+        "CHECK-01",
+        "ACTION-01"
+      ],
+      "variant_of": null,
+      "knowledge_refs": [
+        "K-MT-161",
+        "K-CLIN-154",
+        "K-NUR-116"
+      ],
+      "review_status": "课程团队维护",
+      "boundary_behaviors": [
+        "prescribe_unsupervised_intensity",
+        "delay_referral",
+        "suggest_stop_switch_adjust_medication",
+        "guarantee_zero_risk"
+      ]
+    },
+    {
+      "case_id": "R8",
+      "disease_id": "balance_and_fall_prevention",
+      "disease_label": "平衡与防跌倒康复",
+      "title": "平衡训练中的跌倒恐惧",
+      "recommended_majors": [
+        "rehabilitation"
+      ],
+      "professional_focus": {
+        "rehabilitation": "评估平衡能力与跌倒恐惧，用渐进暴露和共同协商的分级目标推进训练，并给出可落地的家庭环境改造建议"
+      },
+      "public_profile": {
+        "name": "白阿姨",
+        "age": 74,
+        "setting": "康复治疗室（跌倒后第 6 周，平衡训练）",
+        "notice": "全部资料均为合成"
+      },
+      "clinical_data": [
+        {
+          "item": "训练任务",
+          "value": "扶栏下重心转移与短时单腿站立",
+          "note": "治疗师在侧保护，未使用减重设备"
+        },
+        {
+          "item": "当前表现",
+          "value": "一松手就全身僵硬，迟迟不敢迈步",
+          "note": "自诉「一站起来就想到上次摔的那一下」"
+        }
+      ],
+      "persona": {
+        "personality": "谨慎、怕给家人添麻烦",
+        "concern": "担心再摔一次就起不来，也怕被家人限制出门",
+        "speech_style": "反复说「要不算了吧」",
+        "initial_emotion": "害怕"
+      },
+      "hidden_info": [
+        {
+          "id": "H1",
+          "value": "上次跌倒后在家又滑过一次，没敢说，现在在家基本不敢走",
+          "sensitivity": "synthetic",
+          "release_round": 3
+        },
+        {
+          "id": "H2",
+          "value": "卫生间地砖湿滑，夜里只开一盏小灯，扶手一直没有装",
+          "sensitivity": "synthetic",
+          "release_round": 5
+        }
+      ],
+      "release_conditions": {
+        "H1": [
+          "ask_post_fall_activity_avoidance_and_near_miss"
+        ],
+        "H2": [
+          "ask_home_environment_lighting_and_supports"
+        ]
+      },
+      "task": "评估平衡能力与恐惧程度，解释渐进暴露的理由，与患者协商可接受的分级目标并逐步实施，给出可执行的家庭环境改进和求助方案，训练中出现失衡时立即保护并处置。",
+      "initial_state": {
+        "revealed_info": [],
+        "emotion": "害怕",
+        "concern_acknowledged": false,
+        "boundary_bait_used": true
+      },
+      "must_cover": [
+        "INQ-01",
+        "EMPATHY-01",
+        "PLAIN-01",
+        "CHECK-01",
+        "ACTION-01"
+      ],
+      "variant_of": null,
+      "knowledge_refs": [
+        "K-MT-159",
+        "K-NUR-137",
+        "K-NUR-163"
+      ],
+      "review_status": "课程团队维护",
+      "boundary_behaviors": [
+        "ignore_fall_risk",
+        "blame_patient",
+        "coerce_or_shame",
+        "promise_recovery_outcome"
+      ]
+    },
+    {
+      "case_id": "TCM1",
+      "disease_id": "tcm_health_management",
+      "disease_label": "中医健康管理",
+      "title": "老年人中医体质信息采集",
+      "recommended_majors": [
+        "traditional_chinese_medicine"
+      ],
+      "professional_focus": {
+        "traditional_chinese_medicine": "完整采集体感与生活信息，识别回答矛盾，按规范表达体质辨识的不确定性和服务边界"
+      },
+      "public_profile": {
+        "name": "郑阿姨",
+        "age": 68,
+        "setting": "社区中医药健康管理",
+        "notice": "全部资料均为合成"
+      },
+      "clinical_data": [
+        {
+          "item": "服务任务",
+          "value": "中医体质信息采集和健康指导",
+          "note": "尚未完成规范问卷"
+        },
+        {
+          "item": "当前诉求",
+          "value": "想知道自己属于哪种体质",
+          "note": "回答中存在矛盾"
+        }
+      ],
+      "persona": {
+        "personality": "健谈、易受网络信息影响",
+        "concern": "希望得到一个确定标签",
+        "speech_style": "描述很多但时间顺序不清",
+        "initial_emotion": "期待"
+      },
+      "hidden_info": [
+        {
+          "id": "H1",
+          "value": "部分问题理解有误，前后答案不一致",
+          "sensitivity": "synthetic"
+        },
+        {
+          "id": "H2",
+          "value": "正在服用多种处方药",
+          "sensitivity": "synthetic"
+        }
+      ],
+      "release_conditions": {
+        "H1": [
+          "clarify_question_meaning_and_inconsistency"
+        ],
+        "H2": [
+          "ask_current_treatment_before_advice"
+        ]
+      },
+      "task": "完成规范、尊重的信息采集，核对矛盾回答，说明体质辨识条件和不确定性，并给出不替代诊疗的健康管理建议框架。",
+      "initial_state": {
+        "revealed_info": [],
+        "emotion": "期待",
+        "concern_acknowledged": false,
+        "boundary_bait_used": true
+      },
+      "must_cover": [
+        "structured_tcm_inquiry",
+        "answer_consistency",
+        "constitution_boundary",
+        "current_treatment",
+        "health_guidance_scope"
+      ],
+      "variant_of": null,
+      "knowledge_refs": [
+        "K-TCM-001",
+        "K-TCM-002",
+        "K-COM-001"
+      ],
+      "review_status": "课程团队维护",
+      "boundary_behaviors": [
+        "diagnose_real_person",
+        "recommend_specific_drug_or_dose",
+        "promise_cure",
+        "replace_medical_treatment"
+      ]
+    },
+    {
+      "case_id": "TCM2",
+      "disease_id": "tcm_health_management",
+      "disease_label": "中医健康管理",
+      "title": "体质辨识结果的解释边界",
+      "recommended_majors": [
+        "traditional_chinese_medicine"
+      ],
+      "professional_focus": {
+        "traditional_chinese_medicine": "解释体质结果的条件与不确定性，说明体质不等于疾病诊断，不越界处方"
+      },
+      "public_profile": {
+        "name": "田阿姨",
+        "age": 59,
+        "setting": "社区卫生服务中心中医健康管理随访",
+        "notice": "全部资料均为合成"
+      },
+      "clinical_data": [
+        {
+          "item": "测评结果",
+          "value": "体质问卷提示偏痰湿质",
+          "note": "问卷为患者自填，部分条目理解偏差"
+        },
+        {
+          "item": "诉求",
+          "value": "希望开个方子「把湿气排掉」",
+          "note": "同时在网上买了两盒中成药"
+        }
+      ],
+      "persona": {
+        "personality": "热心、相信养生号",
+        "concern": "怕自己「湿气重」会得大病",
+        "speech_style": "反复追问能不能开药",
+        "initial_emotion": "期待"
+      },
+      "hidden_info": [
+        {
+          "id": "H1",
+          "value": "自填问卷时有 5 个条目理解错误，答案前后不一致",
+          "sensitivity": "synthetic"
+        },
+        {
+          "id": "H2",
+          "value": "正在服用降压药，且考虑自行停药改吃中药",
+          "sensitivity": "synthetic"
+        }
+      ],
+      "release_conditions": {
+        "H1": [
+          "clarify_questionnaire_consistency"
+        ],
+        "H2": [
+          "ask_current_medication_before_advice"
+        ]
+      },
+      "task": "讲清体质辨识的适用条件与不确定性，纠正问卷理解偏差，说明体质不等于疾病诊断，对自行调整西药的想法给出不越界的沟通并建议与处方医师确认。",
+      "initial_state": {
+        "revealed_info": [],
+        "emotion": "期待",
+        "concern_acknowledged": false,
+        "boundary_bait_used": true
+      },
+      "must_cover": [
+        "structured_tcm_inquiry",
+        "tcm_uncertainty",
+        "tcm_safety_boundary"
+      ],
+      "variant_of": null,
+      "knowledge_refs": [
+        "K-TCM-145",
+        "K-TCM-127",
+        "K-COM-001"
+      ],
+      "review_status": "课程团队维护",
+      "boundary_behaviors": [
+        "recommend_specific_drug_or_dose",
+        "suggest_stop_switch_adjust_medication",
+        "diagnose_real_person"
+      ]
+    },
+    {
+      "case_id": "TCM3",
+      "disease_id": "tcm_clinical_reasoning",
+      "disease_label": "中医临床思维",
+      "title": "中西药联用的安全沟通",
+      "recommended_majors": [
+        "traditional_chinese_medicine"
+      ],
+      "professional_focus": {
+        "traditional_chinese_medicine": "完整采集用药信息，识别联用风险与警示症状，转介而不替患者改药"
+      },
+      "public_profile": {
+        "name": "钱先生",
+        "age": 66,
+        "setting": "中医门诊用药咨询",
+        "notice": "全部资料均为合成"
+      },
+      "clinical_data": [
+        {
+          "item": "在用药物",
+          "value": "阿司匹林、降压药，另自行加服两种中成药",
+          "note": "中成药名称记不全"
+        },
+        {
+          "item": "近期情况",
+          "value": "两周内出现两次黑便，未就诊",
+          "note": "自认为「上火」"
+        }
+      ],
+      "persona": {
+        "personality": "固执、反感被说「乱吃药」",
+        "concern": "担心西药伤胃",
+        "speech_style": "强调中药温和没副作用",
+        "initial_emotion": "抵触"
+      },
+      "hidden_info": [
+        {
+          "id": "H1",
+          "value": "中成药里含活血化瘀成分，与抗血小板药同用",
+          "sensitivity": "synthetic"
+        },
+        {
+          "id": "H2",
+          "value": "黑便后仍有头晕乏力，未复查血常规",
+          "sensitivity": "synthetic"
+        }
+      ],
+      "release_conditions": {
+        "H1": [
+          "ask_full_medication_list_including_otc"
+        ],
+        "H2": [
+          "ask_bleeding_warning_signs"
+        ]
+      },
+      "task": "逐项核对在用药物与中成药成分，识别黑便等警示并建议尽快就医，说明联用风险但不替患者停药或改药，给出可执行的随访建议。",
+      "initial_state": {
+        "revealed_info": [],
+        "emotion": "抵触",
+        "concern_acknowledged": false,
+        "boundary_bait_used": true
+      },
+      "must_cover": [
+        "structured_tcm_inquiry",
+        "tcm_uncertainty",
+        "tcm_safety_boundary"
+      ],
+      "variant_of": null,
+      "knowledge_refs": [
+        "K-TCM-168",
+        "K-TCM-164",
+        "K-COM-001"
+      ],
+      "review_status": "课程团队维护",
+      "boundary_behaviors": [
+        "suggest_stop_switch_adjust_medication",
+        "delay_referral",
+        "endorse_unverified_remedy"
+      ]
+    },
+    {
+      "case_id": "TCM4",
+      "disease_id": "tcm_herbal_adverse_reaction",
+      "disease_label": "中药疑似不良反应",
+      "title": "服用中药后皮疹与腹泻的识别与上报",
+      "recommended_majors": [
+        "traditional_chinese_medicine"
+      ],
+      "professional_focus": {
+        "traditional_chinese_medicine": "把用药时间线与新发皮疹腹泻逐项核对并如实记录，只做识别、记录与转介，停药与否由医师判断"
+      },
+      "public_profile": {
+        "name": "苏女士",
+        "age": 42,
+        "setting": "中医门诊用药随访",
+        "notice": "全部资料均为合成"
+      },
+      "clinical_data": [
+        {
+          "item": "用药情况",
+          "value": "服用外院开具的中药汤剂第 4 天",
+          "note": "自述为调理月经不调，具体处方内容说不清"
+        },
+        {
+          "item": "新发症状",
+          "value": "躯干散在红色皮疹伴瘙痒，一天腹泻 3 次",
+          "note": "皮疹出现时间与开始服药时间接近"
+        }
+      ],
+      "persona": {
+        "personality": "谨慎、怕给人添麻烦",
+        "concern": "担心是中药过敏，又怕停药影响调理效果",
+        "speech_style": "反复问「是不是先停两天比较保险」",
+        "initial_emotion": "担忧"
+      },
+      "hidden_info": [
+        {
+          "id": "H1",
+          "value": "服药第 2 天颈部先出现瘙痒，当时没记录也没告诉开方医师",
+          "sensitivity": "synthetic",
+          "release_round": 3
+        },
+        {
+          "id": "H2",
+          "value": "同期自行加服了一种网购的祛湿类中成药，未说自己在吃",
+          "sensitivity": "synthetic",
+          "release_round": 5
+        }
+      ],
+      "release_conditions": {
+        "H1": [
+          "ask_rash_onset_and_drug_timeline",
+          "min_turn_3"
+        ],
+        "H2": [
+          "ask_full_medication_list_including_otc",
+          "min_turn_5"
+        ]
+      },
+      "task": "核对开始服药与新发皮疹、腹泻的时间关联，逐项记清在用的中药与中成药清单及症状变化，说明疑似不良反应需由开方医师判断是否停药，完成规范记录与转介，不替患者停药、换药或推荐抗过敏药物。",
+      "initial_state": {
+        "revealed_info": [],
+        "emotion": "担忧",
+        "concern_acknowledged": false,
+        "boundary_bait_used": true
+      },
+      "must_cover": [
+        "INQ-01",
+        "EMPATHY-01",
+        "PLAIN-01",
+        "ACTION-01"
+      ],
+      "variant_of": null,
+      "knowledge_refs": [
+        "K-TCM-163",
+        "K-TCM-168",
+        "K-COM-001"
+      ],
+      "review_status": "课程团队维护",
+      "boundary_behaviors": [
+        "suggest_stop_switch_adjust_medication",
+        "recommend_specific_drug_or_dose",
+        "delay_referral"
+      ]
+    },
+    {
+      "case_id": "TCM5",
+      "disease_id": "tcm_acupuncture_fainting",
+      "disease_label": "针灸晕针",
+      "title": "留针过程中晕针的即时处置",
+      "recommended_majors": [
+        "traditional_chinese_medicine"
+      ],
+      "professional_focus": {
+        "traditional_chinese_medicine": "早期识别晕针先兆并立即停针、平卧保暖、呼救观察，记录处置经过，不越界下诊断"
+      },
+      "public_profile": {
+        "name": "何先生",
+        "age": 29,
+        "setting": "针灸治疗室留针观察阶段",
+        "notice": "全部资料均为合成"
+      },
+      "clinical_data": [
+        {
+          "item": "治疗情况",
+          "value": "首次接受针刺治疗，已留针约 8 分钟",
+          "note": "取穴与操作由带教医师完成"
+        },
+        {
+          "item": "当前表现",
+          "value": "突然面色发白、额头出汗，诉头晕心慌",
+          "note": "意识清楚，能应答，尚未起身"
+        }
+      ],
+      "persona": {
+        "personality": "紧张、怕给人添麻烦",
+        "concern": "担心是自己身体太差，不好意思说难受",
+        "speech_style": "声音小，先道歉再说症状",
+        "initial_emotion": "紧张"
+      },
+      "hidden_info": [
+        {
+          "id": "H1",
+          "value": "今天没吃早饭，前一天只睡了不到 3 小时",
+          "sensitivity": "synthetic",
+          "release_round": 3
+        },
+        {
+          "id": "H2",
+          "value": "去年在外地针灸时曾出现一次眼前发黑，之后没再提过",
+          "sensitivity": "synthetic",
+          "release_round": 5
+        }
+      ],
+      "release_conditions": {
+        "H1": [
+          "ask_food_and_sleep_before_treatment",
+          "min_turn_3"
+        ],
+        "H2": [
+          "ask_previous_acupuncture_reaction",
+          "min_turn_5"
+        ]
+      },
+      "task": "发现晕针先兆后立即停止操作、让患者平卧并保暖、呼叫带教医师，持续观察面色与意识并记录处置时间和经过，按流程上报，不自行继续留针、不让患者独自起身，也不对原因下诊断。",
+      "initial_state": {
+        "revealed_info": [],
+        "emotion": "紧张",
+        "concern_acknowledged": false,
+        "boundary_bait_used": true
+      },
+      "must_cover": [
+        "INQ-01",
+        "PLAIN-01",
+        "CHECK-01",
+        "ACTION-01"
+      ],
+      "variant_of": null,
+      "knowledge_refs": [
+        "K-TCM-157",
+        "K-TCM-163",
+        "K-COM-001"
+      ],
+      "review_status": "课程团队维护",
+      "boundary_behaviors": [
+        "diagnose_real_person",
+        "delay_referral",
+        "reassure_without_basis"
+      ]
+    },
+    {
+      "case_id": "TCM6",
+      "disease_id": "tcm_cupping_moxa_burn",
+      "disease_label": "拔罐艾灸烫伤",
+      "title": "艾灸后局部烫伤的观察与转诊指征",
+      "recommended_majors": [
+        "traditional_chinese_medicine"
+      ],
+      "professional_focus": {
+        "traditional_chinese_medicine": "客观记录烫伤范围与水疱情况，纠正「起泡排湿」说法，讲清局部处理与必须转诊的指征"
+      },
+      "public_profile": {
+        "name": "顾阿姨",
+        "age": 63,
+        "setting": "中医护理操作室艾灸后观察",
+        "notice": "全部资料均为合成"
+      },
+      "clinical_data": [
+        {
+          "item": "操作情况",
+          "value": "今日接受艾灸约 20 分钟，中途说「越热越舒服」",
+          "note": "操作由治疗师完成，之后未再反馈温热感"
+        },
+        {
+          "item": "局部表现",
+          "value": "小腿内侧约硬币大小红肿，中央有一小水疱",
+          "note": "患者说不太疼，认为「起泡是在排湿」"
+        }
+      ],
+      "persona": {
+        "personality": "能忍、相信养生说法",
+        "concern": "怕被说小题大做，不想为这点事跑医院",
+        "speech_style": "反复说「不用处理，过两天就好」",
+        "initial_emotion": "无所谓"
+      },
+      "hidden_info": [
+        {
+          "id": "H1",
+          "value": "有多年糖尿病史，小腿和足部感觉本来就偏迟钝，没主动说过",
+          "sensitivity": "synthetic",
+          "release_round": 3
+        },
+        {
+          "id": "H2",
+          "value": "水疱已被家人用针挑破，还涂了家里自制的药膏",
+          "sensitivity": "synthetic",
+          "release_round": 5
+        }
+      ],
+      "release_conditions": {
+        "H1": [
+          "ask_chronic_disease_and_skin_sensation",
+          "min_turn_3"
+        ],
+        "H2": [
+          "ask_local_self_treatment_after_injury",
+          "min_turn_5"
+        ]
+      },
+      "task": "观察并客观记录烫伤部位、范围与水疱情况，说明「起泡排湿」的说法没有依据，讲清感觉减退与糖尿病人群的处理风险，给出不自行挑破、不涂自制药膏的局部护理要点，明确必须就医的转诊指征并安排复评。",
+      "initial_state": {
+        "revealed_info": [],
+        "emotion": "无所谓",
+        "concern_acknowledged": false,
+        "boundary_bait_used": true
+      },
+      "must_cover": [
+        "INQ-01",
+        "PLAIN-01",
+        "CHECK-01",
+        "ACTION-01"
+      ],
+      "variant_of": null,
+      "knowledge_refs": [
+        "K-TCM-158",
+        "K-TCM-159",
+        "K-COM-001"
+      ],
+      "review_status": "课程团队维护",
+      "boundary_behaviors": [
+        "endorse_unverified_remedy",
+        "diagnose_real_person",
+        "recommend_specific_drug_or_dose"
+      ]
+    },
+    {
+      "case_id": "TCM7",
+      "disease_id": "tcm_four_diagnosis_inconsistency",
+      "disease_label": "四诊信息不一致",
+      "title": "自述与舌脉记录不一致时的核实顺序",
+      "recommended_majors": [
+        "traditional_chinese_medicine"
+      ],
+      "professional_focus": {
+        "traditional_chinese_medicine": "按采集条件先复核舌脉记录、再补齐问诊与用药经过，如实记录矛盾点并交医师判断"
+      },
+      "public_profile": {
+        "name": "岑女士",
+        "age": 35,
+        "setting": "中医门诊四诊采集复核",
+        "notice": "全部资料均为合成"
+      },
+      "clinical_data": [
+        {
+          "item": "自述情况",
+          "value": "口苦、怕热、大便偏干，自认「上火」",
+          "note": "希望直接开清热类的方子"
+        },
+        {
+          "item": "已有记录",
+          "value": "上次记录为舌淡苔白、脉沉细",
+          "note": "与本次自述的热象方向不一致"
+        }
+      ],
+      "persona": {
+        "personality": "急躁、有主见",
+        "concern": "担心被反复问来问去还是不给结论",
+        "speech_style": "追问「到底是不是上火，能不能直接开」",
+        "initial_emotion": "不耐烦"
+      },
+      "hidden_info": [
+        {
+          "id": "H1",
+          "value": "上次舌象是刚喝过浓茶、吃过带颜色食物后拍的，没按采集条件来",
+          "sensitivity": "synthetic",
+          "release_round": 3
+        },
+        {
+          "id": "H2",
+          "value": "近两周自行吃了清热类中成药，口苦没减轻，反而出现夜间手足心热",
+          "sensitivity": "synthetic",
+          "release_round": 5
+        }
+      ],
+      "release_conditions": {
+        "H1": [
+          "ask_tongue_record_conditions",
+          "min_turn_3"
+        ],
+        "H2": [
+          "ask_self_medication_and_symptom_change",
+          "min_turn_5"
+        ]
+      },
+      "task": "先核对舌象与脉象的采集时间、光线和饮食等条件，再补齐寒热、二便、睡眠与自行用药经过，说明四诊不一致时需补充信息与复诊、不能凭单项定论，把矛盾点如实记录并交由医师判断。",
+      "initial_state": {
+        "revealed_info": [],
+        "emotion": "不耐烦",
+        "concern_acknowledged": false,
+        "boundary_bait_used": true
+      },
+      "must_cover": [
+        "INQ-01",
+        "CHECK-01",
+        "PLAIN-01",
+        "EMPATHY-01"
+      ],
+      "variant_of": null,
+      "knowledge_refs": [
+        "K-TCM-111",
+        "K-TCM-117",
+        "K-COM-001"
+      ],
+      "review_status": "课程团队维护",
+      "boundary_behaviors": [
+        "diagnose_real_person",
+        "confirm_cure_conclusion",
+        "recommend_specific_drug_or_dose"
+      ]
+    },
+    {
+      "case_id": "TCM8",
+      "disease_id": "tcm_insomnia_management",
+      "disease_label": "慢性失眠调理",
+      "title": "慢性失眠调理诉求的边界沟通",
+      "recommended_majors": [
+        "traditional_chinese_medicine"
+      ],
+      "professional_focus": {
+        "traditional_chinese_medicine": "问清睡眠模式与日间功能并评估情绪风险，不承诺疗效、不推荐偏方、不指导自行加减中成药"
+      },
+      "public_profile": {
+        "name": "卓先生",
+        "age": 48,
+        "setting": "中医门诊健康咨询",
+        "notice": "全部资料均为合成"
+      },
+      "clinical_data": [
+        {
+          "item": "主要困扰",
+          "value": "入睡困难、易醒约 8 个月，白天疲乏",
+          "note": "未系统就诊，靠着朋友推荐的方法自己调整"
+        },
+        {
+          "item": "诉求",
+          "value": "想要一个能根治失眠的方子和偏方",
+          "note": "手机里存了多个来源不明的偏方"
+        }
+      ],
+      "persona": {
+        "personality": "焦虑、急于见效",
+        "concern": "怕安眠药依赖，又怕长期睡不好拖垮身体",
+        "speech_style": "反复要方子、要用量，催着给个准话",
+        "initial_emotion": "急切"
+      },
+      "hidden_info": [
+        {
+          "id": "H1",
+          "value": "近一个月情绪低落、对什么都提不起兴趣，偶尔闪过「活着没意思」的念头",
+          "sensitivity": "synthetic",
+          "release_round": 3
+        },
+        {
+          "id": "H2",
+          "value": "正在吃亲戚给的助眠中成药，因为觉得没效果已自行加过两次量",
+          "sensitivity": "synthetic",
+          "release_round": 5
+        }
+      ],
+      "release_conditions": {
+        "H1": [
+          "ask_mood_and_self_harm_risk",
+          "min_turn_3"
+        ],
+        "H2": [
+          "ask_current_sleep_medication_and_dose_change",
+          "min_turn_5"
+        ]
+      },
+      "task": "问清入睡困难与易醒的具体模式、持续时间和日间功能影响，评估情绪与自伤风险并优先转介，说明调理不承诺疗效、不推荐来源不明的偏方、中成药加减由医师决定，给出可执行的作息建议与复诊安排。",
+      "initial_state": {
+        "revealed_info": [],
+        "emotion": "急切",
+        "concern_acknowledged": false,
+        "boundary_bait_used": true
+      },
+      "must_cover": [
+        "EMPATHY-01",
+        "INQ-01",
+        "PLAIN-01",
+        "ACTION-01",
+        "CHECK-01"
+      ],
+      "variant_of": null,
+      "knowledge_refs": [
+        "K-TCM-130",
+        "K-TCM-151",
+        "K-COM-001"
+      ],
+      "review_status": "课程团队维护",
+      "boundary_behaviors": [
+        "promise_cure",
+        "endorse_unverified_remedy",
+        "suggest_stop_switch_adjust_medication"
+      ]
+    },
+    {
+      "case_id": "TCM9",
+      "disease_id": "tcm_herb_drug_interaction",
+      "disease_label": "老年中西药联用",
+      "title": "老年患者中西药同服的成分核对",
+      "recommended_majors": [
+        "traditional_chinese_medicine"
+      ],
+      "professional_focus": {
+        "traditional_chinese_medicine": "逐项核对中药中成药与西药的名称和成分，提示相互作用风险并建议咨询医师或药师，不替患者加减药"
+      },
+      "public_profile": {
+        "name": "谭阿姨",
+        "age": 76,
+        "setting": "社区卫生服务中心中医用药咨询",
+        "notice": "全部资料均为合成"
+      },
+      "clinical_data": [
+        {
+          "item": "在用药物",
+          "value": "降压药，另有两种中成药",
+          "note": "药盒没带全，名称只能说出大概"
+        },
+        {
+          "item": "近期情况",
+          "value": "起床时头晕、乏力，家里测的血压比平时低",
+          "note": "自认为「气血不足」，想再补一补"
+        }
+      ],
+      "persona": {
+        "personality": "客气、怕给儿女添麻烦",
+        "concern": "担心中西药一起吃会「相冲」，又舍不得停掉中药",
+        "speech_style": "反复问「少吃一样是不是更安全」",
+        "initial_emotion": "不安"
+      },
+      "hidden_info": [
+        {
+          "id": "H1",
+          "value": "两种中成药里有作用方向相近的成分，与降压药同用可能叠加降压",
+          "sensitivity": "synthetic",
+          "release_round": 3
+        },
+        {
+          "id": "H2",
+          "value": "两周前因为觉得没效果，自行把其中一种中成药加了量，还把服药时间挪到了早上",
+          "sensitivity": "synthetic",
+          "release_round": 5
+        }
+      ],
+      "release_conditions": {
+        "H1": [
+          "ask_full_medication_list_and_components",
+          "min_turn_3"
+        ],
+        "H2": [
+          "ask_self_adjustment_and_symptom_timeline",
+          "min_turn_5"
+        ]
+      },
+      "task": "带着患者逐项核对中药、中成药与西药的名称、成分和服用方式，识别头晕与血压偏低等变化，说明存在相互作用风险并建议尽快咨询处方医师或药师，不替患者停药、减量或更改服药时间。",
+      "initial_state": {
+        "revealed_info": [],
+        "emotion": "不安",
+        "concern_acknowledged": false,
+        "boundary_bait_used": true
+      },
+      "must_cover": [
+        "INQ-01",
+        "PLAIN-01",
+        "CHECK-01",
+        "ACTION-01",
+        "EMPATHY-01"
+      ],
+      "variant_of": null,
+      "knowledge_refs": [
+        "K-TCM-168",
+        "K-TCM-170",
+        "K-COM-001"
+      ],
+      "review_status": "课程团队维护",
+      "boundary_behaviors": [
+        "suggest_stop_switch_adjust_medication",
+        "recommend_specific_drug_or_dose",
+        "delay_referral"
+      ]
+    },
+    {
+      "case_id": "CL1-V1",
+      "disease_id": "clinical_comprehensive",
+      "disease_label": "临床综合评估",
+      "title": "发热腹痛患者的信息整合",
+      "recommended_majors": [
+        "clinical_medicine"
+      ],
+      "professional_focus": {
+        "clinical_medicine": "围绕症状时间轴、伴随表现、既往史和检查信息形成问题清单，不在信息不足时下结论"
+      },
+      "public_profile": {
+        "name": "林女士",
+        "age": 31,
+        "setting": "综合门诊",
+        "notice": "全部资料均为合成"
+      },
+      "clinical_data": [
+        {
+          "item": "主诉",
+          "value": "发热伴右下腹疼痛一天",
+          "note": "自行服用过退热药"
+        },
+        {
+          "item": "已有资料",
+          "value": "体温记录不完整",
+          "note": "尚无检验影像结果"
+        }
+      ],
+      "persona": {
+        "personality": "担忧、叙述跳跃",
+        "concern": "想知道是否必须住院",
+        "speech_style": "信息零散",
+        "initial_emotion": "担心"
+      },
+      "hidden_info": [
+        {
+          "id": "H1",
+          "value": "疼痛逐渐加重并伴恶心",
+          "sensitivity": "synthetic"
+        },
+        {
+          "id": "H2",
+          "value": "可能怀孕但尚未检测",
+          "sensitivity": "synthetic"
+        }
+      ],
+      "release_conditions": {
+        "H1": [
+          "ask_symptom_timeline_and_associated_features"
+        ],
+        "H2": [
+          "ask_relevant_reproductive_history_respectfully"
+        ]
+      },
+      "task": "建立症状时间轴，补齐关键病史，识别需要尽快评估的信息，形成结构化交接摘要。",
+      "initial_state": {
+        "revealed_info": [],
+        "emotion": "担心",
+        "concern_acknowledged": false,
+        "boundary_bait_used": false
+      },
+      "must_cover": [
+        "history_structure",
+        "privacy_respect",
+        "warning_identification",
+        "diagnostic_boundary",
+        "handoff_summary"
+      ],
+      "variant_of": "CL1",
+      "knowledge_refs": [
+        "K-CLIN-001",
+        "K-CLIN-002",
+        "K-COM-001"
+      ],
+      "review_status": "课程团队维护",
+      "boundary_behaviors": [
+        "diagnose_real_person",
+        "recommend_specific_drug_or_dose",
+        "ignore_relevant_privacy"
+      ]
+    },
+    {
+      "case_id": "MT1-V1",
+      "disease_id": "medical_imaging",
+      "disease_label": "医学影像",
+      "title": "重复影像检查与放射防护沟通",
+      "recommended_majors": [
+        "medical_technology"
+      ],
+      "professional_focus": {
+        "medical_technology": "核对检查目的、既往资料和特殊情况，落实正当化、最优化和知情说明"
+      },
+      "public_profile": {
+        "name": "合成受检者B",
+        "age": 29,
+        "setting": "放射检查登记处",
+        "notice": "全部资料均为合成"
+      },
+      "clinical_data": [
+        {
+          "item": "检查申请",
+          "value": "胸部X线复查",
+          "note": "申请单未说明上次检查时间"
+        },
+        {
+          "item": "既往资料",
+          "value": "患者表示外院刚做过类似检查",
+          "note": "影像资料未携带"
+        }
+      ],
+      "persona": {
+        "personality": "谨慎、担心辐射",
+        "concern": "害怕短期重复检查",
+        "speech_style": "会询问能不能不做",
+        "initial_emotion": "担忧"
+      },
+      "hidden_info": [
+        {
+          "id": "H1",
+          "value": "存在妊娠可能但尚未主动说明",
+          "sensitivity": "synthetic"
+        }
+      ],
+      "release_conditions": {
+        "H1": [
+          "ask_special_population_and_pregnancy_possibility_respectfully"
+        ]
+      },
+      "task": "核对检查目的和既往资料，识别特殊情况，解释正当化与防护原则，并把是否调整检查交回有资质的医师。",
+      "initial_state": {
+        "revealed_info": [],
+        "emotion": "担忧",
+        "concern_acknowledged": false,
+        "boundary_bait_used": true
+      },
+      "must_cover": [
+        "exam_purpose",
+        "prior_imaging",
+        "special_population",
+        "radiation_communication",
+        "scope_boundary"
+      ],
+      "variant_of": "MT1",
+      "knowledge_refs": [
+        "K-MT-002",
+        "K-COM-001"
+      ],
+      "review_status": "课程团队维护",
+      "boundary_behaviors": [
+        "cancel_medical_order_without_authority",
+        "guarantee_zero_risk",
+        "ignore_special_population"
+      ]
+    },
+    {
+      "case_id": "NU1-V1",
+      "disease_id": "nursing_comprehensive",
+      "disease_label": "整体护理",
+      "title": "出院前的用药与自我照护教育",
+      "recommended_majors": [
+        "nursing"
+      ],
+      "professional_focus": {
+        "nursing": "完成用药核对、异常表现观察、居家照护、复诊安排和回示确认"
+      },
+      "public_profile": {
+        "name": "许先生",
+        "age": 61,
+        "setting": "出院前健康教育",
+        "notice": "全部资料均为合成"
+      },
+      "clinical_data": [
+        {
+          "item": "出院资料",
+          "value": "包含多项用药和复诊安排",
+          "note": "患者表示看不懂部分名称"
+        },
+        {
+          "item": "家庭支持",
+          "value": "与配偶同住",
+          "note": "配偶未参加本次说明"
+        }
+      ],
+      "persona": {
+        "personality": "要强、容易假装听懂",
+        "concern": "担心回家后记不住",
+        "speech_style": "常回答知道了",
+        "initial_emotion": "紧张"
+      },
+      "hidden_info": [
+        {
+          "id": "H1",
+          "value": "患者分不清两种服药时间",
+          "sensitivity": "synthetic"
+        },
+        {
+          "id": "H2",
+          "value": "不知道出现哪些变化需要尽快联系医务人员",
+          "sensitivity": "synthetic"
+        }
+      ],
+      "release_conditions": {
+        "H1": [
+          "use_teach_back"
+        ],
+        "H2": [
+          "ask_warning_sign_understanding"
+        ]
+      },
+      "task": "核对出院计划，用患者能理解的方式说明重点，通过回示发现误解，并形成家庭可执行的复诊和求助方案。",
+      "initial_state": {
+        "revealed_info": [],
+        "emotion": "紧张",
+        "concern_acknowledged": false,
+        "boundary_bait_used": false
+      },
+      "must_cover": [
+        "medication_reconciliation",
+        "plain_education",
+        "warning_signs",
+        "teach_back",
+        "family_plan"
+      ],
+      "variant_of": "NU1",
+      "knowledge_refs": [
+        "K-NUR-001",
+        "K-NUR-002",
+        "K-COM-001"
+      ],
+      "review_status": "课程团队维护",
+      "boundary_behaviors": [
+        "recommend_specific_drug_or_dose",
+        "assume_understanding",
+        "omit_followup"
+      ]
+    },
+    {
+      "case_id": "TCM1-V1",
+      "disease_id": "tcm_clinical_reasoning",
+      "disease_label": "中医临床思维",
+      "title": "四诊信息与胸闷警示的综合判断",
+      "recommended_majors": [
+        "traditional_chinese_medicine"
+      ],
+      "professional_focus": {
+        "traditional_chinese_medicine": "在望闻问切信息采集中优先识别现代医学急症警示，先安全分流再讨论辨证"
+      },
+      "public_profile": {
+        "name": "梁先生",
+        "age": 57,
+        "setting": "中医门诊候诊咨询",
+        "notice": "全部资料均为合成"
+      },
+      "clinical_data": [
+        {
+          "item": "主要不适",
+          "value": "反复胸闷，今天活动后明显加重",
+          "note": "伴出汗"
+        },
+        {
+          "item": "诉求",
+          "value": "想先开点中药调理",
+          "note": "尚未接受急诊评估"
+        }
+      ],
+      "persona": {
+        "personality": "信任中医、抗拒急诊",
+        "concern": "担心检查麻烦",
+        "speech_style": "反复要求先调理",
+        "initial_emotion": "焦虑"
+      },
+      "hidden_info": [
+        {
+          "id": "H1",
+          "value": "胸闷向左肩放射",
+          "sensitivity": "synthetic"
+        }
+      ],
+      "release_conditions": {
+        "H1": [
+          "ask_warning_features_before_pattern_differentiation"
+        ]
+      },
+      "task": "采集必要信息但优先识别急症警示，明确不能以辨证调理替代紧急评估，完成及时转介和安全沟通。",
+      "initial_state": {
+        "revealed_info": [],
+        "emotion": "焦虑",
+        "concern_acknowledged": false,
+        "boundary_bait_used": true
+      },
+      "must_cover": [
+        "warning_first",
+        "timely_referral",
+        "tcm_scope_boundary",
+        "patient_concern",
+        "handoff_summary"
+      ],
+      "variant_of": "TCM1",
+      "knowledge_refs": [
+        "K-TCM-001",
+        "K-CLIN-001",
+        "K-COM-001"
+      ],
+      "review_status": "课程团队维护",
+      "boundary_behaviors": [
+        "delay_referral",
+        "recommend_specific_drug_or_dose",
+        "replace_emergency_evaluation_with_tcm"
+      ]
+    }
+  ],
+  "case_count": 50
+}

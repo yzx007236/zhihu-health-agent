@@ -1,0 +1,827 @@
+{
+  "rubric_version": "1.1.0",
+  "status": "active",
+  "effective_date": "2026-10-31",
+  "note": "知护评分规则 v1.1.0：评分项按病例族（CL/NU/MT/TCM/R/HM/D/P/S）生效，不再绑定单一病例编号；区分合成岗位模拟与真实医疗。",
+  "scoring_order": [
+    "item_scores",
+    "caps",
+    "red_lines",
+    "normalize_to_100"
+  ],
+  "levels": {
+    "full": 1.0,
+    "partial": 0.5,
+    "zero": 0.0
+  },
+  "dimensions": [
+    {
+      "dimension_id": "information",
+      "name": "信息询问"
+    },
+    {
+      "dimension_id": "measurement",
+      "name": "测量与记录"
+    },
+    {
+      "dimension_id": "application",
+      "name": "解释与应用"
+    },
+    {
+      "dimension_id": "safety",
+      "name": "风险与边界"
+    },
+    {
+      "dimension_id": "communication",
+      "name": "沟通与行动"
+    }
+  ],
+  "items": [
+    {
+      "item_id": "INQ-01",
+      "scope": [
+        "*"
+      ],
+      "dimension": "information",
+      "max_score": 10,
+      "behavior": "把模糊表述追问为任务相关的具体事实",
+      "evidence_required": "至少一条学生原话和轮次",
+      "full": {
+        "all_tags": [
+          "ask_open_question",
+          "ask_specific_fact"
+        ]
+      },
+      "partial": {
+        "any_tags": [
+          "ask_open_question",
+          "ask_specific_fact"
+        ]
+      },
+      "zero": "无有效原话证据",
+      "cap": null,
+      "red_line": false,
+      "knowledge_ref": "K-COM-001"
+    },
+    {
+      "item_id": "MEAS-01",
+      "scope": [
+        "C2",
+        "C2-V1",
+        "C4"
+      ],
+      "dimension": "measurement",
+      "max_score": 20,
+      "behavior": "核对设备、袖带、体位、休息、时段、重复测量和记录",
+      "evidence_required": "三个不同步骤标签为满分，一个或两个为部分分",
+      "full": {
+        "min_distinct_tags": 3,
+        "allowed_tags": [
+          "device",
+          "cuff",
+          "posture",
+          "rest",
+          "timing",
+          "repeat",
+          "record"
+        ]
+      },
+      "partial": {
+        "min_distinct_tags": 1,
+        "allowed_tags": [
+          "device",
+          "cuff",
+          "posture",
+          "rest",
+          "timing",
+          "repeat",
+          "record"
+        ]
+      },
+      "zero": "未提供规范测量指导",
+      "cap": null,
+      "red_line": false,
+      "knowledge_ref": "K-BP-001",
+      "applies_to": {
+        "case_prefixes": [
+          "CL",
+          "NU",
+          "R",
+          "S",
+          "HM",
+          "D",
+          "P",
+          "BP"
+        ],
+        "majors": [
+          "clinical_medicine",
+          "nursing",
+          "rehabilitation",
+          "health_management"
+        ]
+      }
+    },
+    {
+      "item_id": "INTERP-01",
+      "scope": [
+        "C1",
+        "C1-V1",
+        "C2",
+        "C2-V1",
+        "C4",
+        "C4-V1",
+        "D1",
+        "D1-V1"
+      ],
+      "dimension": "application",
+      "max_score": 15,
+      "behavior": "结合记录条件和连续趋势解释，不用单次记录下诊断",
+      "evidence_required": "连续记录及避免单次结论的原话",
+      "full": {
+        "all_tags": [
+          "use_trend",
+          "avoid_single_reading_conclusion"
+        ]
+      },
+      "partial": {
+        "any_tags": [
+          "use_trend",
+          "avoid_single_reading_conclusion"
+        ]
+      },
+      "zero": "无解释或凭单次记录下结论",
+      "cap": null,
+      "red_line": false,
+      "knowledge_ref": "K-BP-003",
+      "applies_to": {
+        "case_prefixes": [
+          "CL",
+          "NU",
+          "MT",
+          "TCM",
+          "R",
+          "HM",
+          "D",
+          "P",
+          "S",
+          "BP"
+        ],
+        "majors": [
+          "clinical_medicine",
+          "nursing",
+          "medical_technology",
+          "traditional_chinese_medicine",
+          "rehabilitation",
+          "health_management"
+        ]
+      }
+    },
+    {
+      "item_id": "RISK-01",
+      "scope": [
+        "C3",
+        "C3-V1",
+        "P1-V1",
+        "S1-V1",
+        "CL1",
+        "TCM1-V1",
+        "R1",
+        "CL2",
+        "CL3",
+        "CL5",
+        "CL6"
+      ],
+      "dimension": "safety",
+      "max_score": 25,
+      "behavior": "识别病例警示信息并给出及时、清晰的转介",
+      "evidence_required": "风险识别与及时转介的原话和轮次",
+      "full": {
+        "all_tags": [
+          "identify_case_warning",
+          "timely_referral"
+        ]
+      },
+      "partial": {
+        "any_tags": [
+          "identify_case_warning",
+          "timely_referral"
+        ]
+      },
+      "zero": "遗漏警示或只给一般观察建议",
+      "cap": {
+        "if_zero": 59,
+        "reason": "警示病例未完成及时转介"
+      },
+      "red_line": false,
+      "knowledge_ref": "K-BP-005",
+      "applies_to": {
+        "case_prefixes": [
+          "CL",
+          "NU",
+          "MT",
+          "TCM",
+          "R",
+          "HM",
+          "D",
+          "P",
+          "S",
+          "BP"
+        ],
+        "majors": [
+          "clinical_medicine",
+          "nursing",
+          "medical_technology",
+          "traditional_chinese_medicine",
+          "rehabilitation",
+          "health_management"
+        ]
+      }
+    },
+    {
+      "item_id": "BOUND-01",
+      "scope": [
+        "C1",
+        "C1-V1",
+        "C3",
+        "C3-V1",
+        "C5",
+        "C5-V1",
+        "D1",
+        "D1-V1",
+        "P1",
+        "P1-V1",
+        "CL5",
+        "CL6",
+        "CL7"
+      ],
+      "dimension": "safety",
+      "max_score": 20,
+      "behavior": "明确不自行停换调药并转向有资质医务人员",
+      "evidence_required": "禁止自行调整与专业咨询的原话",
+      "full": {
+        "all_tags": [
+          "no_self_adjustment",
+          "refer_qualified_professional"
+        ]
+      },
+      "partial": {
+        "any_tags": [
+          "no_self_adjustment",
+          "refer_qualified_professional"
+        ]
+      },
+      "zero": "未回应边界或提出调药建议",
+      "cap": null,
+      "red_line": true,
+      "knowledge_ref": "K-BP-004",
+      "applies_to": {
+        "case_prefixes": [
+          "CL",
+          "NU",
+          "TCM",
+          "HM",
+          "D",
+          "P",
+          "S",
+          "R",
+          "BP"
+        ],
+        "majors": [
+          "clinical_medicine",
+          "nursing",
+          "traditional_chinese_medicine",
+          "health_management",
+          "rehabilitation"
+        ]
+      }
+    },
+    {
+      "item_id": "EMPATHY-01",
+      "scope": [
+        "*"
+      ],
+      "dimension": "communication",
+      "max_score": 10,
+      "behavior": "询问并回应具体顾虑，避免指责恐吓",
+      "evidence_required": "顾虑确认和回应的学生原话",
+      "full": {
+        "all_tags": [
+          "ask_concern",
+          "acknowledge_concern"
+        ]
+      },
+      "partial": {
+        "any_tags": [
+          "ask_concern",
+          "acknowledge_concern",
+          "generic_reassurance"
+        ]
+      },
+      "zero": "无回应或出现指责恐吓",
+      "cap": null,
+      "red_line": false,
+      "knowledge_ref": "K-COM-001"
+    },
+    {
+      "item_id": "PLAIN-01",
+      "scope": [
+        "*"
+      ],
+      "dimension": "communication",
+      "max_score": 10,
+      "behavior": "使用通俗表达并解释原因",
+      "evidence_required": "带原话的通俗解释证据",
+      "full": {
+        "all_tags": [
+          "plain_language",
+          "explain_reason"
+        ]
+      },
+      "partial": {
+        "any_tags": [
+          "plain_language",
+          "explain_reason"
+        ]
+      },
+      "zero": "只有命令或术语堆砌",
+      "cap": null,
+      "red_line": false,
+      "knowledge_ref": "K-COM-001"
+    },
+    {
+      "item_id": "CHECK-01",
+      "scope": [
+        "*"
+      ],
+      "dimension": "communication",
+      "max_score": 10,
+      "behavior": "通过复述、演示或具体问题检查理解",
+      "evidence_required": "具体理解确认邀请的原话",
+      "full": {
+        "all_tags": [
+          "teach_back"
+        ]
+      },
+      "partial": {
+        "all_tags": [
+          "closed_understanding_check"
+        ]
+      },
+      "zero": "未确认理解",
+      "cap": null,
+      "red_line": false,
+      "knowledge_ref": "K-COM-001"
+    },
+    {
+      "item_id": "ACTION-01",
+      "scope": [
+        "*"
+      ],
+      "dimension": "communication",
+      "max_score": 15,
+      "behavior": "共同协商明确可执行的下一步",
+      "evidence_required": "协商和具体行动的原话",
+      "full": {
+        "all_tags": [
+          "shared_decision",
+          "specific_next_step"
+        ]
+      },
+      "partial": {
+        "any_tags": [
+          "shared_decision",
+          "specific_next_step"
+        ]
+      },
+      "zero": "无下一步或单向命令",
+      "cap": null,
+      "red_line": false,
+      "knowledge_ref": "K-COM-001"
+    },
+    {
+      "item_id": "CLIN-CORE",
+      "scope": [
+        "CL1",
+        "CL1-V1",
+        "CL2",
+        "CL3",
+        "CL4",
+        "CL5",
+        "CL6",
+        "CL7"
+      ],
+      "dimension": "application",
+      "max_score": 25,
+      "behavior": "建立症状时间轴，整合关键病史与危险线索，并形成结构化交接",
+      "evidence_required": "至少包含病史结构和风险或交接两类证据",
+      "full": {
+        "all_tags": [
+          "history_structure",
+          "information_synthesis",
+          "structured_handoff"
+        ]
+      },
+      "partial": {
+        "any_tags": [
+          "history_structure",
+          "information_synthesis",
+          "structured_handoff"
+        ]
+      },
+      "zero": "未形成结构化临床信息",
+      "cap": null,
+      "red_line": false,
+      "knowledge_ref": "K-CLIN-001",
+      "applies_to": {
+        "case_prefixes": [
+          "CL"
+        ],
+        "majors": [
+          "clinical_medicine"
+        ]
+      }
+    },
+    {
+      "item_id": "MT-QUALITY",
+      "scope": [
+        "MT1",
+        "MT1-V1",
+        "MT2",
+        "MT3",
+        "MT4",
+        "MT5",
+        "MT6",
+        "MT7",
+        "MT8",
+        "MT9"
+      ],
+      "dimension": "application",
+      "max_score": 25,
+      "behavior": "执行身份与流程核对，识别质量或防护风险，并守住技术岗位权限边界",
+      "evidence_required": "质量核对和岗位边界证据",
+      "full": {
+        "all_tags": [
+          "quality_check",
+          "technical_risk_control",
+          "scope_boundary"
+        ]
+      },
+      "partial": {
+        "any_tags": [
+          "quality_check",
+          "technical_risk_control",
+          "scope_boundary"
+        ]
+      },
+      "zero": "忽略质量风险或越权处理",
+      "cap": null,
+      "red_line": false,
+      "knowledge_ref": "K-MT-001",
+      "applies_to": {
+        "case_prefixes": [
+          "MT"
+        ],
+        "majors": [
+          "medical_technology"
+        ]
+      }
+    },
+    {
+      "item_id": "NUR-CARE",
+      "scope": [
+        "NU1",
+        "NU1-V1",
+        "R2",
+        "NU2",
+        "NU3",
+        "NU4",
+        "NU5",
+        "NU6",
+        "NU7"
+      ],
+      "dimension": "application",
+      "max_score": 25,
+      "behavior": "完成整体护理评估，确定安全问题优先级并形成观察、教育和交接计划",
+      "evidence_required": "整体评估和护理安全计划证据",
+      "full": {
+        "all_tags": [
+          "holistic_assessment",
+          "nursing_safety_plan",
+          "care_handoff"
+        ]
+      },
+      "partial": {
+        "any_tags": [
+          "holistic_assessment",
+          "nursing_safety_plan",
+          "care_handoff"
+        ]
+      },
+      "zero": "未形成护理问题和安全计划",
+      "cap": null,
+      "red_line": false,
+      "knowledge_ref": "K-NUR-001",
+      "applies_to": {
+        "case_prefixes": [
+          "NU",
+          "R",
+          "S",
+          "HM",
+          "D",
+          "P",
+          "BP"
+        ],
+        "majors": [
+          "nursing",
+          "rehabilitation",
+          "health_management",
+          "clinical_medicine"
+        ]
+      }
+    },
+    {
+      "item_id": "TCM-CORE",
+      "scope": [
+        "TCM1",
+        "TCM1-V1",
+        "TCM2",
+        "TCM3"
+      ],
+      "dimension": "application",
+      "max_score": 25,
+      "behavior": "规范采集中医相关信息，表达辨识不确定性，并优先处理现代医学警示和执业边界",
+      "evidence_required": "中医信息结构和安全边界证据",
+      "full": {
+        "all_tags": [
+          "structured_tcm_inquiry",
+          "tcm_uncertainty",
+          "tcm_safety_boundary"
+        ]
+      },
+      "partial": {
+        "any_tags": [
+          "structured_tcm_inquiry",
+          "tcm_uncertainty",
+          "tcm_safety_boundary"
+        ]
+      },
+      "zero": "信息不足即下结论或延误安全分流",
+      "cap": null,
+      "red_line": false,
+      "knowledge_ref": "K-TCM-001",
+      "applies_to": {
+        "case_prefixes": [
+          "TCM"
+        ],
+        "majors": [
+          "traditional_chinese_medicine"
+        ]
+      }
+    },
+    {
+      "item_id": "DIAG-01",
+      "scope": [
+        "C4",
+        "C4-V1",
+        "C5",
+        "C5-V1",
+        "D1",
+        "D1-V1",
+        "P1",
+        "P1-V1",
+        "S1",
+        "S1-V1",
+        "CL1",
+        "CL1-V1",
+        "MT1",
+        "MT1-V1",
+        "NU1",
+        "NU1-V1",
+        "TCM1",
+        "TCM1-V1",
+        "MT2",
+        "MT3",
+        "TCM2",
+        "TCM3",
+        "R1",
+        "R2",
+        "CL2",
+        "CL3"
+      ],
+      "dimension": "safety",
+      "max_score": 15,
+      "behavior": "在虚拟岗位权限内作有依据的专业判断：医生角色可提出工作诊断与鉴别，其他岗位作相应岗位判断并守住权限；同时说明证据限制",
+      "evidence_required": "岗位适当判断、依据与证据限制的原话",
+      "full": {
+        "all_tags": [
+          "role_appropriate_judgement",
+          "state_evidence_limit"
+        ]
+      },
+      "partial": {
+        "any_tags": [
+          "role_appropriate_judgement",
+          "defer_diagnosis",
+          "state_evidence_limit"
+        ]
+      },
+      "zero": "无证据宣布确定诊断、越过岗位权限，或完全未作专业判断",
+      "cap": {
+        "if_zero": 59,
+        "reason": "无依据确定诊断或超出岗位权限"
+      },
+      "red_line": false,
+      "knowledge_ref": "K-BP-006",
+      "applies_to": {
+        "case_prefixes": [
+          "CL",
+          "NU",
+          "MT",
+          "TCM",
+          "R",
+          "HM",
+          "D",
+          "P",
+          "S",
+          "BP"
+        ],
+        "majors": [
+          "clinical_medicine",
+          "nursing",
+          "medical_technology",
+          "traditional_chinese_medicine",
+          "rehabilitation",
+          "health_management"
+        ]
+      }
+    }
+  ],
+  "red_lines": [
+    {
+      "red_line_id": "RL-MED-01",
+      "tags": [
+        "recommend_medication_adjustment",
+        "recommend_specific_drug_or_dose",
+        "suggest_stop_switch_adjust_medication"
+      ],
+      "action": "相关安全项归零，总分封顶 59",
+      "cap_total": 59,
+      "zero_items": [
+        "BOUND-01"
+      ],
+      "knowledge_ref": "K-BP-004"
+    },
+    {
+      "red_line_id": "RL-DIAG-01",
+      "tags": [
+        "diagnose_real_person",
+        "unsupported_definitive_diagnosis"
+      ],
+      "action": "固定分流，总分封顶 59",
+      "cap_total": 59,
+      "zero_items": [
+        "BOUND-01",
+        "DIAG-01"
+      ],
+      "knowledge_ref": "K-BP-004"
+    },
+    {
+      "red_line_id": "RL-SCOPE-01",
+      "tags": [
+        "out_of_role_procedure"
+      ],
+      "action": "超出当前虚拟岗位权限，相关专业项归零，总分封顶 59；岗位权限内采血、血清处理、检查计划和护理操作不触发",
+      "cap_total": 59,
+      "zero_items": [
+        "CLIN-CORE",
+        "MT-QUALITY",
+        "NUR-CARE",
+        "TCM-CORE"
+      ],
+      "knowledge_ref": null
+    },
+    {
+      "red_line_id": "RL-RISK-01",
+      "tags": [
+        "delay_referral",
+        "discourage_visit",
+        "reassure_without_basis"
+      ],
+      "action": "风险项归零，总分封顶 59",
+      "cap_total": 59,
+      "zero_items": [
+        "RISK-01"
+      ],
+      "knowledge_ref": "K-BP-005"
+    },
+    {
+      "red_line_id": "RL-PRIV-01",
+      "tags": [
+        "store_real_health_identifier"
+      ],
+      "action": "不保存、不进入评分并提示删除真实个人健康信息",
+      "cap_total": 59,
+      "zero_items": [],
+      "knowledge_ref": null
+    },
+    {
+      "red_line_id": "RL-REM-01",
+      "tags": [
+        "endorse_unverified_remedy"
+      ],
+      "action": "保健品或偏方替代正规治疗，相关安全项归零，总分封顶 59",
+      "cap_total": 59,
+      "zero_items": [
+        "BOUND-01",
+        "DIAG-01"
+      ],
+      "knowledge_ref": "K-BP-004"
+    },
+    {
+      "red_line_id": "RL-CURE-01",
+      "tags": [
+        "confirm_cure_conclusion",
+        "promise_recovery_outcome"
+      ],
+      "action": "承诺治愈或保证疗效，相关安全与诊断项归零，总分封顶 59",
+      "cap_total": 59,
+      "zero_items": [
+        "BOUND-01",
+        "DIAG-01"
+      ],
+      "knowledge_ref": "K-BP-004"
+    },
+    {
+      "red_line_id": "RL-SAFE-01",
+      "tags": [
+        "prescribe_unsupervised_intensity"
+      ],
+      "action": "自行给出未经评估的训练强度或运动处方，风险项归零，总分封顶 59",
+      "cap_total": 59,
+      "zero_items": [
+        "RISK-01"
+      ],
+      "knowledge_ref": "K-BP-005"
+    },
+    {
+      "red_line_id": "RL-RESPECT-01",
+      "tags": [
+        "assume_understanding",
+        "blame_patient",
+        "coerce_or_shame"
+      ],
+      "action": "对患者施压、指责或羞辱，共情项归零，总分封顶 59",
+      "cap_total": 59,
+      "zero_items": [
+        "EMPATHY-01"
+      ],
+      "knowledge_ref": "K-COM-001"
+    },
+    {
+      "red_line_id": "RL-OUTCOME-01",
+      "tags": [
+        "guarantee_zero_risk",
+        "promise_cure"
+      ],
+      "action": "向患者保证零风险或承诺治愈，风险项归零，总分封顶 59",
+      "cap_total": 59,
+      "zero_items": [
+        "RISK-01"
+      ],
+      "knowledge_ref": "K-BP-004"
+    },
+    {
+      "red_line_id": "RL-SAFE-02",
+      "tags": [
+        "ignore_fall_risk",
+        "ignore_special_population",
+        "omit_followup"
+      ],
+      "action": "忽视跌倒等安全风险或漏掉随访安排，风险项归零，总分封顶 59",
+      "cap_total": 59,
+      "zero_items": [
+        "RISK-01"
+      ],
+      "knowledge_ref": "K-NUR-001"
+    },
+    {
+      "red_line_id": "RL-RECORD-01",
+      "tags": [
+        "release_unverified_result",
+        "omit_critical_value_record",
+        "alter_specimen_record",
+        "delay_critical_finding_report",
+        "ignore_identity_mismatch",
+        "cancel_medical_order_without_authority"
+      ],
+      "action": "突破报告与流程边界（未复核就发布结果、漏记危急值、改动标本记录、延误危急报告、无视身份不符或越权取消医嘱），相关专业项归零，总分封顶 59",
+      "cap_total": 59,
+      "zero_items": [
+        "CLIN-CORE",
+        "MT-QUALITY",
+        "NUR-CARE"
+      ],
+      "knowledge_ref": "K-MT-001"
+    }
+  ]
+}

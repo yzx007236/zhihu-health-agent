@@ -1,0 +1,278 @@
+{
+  "quiz_id": "ZH-PRETEST-English",
+  "version": "4.4.0",
+  "title": "医学英语小样（④ 英语题目锻炼医学专业素养）",
+  "note": "20 道原创情境题，依据本科规划教材的相应章节命制，并用权威临床资料交叉核验；重点考查医学术语、病历安全、沟通、循证方法与临床推理，而不是孤立背单词。",
+  "major_papers": {
+    "other": {
+      "english": [
+        "Q-EN-001",
+        "Q-EN-002",
+        "Q-EN-003",
+        "Q-EN-004",
+        "Q-EN-007",
+        "Q-EN-014",
+        "Q-EN-016",
+        "Q-EN-020"
+      ]
+    },
+    "clinical_medicine": {
+      "english": [
+        "Q-EN-001",
+        "Q-EN-002",
+        "Q-EN-003",
+        "Q-EN-004",
+        "Q-EN-007",
+        "Q-EN-014",
+        "Q-EN-016",
+        "Q-EN-020"
+      ]
+    },
+    "medical_technology": {
+      "english": [
+        "Q-EN-001",
+        "Q-EN-002",
+        "Q-EN-003",
+        "Q-EN-004",
+        "Q-EN-007",
+        "Q-EN-014",
+        "Q-EN-016",
+        "Q-EN-020"
+      ]
+    },
+    "nursing": {
+      "english": [
+        "Q-EN-001",
+        "Q-EN-002",
+        "Q-EN-003",
+        "Q-EN-004",
+        "Q-EN-007",
+        "Q-EN-014",
+        "Q-EN-016",
+        "Q-EN-020"
+      ]
+    },
+    "traditional_chinese_medicine": {
+      "english": [
+        "Q-EN-001",
+        "Q-EN-002",
+        "Q-EN-003",
+        "Q-EN-004",
+        "Q-EN-007",
+        "Q-EN-014",
+        "Q-EN-016",
+        "Q-EN-020"
+      ]
+    },
+    "rehabilitation": {
+      "english": [
+        "Q-EN-001",
+        "Q-EN-002",
+        "Q-EN-003",
+        "Q-EN-004",
+        "Q-EN-007",
+        "Q-EN-014",
+        "Q-EN-016",
+        "Q-EN-020"
+      ]
+    },
+    "health_management": {
+      "english": [
+        "Q-EN-001",
+        "Q-EN-002",
+        "Q-EN-003",
+        "Q-EN-004",
+        "Q-EN-007",
+        "Q-EN-014",
+        "Q-EN-016",
+        "Q-EN-020"
+      ]
+    }
+  },
+  "questions": [
+    {
+      "question_id": "Q-EN-001",
+      "node_id": "english_terminology",
+      "major_focus": [
+        "all"
+      ],
+      "type": "single_choice",
+      "stem": "A 68-year-old patient says, \"I become short of breath when I lie flat and now sleep on three pillows.\" Which entry best documents this symptom?",
+      "options": {
+        "A": "Dyspnea with three-pillow orthopnea",
+        "B": "Dysphagia aggravated by the supine position",
+        "C": "Exertional angina relieved by three pillows",
+        "D": "Syncope associated with sleep"
+      },
+      "answer": "A",
+      "score": 1,
+      "score_rule": "完全匹配标准答案得 1 分，否则 0 分",
+      "difficulty": "english",
+      "explanation": "选 A。Dyspnea 是呼吸困难；orthopnea 指平卧时呼吸困难加重、坐起或半卧可减轻，即端坐呼吸。题中需要垫三个枕头睡觉，因此 three-pillow orthopnea 能准确记录症状；dysphagia 是吞咽困难，syncope 是晕厥。",
+      "explanation_ref": "K-TEXTBOOK-EN-001",
+      "source": "《诊断学》第9版·常见症状·呼吸困难",
+      "source_note": "教材章节命题；K-EN-001 附 NCBI 临床资料交叉核验"
+    },
+    {
+      "question_id": "Q-EN-002",
+      "node_id": "english_abbreviation",
+      "major_focus": [
+        "all"
+      ],
+      "type": "single_choice",
+      "stem": "A PRN analgesic order states only \"morphine 2 mg IV PRN.\" What is the safest action before administration?",
+      "options": {
+        "A": "Give it whenever the patient asks",
+        "B": "Clarify the indication and minimum dosing interval",
+        "C": "Automatically administer it every four hours",
+        "D": "Replace IV administration with oral administration"
+      },
+      "answer": "B",
+      "score": 1,
+      "score_rule": "完全匹配标准答案得 1 分，否则 0 分",
+      "difficulty": "english",
+      "explanation": "PRN 表示按需，但安全执行还需明确适应证、剂量、途径与最短间隔。信息不全时应先澄清，不能自行假设频次或改变途径。",
+      "explanation_ref": "K-EN-002",
+      "source": "《基础护理学》第7版·给药与医嘱执行",
+      "source_note": "教材章节命题；K-EN-002 附 Joint Commission 官方资料交叉核验"
+    },
+    {
+      "question_id": "Q-EN-003",
+      "node_id": "english_physical_exam",
+      "major_focus": [
+        "all"
+      ],
+      "type": "single_choice",
+      "stem": "Cardiac examination reveals a grade 3/6 systolic murmur without a palpable thrill. Which interpretation is most accurate?",
+      "options": {
+        "A": "The finding is internally inconsistent because every grade 3 murmur has a thrill",
+        "B": "It is moderately loud and readily audible; absence of a thrill can be consistent",
+        "C": "It is very loud and must be audible with the stethoscope off the chest",
+        "D": "Its grade alone establishes the severity of the underlying valve lesion"
+      },
+      "answer": "B",
+      "score": 1,
+      "score_rule": "完全匹配标准答案得 1 分，否则 0 分",
+      "difficulty": "english",
+      "explanation": "选 B。教材的 Levine 收缩期杂音分级中，3/6 为中度、明显可闻，通常无震颤；4/6 级才伴震颤，6/6 级听诊器稍离胸壁仍可听到。杂音响度本身不能单独确定瓣膜病变严重程度。",
+      "explanation_ref": "K-TEXTBOOK-EN-003",
+      "source": "《诊断学》第9版·检体诊断·心脏检查",
+      "source_note": "教材章节命题；K-EN-003 附 NCBI Clinical Methods 交叉核验"
+    },
+    {
+      "question_id": "Q-EN-004",
+      "node_id": "english_abbreviation",
+      "major_focus": [
+        "all"
+      ],
+      "type": "single_choice",
+      "stem": "During handover, a colleague says only, \"The patient developed SOB overnight.\" What is the safest way to enter this information in the medical record?",
+      "options": {
+        "A": "Copy \"SOB\" because all clinical abbreviations have one meaning",
+        "B": "Document small bowel obstruction without further assessment",
+        "C": "Clarify the intended meaning and write the full term with clinical context",
+        "D": "Omit the symptom because abbreviations are never allowed"
+      },
+      "answer": "C",
+      "score": 1,
+      "score_rule": "完全匹配标准答案得 1 分，否则 0 分",
+      "difficulty": "english",
+      "explanation": "SOB 常指 shortness of breath，但缩写可能存在歧义。安全病历书写应先核实含义，再记录完整术语和具体临床语境。",
+      "explanation_ref": "K-EN-004",
+      "source": "《诊断学》第9版·病历书写",
+      "source_note": "教材章节命题；K-EN-004 附 Joint Commission 缩写安全规范交叉核验"
+    },
+    {
+      "question_id": "Q-EN-007",
+      "node_id": "english_clinical_reasoning",
+      "major_focus": [
+        "all"
+      ],
+      "type": "single_choice",
+      "stem": "A patient presents with BP 86/54 mmHg, HR 126/min, cool extremities and confusion. Which action should occur first while other team members obtain focused information?",
+      "options": {
+        "A": "Complete a comprehensive family pedigree",
+        "B": "Begin an ABCDE assessment and treat immediate life threats",
+        "C": "Wait for all laboratory results before intervention",
+        "D": "Provide a definitive diagnosis before reassessment"
+      },
+      "answer": "B",
+      "score": 1,
+      "score_rule": "完全匹配标准答案得 1 分，否则 0 分",
+      "difficulty": "english",
+      "explanation": "低血压、心动过速、肢冷和意识改变提示循环灌注不足。应按 ABCDE 同步评估和处理生命威胁，而不是等完整检查后再干预。",
+      "explanation_ref": "K-EN-007",
+      "source": "《诊断学》第9版·一般检查与生命体征",
+      "source_note": "教材情境命题；K-EN-007 附 Resuscitation Council UK ABCDE 官方资料交叉核验"
+    },
+    {
+      "question_id": "Q-EN-014",
+      "node_id": "english_handoff",
+      "major_focus": [
+        "all"
+      ],
+      "type": "single_choice",
+      "stem": "Which handoff message best follows the SBAR structure for a deteriorating patient?",
+      "options": {
+        "A": "Recommendation, Situation, Background, Assessment",
+        "B": "Situation, Background, Assessment, Recommendation or Request",
+        "C": "Symptoms, Bed number, Allergies, Reassurance",
+        "D": "Start with the complete lifetime history and omit a requested action"
+      },
+      "answer": "B",
+      "score": 1,
+      "score_rule": "完全匹配标准答案得 1 分，否则 0 分",
+      "difficulty": "english",
+      "explanation": "SBAR依次说明当前情况、相关背景、评估判断以及建议或请求。专业交接不仅汇报数据，还要明确担忧、需要什么以及多快需要响应。",
+      "explanation_ref": "K-EN-014",
+      "source": "《基础护理学》第7版·护理沟通与交接",
+      "source_note": "教材章节命题；K-EN-014 附 AHRQ TeamSTEPPS SBAR 官方工具交叉核验"
+    },
+    {
+      "question_id": "Q-EN-016",
+      "node_id": "english_nursing_assessment",
+      "major_focus": [
+        "all"
+      ],
+      "type": "single_choice",
+      "stem": "During skin assessment, the sacrum has intact skin with localized non-blanchable erythema. Which documentation is most accurate?",
+      "options": {
+        "A": "Stage 1 pressure injury; document location, appearance and preventive actions",
+        "B": "Stage 2 pressure injury because all redness indicates partial-thickness skin loss",
+        "C": "Unstageable pressure injury because the skin is intact",
+        "D": "Normal finding that requires no reassessment"
+      },
+      "answer": "A",
+      "score": 1,
+      "score_rule": "完全匹配标准答案得 1 分，否则 0 分",
+      "difficulty": "english",
+      "explanation": "完整皮肤上的局限性、不可压白红斑符合1期压力性损伤的核心描述。应记录部位、颜色、压白情况及预防措施，并持续评估；不能仅凭红斑判断为皮肤缺损。",
+      "explanation_ref": "K-EN-016",
+      "source": "《基础护理学》第7版·压力性损伤的预防与护理",
+      "source_note": "教材章节命题；K-EN-016 附 CDC 收录的分期资料交叉核验"
+    },
+    {
+      "question_id": "Q-EN-020",
+      "node_id": "english_evidence",
+      "major_focus": [
+        "all"
+      ],
+      "type": "single_choice",
+      "stem": "In a trial, an adverse outcome occurs in 20% of the control group and 10% of the treatment group. What are the absolute risk reduction and number needed to treat?",
+      "options": {
+        "A": "ARR 50%; NNT 2",
+        "B": "ARR 10 percentage points; NNT 10",
+        "C": "ARR 10 percentage points; NNT 100",
+        "D": "ARR 2%; NNT 50"
+      },
+      "answer": "B",
+      "score": 1,
+      "score_rule": "完全匹配标准答案得 1 分，否则 0 分",
+      "difficulty": "english",
+      "explanation": "选 B。对照组不良结局风险 20%，治疗组 10%，绝对风险降低（ARR）=20%−10%=10 个百分点=0.10，需治疗人数（NNT）=1/0.10=10。A 的 50% 是相对风险降低而非 ARR；C 的 NNT 算错；D 的 ARR 与 NNT 均不符合题设。以上数值适用于该试验观察期和人群。",
+      "explanation_ref": "K-TEXTBOOK-EN-020",
+      "source": "《流行病学》·临床试验效应指标",
+      "source_note": "教材章节命题；K-EN-020 附美国国家医学图书馆 MeSH 定义交叉核验"
+    }
+  ]
+}

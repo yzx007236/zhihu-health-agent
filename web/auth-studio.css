@@ -1,0 +1,26 @@
+/* Shared student / teacher split login. Real forms remain in classroom.js. */
+.course-auth-page>.course-header{display:none}
+.course-auth-page .course-shell{max-width:none;margin:0;padding:0}
+.auth-shell{display:grid;grid-template-columns:46% minmax(0,1fr);min-height:100dvh}
+.auth-brand-panel{position:relative;isolation:isolate;overflow:hidden;min-height:100dvh;background:#e9ecdf;padding:clamp(32px,4.1vw,72px);display:flex;flex-direction:column}
+.auth-brand{display:flex;align-items:center;gap:14px;width:fit-content;color:#34483e;font-size:29px;font-weight:650;line-height:1.4;z-index:1}.auth-brand:hover{text-decoration:none}.auth-brand img{width:53px;height:53px}.auth-brand small{display:block;font-size:8px;letter-spacing:2.4px;margin-top:2px;font-weight:400}
+.auth-brand-copy{position:relative;z-index:1;margin-top:clamp(38px,6vh,68px);margin-bottom:180px}.auth-brand-copy>p{font-size:9px;letter-spacing:2.4px;color:#6b775f;margin-bottom:22px}.auth-brand-copy>h2{font:600 clamp(30px,2.8vw,48px)/1.48 "Microsoft YaHei","PingFang SC",sans-serif;letter-spacing:1px;margin:0 0 24px;color:#34483e}.auth-brand-copy>div{font-size:14px;line-height:1.9;color:#758169;letter-spacing:.1px}
+.auth-architecture{position:absolute;bottom:0;left:0;width:100%;max-height:310px;object-fit:fill;object-position:bottom;z-index:0}
+.auth-form-panel{position:relative;display:flex;flex-direction:column;justify-content:center;align-items:center;padding:90px 48px 65px;min-width:0;background:#f8f7f2}
+.auth-free-entry{position:absolute;top:30px;right:38px;font-size:12px;color:var(--muted)}
+.auth-form-panel .course-auth{max-width:430px;width:100%;padding:0;margin:0;border:0;background:none;border-radius:0;box-shadow:none}
+.auth-form-panel .course-auth:before,.auth-form-panel .course-auth:after{display:none}
+.auth-form-panel .course-entry-back{font-size:11px;margin-bottom:27px}.auth-form-panel .course-tag{font-size:10px;background:#e7ebdc;margin-bottom:15px;padding:4px 10px}
+.auth-form-panel .course-auth>h1{font-size:30px;font-weight:600;letter-spacing:.5px;margin-bottom:8px}.auth-form-panel .course-auth>.muted{font-size:12px;color:#6a7463;line-height:1.9;margin-bottom:24px}
+.auth-form-panel label{font-size:12px;margin-top:18px;margin-bottom:0;color:#4c5b4b}.auth-form-panel input{background:#f8f7f2;border-color:#d5dacc;border-radius:5px;height:46px;font-size:14px;padding:11px 13px;margin-top:8px}.auth-form-panel form>button{height:46px;width:100%;margin-top:25px;letter-spacing:1px;background:#3e5142}
+.auth-form-panel .course-help{background:#eeefe6;border:0;border-radius:5px;font-size:11px;line-height:1.9;padding:13px 15px;margin-top:21px}
+.auth-form-panel .course-auth>form+p{margin-top:22px;font-size:12px}.auth-form-panel .course-auth>form+p a{border-bottom:1px solid #b3bea6;padding-bottom:2px;margin-left:5px}
+.course-setup{margin-top:22px;border-top:1px solid #d5dacc}.course-setup>summary{display:flex;justify-content:space-between;list-style:none;cursor:pointer;padding:16px 0;font-size:12px;color:var(--muted)}.course-setup>summary::-webkit-details-marker{display:none}.course-setup[open]>summary span{transform:rotate(45deg)}.course-setup>.muted{font-size:11px}
+.auth-footer{font-size:10px;letter-spacing:1px;color:#7c8573;margin-top:48px;text-align:center}.auth-form-panel :focus-visible{outline:2px solid #6f8168;outline-offset:4px}
+@media(min-width:1550px){.auth-shell{grid-template-columns:48% minmax(0,1fr)}.auth-brand-panel{padding-left:12%}.auth-brand-copy{margin-top:11vh}.auth-architecture{max-height:365px}}
+@media(max-width:980px){.auth-shell{grid-template-columns:43% minmax(0,1fr)}.auth-brand-panel{padding:35px 27px}.auth-brand-copy>h2{font-size:32px}.auth-brand-copy>div{font-size:12px}.auth-form-panel{padding:80px 32px 55px}.auth-architecture{max-height:240px}.auth-brand-copy{margin-bottom:180px}}
+@media(max-width:680px){
+  .auth-shell{grid-template-columns:1fr}.auth-brand-panel{min-height:0;padding:23px 24px 25px;display:block}.auth-brand{font-size:23px;gap:10px}.auth-brand img{width:40px;height:40px}.auth-brand small{font-size:7px;letter-spacing:1.8px}
+  .auth-brand-copy{margin:22px 0 0}.auth-brand-copy>p{font-size:8px;margin-bottom:9px}.auth-brand-copy>h2{font-size:24px;line-height:1.6;margin:0;max-width:245px;letter-spacing:0}.auth-brand-copy>h2 br{display:none}.auth-brand-copy>div{display:none}.auth-architecture{width:132px;height:110px;left:auto;right:-10px;opacity:.7}
+  .auth-form-panel{padding:25px 25px 40px;justify-content:flex-start}.auth-free-entry{position:static;align-self:flex-end;font-size:10px;margin-bottom:20px}.auth-form-panel .course-entry-back{margin-bottom:22px}.auth-form-panel .course-auth>h1{font-size:27px}.auth-form-panel .course-auth>.muted{font-size:11px;margin-bottom:20px}.auth-footer{margin-top:32px;font-size:9px}
+}

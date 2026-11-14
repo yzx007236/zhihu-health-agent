@@ -1,0 +1,10 @@
+{
+  "_note": "示例答卷，对应 other 卷（通用 5 题）全对。改用 --major 时需换成该专业卷的题目编号，见 references/quizzes/pretest.json 的 major_papers。",
+  "answers": {
+    "Q-BP-001": "A",
+    "Q-BP-002": "B",
+    "Q-BP-003": "C",
+    "Q-BP-004": "C",
+    "Q-BP-005": "C"
+  }
+}

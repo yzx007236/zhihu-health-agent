@@ -1,0 +1,1913 @@
+{
+  "version": "1.0",
+  "status": "conservative_teaching_gates_not_clinical_rules",
+  "backgrounds": {
+    "diabetes": {
+      "pattern": "糖尿病|diabetes",
+      "question": "是否有已确认的糖尿病背景（不能以单次血糖确诊）？"
+    },
+    "glycemia": {
+      "pattern": "高血糖|血糖升高|血糖异常",
+      "question": "是否为当前新发现的血糖异常？"
+    },
+    "elderly_diabetes": {
+      "pattern": "糖尿病|diabetes",
+      "question": "是否为糖尿病患者，而非仅有老年背景？"
+    },
+    "lipid": {
+      "pattern": "血脂|LDL|他汀|降脂",
+      "question": "是否正在进行血脂风险分层或降脂治疗评估？"
+    },
+    "ami": {
+      "pattern": "肠系膜缺血|肠缺血",
+      "question": "是否已有疑似或高度怀疑急性肠系膜缺血的评估依据？",
+      "suspected_allowed": true
+    },
+    "ugi": {
+      "pattern": "溃疡出血|消化道出血|内镜止血",
+      "question": "是否有当前溃疡/上消化道出血背景及其评估依据？"
+    },
+    "copd": {
+      "pattern": "慢阻肺|慢性阻塞性肺|COPD",
+      "question": "是否已确诊慢阻肺，不能仅凭气促或主题关联认定？"
+    },
+    "sleep": {
+      "pattern": "慢性失眠",
+      "question": "是否已确认成人慢性失眠，而非急性失眠？"
+    },
+    "ra": {
+      "pattern": "类风湿|类风湿关节炎",
+      "question": "是否已有明确类风湿关节炎背景？"
+    },
+    "transfusion": {
+      "pattern": "输血决策|输血阈值|考虑输血|判断输血|是否输血",
+      "question": "是否是临床输血决策，而非交叉配血或相容性操作？"
+    },
+    "allergy_education": {
+      "pattern": "过敏.{0,10}出院|严重过敏.{0,10}教育|自动注射器",
+      "question": "是否为严重过敏后的出院教育及自动注射器培训情境？"
+    },
+    "stroke": {
+      "pattern": "卒中|脑梗死|脑梗塞",
+      "question": "是否有已明确的卒中后/当前卒中背景，而非其他吞咽障碍病因？"
+    },
+    "cap": {
+      "pattern": "社区获得性肺炎|社区肺炎|(?<![A-Za-z])CAP(?![A-Za-z])",
+      "question": "是否为当前成人社区获得性肺炎背景，且有临床及影像依据？"
+    },
+    "sepsis": {
+      "pattern": "脓毒症|脓毒性休克|sepsis|septic shock",
+      "question": "是否有当前疑似或已确认的脓毒症评估依据，而非仅有发热？",
+      "suspected_allowed": true
+    },
+    "anaphylaxis": {
+      "pattern": "严重过敏反应|全身性过敏反应|过敏性休克|anaphylaxis",
+      "question": "是否为当前疑似或已确认的严重全身过敏反应，或该次反应的观察阶段？",
+      "suspected_allowed": true
+    },
+    "acs_evaluation": {
+      "pattern": "急性冠脉综合征|急性冠状动脉综合征|(?<![A-Za-z])ACS(?![A-Za-z])",
+      "question": "是否为当前急诊急性胸痛疑似ACS的评估，而非稳定胸痛或其他原因？",
+      "suspected_allowed": true
+    },
+    "acute_pancreatitis": {
+      "pattern": "急性胰腺炎",
+      "question": "是否已确认本次急性胰腺炎，而非仅有腹痛或既往病史？",
+      "confirmed_required": true
+    },
+    "perforated_ulcer": {
+      "pattern": "消化性溃疡穿孔|溃疡穿孔",
+      "question": "是否为当前疑似或确认的消化性溃疡穿孔，而非其他腹痛？",
+      "suspected_allowed": true
+    },
+    "bleeding_ulcer": {
+      "pattern": "出血性消化性溃疡|消化性溃疡出血|溃疡出血",
+      "question": "本次出血是否已证实来自消化性溃疡，而非仅有黑便？",
+      "confirmed_required": true
+    },
+    "postoperative_delirium": {
+      "pattern": "术后谵妄",
+      "question": "是否为已确认的本次术后谵妄？一般住院意识改变不能直接等同。",
+      "confirmed_required": true
+    },
+    "appendicitis_evaluation": {
+      "pattern": "急性阑尾炎|阑尾炎",
+      "question": "是否正在评估本次疑似或确认的急性阑尾炎？右下腹痛仍须鉴别病因。",
+      "suspected_allowed": true
+    },
+    "tloc_evaluation": {
+      "pattern": "短暂意识丧失|(?<![A-Za-z])TLOC(?![A-Za-z])|晕厥",
+      "question": "是否为本次短暂意识丧失或疑晕厥评估？单纯头晕、跌倒不能代替事件核实。",
+      "suspected_allowed": true
+    },
+    "confirmed_syncope": {
+      "pattern": "晕厥",
+      "question": "是否已完成鉴别并确认本次事件为晕厥？短暂意识丧失仍可能有其他病因。",
+      "confirmed_required": true
+    }
+  },
+  "cards": {
+    "K01": {
+      "backgrounds": [
+        "glycemia"
+      ],
+      "min_age": 18,
+      "requires": [
+        {
+          "pattern": "感染|创伤|应激",
+          "question": "是否处于感染/创伤等应激期？"
+        },
+        {
+          "pattern": "首次|一次异常|单次",
+          "question": "是否为首次或仅一次异常结果？"
+        }
+      ],
+      "excludes": [],
+      "retrieval": []
+    },
+    "K02": {
+      "backgrounds": [
+        "diabetes"
+      ],
+      "min_age": 18,
+      "requires": [
+        {
+          "pattern": "反复低血糖|严重低血糖",
+          "question": "是否已测得并确认严重或反复低血糖？"
+        }
+      ],
+      "excludes": [],
+      "retrieval": []
+    },
+    "K03": {
+      "backgrounds": [
+        "diabetes"
+      ],
+      "min_age": 18,
+      "requires": [
+        {
+          "pattern": "使用SGLT2|服用SGLT2|正在.{0,5}列净",
+          "question": "是否正在使用SGLT2抑制剂？"
+        },
+        {
+          "pattern": "恶心|呕吐|腹痛|脱水|意识改变",
+          "question": "是否出现当前不能解释的相关症状？"
+        }
+      ],
+      "excludes": [],
+      "retrieval": []
+    },
+    "K04": {
+      "backgrounds": [
+        "diabetes"
+      ],
+      "min_age": 18,
+      "requires": [
+        {
+          "pattern": "UACR.{0,8}升高|尿白蛋白.{0,8}异常",
+          "question": "是否为一次UACR异常而非已经确认的持续异常？"
+        }
+      ],
+      "excludes": [],
+      "retrieval": []
+    },
+    "K05": {
+      "backgrounds": [
+        "diabetes"
+      ],
+      "min_age": 18,
+      "requires": [
+        {
+          "pattern": "消瘦|非计划.{0,4}体重下降",
+          "question": "是否存在当前消瘦或非计划体重下降？"
+        },
+        {
+          "pattern": "减重|少吃",
+          "question": "是否仍拟执行统一少吃减重方案？"
+        }
+      ],
+      "excludes": [],
+      "retrieval": []
+    },
+    "K06": {
+      "backgrounds": [
+        "diabetes"
+      ],
+      "min_age": 18,
+      "requires": [
+        {
+          "pattern": "足溃疡|足畸形",
+          "question": "是否已有新发足部溃疡或严重畸形？"
+        }
+      ],
+      "excludes": [],
+      "retrieval": []
+    },
+    "K07": {
+      "backgrounds": [
+        "diabetes"
+      ],
+      "min_age": 18,
+      "requires": [
+        {
+          "pattern": "上转|上级医院|出院",
+          "question": "是否涉及上转后向基层的照护衔接？"
+        },
+        {
+          "pattern": "病情稳定|情况稳定",
+          "question": "是否已经确认稳定及适宜下转？"
+        }
+      ],
+      "excludes": [],
+      "retrieval": []
+    },
+    "K08": {
+      "backgrounds": [
+        "elderly_diabetes"
+      ],
+      "min_age": 65,
+      "requires": [
+        {
+          "pattern": "统一.{0,6}目标|同一.{0,6}目标|HbA1c目标|8%",
+          "question": "是否正使用统一HbA1c目标且需要健康状态分层？"
+        }
+      ],
+      "excludes": [],
+      "retrieval": []
+    },
+    "K09": {
+      "backgrounds": [
+        "elderly_diabetes"
+      ],
+      "min_age": 65,
+      "requires": [
+        {
+          "pattern": "漏药|跌倒|无法监测",
+          "question": "是否存在漏药、跌倒或自我监测困难？"
+        }
+      ],
+      "excludes": [],
+      "retrieval": []
+    },
+    "K10": {
+      "backgrounds": [
+        "elderly_diabetes"
+      ],
+      "min_age": 65,
+      "requires": [
+        {
+          "pattern": "方案复杂|步骤复杂|照护负担|用药错误",
+          "question": "是否确有复杂方案或执行负担？"
+        }
+      ],
+      "excludes": [],
+      "retrieval": []
+    },
+    "K11": {
+      "backgrounds": [
+        "elderly_diabetes"
+      ],
+      "min_age": 65,
+      "requires": [
+        {
+          "pattern": "血糖达标",
+          "question": "是否已核实血糖达标？"
+        },
+        {
+          "pattern": "心衰|慢性肾病|ASCVD|心肾高风险",
+          "question": "是否已确认心肾共病或高风险？"
+        }
+      ],
+      "excludes": [],
+      "retrieval": []
+    },
+    "K12": {
+      "backgrounds": [
+        "elderly_diabetes"
+      ],
+      "min_age": 65,
+      "requires": [
+        {
+          "pattern": "费用|买不起|支付|支持不足",
+          "question": "是否存在费用/支付或照护支持障碍？"
+        },
+        {
+          "pattern": "漏药|减少监测",
+          "question": "是否已影响用药或必要监测？"
+        }
+      ],
+      "excludes": [],
+      "retrieval": []
+    },
+    "K13": {
+      "backgrounds": [
+        "lipid"
+      ],
+      "min_age": 18,
+      "requires": [
+        {
+          "pattern": "LDL|风险分层|极高危|超高危",
+          "question": "是否在核对LDL目标与风险层级？"
+        }
+      ],
+      "excludes": [],
+      "retrieval": []
+    },
+    "K14": {
+      "backgrounds": [
+        "lipid"
+      ],
+      "min_age": 18,
+      "requires": [
+        {
+          "pattern": "未达标|未达目标|不耐受",
+          "question": "是否存在降脂未达目标或他汀不耐受？"
+        }
+      ],
+      "excludes": [],
+      "retrieval": []
+    },
+    "K15": {
+      "backgrounds": [
+        "ami"
+      ],
+      "min_age": 18,
+      "requires": [
+        {
+          "pattern": "剧烈腹痛|腹痛剧烈|腹痛非常剧烈",
+          "question": "是否存在当前剧烈腹痛？"
+        },
+        {
+          "pattern": "查体轻|体征轻|症状与体征不匹配",
+          "question": "是否已确认症状与查体不匹配？"
+        }
+      ],
+      "excludes": [],
+      "retrieval": [
+        "腹痛|急腹症"
+      ]
+    },
+    "K16": {
+      "backgrounds": [
+        "ami"
+      ],
+      "min_age": 18,
+      "requires": [
+        {
+          "pattern": "乳酸|白细胞|化验",
+          "question": "是否正在依据乳酸或常规化验排除肠缺血？"
+        }
+      ],
+      "excludes": [],
+      "retrieval": [
+        "腹痛|急腹症"
+      ]
+    },
+    "K17": {
+      "backgrounds": [
+        "ami"
+      ],
+      "min_age": 18,
+      "requires": [
+        {
+          "pattern": "急性肾损伤|AKI",
+          "question": "是否已确认合并急性肾损伤？"
+        },
+        {
+          "pattern": "CTA|造影",
+          "question": "是否因造影顾虑延迟必要CTA评估？"
+        }
+      ],
+      "excludes": [],
+      "retrieval": [
+        "腹痛|急腹症"
+      ]
+    },
+    "K18": {
+      "backgrounds": [
+        "ugi"
+      ],
+      "min_age": 18,
+      "requires": [
+        {
+          "pattern": "内镜|PPI",
+          "question": "是否涉及复苏与内镜时机的调整？"
+        }
+      ],
+      "excludes": [],
+      "retrieval": []
+    },
+    "K19": {
+      "backgrounds": [
+        "ugi"
+      ],
+      "min_age": 18,
+      "requires": [
+        {
+          "pattern": "持续出血|再出血",
+          "question": "是否有内镜后持续或再出血证据？"
+        },
+        {
+          "pattern": "内镜后|内镜止血后",
+          "question": "是否已经接受内镜止血？"
+        }
+      ],
+      "excludes": [],
+      "retrieval": []
+    },
+    "K20": {
+      "backgrounds": [
+        "ugi"
+      ],
+      "min_age": 18,
+      "requires": [
+        {
+          "pattern": "持久止血已实现|持久止血|止血稳定",
+          "question": "是否已确认持久止血与口服安全？"
+        },
+        {
+          "pattern": "长期禁食|固定.{0,4}禁食",
+          "question": "是否仍因固定计划长期禁食？"
+        },
+        {
+          "pattern": "可安全口服|已确认口服安全|能够安全口服",
+          "question": "是否已单独确认能够安全口服？"
+        }
+      ],
+      "excludes": [
+        {
+          "pattern": "活动性出血|止血不稳|不能安全口服",
+          "question": "是否仍活动性出血、止血不稳或不能安全口服？",
+          "require_clear": false
+        }
+      ],
+      "retrieval": []
+    },
+    "K21": {
+      "backgrounds": [
+        "copd"
+      ],
+      "min_age": 18,
+      "requires": [
+        {
+          "pattern": "加重住院|加重后出院|加重住院后",
+          "question": "是否处于慢阻肺加重住院后的康复衔接？"
+        },
+        {
+          "pattern": "病情稳定|情况稳定",
+          "question": "是否已确认当前病情稳定？"
+        }
+      ],
+      "excludes": [],
+      "retrieval": [
+        "气促|呼吸困难|肺康复"
+      ]
+    },
+    "K22": {
+      "backgrounds": [
+        "copd"
+      ],
+      "min_age": 18,
+      "requires": [
+        {
+          "pattern": "康复需求|肺康复",
+          "question": "是否已有经评估的肺康复需求？"
+        },
+        {
+          "pattern": "交通|距离|支持不足|到不了",
+          "question": "是否存在到中心参加的具体障碍？"
+        },
+        {
+          "pattern": "病情稳定|情况稳定",
+          "question": "是否已评估临床稳定性与远程安全？"
+        }
+      ],
+      "excludes": [],
+      "retrieval": [
+        "气促|呼吸困难|肺康复"
+      ]
+    },
+    "K23": {
+      "backgrounds": [
+        "sleep"
+      ],
+      "min_age": 18,
+      "requires": [
+        {
+          "pattern": "长期.{0,5}药|主要靠药物|单用药物|安眠药",
+          "question": "是否主要依赖药物且未评估CBT-I？"
+        }
+      ],
+      "excludes": [
+        {
+          "pattern": "急性失眠",
+          "question": "是否为急性失眠（本卡不适用）？"
+        }
+      ],
+      "retrieval": [
+        "失眠|CBT-I"
+      ]
+    },
+    "K24": {
+      "backgrounds": [
+        "sleep"
+      ],
+      "min_age": 18,
+      "requires": [
+        {
+          "pattern": "已接受CBT-I|正在.{0,4}CBT-I|已做CBT-I",
+          "question": "是否已经接受CBT-I？"
+        },
+        {
+          "pattern": "加药|联合|加安眠药",
+          "question": "是否准备常规联合药物？"
+        }
+      ],
+      "excludes": [
+        {
+          "pattern": "急性失眠",
+          "question": "是否为急性失眠（本卡不适用）？"
+        }
+      ],
+      "retrieval": [
+        "失眠|CBT-I"
+      ]
+    },
+    "K25": {
+      "backgrounds": [
+        "ra"
+      ],
+      "min_age": 18,
+      "requires": [
+        {
+          "pattern": "疗效不足|反应不足",
+          "question": "是否已确认当前疗效不足？"
+        },
+        {
+          "pattern": "JAK",
+          "question": "是否涉及JAK抑制剂的风险选择？"
+        }
+      ],
+      "excludes": [],
+      "retrieval": []
+    },
+    "K26": {
+      "backgrounds": [
+        "ra"
+      ],
+      "min_age": 18,
+      "requires": [
+        {
+          "pattern": "持续缓解|持续.{0,4}缓解",
+          "question": "是否为持续且经评估的缓解？"
+        },
+        {
+          "pattern": "停药|停DMARD|减量",
+          "question": "是否正在讨论DMARD减量或停药？"
+        }
+      ],
+      "excludes": [],
+      "retrieval": []
+    },
+    "K27": {
+      "backgrounds": [
+        "transfusion"
+      ],
+      "min_age": 18,
+      "requires": [
+        {
+          "pattern": "住院",
+          "question": "是否为住院成人？"
+        },
+        {
+          "pattern": "循环稳定|血流动力学稳定",
+          "question": "是否确认血流动力学稳定？"
+        }
+      ],
+      "excludes": [
+        {
+          "pattern": "交叉配血|输血相容性",
+          "question": "当前是否实际为交叉配血或相容性操作（不在本卡范围）？"
+        },
+        {
+          "pattern": "急性冠脉综合征|ACS",
+          "question": "是否存在急性冠脉综合征（不能套本卡稳定人群阈值）？"
+        },
+        {
+          "pattern": "持续大出血|活动性出血|持续出血",
+          "question": "是否仍有持续或活动性出血（不能套本卡稳定人群阈值）？"
+        },
+        {
+          "pattern": "循环不稳定|血流动力学不稳定",
+          "question": "是否循环不稳定（不能套稳定人群阈值）？",
+          "require_clear": false
+        }
+      ],
+      "retrieval": [
+        "输血|交叉配血|相容性"
+      ]
+    },
+    "K28": {
+      "backgrounds": [
+        "allergy_education"
+      ],
+      "min_age": 0,
+      "requires": [
+        {
+          "pattern": "培训|不会使用|没有培训",
+          "question": "是否未掌握自动注射器使用及呼救？"
+        }
+      ],
+      "excludes": [],
+      "retrieval": []
+    },
+    "K29": {
+      "backgrounds": [
+        "diabetes"
+      ],
+      "min_age": 18,
+      "requires": [
+        {
+          "pattern": "统一.{0,4}运动|同一.{0,4}运动|固定运动",
+          "question": "是否正准备统一运动目标且需个体化评估？"
+        }
+      ],
+      "excludes": [],
+      "retrieval": []
+    },
+    "K30": {
+      "backgrounds": [
+        "diabetes"
+      ],
+      "min_age": 18,
+      "requires": [
+        {
+          "pattern": "新发.{0,4}麻木|新出现.{0,4}麻木|新发.{0,4}疼痛",
+          "question": "是否是新出现的麻木或疼痛？"
+        }
+      ],
+      "excludes": [],
+      "retrieval": []
+    },
+    "K31": {
+      "backgrounds": [
+        "diabetes"
+      ],
+      "min_age": 18,
+      "requires": [
+        {
+          "pattern": "检查异常|检查已经异常",
+          "question": "是否已有明确检查异常及趋势？"
+        },
+        {
+          "pattern": "年度|半年度|常规复查",
+          "question": "是否仍机械沿用常规复查周期？"
+        }
+      ],
+      "excludes": [],
+      "retrieval": []
+    },
+    "K32": {
+      "backgrounds": [
+        "elderly_diabetes"
+      ],
+      "min_age": 65,
+      "requires": [
+        {
+          "pattern": "使用胰岛素|胰岛素使用者",
+          "question": "是否实际使用胰岛素？"
+        },
+        {
+          "pattern": "低血糖|血糖波动|监测负担",
+          "question": "是否存在波动、低血糖或监测负担？"
+        }
+      ],
+      "excludes": [],
+      "retrieval": []
+    },
+    "K33": {
+      "backgrounds": [
+        "elderly_diabetes"
+      ],
+      "min_age": 65,
+      "requires": [
+        {
+          "pattern": "反复漏药|记错步骤|管理能力下降",
+          "question": "是否有反复漏药或管理能力变化？"
+        }
+      ],
+      "excludes": [],
+      "retrieval": []
+    },
+    "K34": {
+      "backgrounds": [
+        "elderly_diabetes"
+      ],
+      "min_age": 65,
+      "requires": [
+        {
+          "pattern": "降压|血压目标",
+          "question": "是否涉及降压目标评估？"
+        },
+        {
+          "pattern": "不耐受|健康状况差",
+          "question": "是否有不耐受或健康状态不佳？"
+        }
+      ],
+      "excludes": [],
+      "retrieval": []
+    },
+    "K35": {
+      "backgrounds": [
+        "elderly_diabetes"
+      ],
+      "min_age": 65,
+      "requires": [
+        {
+          "pattern": "照护机构|长期照护|急性期后照护",
+          "question": "是否转入长期或急性期后照护机构？"
+        },
+        {
+          "pattern": "CGM|胰岛素设备",
+          "question": "是否使用需交接培训的糖尿病设备？"
+        },
+        {
+          "pattern": "不熟悉|缺少培训",
+          "question": "工作人员是否存在设备培训缺口？"
+        }
+      ],
+      "excludes": [],
+      "retrieval": []
+    },
+    "K36": {
+      "backgrounds": [
+        "diabetes"
+      ],
+      "min_age": 18,
+      "requires": [
+        {
+          "pattern": "运动计划|固定训练",
+          "question": "是否准备实施运动计划？"
+        },
+        {
+          "pattern": "急性并发症|严重慢性并发症",
+          "question": "是否已有急性或严重慢性并发症？"
+        }
+      ],
+      "excludes": [],
+      "retrieval": []
+    },
+    "K37": {
+      "backgrounds": [
+        "elderly_diabetes"
+      ],
+      "min_age": 65,
+      "requires": [
+        {
+          "pattern": "筛查负担|筛查组合",
+          "question": "是否存在筛查负担及个体化选择需求？"
+        }
+      ],
+      "excludes": [],
+      "retrieval": []
+    },
+    "K38": {
+      "backgrounds": [
+        "copd"
+      ],
+      "min_age": 18,
+      "requires": [
+        {
+          "pattern": "肺功能",
+          "question": "是否正在依据肺功能选择初始方案？"
+        },
+        {
+          "pattern": "症状.{0,5}不同|加重.{0,5}不同|仅看肺功能",
+          "question": "是否存在症状/加重差异或只看肺功能的问题？"
+        }
+      ],
+      "excludes": [],
+      "retrieval": [
+        "气促|呼吸困难|肺康复"
+      ]
+    },
+    "K39": {
+      "backgrounds": [
+        "copd"
+      ],
+      "min_age": 18,
+      "requires": [
+        {
+          "pattern": "mMRC",
+          "question": "是否已取得mMRC评估？"
+        },
+        {
+          "pattern": "CAT",
+          "question": "是否已取得CAT评估？"
+        },
+        {
+          "pattern": "不一致",
+          "question": "两量表结果是否确实不一致？"
+        }
+      ],
+      "excludes": [],
+      "retrieval": [
+        "气促|呼吸困难|肺康复"
+      ]
+    },
+    "K40": {
+      "backgrounds": [
+        "copd"
+      ],
+      "min_age": 18,
+      "requires": [
+        {
+          "pattern": "燃料|职业暴露|持续暴露|炉具",
+          "question": "是否有当前家用燃料或职业暴露线索？"
+        }
+      ],
+      "excludes": [],
+      "retrieval": [
+        "气促|呼吸困难|肺康复"
+      ]
+    },
+    "K41": {
+      "backgrounds": [
+        "copd"
+      ],
+      "min_age": 18,
+      "requires": [
+        {
+          "pattern": "仍气促|持续气促|症状不改善|控制不佳",
+          "question": "是否规范开药后仍有持续气促或控制不佳？"
+        },
+        {
+          "pattern": "已用吸入药|规范开药|正在吸入|使用吸入药",
+          "question": "是否确认当前已经接受规范吸入治疗？"
+        },
+        {
+          "pattern": "病情稳定|情况稳定",
+          "question": "是否已核实当前稳定，未把急性恶化当随访问题？"
+        },
+        {
+          "pattern": "共病已评估|已评估共病",
+          "question": "是否已评估共病对当前症状的干扰？"
+        }
+      ],
+      "excludes": [
+        {
+          "pattern": "(?:气促|呼吸困难)(?:明确)?(?:由|归因于|病因为).{0,8}(?:心衰|肺栓塞|贫血|肺炎)|(?:心衰|肺栓塞|贫血|肺炎)(?:明确)?(?:导致|引起)(?:的)?(?:气促|呼吸困难)",
+          "question": "当前气促是否已明确由其他病因引起（不能据此调整慢阻肺治疗）？",
+          "require_clear": false
+        }
+      ],
+      "retrieval": [
+        "气促|呼吸困难|肺康复"
+      ]
+    },
+    "K42": {
+      "backgrounds": [
+        "copd"
+      ],
+      "min_age": 18,
+      "requires": [
+        {
+          "pattern": "ICS.{0,8}LABA",
+          "question": "当前是否为ICS+LABA方案？"
+        },
+        {
+          "pattern": "反复加重|肺部感染风险|分枝杆菌风险",
+          "question": "是否存在反复加重或较高感染风险？"
+        }
+      ],
+      "excludes": [
+        {
+          "pattern": "哮喘撤药",
+          "question": "是否实际为哮喘撤药情境？"
+        }
+      ],
+      "retrieval": [
+        "气促|呼吸困难|肺康复"
+      ]
+    },
+    "K43": {
+      "backgrounds": [
+        "copd"
+      ],
+      "min_age": 18,
+      "requires": [
+        {
+          "pattern": "吸气不足|协调困难|不能独立操作",
+          "question": "是否确有吸入装置操作能力障碍？"
+        }
+      ],
+      "excludes": [],
+      "retrieval": [
+        "气促|呼吸困难|肺康复"
+      ]
+    },
+    "K44": {
+      "backgrounds": [
+        "copd"
+      ],
+      "min_age": 18,
+      "requires": [
+        {
+          "pattern": "营养变化|心理变化|功能变化|耐受变化",
+          "question": "是否有当前临床/功能/营养/心理或耐受变化？"
+        },
+        {
+          "pattern": "固定训练",
+          "question": "是否仍在执行固定训练表？"
+        }
+      ],
+      "excludes": [],
+      "retrieval": [
+        "气促|呼吸困难|肺康复"
+      ]
+    },
+    "K45": {
+      "backgrounds": [
+        "copd"
+      ],
+      "min_age": 18,
+      "requires": [
+        {
+          "pattern": "中重度急性加重",
+          "question": "是否为已确认的中重度急性加重？"
+        },
+        {
+          "pattern": "疗程结束|延长激素|增加激素",
+          "question": "是否涉及疗程结束后机械延长激素？"
+        }
+      ],
+      "excludes": [],
+      "retrieval": [
+        "气促|呼吸困难|肺康复"
+      ]
+    },
+    "K46": {
+      "backgrounds": [
+        "copd"
+      ],
+      "min_age": 18,
+      "requires": [
+        {
+          "pattern": "急性高碳酸呼吸衰竭|急性高碳酸血症",
+          "question": "是否经血气等确认急性高碳酸呼吸衰竭？"
+        },
+        {
+          "pattern": "HFNC|高流量",
+          "question": "是否拟以高流量简单替代有指征的NIV？"
+        },
+        {
+          "pattern": "符合NIV指征|有无创通气指征",
+          "question": "是否已核对NIV指征及禁忌证？"
+        }
+      ],
+      "excludes": [],
+      "retrieval": [
+        "气促|呼吸困难|肺康复"
+      ]
+    },
+    "K47": {
+      "backgrounds": [
+        "copd"
+      ],
+      "min_age": 18,
+      "requires": [
+        {
+          "pattern": "加重住院后|急性加重.{0,6}出院",
+          "question": "是否为本次急性加重住院后的出院计划？"
+        },
+        {
+          "pattern": "只按原药单|原药单出院",
+          "question": "是否仅沿用原药单而未评估加重原因？"
+        }
+      ],
+      "excludes": [],
+      "retrieval": [
+        "气促|呼吸困难|肺康复"
+      ]
+    },
+    "K48": {
+      "backgrounds": [
+        "stroke"
+      ],
+      "min_age": 18,
+      "requires": [
+        {
+          "pattern": "准备.{0,8}(进食|喂水|饮水|口服药)|首次.{0,8}(进食|饮水|口服)",
+          "question": "是否准备首次进食、饮水或口服药？"
+        },
+        {
+          "pattern": "吞咽尚未筛查|吞咽安全未确认|未确认吞咽安全|未做吞咽筛查",
+          "question": "是否尚未完成规范吞咽安全筛查？"
+        }
+      ],
+      "excludes": [],
+      "retrieval": [
+        "吞咽|误吸|康复耐受"
+      ]
+    },
+    "K49": {
+      "backgrounds": [
+        "stroke"
+      ],
+      "min_age": 18,
+      "requires": [
+        {
+          "pattern": "疑似误吸|饮水呛咳|湿润声音|声音湿润",
+          "question": "是否存在疑似误吸的具体表现？"
+        }
+      ],
+      "excludes": [],
+      "retrieval": [
+        "吞咽|误吸|康复耐受"
+      ]
+    },
+    "K50": {
+      "backgrounds": [
+        "stroke"
+      ],
+      "min_age": 18,
+      "requires": [
+        {
+          "pattern": "营养不良|营养风险|营养不良风险",
+          "question": "是否筛查发现营养不良或风险？"
+        }
+      ],
+      "excludes": [],
+      "retrieval": [
+        "吞咽|误吸|康复耐受"
+      ]
+    },
+    "K51": {
+      "backgrounds": [
+        "stroke"
+      ],
+      "min_age": 18,
+      "requires": [
+        {
+          "pattern": "常规置管|准备留置尿管",
+          "question": "是否拟无明确指征常规留置尿管？"
+        }
+      ],
+      "excludes": [],
+      "retrieval": [
+        "吞咽|误吸|康复耐受"
+      ]
+    },
+    "K52": {
+      "backgrounds": [
+        "stroke"
+      ],
+      "min_age": 18,
+      "requires": [
+        {
+          "pattern": "耐受下降|耐受降低",
+          "question": "是否已有训练耐受下降？"
+        },
+        {
+          "pattern": "固定强度",
+          "question": "是否仍要求完成固定强度？"
+        }
+      ],
+      "excludes": [
+        {
+          "pattern": "新发神经症状|突然偏瘫|突发言语不清",
+          "question": "是否有新发神经症状需立即升级？"
+        }
+      ],
+      "retrieval": [
+        "吞咽|误吸|康复耐受"
+      ]
+    },
+    "K53": {
+      "backgrounds": [
+        "stroke"
+      ],
+      "min_age": 18,
+      "requires": [
+        {
+          "pattern": "忽视口腔卫生|口腔清洁不足",
+          "question": "是否存在口腔卫生照护缺口？"
+        }
+      ],
+      "excludes": [],
+      "retrieval": [
+        "吞咽|误吸|康复耐受"
+      ]
+    },
+    "K54": {
+      "backgrounds": [
+        "stroke"
+      ],
+      "min_age": 18,
+      "requires": [
+        {
+          "pattern": "急性缺血性卒中",
+          "question": "是否已明确急性缺血性卒中？"
+        },
+        {
+          "pattern": "意识下降|意识降低|延髓功能障碍",
+          "question": "是否存在意识降低或延髓功能障碍？"
+        },
+        {
+          "pattern": "气道受损|气道保护受损",
+          "question": "是否影响气道保护或呼吸状态？"
+        }
+      ],
+      "excludes": [],
+      "retrieval": [
+        "吞咽|误吸|康复耐受"
+      ]
+    },
+    "K55": {
+      "backgrounds": [
+        "ami"
+      ],
+      "min_age": 18,
+      "requires": [
+        {
+          "pattern": "明确腹膜炎|腹膜刺激征阳性|板状腹",
+          "question": "是否已确认明确腹膜炎表现？"
+        }
+      ],
+      "excludes": [],
+      "retrieval": [
+        "腹痛|急腹症"
+      ]
+    },
+    "K56": {
+      "backgrounds": [
+        "cap"
+      ],
+      "min_age": 18,
+      "requires": [
+        {
+          "pattern": "影像.*(?:浸润|肺炎)|胸片.*(?:浸润|肺炎)|胸部\\s*X\\s*线.*(?:浸润|肺炎)|CT.*(?:浸润|肺炎)",
+          "question": "影像是否支持当前肺炎？"
+        },
+        {
+          "pattern": "降钙素原低|PCT低|低PCT",
+          "question": "是否已取得初始低降钙素原结果并核实采样时间？"
+        }
+      ],
+      "excludes": [
+        {
+          "pattern": "院内肺炎|医院获得性肺炎|呼吸机相关肺炎",
+          "question": "是否存在院内或呼吸机相关肺炎？"
+        },
+        {
+          "pattern": "免疫抑制|免疫功能低下",
+          "question": "是否存在超出本指南范围的免疫抑制状态？"
+        }
+      ],
+      "retrieval": [
+        "肺炎|降钙素原|PCT",
+        "咳嗽.*发热|发热.*咳嗽|黄.{0,2}痰|肺.{0,10}(?:实变|浸润)"
+      ]
+    },
+    "K57": {
+      "backgrounds": [
+        "cap"
+      ],
+      "min_age": 18,
+      "requires": [
+        {
+          "pattern": "影像.*(?:浸润|肺炎)|胸片.*(?:浸润|肺炎)|胸部\\s*X\\s*线.*(?:浸润|肺炎)|CT.*(?:浸润|肺炎)",
+          "question": "影像是否支持当前肺炎？"
+        },
+        {
+          "pattern": "流感.{0,8}阳性",
+          "question": "是否确认本次流感检测阳性？"
+        }
+      ],
+      "excludes": [
+        {
+          "pattern": "院内肺炎|医院获得性肺炎|呼吸机相关肺炎",
+          "question": "是否存在院内或呼吸机相关肺炎？"
+        },
+        {
+          "pattern": "免疫抑制|免疫功能低下",
+          "question": "是否存在超出本指南范围的免疫抑制状态？"
+        }
+      ],
+      "retrieval": [
+        "肺炎|流感",
+        "咳嗽.*发热|发热.*咳嗽|黄.{0,2}痰|肺.{0,10}(?:实变|浸润)"
+      ]
+    },
+    "K58": {
+      "backgrounds": [
+        "cap"
+      ],
+      "min_age": 18,
+      "requires": [
+        {
+          "pattern": "第5[天日].*(?:仍|持续)|治疗5[天日].*(?:仍|持续)|病情恶化",
+          "question": "是否治疗至第5日仍未稳定，或更早出现病情恶化？"
+        }
+      ],
+      "excludes": [
+        {
+          "pattern": "院内肺炎|医院获得性肺炎|呼吸机相关肺炎",
+          "question": "是否存在院内或呼吸机相关肺炎？"
+        },
+        {
+          "pattern": "免疫抑制|免疫功能低下",
+          "question": "是否存在超出本指南范围的免疫抑制状态？"
+        }
+      ],
+      "retrieval": [
+        "肺炎|治疗无效|仍发热",
+        "咳嗽.*发热|发热.*咳嗽|黄.{0,2}痰|肺.{0,10}(?:实变|浸润)"
+      ]
+    },
+    "K59": {
+      "backgrounds": [
+        "cap"
+      ],
+      "min_age": 18,
+      "requires": [
+        {
+          "pattern": "住院",
+          "question": "是否为住院治疗情境？"
+        },
+        {
+          "pattern": "误吸|吸入性肺炎",
+          "question": "是否存在疑误吸相关肺炎的评估？"
+        }
+      ],
+      "excludes": [
+        {
+          "pattern": "院内肺炎|医院获得性肺炎|呼吸机相关肺炎",
+          "question": "是否存在院内或呼吸机相关肺炎？"
+        },
+        {
+          "pattern": "免疫抑制|免疫功能低下",
+          "question": "是否存在超出本指南范围的免疫抑制状态？"
+        },
+        {
+          "pattern": "肺脓肿|脓胸",
+          "question": "是否存在疑似或已证实肺脓肿、脓胸？"
+        }
+      ],
+      "retrieval": [
+        "肺炎|误吸|厌氧",
+        "咳嗽.*发热|发热.*咳嗽|黄.{0,2}痰|肺.{0,10}(?:实变|浸润)"
+      ]
+    },
+    "K60": {
+      "backgrounds": [
+        "sepsis"
+      ],
+      "min_age": 18,
+      "requires": [
+        {
+          "pattern": "qSOFA",
+          "question": "是否正在使用qSOFA进行本次风险筛查？"
+        }
+      ],
+      "excludes": [],
+      "retrieval": [
+        "qSOFA|脓毒症"
+      ]
+    },
+    "K61": {
+      "backgrounds": [
+        "sepsis"
+      ],
+      "min_age": 18,
+      "requires": [
+        {
+          "pattern": "急性复苏|正在复苏|液体复苏",
+          "question": "是否处于本次急性复苏评估？"
+        },
+        {
+          "pattern": "乳酸升高|乳酸高",
+          "question": "是否已核实本次乳酸升高及其变化？"
+        }
+      ],
+      "excludes": [],
+      "retrieval": [
+        "乳酸|脓毒症"
+      ]
+    },
+    "K62": {
+      "backgrounds": [
+        "sepsis"
+      ],
+      "min_age": 18,
+      "requires": [
+        {
+          "pattern": "液体复苏|补液评估|继续补液",
+          "question": "是否正在评估本次液体复苏及继续补液的必要性？"
+        }
+      ],
+      "excludes": [],
+      "retrieval": [
+        "脓毒症|液体复苏"
+      ]
+    },
+    "K63": {
+      "backgrounds": [
+        "sepsis"
+      ],
+      "min_age": 18,
+      "requires": [
+        {
+          "pattern": "感染尚未证实|感染证据不足|感染待确认",
+          "question": "是否感染仍待确认，而非已经证实？"
+        }
+      ],
+      "excludes": [],
+      "retrieval": [
+        "脓毒症|感染证据不足"
+      ]
+    },
+    "K64": {
+      "backgrounds": [
+        "anaphylaxis"
+      ],
+      "min_age": 18,
+      "requires": [
+        {
+          "pattern": "急性发作|暴露后急起",
+          "question": "是否为暴露相关或当前急性发作？"
+        },
+        {
+          "pattern": "呼吸受累|循环受累|严重呼吸困难|低血压",
+          "question": "是否已有呼吸或循环受累线索？"
+        }
+      ],
+      "excludes": [],
+      "retrieval": [
+        "严重过敏|过敏性休克|无皮疹"
+      ]
+    },
+    "K65": {
+      "backgrounds": [
+        "anaphylaxis"
+      ],
+      "min_age": 18,
+      "requires": [
+        {
+          "pattern": "抗组胺|抗过敏药",
+          "question": "是否正在使用或拟依赖抗组胺类药物处理本次反应？"
+        }
+      ],
+      "excludes": [],
+      "retrieval": [
+        "严重过敏|抗组胺"
+      ]
+    },
+    "K66": {
+      "backgrounds": [
+        "anaphylaxis"
+      ],
+      "min_age": 18,
+      "requires": [
+        {
+          "pattern": "吸入支气管扩张剂|雾化支气管扩张剂",
+          "question": "是否已给予吸入或雾化支气管扩张剂？"
+        },
+        {
+          "pattern": "症状持续|仍喘息",
+          "question": "是否当前症状仍持续？"
+        }
+      ],
+      "excludes": [],
+      "retrieval": [
+        "严重过敏|雾化"
+      ]
+    },
+    "K67": {
+      "backgrounds": [
+        "anaphylaxis"
+      ],
+      "min_age": 18,
+      "requires": [
+        {
+          "pattern": "处置后观察|缓解后观察|观察阶段",
+          "question": "是否为本次急性反应处置后的观察阶段？"
+        }
+      ],
+      "excludes": [],
+      "retrieval": [
+        "严重过敏|过敏.*观察"
+      ]
+    },
+    "K68": {
+      "backgrounds": [
+        "acs_evaluation"
+      ],
+      "min_age": 18,
+      "requires": [
+        {
+          "pattern": "急诊",
+          "question": "是否为当前急诊评估？"
+        },
+        {
+          "pattern": "急性胸痛",
+          "question": "是否为本次急性胸痛？"
+        },
+        {
+          "pattern": "首份心电图正常|首份心电图无缺血|非缺血性心电图",
+          "question": "是否已核对本次首份心电图未见缺血改变？"
+        }
+      ],
+      "excludes": [
+        {
+          "pattern": "胸痛明确由其他病因引起|胸痛确认为非心源性",
+          "question": "是否已经确认其他病因为本次胸痛的原因？"
+        }
+      ],
+      "retrieval": [
+        "胸痛|心电图",
+        "胸闷|胸骨后.{0,12}(?:压榨|疼痛|闷痛)"
+      ]
+    },
+    "K69": {
+      "backgrounds": [
+        "acs_evaluation"
+      ],
+      "min_age": 18,
+      "requires": [
+        {
+          "pattern": "急诊",
+          "question": "是否为当前急诊评估？"
+        },
+        {
+          "pattern": "急性胸痛",
+          "question": "是否为本次急性胸痛？"
+        },
+        {
+          "pattern": "心电图不确切|心电图待判读",
+          "question": "是否初次心电图尚不能明确，需要专业判读？"
+        }
+      ],
+      "excludes": [
+        {
+          "pattern": "胸痛明确由其他病因引起|胸痛确认为非心源性",
+          "question": "是否已经确认其他病因为本次胸痛的原因？"
+        }
+      ],
+      "retrieval": [
+        "胸痛|动态心电图",
+        "胸闷|胸骨后.{0,12}(?:压榨|疼痛|闷痛)"
+      ]
+    },
+    "K70": {
+      "backgrounds": [
+        "acs_evaluation"
+      ],
+      "min_age": 18,
+      "requires": [
+        {
+          "pattern": "急诊",
+          "question": "是否为当前急诊评估？"
+        },
+        {
+          "pattern": "肌钙蛋白升高|肌钙蛋白阳性",
+          "question": "是否已取得本次肌钙蛋白升高结果及动态资料？"
+        }
+      ],
+      "excludes": [
+        {
+          "pattern": "胸痛明确由其他病因引起|胸痛确认为非心源性",
+          "question": "是否已经确认其他病因为本次胸痛的原因？"
+        }
+      ],
+      "retrieval": [
+        "胸痛|肌钙蛋白",
+        "胸闷|胸骨后.{0,12}(?:压榨|疼痛|闷痛)"
+      ]
+    },
+    "K71": {
+      "backgrounds": [
+        "acs_evaluation"
+      ],
+      "min_age": 18,
+      "requires": [
+        {
+          "pattern": "急诊",
+          "question": "是否为当前急诊评估？"
+        },
+        {
+          "pattern": "急性胸痛",
+          "question": "是否为本次急性胸痛？"
+        },
+        {
+          "pattern": "单次高敏肌钙蛋白低|单次hs-cTn低",
+          "question": "是否仅取得单次高敏肌钙蛋白较低的结果？"
+        }
+      ],
+      "excludes": [
+        {
+          "pattern": "胸痛明确由其他病因引起|胸痛确认为非心源性",
+          "question": "是否已经确认其他病因为本次胸痛的原因？"
+        }
+      ],
+      "retrieval": [
+        "胸痛|肌钙蛋白",
+        "胸闷|胸骨后.{0,12}(?:压榨|疼痛|闷痛)"
+      ]
+    },
+    "K72": {
+      "backgrounds": [
+        "acute_pancreatitis"
+      ],
+      "min_age": 18,
+      "requires": [
+        {
+          "pattern": "低氧|局部坏死|器官功能障碍|器官衰竭",
+          "question": "是否已有本次器官功能变化或坏死的客观依据，并核对持续时间？"
+        }
+      ],
+      "excludes": [],
+      "retrieval": [
+        "胰腺炎|上腹剧痛.*背部"
+      ]
+    },
+    "K73": {
+      "backgrounds": [
+        "acute_pancreatitis"
+      ],
+      "min_age": 18,
+      "requires": [
+        {
+          "pattern": "局部坏死|胰腺坏死|预防性抗菌|预防性抗生素",
+          "question": "是否存在坏死或正在考虑预防性抗菌治疗？"
+        }
+      ],
+      "excludes": [
+        {
+          "pattern": "胰腺感染|感染性坏死|其他感染灶",
+          "question": "是否存在疑似或证实胰腺感染、感染性坏死或其他感染灶？"
+        }
+      ],
+      "retrieval": [
+        "胰腺炎|胰腺坏死"
+      ]
+    },
+    "K74": {
+      "backgrounds": [
+        "acute_pancreatitis"
+      ],
+      "min_age": 18,
+      "requires": [
+        {
+          "pattern": "液体复苏|继续补液|补液评估",
+          "question": "是否正在评估本次液体复苏及继续补液？"
+        }
+      ],
+      "excludes": [],
+      "retrieval": [
+        "胰腺炎|补液"
+      ]
+    },
+    "K75": {
+      "backgrounds": [
+        "acute_pancreatitis"
+      ],
+      "min_age": 18,
+      "requires": [
+        {
+          "pattern": "重症急性胰腺炎|持续器官衰竭",
+          "question": "是否有重症急性胰腺炎的分级依据？"
+        },
+        {
+          "pattern": "营养支持|营养途径",
+          "question": "是否正在评估营养支持途径与耐受？"
+        }
+      ],
+      "excludes": [],
+      "retrieval": [
+        "胰腺炎|营养支持"
+      ]
+    },
+    "K76": {
+      "backgrounds": [
+        "perforated_ulcer"
+      ],
+      "min_age": 18,
+      "requires": [
+        {
+          "pattern": "影像未见游离气体|未见游离气体|阴性初片",
+          "question": "本次初始影像是否未见游离气体，且临床仍疑穿孔？"
+        }
+      ],
+      "excludes": [],
+      "retrieval": [
+        "溃疡穿孔|突发上腹痛"
+      ]
+    },
+    "K77": {
+      "backgrounds": [
+        "perforated_ulcer"
+      ],
+      "min_age": 18,
+      "requires": [
+        {
+          "pattern": "非手术观察|保守治疗评估",
+          "question": "是否正在讨论非手术观察的适用性，而非已具备全部前提？"
+        }
+      ],
+      "excludes": [],
+      "retrieval": [
+        "溃疡穿孔|保守治疗"
+      ]
+    },
+    "K78": {
+      "backgrounds": [
+        "perforated_ulcer"
+      ],
+      "min_age": 18,
+      "requires": [
+        {
+          "pattern": "腹膜炎|明显气腹|腔外造影剂漏出",
+          "question": "是否存在腹膜炎、明显气腹或腔外漏出等高风险证据？"
+        }
+      ],
+      "excludes": [],
+      "retrieval": [
+        "溃疡穿孔|板状腹"
+      ]
+    },
+    "K79": {
+      "backgrounds": [
+        "bleeding_ulcer"
+      ],
+      "min_age": 18,
+      "requires": [
+        {
+          "pattern": "内镜证实溃疡出血|胃镜证实溃疡出血|溃疡出血已确诊",
+          "question": "是否有本次胃镜等证实溃疡出血的依据？"
+        }
+      ],
+      "excludes": [],
+      "retrieval": [
+        "黑便|呕血|溃疡出血"
+      ]
+    },
+    "K80": {
+      "backgrounds": [
+        "postoperative_delirium"
+      ],
+      "min_age": 65,
+      "requires": [
+        {
+          "pattern": "诱因未明|病因评估|注意力.{0,8}(?:下降|不集中)|意识波动",
+          "question": "是否需要梳理本次谵妄诱因或注意力、意识波动？"
+        }
+      ],
+      "excludes": [],
+      "retrieval": [
+        "谵妄|注意力不集中|意识波动"
+      ]
+    },
+    "K81": {
+      "backgrounds": [
+        "postoperative_delirium"
+      ],
+      "min_age": 65,
+      "requires": [
+        {
+          "pattern": "综合干预|非药物干预|团队干预",
+          "question": "是否正在规划本次谵妄的综合或非药物团队干预？"
+        }
+      ],
+      "excludes": [],
+      "retrieval": [
+        "术后谵妄|非药物干预"
+      ]
+    },
+    "K82": {
+      "backgrounds": [
+        "postoperative_delirium"
+      ],
+      "min_age": 65,
+      "requires": [
+        {
+          "pattern": "严重激越",
+          "question": "是否存在严重激越？"
+        },
+        {
+          "pattern": "伤害风险",
+          "question": "是否存在对自己或他人的显著伤害风险？"
+        },
+        {
+          "pattern": "苯二氮[䓬卓]类(?!戒断)|benzodiazepine(?! withdrawal)",
+          "question": "是否正在考虑苯二氮䓬类作为一线治疗？"
+        }
+      ],
+      "excludes": [
+        {
+          "pattern": "酒精戒断|苯二氮[䓬卓].{0,4}戒断|其他特定适应证",
+          "question": "是否存在酒精或苯二氮䓬戒断等特定适应证？"
+        }
+      ],
+      "retrieval": [
+        "术后谵妄|苯二氮[䓬卓]"
+      ]
+    },
+    "K83": {
+      "backgrounds": [
+        "postoperative_delirium"
+      ],
+      "min_age": 65,
+      "requires": [
+        {
+          "pattern": "低活动型|安静少动",
+          "question": "是否有低活动型或安静少动表现并经过行为风险评估？"
+        }
+      ],
+      "excludes": [
+        {
+          "pattern": "激越|伤害威胁",
+          "question": "是否存在激越或对自己他人的显著伤害威胁？"
+        }
+      ],
+      "retrieval": [
+        "术后谵妄|低活动型"
+      ]
+    },
+    "K84": {
+      "backgrounds": [
+        "appendicitis_evaluation"
+      ],
+      "min_age": 18,
+      "requires": [
+        {
+          "pattern": "右下腹.{0,6}(?:痛|疼)|转到右下腹|阑尾炎风险分层",
+          "question": "是否有本次右下腹症状或正在开展阑尾炎风险分层？"
+        }
+      ],
+      "excludes": [],
+      "retrieval": [
+        "右下腹|阑尾炎|急性腹痛"
+      ]
+    },
+    "K85": {
+      "backgrounds": [
+        "appendicitis_evaluation"
+      ],
+      "min_age": 18,
+      "requires": [
+        {
+          "pattern": "Alvarado",
+          "question": "是否正在使用本次Alvarado评分，并核实各项目？"
+        }
+      ],
+      "excludes": [],
+      "retrieval": [
+        "Alvarado|阑尾炎"
+      ]
+    },
+    "K86": {
+      "backgrounds": [
+        "appendicitis_evaluation"
+      ],
+      "min_age": 18,
+      "requires": [
+        {
+          "pattern": "初始检查正常|初检正常",
+          "question": "是否核实哪些本次初始检查正常？"
+        },
+        {
+          "pattern": "右下腹痛持续|右下腹痛未缓解",
+          "question": "是否仍有持续未缓解的右下腹痛？"
+        }
+      ],
+      "excludes": [],
+      "retrieval": [
+        "右下腹|阑尾炎"
+      ]
+    },
+    "K87": {
+      "backgrounds": [
+        "appendicitis_evaluation"
+      ],
+      "min_age": 18,
+      "requires": [
+        {
+          "pattern": "妊娠|怀孕",
+          "question": "是否已确认当前妊娠及孕周？"
+        },
+        {
+          "pattern": "MRI阴性|MRI结论不明确",
+          "question": "是否核实本次MRI阴性或结论不明确？"
+        },
+        {
+          "pattern": "临床仍高度怀疑",
+          "question": "是否经临床复评仍高度怀疑本次阑尾炎？"
+        }
+      ],
+      "excludes": [],
+      "retrieval": [
+        "妊娠.*阑尾炎|MRI.*阑尾炎"
+      ]
+    },
+    "K88": {
+      "backgrounds": [
+        "tloc_evaluation"
+      ],
+      "min_age": 18,
+      "requires": [
+        {
+          "pattern": "急诊",
+          "question": "是否为急诊事件评估情境？"
+        }
+      ],
+      "excludes": [],
+      "retrieval": [
+        "晕厥|短暂意识丧失|眼前发黑|跌倒|摔了"
+      ]
+    },
+    "K89": {
+      "backgrounds": [
+        "tloc_evaluation"
+      ],
+      "min_age": 18,
+      "requires": [
+        {
+          "pattern": "急诊",
+          "question": "是否为急诊评估情境？"
+        },
+        {
+          "pattern": "心电图评估|初始诊断评估",
+          "question": "是否正在进行本次初始诊断及心电图评估？"
+        }
+      ],
+      "excludes": [
+        {
+          "pattern": "创伤性意识丧失|休克",
+          "question": "是否存在创伤性意识丧失或休克，需要先转入相应紧急路径？"
+        }
+      ],
+      "retrieval": [
+        "晕厥|短暂意识丧失"
+      ]
+    },
+    "K90": {
+      "backgrounds": [
+        "tloc_evaluation"
+      ],
+      "min_age": 18,
+      "requires": [
+        {
+          "pattern": "急诊",
+          "question": "是否为急诊评估情境？"
+        },
+        {
+          "pattern": "基础评估已完成",
+          "question": "是否已完成基础诊断评估？"
+        },
+        {
+          "pattern": "体位性原因|体位试验",
+          "question": "是否正在评估体位相关原因及试验适合性？"
+        }
+      ],
+      "excludes": [
+        {
+          "pattern": "创伤性意识丧失|休克",
+          "question": "是否存在创伤性意识丧失或休克，需要先转入相应紧急路径？"
+        },
+        {
+          "pattern": "循环不稳定|站立不安全",
+          "question": "是否循环不稳或不具备安全站立条件？"
+        }
+      ],
+      "retrieval": [
+        "起立.*头晕|眼前发黑|晕厥"
+      ]
+    },
+    "K91": {
+      "backgrounds": [
+        "confirmed_syncope"
+      ],
+      "min_age": 18,
+      "requires": [
+        {
+          "pattern": "急诊",
+          "question": "是否为急诊评估情境？"
+        },
+        {
+          "pattern": "中危|高危|中等风险|高风险",
+          "question": "是否已依据病史、查体和心电图完成中高风险分层？"
+        }
+      ],
+      "excludes": [
+        {
+          "pattern": "创伤性意识丧失|休克",
+          "question": "是否存在创伤性意识丧失或休克，需要先转入相应紧急路径？"
+        }
+      ],
+      "retrieval": [
+        "晕厥|短暂意识丧失"
+      ]
+    }
+  }
+}

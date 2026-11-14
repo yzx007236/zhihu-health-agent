@@ -1,0 +1,190 @@
+{
+  "schema_version": "1.0",
+  "knowledge_pack": "医学英语与临床沟通",
+  "content_status": "课程团队维护",
+  "fallback": "当前课程知识库未收录这一问题的可靠依据，请查阅课程指定教材或向教师咨询。",
+  "cards": [
+    {
+      "knowledge_id": "K-EN-001", "node_id": "english_terminology", "title": "Dyspnea 的含义",
+      "claim": "Dyspnea 指呼吸困难或主观呼吸不适；英文临床资料中常以 shortness of breath 描述。",
+      "source": "《诊断学》（第9版，万学红、卢雪峰主编）", "source_location": "第一篇 常见症状·呼吸困难",
+      "source_url": "https://medu.pmph.com/readdetail/todetail.action?id=24041", "secondary_source_url": "https://www.ncbi.nlm.nih.gov/books/NBK499965/", "source_note": "按人民卫生出版社本科规划教材章节组织，并由 NCBI Bookshelf 临床综述交叉核验。",
+      "version": "2025", "scope": "医学英语术语教学", "exceptions": "术语不能替代对病因与严重程度的临床评估。",
+      "misconceptions": ["把 dyspnea 与 dysphagia（吞咽困难）混淆"], "lay_terms": ["dyspnea 就是呼吸困难、气不够用的感觉。"],
+      "reviewer": null, "review_status": "课程团队维护", "updated_at": "2026-11-08"
+    },
+    {
+      "knowledge_id": "K-EN-002", "node_id": "english_abbreviation", "title": "PRN 医嘱",
+      "claim": "PRN 源于拉丁语 pro re nata，表示按需使用；安全医嘱还应明确适应证、剂量、途径和频率。",
+      "source": "《基础护理学》（第7版，李小寒、尚少梅主编）", "source_location": "给药与医嘱执行相关章节",
+      "source_url": "https://medu.pmph.com/readdetail/todetail.action?id=40115", "secondary_source_url": "https://manual.jointcommission.org/releases/TJC2022B2/AppendixDTJC.html", "source_note": "按人民卫生出版社本科规划教材框架组织，并由 Joint Commission 官方数据字典核验 PRN 定义。",
+      "version": "2022B2", "scope": "医学英语缩写与医嘱安全教学", "exceptions": "执行医嘱须遵循所在机构政策及持证人员职责。",
+      "misconceptions": ["把 PRN 当作固定时点给药"], "lay_terms": ["PRN 是有需要时使用，不是每天固定时间使用。"],
+      "reviewer": null, "review_status": "课程团队维护", "updated_at": "2026-11-08"
+    },
+    {
+      "knowledge_id": "K-EN-003", "node_id": "english_physical_exam", "title": "收缩期杂音 3/6 级",
+      "claim": "Levine 六级分级中，3 级杂音为中等响度、容易听到，通常尚无震颤；4 级起伴可触及震颤。",
+      "source": "《诊断学》（第9版，万学红、卢雪峰主编）", "source_location": "第三篇 检体诊断·心脏检查",
+      "source_url": "https://medu.pmph.com/readdetail/todetail.action?id=24041", "secondary_source_url": "https://www.ncbi.nlm.nih.gov/books/NBK345/", "source_note": "按人民卫生出版社本科规划教材章节组织，并由 NCBI Clinical Methods 核验杂音分级。",
+      "version": "1990", "scope": "心脏查体医学英语教学", "exceptions": "响度不能单独判断病变严重程度。",
+      "misconceptions": ["认为 3/6 级一定伴震颤"], "lay_terms": ["3/6 级是中等响、容易听见，但一般还摸不到震颤。"],
+      "reviewer": null, "review_status": "课程团队维护", "updated_at": "2026-11-08"
+    },
+    {
+      "knowledge_id": "K-EN-004", "node_id": "english_abbreviation", "title": "SOB 与缩写歧义",
+      "claim": "在呼吸症状的病程记录语境中，SOB 常指 shortness of breath；因医学缩写可能存在歧义，正式记录宜结合上下文并遵循机构认可的缩写规范。",
+      "source": "《诊断学》（第9版，万学红、卢雪峰主编）", "source_location": "第八篇 病历书写及诊断思维方法",
+      "source_url": "https://medu.pmph.com/readdetail/todetail.action?id=24041", "secondary_source_url": "https://www.jointcommission.org/en-us/knowledge-library/support-center/standards-interpretation/standards-faqs/000001229", "source_note": "按诊断学病历书写章节组织，并由 Joint Commission 缩写安全规范交叉核验。",
+      "version": "2025", "scope": "英文病程记录阅读", "exceptions": "不同专科语境可能有其他释义，必须结合上下文。",
+      "misconceptions": ["脱离语境机械解释所有缩写"], "lay_terms": ["呼吸症状记录里的 SOB 通常是气短，但仍要看上下文。"],
+      "reviewer": null, "review_status": "课程团队维护", "updated_at": "2026-11-08"
+    },
+    {
+      "knowledge_id": "K-EN-005", "node_id": "english_clinical_reasoning", "title": "Comorbidity 的含义",
+      "claim": "Comorbidity 指与主要疾病同时存在的另一种疾病或医学状况。",
+      "source": "《内科学》（第9版，葛均波、徐永健、王辰主编）", "source_location": "综合临床评估与多病共存语境",
+      "source_url": "https://medu.pmph.com/readdetail/todetail.action?id=24060", "secondary_source_url": "https://www.cancer.gov/publications/dictionaries/cancer-terms/def/comorbidity", "source_note": "按人民卫生出版社内科学教材框架组织，并由美国国家癌症研究所官方术语词典核验定义。",
+      "version": "current", "scope": "医学英语与临床推理教学", "exceptions": "具体研究可能对共病的时间窗或范围另作定义。",
+      "misconceptions": ["把 comorbidity 等同于治疗并发症"], "lay_terms": ["合并症是主要疾病之外同时存在的其他健康问题。"],
+      "reviewer": null, "review_status": "课程团队维护", "updated_at": "2026-11-08"
+    },
+    {
+      "knowledge_id": "K-EN-006", "node_id": "english_communication", "title": "知情同意中的决策能力",
+      "claim": "医疗决策能力包括理解相关信息、认识决定及其后果、进行推理并表达选择；是否工整签名并不能单独证明具有决策能力。",
+      "source": "《医学伦理学》（第4版，孙福川、王明旭主编）", "source_location": "知情同意与患者自主相关章节",
+      "source_url": "https://medu.pmph.com/readdetail/todetail.action?id=2715", "secondary_source_url": "https://www.merckmanuals.com/professional/special-subjects/medicolegal-issues/capacity-competence-and-incapacity", "source_note": "按人民卫生出版社医学伦理学教材框架组织，并由 Merck Manual 专业版核验决策能力要素。",
+      "version": "current", "scope": "知情同意沟通教学", "exceptions": "能力评估与法律上的 competence 不完全相同，须遵循当地法律与机构流程。",
+      "misconceptions": ["认为会签字就必然具有决策能力"], "lay_terms": ["关键不是签字，而是能理解、权衡并说出自己的选择。"],
+      "reviewer": null, "review_status": "课程团队维护", "updated_at": "2026-11-08"
+    },
+    {
+      "knowledge_id": "K-EN-007", "node_id": "english_clinical_reasoning", "title": "危重患者的 ABCDE 优先顺序",
+      "claim": "对病情危重或可能恶化的患者，应先采用 ABCDE 方法依次评估和处理气道、呼吸、循环、神经功能和暴露问题，并在发现威胁时立即处理。",
+      "source": "《诊断学》（第9版，万学红、卢雪峰主编）", "source_location": "第三篇 检体诊断·一般检查与生命体征",
+      "source_url": "https://medu.pmph.com/readdetail/todetail.action?id=24041", "secondary_source_url": "https://www.resus.org.uk/library/abcde-approach", "source_note": "按诊断学一般检查框架设计情境，并由英国复苏委员会 ABCDE 官方资源核验处置优先级。",
+      "version": "current", "scope": "合成病例中的急危重优先级教学", "exceptions": "真实急救必须由具备资质的团队依当地规范实施。",
+      "misconceptions": ["先完成详细病史或全部检查再处理生命威胁"], "lay_terms": ["先处理最可能马上危及生命的问题，再补充检查和解释。"],
+      "reviewer": null, "review_status": "课程团队维护", "updated_at": "2026-11-08"
+    },
+    {
+      "knowledge_id": "K-EN-008", "node_id": "english_communication", "title": "临床沟通中的共情回应",
+      "claim": "共情回应应识别并承认对方的情绪与经历；否定、责备或淡化情绪会削弱沟通。",
+      "source": "《医学心理学》（第7版，姚树桥、杨艳杰主编）", "source_location": "第十一章 医患关系与医患沟通",
+      "source_url": "https://medu.pmph.com/readdetail/todetail.action?id=24057", "secondary_source_url": "https://www.ahrq.gov/sites/default/files/wysiwyg/teamstepps-program/dx-improvement/module3-presenters-notes.pdf", "source_note": "按人民卫生出版社医学心理学教材明确列出的沟通章节组织，并由 AHRQ 官方培训材料交叉核验。",
+      "version": "current", "scope": "临床访谈沟通教学", "exceptions": "共情不等于对尚未确认的事实或诊断作保证。",
+      "misconceptions": ["用‘没什么可担心的’代替回应情绪"], "lay_terms": ["先说出你看见了对方的害怕或担心，再继续讨论。"],
+      "reviewer": null, "review_status": "课程团队维护", "updated_at": "2026-11-08"
+    },
+    {
+      "knowledge_id": "K-EN-009", "node_id": "english_clinical_reasoning", "title": "Differential diagnosis 的含义",
+      "claim": "鉴别诊断是针对患者表现提出并比较的一组可能诊断，通常结合可能性与严重性排序，并随新信息更新。",
+      "source": "《诊断学》（第9版，万学红、卢雪峰主编）", "source_location": "第八篇 病历书写及诊断思维方法",
+      "source_url": "https://medu.pmph.com/readdetail/todetail.action?id=24041", "secondary_source_url": "https://www.ncbi.nlm.nih.gov/books/NBK338593/", "source_note": "按诊断学的诊断步骤与临床思维章节组织，并由美国国家医学院诊断过程报告交叉核验。",
+      "version": "2015", "scope": "医学英语与临床推理教学", "exceptions": "候选清单不是最终诊断，也不应忽略低概率但高风险情况。",
+      "misconceptions": ["把鉴别诊断当作已经确诊的结论"], "lay_terms": ["它是一张需要继续排查的可能性清单，不是最终答案。"],
+      "reviewer": null, "review_status": "课程团队维护", "updated_at": "2026-11-08"
+    },
+    {
+      "knowledge_id": "K-EN-010", "node_id": "english_evidence", "title": "随机对照试验中的 Placebo",
+      "claim": "Placebo 是外观或给法类似研究治疗、但不含研究中活性成分的无活性对照，用于帮助区分干预效应与期望等影响。",
+      "source": "《流行病学》（本科规划教材）", "source_location": "实验性研究·随机对照试验",
+      "source_url": "https://medu.pmph.com/", "secondary_source_url": "https://www.cancer.gov/publications/dictionaries/cancer-terms/def/placebo", "source_note": "按本科流行病学实验研究章节组织，并由美国国家癌症研究所官方术语词典核验定义；不虚构具体页码。",
+      "version": "current", "scope": "循证医学英语教学", "exceptions": "并非所有随机对照试验都使用安慰剂，对照也可能是常规治疗或活性治疗。",
+      "misconceptions": ["认为 placebo 就是所有参与者都接受的标准治疗"], "lay_terms": ["安慰剂是不含研究活性成分、用来作比较的对照。"],
+      "reviewer": null, "review_status": "课程团队维护", "updated_at": "2026-11-08"
+    },
+    {
+      "knowledge_id": "K-EN-011", "node_id": "english_physiology", "title": "动脉血气与呼吸性酸中毒",
+      "claim": "pH 7.29 低于正常范围，提示酸血症；PaCO₂ 60 mmHg 升高，指向原发性呼吸性酸中毒。HCO₃⁻ 28 mmol/L 轻度升高，提示有一定代偿，但 pH 仍低，故选 B。判断急慢性及是否合并其他酸碱失衡还需结合病程和完整临床资料。",
+      "textbook_reference": "《内科学》（第10版），PDF 第 182、809、812 页",
+      "textbook_review": "AI 对照教材初核，待教师复核",
+      "source": "《生理学》（第10版，罗自强、管又飞主编）", "source_location": "呼吸与酸碱平衡相关章节",
+      "source_url": "https://medu.pmph.com/readdetail/todetail.action?id=32415", "secondary_source_url": "https://www.ncbi.nlm.nih.gov/books/NBK371/", "source_note": "按人民卫生出版社生理学教材组织，并由NCBI Clinical Methods血气章节交叉核验。",
+      "version": "2025", "scope": "医学英语与血气基础判读", "exceptions": "混合性酸碱紊乱及急慢性判断必须结合完整临床资料，不能只凭一组数值作处置决定。",
+      "misconceptions": ["只看HCO3-而不先判断pH与PaCO2"], "lay_terms": ["先看血液偏酸还是偏碱，再判断主要是呼吸还是代谢因素造成。"],
+      "reviewer": null, "review_status": "课程团队维护", "updated_at": "2026-11-08"
+    },
+    {
+      "knowledge_id": "K-EN-012", "node_id": "english_diagnostics", "title": "诊断试验的敏感度与特异度",
+      "claim": "敏感度是有病者中检测阳性的比例，关系到假阴性；特异度是无病者中检测阴性的比例，关系到假阳性。结果解释还需结合验前概率与检测条件。",
+      "source": "《诊断学》（第9版，万学红、卢雪峰主编）", "source_location": "实验诊断与诊断试验评价相关章节",
+      "source_url": "https://medu.pmph.com/readdetail/todetail.action?id=24041", "secondary_source_url": "https://www.cdc.gov/labtraining/docs/job_aids/additional_resources/sensitivity_and_specificity_final_5_23_2022_508.pdf", "source_note": "按诊断学教材框架组织，并由CDC诊断敏感度与特异度教学资料核验。",
+      "version": "2022", "scope": "诊断试验医学英语", "exceptions": "高敏感度阴性结果并非在所有情境下绝对排除疾病，须考虑验前概率、采样时机和样本质量。",
+      "misconceptions": ["把高敏感度理解成高特异度", "把阴性结果当作无条件排除"], "lay_terms": ["敏感度关注少漏诊，特异度关注少误报。"],
+      "reviewer": null, "review_status": "课程团队维护", "updated_at": "2026-11-08"
+    },
+    {
+      "knowledge_id": "K-EN-013", "node_id": "english_medication_safety", "title": "肾功能与药物剂量核对",
+      "claim": "肾清除药物在肾功能下降时可能蓄积；用药前应按具体药物要求核对适用的肾功能估算、剂量调整和禁忌，并依流程向处方者或药师澄清。",
+      "source": "《药理学》（第9版，杨宝峰、陈建国主编）", "source_location": "药物代谢动力学与合理用药相关章节",
+      "source_url": "https://medu.pmph.com/readdetail/todetail.action?id=24061", "secondary_source_url": "https://www.niddk.nih.gov/research-funding/research-programs/kidney-clinical-research-epidemiology/laboratory/glomerular-filtration-rate-equations", "source_note": "按人民卫生出版社药理学教材组织，并由NIDDK肾小球滤过率资料交叉核验。",
+      "version": "current", "scope": "用药安全与医学英语", "exceptions": "不同药物可能指定不同肾功能估算方法，不能机械地用单一eGFR数值替代药品说明和专业判断。",
+      "misconceptions": ["血肌酐不高就一定无需调整剂量", "擅自加倍或停用处方药"], "lay_terms": ["肾功能下降时，有些药排得更慢，需先核对剂量是否合适。"],
+      "reviewer": null, "review_status": "课程团队维护", "updated_at": "2026-11-08"
+    },
+    {
+      "knowledge_id": "K-EN-014", "node_id": "english_handoff", "title": "SBAR结构化交接",
+      "claim": "SBAR依次为Situation、Background、Assessment、Recommendation或Request，用于简洁传递当前问题、相关背景、专业判断和所需行动。",
+      "source": "《基础护理学》（第7版，李小寒、尚少梅主编）", "source_location": "护理沟通与交接相关章节",
+      "source_url": "https://medu.pmph.com/readdetail/todetail.action?id=40115", "secondary_source_url": "https://www.ahrq.gov/teamstepps-program/curriculum/communication/tools/sbar.html", "source_note": "按基础护理学教材框架组织，并由AHRQ TeamSTEPPS SBAR官方工具核验。",
+      "version": "current", "scope": "护理交接与团队沟通", "exceptions": "SBAR可按团队场景调整，但不能省略关键患者身份、紧急程度或明确请求。",
+      "misconceptions": ["只报数据不提出评估与请求", "用完整终身病史淹没当前紧急问题"], "lay_terms": ["先说现在发生什么，再交代背景、你的判断和需要对方做什么。"],
+      "reviewer": null, "review_status": "课程团队维护", "updated_at": "2026-11-08"
+    },
+    {
+      "knowledge_id": "K-EN-015", "node_id": "english_medication_safety", "title": "转换节点的用药重整",
+      "claim": "用药重整是在入院、转科和出院等转换节点，将完整既往用药与新方案逐项比较，识别遗漏、重复、剂量或频次差异，并确认差异是否有意。",
+      "source": "《基础护理学》（第7版，李小寒、尚少梅主编）", "source_location": "给药安全与出院指导相关章节",
+      "source_url": "https://medu.pmph.com/readdetail/todetail.action?id=40115", "secondary_source_url": "https://psnet.ahrq.gov/primer/medication-reconciliation", "source_note": "按基础护理学教材框架组织，并由AHRQ PSNet用药重整资料交叉核验。",
+      "version": "2024", "scope": "患者安全与用药交接", "exceptions": "发现差异不等于直接恢复旧药，应先核对临床意图并依职责完成澄清。",
+      "misconceptions": ["只抄写新清单不与旧方案比较", "让患者自行恢复所有旧药"], "lay_terms": ["把转院或出院前后的药单逐项对一遍，确认每个变化都有理由。"],
+      "reviewer": null, "review_status": "课程团队维护", "updated_at": "2026-11-08"
+    },
+    {
+      "knowledge_id": "K-EN-016", "node_id": "english_nursing_assessment", "title": "1期压力性损伤识别",
+      "claim": "完整皮肤上的局限性不可压白红斑符合1期压力性损伤的核心描述；应记录部位、颜色、压白情况、风险因素与预防措施并持续观察。",
+      "source": "《基础护理学》（第7版，李小寒、尚少梅主编）", "source_location": "压力性损伤的预防与护理",
+      "source_url": "https://medu.pmph.com/readdetail/todetail.action?id=40115", "secondary_source_url": "https://www.cdc.gov/nchs/data/icd/Topic_packet_Sept_2018_part2.pdf", "source_note": "按基础护理学教材章节组织，并由CDC收录的压力性损伤分期资料交叉核验。",
+      "version": "current", "scope": "护理评估医学英语", "exceptions": "深色皮肤表现可能不同，分期须结合完整评估，不能仅凭颜色照片下结论。",
+      "misconceptions": ["把所有红斑都当作2期", "完整皮肤就认为无需干预"], "lay_terms": ["皮肤虽没破，但持续按不白的红斑已经是需要处理的早期损伤信号。"],
+      "reviewer": null, "review_status": "课程团队维护", "updated_at": "2026-11-08"
+    },
+    {
+      "knowledge_id": "K-EN-017", "node_id": "english_clinical_reasoning", "title": "谵妄的急性波动特征",
+      "claim": "谵妄通常表现为数小时至数天内出现的注意与认知急性改变，病情在一天中波动；应寻找急性疾病、药物或其他生理原因。",
+      "source": "《内科学》（第9版，葛均波、徐永健、王辰主编）", "source_location": "意识障碍与老年患者综合评估相关章节",
+      "source_url": "https://medu.pmph.com/readdetail/todetail.action?id=24060", "secondary_source_url": "https://www.ncbi.nlm.nih.gov/books/NBK553009/", "source_note": "按内科学教材临床评估框架组织，并由NICE谵妄指南交叉核验。",
+      "version": "2023", "scope": "临床推理与老年医学英语", "exceptions": "谵妄与痴呆可同时存在，不能因既往认知障碍而忽略急性变化。",
+      "misconceptions": ["把突然意识改变归因于正常老化", "只观察不寻找诱因"], "lay_terms": ["突然、忽好忽坏、注意力差，要优先想到急性谵妄并找原因。"],
+      "reviewer": null, "review_status": "课程团队维护", "updated_at": "2026-11-08"
+    },
+    {
+      "knowledge_id": "K-EN-018", "node_id": "english_communication", "title": "Teach-back确认理解",
+      "claim": "Teach-back要求患者用自己的话说明其理解的治疗或护理计划，用于检查医务人员是否解释清楚；发现误解后应换一种方式解释并再次确认。",
+      "source": "《医学心理学》（第7版，姚树桥、杨艳杰主编）", "source_location": "第十一章 医患关系与医患沟通",
+      "source_url": "https://medu.pmph.com/readdetail/todetail.action?id=24057", "secondary_source_url": "https://www.ahrq.gov/health-literacy/improve/precautions/tool5.html", "source_note": "按医学心理学沟通章节组织，并由AHRQ Teach-Back官方工具核验。",
+      "version": "current", "scope": "健康教育与沟通医学英语", "exceptions": "Teach-back不是记忆考试，也不应以责备语气要求患者逐字复述。",
+      "misconceptions": ["只问‘听懂了吗’", "把患者复述错误归咎于患者"], "lay_terms": ["请患者用自己的话说一遍，检查的是我们有没有讲清楚。"],
+      "reviewer": null, "review_status": "课程团队维护", "updated_at": "2026-11-08"
+    },
+    {
+      "knowledge_id": "K-EN-019", "node_id": "english_infection_control", "title": "手套不能替代手卫生",
+      "claim": "无菌操作前应在正确时机进行手卫生；需要戴手套时也应在戴前清洁双手，并在脱手套后按指征再次进行手卫生。",
+      "source": "《基础护理学》（第7版，李小寒、尚少梅主编）", "source_location": "医院感染预防与控制相关章节",
+      "source_url": "https://medu.pmph.com/readdetail/todetail.action?id=40115", "secondary_source_url": "https://www.who.int/news/item/05-05-2025-gloves-do-not-replace-hand-hygiene---reminder-from-who", "source_note": "按基础护理学教材章节组织，并由WHO手卫生与手套使用资料交叉核验。",
+      "version": "2025", "scope": "感染控制医学英语", "exceptions": "具体手卫生方式还需结合可见污染、病原体和机构感染控制规范。",
+      "misconceptions": ["戴手套即可跳过手卫生", "同一副手套跨越清洁与污染操作"], "lay_terms": ["手套是屏障，不是洗手的替代品。"],
+      "reviewer": null, "review_status": "课程团队维护", "updated_at": "2026-11-08"
+    },
+    {
+      "knowledge_id": "K-EN-020", "node_id": "english_evidence", "title": "绝对风险降低与NNT",
+      "claim": "绝对风险降低是对照组风险减去治疗组风险；治疗获益所需人数NNT为绝对风险降低的倒数，并应结合随访时间与不确定性解释。",
+      "source": "《流行病学》（本科规划教材）", "source_location": "实验性研究与临床试验效应指标",
+      "source_url": "https://medu.pmph.com/", "secondary_source_url": "https://meshb.nlm.nih.gov/record/ui?ui=D061366", "source_note": "按本科流行病学实验研究章节组织，并由美国国家医学图书馆MeSH定义交叉核验。",
+      "version": "2026", "scope": "循证医学英语与风险沟通", "exceptions": "NNT随基线风险和随访时间变化，正式报告还应提供置信区间。",
+      "misconceptions": ["把相对风险降低当作绝对风险降低", "忽略随访时间直接比较NNT"], "lay_terms": ["先算风险真正少了多少，再用倒数算平均需要治疗多少人才能多避免一个结局。"],
+      "reviewer": null, "review_status": "课程团队维护", "updated_at": "2026-11-08"
+    }
+  ]
+}

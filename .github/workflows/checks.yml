@@ -1,0 +1,33 @@
+name: Source checks
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  local-runtime:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Core tools
+        run: python workbuddy-agent/zhihu-agent/connector/server/tests/test_tools.py
+      - name: HTTP acceptance
+        run: python -m unittest discover -s workbuddy-agent/zhihu-agent/connector/server/tests -p test_local_experience_http.py -v
+      - name: Classroom
+        run: python -m unittest discover -s workbuddy-agent/zhihu-agent/connector/server/tests -p test_classroom.py -v
+      - name: Frontend checks
+        shell: bash
+        run: |
+          python web/build_experience_test_fixtures.py
+          for test in web/test_*.cjs; do
+            node "$test" || exit 1
+          done

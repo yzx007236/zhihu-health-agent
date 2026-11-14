@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "zhihu-training-runtime": {
+      "type": "streamableHttp",
+      "url": "https://REPLACE-WITH-YOUR-DOMAIN.example/mcp",
+      "timeout": 30000
+    }
+  }
+}

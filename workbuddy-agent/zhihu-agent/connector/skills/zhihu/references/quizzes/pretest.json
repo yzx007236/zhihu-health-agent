@@ -1,0 +1,1926 @@
+{
+  "quiz_id": "ZH-PRETEST-04",
+  "version": "4.4.0",
+  "title": "医学专业微型自测（两档卷：基础 5 题 / 进阶 5 题）",
+  "major_papers": {
+    "other": {
+      "basic": [
+        "Q-BP-001",
+        "Q-BP-002",
+        "Q-BP-003",
+        "Q-BP-004",
+        "Q-BP-005"
+      ],
+      "intermediate": [
+        "Q-BP-101",
+        "Q-BP-102",
+        "Q-BP-105",
+        "Q-BP-111",
+        "Q-BP-112"
+      ]
+    },
+    "clinical_medicine": {
+      "basic": [
+        "Q-CM-101",
+        "Q-CM-102",
+        "Q-CM-103",
+        "Q-CM-206",
+        "Q-CM-208",
+        "Q-CM-209",
+        "Q-CM-210",
+        "Q-CM-211",
+        "Q-CM-212",
+        "Q-CM-213",
+        "Q-CM-214"
+      ],
+      "intermediate": [
+        "Q-CM-201",
+        "Q-CM-202",
+        "Q-CM-204",
+        "Q-CM-221",
+        "Q-CM-223"
+      ]
+    },
+    "medical_technology": {
+      "basic": [
+        "Q-MT-101",
+        "Q-MT-102",
+        "Q-MT-103",
+        "Q-MT-104",
+        "Q-MT-105"
+      ],
+      "intermediate": [
+        "Q-MT-201",
+        "Q-MT-202",
+        "Q-MT-203",
+        "Q-MT-221",
+        "Q-MT-222"
+      ]
+    },
+    "nursing": {
+      "basic": [
+        "Q-NU-206",
+        "Q-NU-207",
+        "Q-NU-208",
+        "Q-NU-209",
+        "Q-NU-213",
+        "Q-NU-214",
+        "Q-NU-215"
+      ],
+      "intermediate": [
+        "Q-NU-201",
+        "Q-NU-202",
+        "Q-NU-203",
+        "Q-NU-222",
+        "Q-NU-223"
+      ]
+    },
+    "traditional_chinese_medicine": {
+      "basic": [
+        "Q-TCM-206",
+        "Q-TCM-207",
+        "Q-TCM-208",
+        "Q-TCM-209",
+        "Q-TCM-210",
+        "Q-TCM-211"
+      ],
+      "intermediate": [
+        "Q-TCM-201",
+        "Q-TCM-203",
+        "Q-TCM-204",
+        "Q-TCM-205",
+        "Q-TCM-222"
+      ]
+    },
+    "rehabilitation": {
+      "basic": [
+        "Q-RH-101",
+        "Q-RH-102",
+        "Q-RH-103",
+        "Q-RH-104",
+        "Q-RH-105"
+      ],
+      "intermediate": [
+        "Q-RH-201",
+        "Q-RH-202",
+        "Q-RH-203",
+        "Q-RH-204",
+        "Q-RH-223"
+      ]
+    },
+    "health_management": {
+      "basic": [
+        "Q-HM-101",
+        "Q-HM-102",
+        "Q-HM-103",
+        "Q-HM-104",
+        "Q-HM-105"
+      ],
+      "intermediate": [
+        "Q-HM-201",
+        "Q-HM-202",
+        "Q-HM-203",
+        "Q-HM-205",
+        "Q-HM-223"
+      ]
+    }
+  },
+  "questions": [
+    {
+      "question_id": "Q-BP-001",
+      "node_id": "measurement_device_posture",
+      "major_focus": [
+        "all"
+      ],
+      "type": "single_choice",
+      "stem": "指导居民家庭测量时，哪项做法更规范？",
+      "options": {
+        "A": "使用经验证的上臂式电子血压计，坐稳后再测",
+        "B": "测量时持续说话以缓解紧张",
+        "C": "袖带隔着厚衣服也可以",
+        "D": "手臂自然下垂即可"
+      },
+      "answer": "A",
+      "score": 1,
+      "score_rule": "完全匹配标准答案得 1 分，否则 0 分",
+      "explanation_ref": "K-TEXTBOOK-BP-001",
+      "difficulty": "basic",
+      "active": true,
+      "quality_grade": "B",
+      "review_status": "restored_for_paper_minimum",
+      "restored_for_paper_minimum": true
+    },
+    {
+      "question_id": "Q-BP-002",
+      "node_id": "measurement_schedule_repeat",
+      "major_focus": [
+        "all"
+      ],
+      "type": "single_choice",
+      "stem": "关于一次测量时段的记录，哪项更合适？",
+      "options": {
+        "A": "只保留最低值",
+        "B": "连续测量并完整记录日期、时间和读数",
+        "C": "只在头晕时测量",
+        "D": "测得异常就立即自行加药"
+      },
+      "answer": "B",
+      "score": 1,
+      "score_rule": "完全匹配标准答案得 1 分，否则 0 分",
+      "explanation_ref": "K-TEXTBOOK-BP-002",
+      "difficulty": "basic",
+      "active": true,
+      "quality_grade": "B",
+      "review_status": "restored_for_paper_minimum",
+      "restored_for_paper_minimum": true
+    },
+    {
+      "question_id": "Q-BP-003",
+      "node_id": "reading_interpretation",
+      "major_focus": [
+        "all"
+      ],
+      "type": "single_choice",
+      "stem": "面对一次与平时不同的读数，合适的解释是？",
+      "options": {
+        "A": "一次读数就能确定长期状态",
+        "B": "只看最接近期望的数值",
+        "C": "结合规范测量条件和连续记录判断，不自行诊断",
+        "D": "删除异常记录"
+      },
+      "answer": "C",
+      "score": 1,
+      "score_rule": "完全匹配标准答案得 1 分，否则 0 分",
+      "explanation_ref": "K-TEXTBOOK-BP-003",
+      "difficulty": "basic",
+      "active": true,
+      "quality_grade": "B",
+      "review_status": "restored_for_paper_minimum",
+      "restored_for_paper_minimum": true
+    },
+    {
+      "question_id": "Q-BP-004",
+      "node_id": "medication_boundary",
+      "major_focus": [
+        "all"
+      ],
+      "type": "single_choice",
+      "stem": "居民问‘我能不能自己停药’，学生应如何回应？",
+      "options": {
+        "A": "根据今天读数决定",
+        "B": "建议先减半",
+        "C": "说明不要自行调整，并建议咨询有资质的医务人员",
+        "D": "推荐保健品替代"
+      },
+      "answer": "C",
+      "score": 1,
+      "score_rule": "完全匹配标准答案得 1 分，否则 0 分",
+      "explanation_ref": "K-BP-004",
+      "difficulty": "basic",
+      "active": true,
+      "quality_grade": "B",
+      "review_status": "restored_for_paper_minimum",
+      "restored_for_paper_minimum": true
+    },
+    {
+      "question_id": "Q-BP-005",
+      "node_id": "risk_referral",
+      "major_focus": [
+        "all"
+      ],
+      "type": "single_choice",
+      "stem": "合成病例出现预设警示信息并伴明显不适时，首先应？",
+      "options": {
+        "A": "只讲一般生活方式",
+        "B": "继续闲聊观察",
+        "C": "按课程规则及时转介，紧急时提示拨打 120",
+        "D": "自行给出诊断"
+      },
+      "answer": "C",
+      "score": 1,
+      "score_rule": "完全匹配标准答案得 1 分，否则 0 分",
+      "explanation_ref": "K-BP-005",
+      "difficulty": "basic",
+      "active": true,
+      "quality_grade": "B",
+      "review_status": "restored_for_paper_minimum",
+      "restored_for_paper_minimum": true
+    },
+    {
+      "question_id": "Q-BP-101",
+      "node_id": "home_reading_interpretation_boundary",
+      "major_focus": [
+        "other"
+      ],
+      "type": "single_choice",
+      "difficulty": "intermediate",
+      "stem": "王阿姨连续一周在家测血压，早上多在 145/92 左右，晚上在 138/86 左右；同周在社区测的一次是 136/84。她说「那我这算不算高血压，要不要自己先吃药？」下面哪种回应最合适？",
+      "options": {
+        "A": "「家里测的都偏高，说明您确实是高血压了，先按天吃一片硝苯地平看看效果。」",
+        "B": "「不能只看某一次或某一边的数值，家里和社区的测量条件不一样；把这一周早晚的完整记录带去给医生，由医生结合两边结果判断，药不要自己加。」",
+        "C": "「社区那次是正常的，说明您没有高血压，家里那些记录可以不用管了。」",
+        "D": "「您把偏高那几天删掉，只留正常的记录给医生看，这样不容易被误诊。」"
+      },
+      "answer": "B",
+      "score": 1,
+      "score_rule": "完全匹配标准答案得 1 分，否则 0 分",
+      "explanation_ref": "K-TEXTBOOK-BP-101",
+      "active": true,
+      "quality_grade": "B",
+      "review_status": "restored_for_paper_minimum",
+      "restored_for_paper_minimum": true
+    },
+    {
+      "question_id": "Q-BP-102",
+      "node_id": "measurement_condition_confounder",
+      "major_focus": [
+        "other"
+      ],
+      "type": "single_choice",
+      "difficulty": "intermediate",
+      "stem": "李叔早上起床后马上测血压，测得 158/96。他说：「我一测就高，肯定是药不管用了，今天多吃一片。」追问后发现：他刚起床上过厕所回来，测之前喝了浓茶，测的时候一边说话一边举着袖带。最合适的处理是？",
+      "options": {
+        "A": "先认同他的判断，建议今天加服一片，明天再复测。",
+        "B": "说明这次读数可能受刚起床、喝浓茶、说话和袖带位置影响，先按规范安静坐 5 分钟、不说不动重测一次，并把两次读数和当时的条件都记下来，药不要动。",
+        "C": "让他改到下午再测，早上这次不作数，也不必记录。",
+        "D": "告诉他「测一次高不代表什么」，不必再测，等下次社区体检再说。"
+      },
+      "answer": "B",
+      "score": 1,
+      "score_rule": "完全匹配标准答案得 1 分，否则 0 分",
+      "explanation_ref": "K-TEXTBOOK-BP-102",
+      "active": true,
+      "quality_grade": "B",
+      "review_status": "restored_for_paper_minimum",
+      "restored_for_paper_minimum": true
+    },
+    {
+      "question_id": "Q-BP-105",
+      "node_id": "unverified_remedy_boundary",
+      "major_focus": [
+        "other"
+      ],
+      "type": "single_choice",
+      "difficulty": "intermediate",
+      "stem": "刘阿姨听说邻居喝某种「降压茶」后血压正常了，已经买了两盒，问：「我是不是可以把药停了，改喝茶？」最合适的回应是？",
+      "options": {
+        "A": "「可以试试，很多人喝了有效，先把药停两周看看。」",
+        "B": "「这类茶没有经过验证，不能替代降压药，也不建议自行停药；您可以把包装和成分记下来，下次就诊时带给医生看，由医生判断能不能和现在的药一起用。」",
+        "C": "「茶没有副作用，喝多少都行，药可以少吃一半。」",
+        "D": "「邻居有效您也会有效，先按邻居的喝法来。」"
+      },
+      "answer": "B",
+      "score": 1,
+      "score_rule": "完全匹配标准答案得 1 分，否则 0 分",
+      "explanation_ref": "K-BP-004",
+      "active": true,
+      "quality_grade": "B",
+      "review_status": "restored_for_paper_minimum",
+      "restored_for_paper_minimum": true
+    },
+    {
+      "question_id": "Q-CM-101",
+      "node_id": "history_chief_complaint",
+      "major_focus": [
+        "clinical_medicine"
+      ],
+      "type": "single_choice",
+      "difficulty": "basic",
+      "stem": "门诊接诊一名反复上腹不适三周的居民，在书写主诉时，下列做法最规范的是：",
+      "options": {
+        "A": "把「慢性胃炎待查」作为主诉写在病历最前，便于后续对照",
+        "B": "用患者自己的话概括最主要的不适及其持续时间，一般不超过二十字",
+        "C": "把本次就诊前所有症状按时间顺序逐条罗列在主诉中，力求完整",
+        "D": "以「血压 150/95 mmHg」作为主诉，突出本次发现的异常指标"
+      },
+      "answer": "B",
+      "score": 1,
+      "score_rule": "完全匹配标准答案得 1 分，否则 0 分",
+      "explanation_ref": "K-TEXTBOOK-CM-101"
+    },
+    {
+      "question_id": "Q-CM-102",
+      "node_id": "chest_pain_red_flag",
+      "major_focus": [
+        "clinical_medicine"
+      ],
+      "type": "single_choice",
+      "difficulty": "basic",
+      "stem": "一名 58 岁男性因胸骨后压闷感 40 分钟来诊，伴出汗、恶心。接诊时最先应当做的是：",
+      "options": {
+        "A": "先详细询问饮食习惯与家族史，信息齐全后再决定处理方式",
+        "B": "先开具胸部 CT，待影像结果明确后再判断病情轻重",
+        "C": "立即测量生命体征并完成心电图，优先判断是否存在致命性胸痛",
+        "D": "先给予口服止痛药缓解不适，待疼痛缓解后再做系统评估"
+      },
+      "answer": "C",
+      "score": 1,
+      "score_rule": "完全匹配标准答案得 1 分，否则 0 分",
+      "explanation_ref": "K-CLIN-111"
+    },
+    {
+      "question_id": "Q-CM-103",
+      "node_id": "preanalytical_check",
+      "major_focus": [
+        "clinical_medicine"
+      ],
+      "type": "single_choice",
+      "difficulty": "basic",
+      "stem": "一名正在静脉输液的患者需要抽血复查电解质与血糖。采血前最应当核对并落实的是：",
+      "options": {
+        "A": "避免在输液同侧肢体采血，必要时在对侧肢体采血并及时送检",
+        "B": "优先从输液侧肢体采血，因该侧血管充盈、穿刺成功率更高",
+        "C": "只要采血量足够，采血部位与是否输液都不影响电解质结果",
+        "D": "应在输液结束后立即于同侧肢体采血，以保证前后结果可比"
+      },
+      "answer": "A",
+      "score": 1,
+      "score_rule": "完全匹配标准答案得 1 分，否则 0 分",
+      "explanation_ref": "K-CLIN-137"
+    },
+    {
+      "question_id": "Q-CM-201",
+      "node_id": "emergency_abcde_sequence",
+      "major_focus": [
+        "clinical_medicine"
+      ],
+      "type": "single_choice",
+      "difficulty": "intermediate",
+      "stem": "社区诊室内，一名 62 岁男性突然出现明显呼吸困难、口唇发绀，只能断续说出两三个字，伴大汗。此时最恰当的处置顺序是：",
+      "options": {
+        "A": "先完成既往史与用药史采集，信息齐全后再判断是否需要转诊",
+        "B": "立即评估气道与呼吸、给予氧疗并呼叫上级支援，同时持续监测生命体征",
+        "C": "先完成心电图与抽血检查，明确病因后再决定处理方案",
+        "D": "让患者平卧休息并安抚情绪，观察 30 分钟后再评估病情变化"
+      },
+      "answer": "B",
+      "score": 1,
+      "score_rule": "完全匹配标准答案得 1 分，否则 0 分",
+      "explanation_ref": "K-CLIN-128"
+    },
+    {
+      "question_id": "Q-CM-202",
+      "node_id": "differential_reasoning",
+      "major_focus": [
+        "clinical_medicine"
+      ],
+      "type": "single_choice",
+      "difficulty": "intermediate",
+      "stem": "一名 24 岁男性，起初为脐周隐痛伴恶心，6 小时后疼痛固定于右下腹，走路时加重，体温 37.8℃，右下腹按压后放手时疼痛明显。此时最符合的鉴别思路是：",
+      "options": {
+        "A": "疼痛已由脐周转移至右下腹，应优先考虑急性阑尾炎，并动态复查腹部体征",
+        "B": "疼痛位置已经固定，说明病情趋于稳定，可按功能性消化不良处理并预约一周后复诊",
+        "C": "体温未超过 38.5℃，可基本排除腹腔感染性病变，暂不需外科评估",
+        "D": "先按胃炎给予抑酸治疗，症状缓解即可排除外科急腹症"
+      },
+      "answer": "A",
+      "score": 1,
+      "score_rule": "完全匹配标准答案得 1 分，否则 0 分",
+      "explanation_ref": "K-TEXTBOOK-CM-202"
+    },
+    {
+      "question_id": "Q-CM-204",
+      "node_id": "referral_trigger",
+      "major_focus": [
+        "clinical_medicine"
+      ],
+      "type": "single_choice",
+      "difficulty": "intermediate",
+      "stem": "一名 28 岁女性，停经约 7 周，突发下腹剧痛伴少量阴道流血，面色苍白、脉搏细速，血压 90/60 mmHg。社区接诊时最恰当的处置是：",
+      "options": {
+        "A": "先行妇科双合诊明确疼痛来源，再决定是否需要转诊",
+        "B": "立即建立静脉通路、监测生命体征并呼叫急救转诊，同时补充询问停经史与出血情况",
+        "C": "按痛经处理，给予解痉止痛后留观，待疼痛缓解再评估",
+        "D": "先完善血常规与超声检查，待结果回报后再联系转诊"
+      },
+      "answer": "B",
+      "score": 1,
+      "score_rule": "完全匹配标准答案得 1 分，否则 0 分",
+      "explanation_ref": "K-TEXTBOOK-CM-204",
+      "active": true,
+      "quality_grade": "B",
+      "review_status": "restored_for_paper_minimum",
+      "restored_for_paper_minimum": true
+    },
+    {
+      "question_id": "Q-MT-101",
+      "node_id": "preanalytic_identity_check",
+      "major_focus": [
+        "medical_technology"
+      ],
+      "type": "single_choice",
+      "difficulty": "basic",
+      "stem": "关于住院患者静脉血标本采集后的标识，下列做法正确的是？",
+      "options": {
+        "A": "采血后将标本集中带回治疗室，再按申请单统一粘贴标签",
+        "B": "在患者床旁采集完成后立即粘贴标签，核对姓名、住院号、采集日期与时间及采集者",
+        "C": "先在治疗室贴好标签，再携已贴签的采血管到床旁按标签提示采血",
+        "D": "由同病室患者或家属代为确认患者身份后粘贴标签"
+      },
+      "answer": "B",
+      "score": 1,
+      "score_rule": "完全匹配标准答案得 1 分，否则 0 分",
+      "explanation_ref": "K-MT-113",
+      "active": true,
+      "quality_grade": "B",
+      "review_status": "restored_for_paper_minimum",
+      "restored_for_paper_minimum": true
+    },
+    {
+      "question_id": "Q-MT-102",
+      "node_id": "critical_value_closed_loop",
+      "major_focus": [
+        "medical_technology"
+      ],
+      "type": "single_choice",
+      "difficulty": "basic",
+      "stem": "某检验项目结果达到危急值，经复核确认无误后，检验人员的正确处置是？",
+      "options": {
+        "A": "在检验系统内记录结果，等临床医师自行查看后处理",
+        "B": "先按常规流程发出报告，再于交班时口头告知接班同事",
+        "C": "按机构规定时限电话通知临床，登记患者信息、项目、结果、接听人与时间，并追踪临床是否处置",
+        "D": "请患者家属转告主管医师，以免电话打扰临床工作"
+      },
+      "answer": "C",
+      "score": 1,
+      "score_rule": "完全匹配标准答案得 1 分，否则 0 分",
+      "explanation_ref": "K-MT-164",
+      "active": true,
+      "quality_grade": "B",
+      "review_status": "restored_for_paper_minimum",
+      "restored_for_paper_minimum": true
+    },
+    {
+      "question_id": "Q-MT-103",
+      "node_id": "imaging_accompanying_protection",
+      "major_focus": [
+        "medical_technology"
+      ],
+      "type": "single_choice",
+      "difficulty": "basic",
+      "stem": "放射检查中，患者因病情需要家属在检查室内扶持，下列做法正确的是？",
+      "options": {
+        "A": "让家属直接扶持患者，检查结束后再补做登记",
+        "B": "为缩短检查时间，让家属站在患者身后扶持，不必穿戴防护用品",
+        "C": "仅在患者主动询问时才告知家属辐射风险",
+        "D": "先确认确有必要，告知辐射风险并提供铅衣等防护用品，登记后安排家属扶持"
+      },
+      "answer": "D",
+      "score": 1,
+      "score_rule": "完全匹配标准答案得 1 分，否则 0 分",
+      "explanation_ref": "K-MT-142",
+      "active": true,
+      "quality_grade": "B",
+      "review_status": "restored_for_paper_minimum",
+      "restored_for_paper_minimum": true
+    },
+    {
+      "question_id": "Q-MT-104",
+      "node_id": "calibration_reagent_lot_change",
+      "major_focus": [
+        "medical_technology"
+      ],
+      "type": "single_choice",
+      "difficulty": "basic",
+      "stem": "某检测项目更换试剂批号后，正确的处理是？",
+      "options": {
+        "A": "沿用原校准曲线直接检测，待下次常规校准日再统一校准",
+        "B": "重新校准并做验证，比对结果在允许范围内方可发出报告",
+        "C": "只做一次质控，质控点在控即可不校准直接检测",
+        "D": "先用新批号试剂检测少量标本，结果与旧批号接近即可"
+      },
+      "answer": "B",
+      "score": 1,
+      "score_rule": "完全匹配标准答案得 1 分，否则 0 分",
+      "explanation_ref": "K-MT-120"
+    },
+    {
+      "question_id": "Q-MT-105",
+      "node_id": "report_scope_boundary",
+      "major_focus": [
+        "medical_technology"
+      ],
+      "type": "single_choice",
+      "difficulty": "basic",
+      "stem": "患者拿到影像报告后追问自己是否得了某种疾病，技术人员的正确回应是？",
+      "options": {
+        "A": "依据报告中的描述性所见，直接告知患者所患疾病的名称",
+        "B": "告诉患者报告没有问题，以免其过度担心",
+        "C": "说明报告为影像所见与印象，最终诊断需由临床医师结合病史与其他检查判断，并引导患者咨询主诊医师",
+        "D": "以保护隐私为由拒绝回答任何问题，让患者自行理解报告内容"
+      },
+      "answer": "C",
+      "score": 1,
+      "score_rule": "完全匹配标准答案得 1 分，否则 0 分",
+      "explanation_ref": "K-MT-169",
+      "active": true,
+      "quality_grade": "B",
+      "review_status": "restored_for_paper_minimum",
+      "restored_for_paper_minimum": true
+    },
+    {
+      "question_id": "Q-MT-201",
+      "node_id": "clinical_mismatch_review_sequence",
+      "major_focus": [
+        "medical_technology"
+      ],
+      "type": "single_choice",
+      "difficulty": "intermediate",
+      "stem": "某住院患者生化结果显示血钾明显高于参考区间，但患者无相应症状，近期心电图也未见明显异常。按规范，检验人员下一步最恰当的处置是？",
+      "options": {
+        "A": "直接按危急值电话通知临床，不必再核查标本与仪器",
+        "B": "先核对患者身份与标本信息，再查看标本质量（有无溶血、凝块、采血量不足），然后检查仪器状态与当日质控，必要时复测，确认无误后如实报告并在备注中说明已复核",
+        "C": "在信息系统内将结果手工改为接近参考区间的数值，再通知临床",
+        "D": "本批暂不发报告，等下一批标本一起复测后再决定如何报告"
+      },
+      "answer": "B",
+      "score": 1,
+      "score_rule": "完全匹配标准答案得 1 分，否则 0 分",
+      "explanation_ref": "K-MT-165",
+      "active": true,
+      "quality_grade": "B",
+      "review_status": "restored_for_paper_minimum",
+      "restored_for_paper_minimum": true
+    },
+    {
+      "question_id": "Q-MT-202",
+      "node_id": "specimen_rejection_disposition",
+      "major_focus": [
+        "medical_technology"
+      ],
+      "type": "single_choice",
+      "difficulty": "intermediate",
+      "stem": "护士送来一支凝血功能检测标本，采血量明显低于管壁标示刻度，临床因患者急需结果多次催促。检验人员的正确处置是？",
+      "options": {
+        "A": "把标本离心后取上层血浆检测，并在报告备注中说明采血量不足",
+        "B": "先将标本倒出一部分再混匀，使血量与抗凝剂比例相符后检测",
+        "C": "按拒收标准拒收该标本，记录拒收原因与时间，通知临床说明抗凝剂相对过量会使结果失真并请重新采集",
+        "D": "先上机检测，若结果在参考区间内就直接发出，异常时再要求重采"
+      },
+      "answer": "C",
+      "score": 1,
+      "score_rule": "完全匹配标准答案得 1 分，否则 0 分",
+      "explanation_ref": "K-MT-111",
+      "active": true,
+      "quality_grade": "B",
+      "review_status": "restored_for_paper_minimum",
+      "restored_for_paper_minimum": true
+    },
+    {
+      "question_id": "Q-MT-203",
+      "node_id": "qc_out_of_control_hold",
+      "major_focus": [
+        "medical_technology"
+      ],
+      "type": "single_choice",
+      "difficulty": "intermediate",
+      "stem": "某批次检测的室内质控结果超出允许范围，该批次已产生数十份患者结果，其中部分报告尚未发出。此时正确的处置顺序是？",
+      "options": {
+        "A": "先发出已完成的报告，再补做质控，若后续在控则不再追溯",
+        "B": "挑选在控的质控点作为判断依据，认为该批结果可接受并正常发出",
+        "C": "只重新检测质控品，质控在控后即发出原批次患者结果",
+        "D": "暂停发放该批报告，查找试剂、校准、仪器与操作原因，纠正后重新检测该批标本并使质控在控，再评估已发报告是否需要更正"
+      },
+      "answer": "D",
+      "score": 1,
+      "score_rule": "完全匹配标准答案得 1 分，否则 0 分",
+      "explanation_ref": "K-MT-119",
+      "active": true,
+      "quality_grade": "B",
+      "review_status": "restored_for_paper_minimum",
+      "restored_for_paper_minimum": true
+    },
+    {
+      "question_id": "Q-NU-201",
+      "node_id": "deterioration_priority_response",
+      "major_focus": [
+        "nursing"
+      ],
+      "type": "single_choice",
+      "difficulty": "intermediate",
+      "stem": "夜班护士巡视时发现一位患者突发胸闷、气促，呼吸频率明显增快，口唇轻度发绀，血氧饱和度较前下降；该患者半小时前刚更换过输液袋。此时护士首先应做的是？",
+      "options": {
+        "A": "立即停止输液，保留剩余药液与输液器，更换输液通路，给予吸氧并监测生命体征，同时报告医师配合处理。",
+        "B": "先完成本班其余患者的治疗任务，待交接班时一并汇报。",
+        "C": "调快输液速度，使本次输液尽快结束，再观察症状是否缓解。",
+        "D": "安慰患者，说明可能是紧张所致，继续观察暂不处理。"
+      },
+      "answer": "A",
+      "score": 1,
+      "score_rule": "完全匹配标准答案得 1 分，否则 0 分",
+      "explanation_ref": "K-NUR-131",
+      "active": true,
+      "quality_grade": "B",
+      "review_status": "restored_for_paper_minimum",
+      "restored_for_paper_minimum": true
+    },
+    {
+      "question_id": "Q-NU-202",
+      "node_id": "critical_value_reporting",
+      "major_focus": [
+        "nursing"
+      ],
+      "type": "single_choice",
+      "difficulty": "intermediate",
+      "stem": "护士接到检验科电话，报告某患者的一项血液检验结果达到危急值，而患者当时并无明显自觉不适。护士的处理最恰当的是？",
+      "options": {
+        "A": "先在护理记录上登记，等医师查房时再当面告知。",
+        "B": "转告同班护士，由同班护士决定是否上报医师。",
+        "C": "复述确认患者信息、检验项目与数值，立即报告医师，记录报告时间与接收人，并跟踪处理与复查结果，形成闭环。",
+        "D": "因患者没有症状，可暂不处理，等下次采血时一并复查。"
+      },
+      "answer": "C",
+      "score": 1,
+      "score_rule": "完全匹配标准答案得 1 分，否则 0 分",
+      "explanation_ref": "K-NUR-171",
+      "active": true,
+      "quality_grade": "B",
+      "review_status": "restored_for_paper_minimum",
+      "restored_for_paper_minimum": true
+    },
+    {
+      "question_id": "Q-NU-203",
+      "node_id": "interprofessional_referral",
+      "major_focus": [
+        "nursing"
+      ],
+      "type": "single_choice",
+      "difficulty": "intermediate",
+      "stem": "一位急性卒中后的患者在接受协助饮水时出现呛咳，之后声音变得湿润，但此前能清楚说话、对答正常。护士下一步最恰当的处理是？",
+      "options": {
+        "A": "患者能清楚说话，说明吞咽功能正常，可继续缓慢喂水。",
+        "B": "让患者先休息片刻，改喂稠厚食物后继续观察，暂不报告。",
+        "C": "仅在交班本上注明「饮水偶有呛咳」，交由下一班继续观察。",
+        "D": "立即停止经口进食与进水，保持气道通畅，报告医师并联系言语治疗师完成吞咽功能评估后，再决定进食方式与食物性状。"
+      },
+      "answer": "D",
+      "score": 1,
+      "score_rule": "完全匹配标准答案得 1 分，否则 0 分",
+      "explanation_ref": "K-NUR-143",
+      "active": true,
+      "quality_grade": "B",
+      "review_status": "restored_for_paper_minimum",
+      "restored_for_paper_minimum": true
+    },
+    {
+      "question_id": "Q-TCM-201",
+      "node_id": "emergency_stroke_referral",
+      "major_focus": [
+        "traditional_chinese_medicine"
+      ],
+      "type": "single_choice",
+      "difficulty": "intermediate",
+      "stem": "上午查房时，一位68岁患者突然出现口角歪斜、左侧肢体无力、言语不清，症状出现约40分钟。家属认为“可能是受风了”，希望先做经络调理，稍后再决定是否就医。此时最恰当的处理是：",
+      "options": {
+        "A": "先按风邪中络向家属解释病情，为患者按揉穴位观察半小时再判断",
+        "B": "在指尖放血以“醒神开窍”，待症状缓解后再考虑转诊",
+        "C": "立即记录发病时间、保持气道通畅，启动急症流程并呼叫医师、安排急救转运，不采用放血或针刺处置",
+        "D": "先完成舌诊与脉诊、明确证候类型，再决定是否转诊"
+      },
+      "answer": "C",
+      "score": 1,
+      "score_rule": "完全匹配标准答案得 1 分，否则 0 分",
+      "explanation_ref": "K-TCM-166",
+      "active": true,
+      "quality_grade": "B",
+      "review_status": "restored_for_paper_minimum",
+      "restored_for_paper_minimum": true
+    },
+    {
+      "question_id": "Q-TCM-203",
+      "node_id": "insufficient_info_expression",
+      "major_focus": [
+        "traditional_chinese_medicine"
+      ],
+      "type": "single_choice",
+      "difficulty": "intermediate",
+      "stem": "一位患者舌质偏红、舌苔黄，但同时诉畏寒明显、大便稀溏，四诊所得并不一致。患者反复要求“给个准话”，希望马上知道自己是寒还是热。此时恰当的回应是：",
+      "options": {
+        "A": "选取与最初印象相符的舌象予以记录，其余不一致的信息暂不写入",
+        "B": "为满足患者期待，先给出一个明确的证候名称，嘱其按此自行调理",
+        "C": "说明目前资料不一致、尚不能形成判断，列出还需补充的信息并安排复评，必要时请医师复核",
+        "D": "告知患者四诊不一致说明病情复杂，建议其自行观察一个月后再就诊"
+      },
+      "answer": "C",
+      "score": 1,
+      "score_rule": "完全匹配标准答案得 1 分，否则 0 分",
+      "explanation_ref": "K-TCM-126",
+      "active": true,
+      "quality_grade": "B",
+      "review_status": "restored_for_paper_minimum",
+      "restored_for_paper_minimum": true
+    },
+    {
+      "question_id": "Q-TCM-204",
+      "node_id": "high_fever_emergency_referral",
+      "major_focus": [
+        "traditional_chinese_medicine"
+      ],
+      "type": "single_choice",
+      "difficulty": "intermediate",
+      "stem": "夜班时一位患者体温39.5℃，伴寒战、意识模糊、呼吸急促。家属询问能否先“清热调理”、喝点凉茶观察一晚。此时应当：",
+      "options": {
+        "A": "先辨明属风寒还是风热，再决定是否报告医师",
+        "B": "建议家属先给患者服用退热药，观察至次日晨交班",
+        "C": "嘱患者多饮凉茶、加盖衣被发汗，待汗出后再评估",
+        "D": "立即测量并记录生命体征，按急症流程呼叫医师、安排转诊，不以辨证解释延误处理，用药由医师决定"
+      },
+      "answer": "D",
+      "score": 1,
+      "score_rule": "完全匹配标准答案得 1 分，否则 0 分",
+      "explanation_ref": "K-TCM-167",
+      "active": true,
+      "quality_grade": "B",
+      "review_status": "restored_for_paper_minimum",
+      "restored_for_paper_minimum": true
+    },
+    {
+      "question_id": "Q-TCM-205",
+      "node_id": "prescription_scope_boundary",
+      "major_focus": [
+        "traditional_chinese_medicine"
+      ],
+      "type": "single_choice",
+      "difficulty": "intermediate",
+      "stem": "一位患者家属拿着从网络抄来的方子，要求实习同学“照着抓几副先吃着”，并表示“中药平和，吃不好也吃不坏”。下列处理正确的是：",
+      "options": {
+        "A": "说明处方与剂量须由具备资质的执业医师面诊后开具，不抄录方子、不增减药味、不推荐中成药，可协助整理四诊记录并预约医师",
+        "B": "按家属提供的方子抄录一遍，注明“仅供参考”后交给家属",
+        "C": "根据患者的体质辨识结果，在方子上增减几味药再交给家属",
+        "D": "先让患者试服两剂，若无不适再请医师确认"
+      },
+      "answer": "A",
+      "score": 1,
+      "score_rule": "完全匹配标准答案得 1 分，否则 0 分",
+      "explanation_ref": "K-TCM-108",
+      "active": true,
+      "quality_grade": "B",
+      "review_status": "restored_for_paper_minimum",
+      "restored_for_paper_minimum": true
+    },
+    {
+      "question_id": "Q-RH-101",
+      "node_id": "pre_training_safety_screen",
+      "major_focus": [
+        "rehabilitation"
+      ],
+      "type": "single_choice",
+      "difficulty": "basic",
+      "stem": "为一名脑卒中后偏瘫患者开始当天的站立平衡训练前，最符合规范的做法是？",
+      "options": {
+        "A": "按昨天的训练量直接开始，训练结束后再补测生命体征",
+        "B": "只要患者说“今天感觉还行”，即可直接开始训练",
+        "C": "先核对生命体征、主诉与用药情况，确认无禁忌后再开始训练",
+        "D": "先进行高强度训练，观察患者能否耐受，再决定是否评估"
+      },
+      "answer": "C",
+      "score": 1,
+      "score_rule": "完全匹配标准答案得 1 分，否则 0 分",
+      "explanation_ref": "K-RH-COURSE-006"
+    },
+    {
+      "question_id": "Q-RH-102",
+      "node_id": "stop_signal_recognition",
+      "major_focus": [
+        "rehabilitation"
+      ],
+      "type": "single_choice",
+      "difficulty": "basic",
+      "stem": "训练过程中，患者主诉头晕，并出现面色苍白、出汗。此时最恰当的处理是？",
+      "options": {
+        "A": "鼓励患者坚持完成当日组数，以免影响训练进度",
+        "B": "立即停止训练，协助患者安全坐下或卧下，并观察生命体征",
+        "C": "降低阻力继续训练，只关注动作是否到位，不必在意面色变化",
+        "D": "让患者自行走到走廊休息，稍后回来继续训练"
+      },
+      "answer": "B",
+      "score": 1,
+      "score_rule": "完全匹配标准答案得 1 分，否则 0 分",
+      "explanation_ref": "K-RH-COURSE-006"
+    },
+    {
+      "question_id": "Q-RH-103",
+      "node_id": "functional_assessment_standard",
+      "major_focus": [
+        "rehabilitation"
+      ],
+      "type": "single_choice",
+      "difficulty": "basic",
+      "stem": "关于康复功能评定（如 Barthel 指数、Berg 平衡量表）的实施与结果使用，哪项更规范？",
+      "options": {
+        "A": "把评定得分直接作为诊断结论告知患者",
+        "B": "为节省时间，可在患者疲劳状态下一次性完成全部评定",
+        "C": "不同评定者之间无需统一流程，凭经验判断即可",
+        "D": "按标准条件与统一说明实施，记录结果并说明其反映的是功能表现而非疾病诊断"
+      },
+      "answer": "D",
+      "score": 1,
+      "score_rule": "完全匹配标准答案得 1 分，否则 0 分",
+      "explanation_ref": "K-RH-COURSE-001",
+      "active": true,
+      "quality_grade": "B",
+      "review_status": "restored_for_paper_minimum",
+      "restored_for_paper_minimum": true
+    },
+    {
+      "question_id": "Q-RH-104",
+      "node_id": "adl_training_principles",
+      "major_focus": [
+        "rehabilitation"
+      ],
+      "type": "single_choice",
+      "difficulty": "basic",
+      "stem": "对脑卒中后偏瘫患者进行日常生活活动（ADL）训练时，哪项原则更恰当？",
+      "options": {
+        "A": "从患者当前能完成的部分入手，按“示范—辅助—逐步撤除辅助”的顺序训练",
+        "B": "为节省时间，由治疗师代替患者完成大部分动作",
+        "C": "一开始就要求患者独立完成全部穿衣、进食步骤",
+        "D": "只在训练室练习，不必在真实生活场景中重复"
+      },
+      "answer": "A",
+      "score": 1,
+      "score_rule": "完全匹配标准答案得 1 分，否则 0 分",
+      "explanation_ref": "K-RH-COURSE-003",
+      "active": true,
+      "quality_grade": "B",
+      "review_status": "restored_for_paper_minimum",
+      "restored_for_paper_minimum": true
+    },
+    {
+      "question_id": "Q-RH-105",
+      "node_id": "caregiver_training_return_demo",
+      "major_focus": [
+        "rehabilitation"
+      ],
+      "type": "single_choice",
+      "difficulty": "basic",
+      "stem": "出院前培训家属协助患者完成床椅转移，最符合规范的做法是？",
+      "options": {
+        "A": "口头讲解一遍转移步骤后，即让家属带患者回家",
+        "B": "只把转移注意事项写在纸上交给家属",
+        "C": "让家属在治疗师看护下实际操作并回示关键步骤，确认安全后再安排出院",
+        "D": "由家属自行观看视频学习，治疗师不必现场核对"
+      },
+      "answer": "C",
+      "score": 1,
+      "score_rule": "完全匹配标准答案得 1 分，否则 0 分",
+      "explanation_ref": "K-RH-COURSE-003",
+      "active": true,
+      "quality_grade": "B",
+      "review_status": "restored_for_paper_minimum",
+      "restored_for_paper_minimum": true
+    },
+    {
+      "question_id": "Q-RH-201",
+      "node_id": "acute_change_first_response",
+      "major_focus": [
+        "rehabilitation"
+      ],
+      "type": "single_choice",
+      "difficulty": "intermediate",
+      "stem": "一名脑卒中后 3 个月的患者在平行杠内练习步行时，突然出现患侧肢体无力加重、言语含糊。家属认为“再走两圈就缓过来了”，要求继续训练。此时最恰当的处理是？",
+      "options": {
+        "A": "先停止训练，协助患者安全坐稳并观察症状是否持续，记录起病时间，按流程启动转诊",
+        "B": "尊重家属意见，让患者走完剩余组数后再评估",
+        "C": "认为是疲劳所致，改为被动按摩后继续训练",
+        "D": "让患者自行回病房休息，次日再评估"
+      },
+      "answer": "A",
+      "score": 1,
+      "score_rule": "完全匹配标准答案得 1 分，否则 0 分",
+      "explanation_ref": "K-RH-COURSE-006",
+      "active": true,
+      "quality_grade": "B",
+      "review_status": "restored_for_paper_minimum",
+      "restored_for_paper_minimum": true
+    },
+    {
+      "question_id": "Q-RH-202",
+      "node_id": "referral_threshold_decision",
+      "major_focus": [
+        "rehabilitation"
+      ],
+      "type": "single_choice",
+      "difficulty": "intermediate",
+      "stem": "一名脑卒中后患者在步行训练中出现胸闷、心慌，休息 5 分钟后症状仍未缓解，血压较训练前明显升高。患者希望“把今天剩下的组数做完”。此时最合适的处理是？",
+      "options": {
+        "A": "继续观察 30 分钟，若仍不适再联系医生",
+        "B": "停止训练并保持安静休息，立即联系主管医生评估，按医嘱决定是否转诊",
+        "C": "认为症状与训练无关，改为坐位训练以完成当日计划",
+        "D": "让患者自行回家休息，嘱其不适加重再来"
+      },
+      "answer": "B",
+      "score": 1,
+      "score_rule": "完全匹配标准答案得 1 分，否则 0 分",
+      "explanation_ref": "K-RH-COURSE-006",
+      "active": true,
+      "quality_grade": "B",
+      "review_status": "restored_for_paper_minimum",
+      "restored_for_paper_minimum": true
+    },
+    {
+      "question_id": "Q-RH-203",
+      "node_id": "shared_goal_setting",
+      "major_focus": [
+        "rehabilitation"
+      ],
+      "type": "single_choice",
+      "difficulty": "intermediate",
+      "stem": "一名脑卒中后患者希望尽快“自己走回家”，家属担心跌倒，坚持要求全程搀扶。近期评定显示，患者目前需要在监护下完成短距离步行。在制定下一阶段训练目标时，最符合规范的做法是？",
+      "options": {
+        "A": "直接按家属要求全程搀扶，避免争执",
+        "B": "承诺患者短期内即可独立步行回家，以增强信心",
+        "C": "说明当前功能水平与跌倒风险，与患者和家属共同商定分阶段目标，并约定复评时间",
+        "D": "只与家属沟通，不必让患者参与目标制定"
+      },
+      "answer": "C",
+      "score": 1,
+      "score_rule": "完全匹配标准答案得 1 分，否则 0 分",
+      "explanation_ref": "K-RH-COURSE-002",
+      "active": true,
+      "quality_grade": "B",
+      "review_status": "restored_for_paper_minimum",
+      "restored_for_paper_minimum": true
+    },
+    {
+      "question_id": "Q-RH-204",
+      "node_id": "discharge_transition_planning",
+      "major_focus": [
+        "rehabilitation"
+      ],
+      "type": "single_choice",
+      "difficulty": "intermediate",
+      "stem": "一名脑卒中后患者即将出院，家属表示家中无人会协助床椅转移，也说不清复诊安排。患者希望“回家慢慢练”，家属则希望尽快办完手续。此时最恰当的做法是？",
+      "options": {
+        "A": "按原计划办理出院，让家属回家后自行摸索",
+        "B": "把训练动作打印给家属即可，不必核实其掌握情况",
+        "C": "建议患者延长住院，暂不讨论出院后的安排",
+        "D": "出院前完成照护者转移培训与回示，落实居家环境与随访安排，明确复诊和出现异常时的联系方式"
+      },
+      "answer": "D",
+      "score": 1,
+      "score_rule": "完全匹配标准答案得 1 分，否则 0 分",
+      "explanation_ref": "K-RH-COURSE-003",
+      "active": true,
+      "quality_grade": "B",
+      "review_status": "restored_for_paper_minimum",
+      "restored_for_paper_minimum": true
+    },
+    {
+      "question_id": "Q-HM-101",
+      "node_id": "health_record_baseline",
+      "major_focus": [
+        "health_management"
+      ],
+      "type": "single_choice",
+      "difficulty": "basic",
+      "stem": "社区护士为一位新纳入慢病管理的居民建立健康档案，需要记录其家庭血压自测情况。下列记录方式最符合随访建档规范的是：",
+      "options": {
+        "A": "只写“血压偏高”，不记录测量时间、测量体位和所用血压计",
+        "B": "记录测量日期与时间、收缩压和舒张压、心率，以及测量时的体位、袖带和是否安静休息等条件",
+        "C": "只收录居民自述的“最高一次”数值，其余读数不再归档",
+        "D": "把家属口述的数值直接作为本次测量结果归档"
+      },
+      "answer": "B",
+      "score": 1,
+      "score_rule": "完全匹配标准答案得 1 分，否则 0 分",
+      "explanation_ref": "K-TEXTBOOK-HM-101",
+      "active": true,
+      "quality_grade": "B",
+      "review_status": "restored_for_paper_minimum",
+      "restored_for_paper_minimum": true
+    },
+    {
+      "question_id": "Q-HM-102",
+      "node_id": "measurement_conditions",
+      "major_focus": [
+        "health_management"
+      ],
+      "type": "single_choice",
+      "difficulty": "basic",
+      "stem": "入户随访时，随访者准备为居民测量血压。下列准备与操作最恰当的是：",
+      "options": {
+        "A": "先请居民坐位安静休息，背部有支撑、双脚平放，手臂与心脏大致同高，测量过程中保持安静不说话",
+        "B": "居民刚上楼进门，趁其尚未坐下立即测量，以节省随访时间",
+        "C": "为操作方便，隔着较厚衣物把袖带绑在前臂上测量",
+        "D": "只测量一次，读数偏低就直接作为本次随访结果记录"
+      },
+      "answer": "A",
+      "score": 1,
+      "score_rule": "完全匹配标准答案得 1 分，否则 0 分",
+      "explanation_ref": "K-TEXTBOOK-HM-102",
+      "active": true,
+      "quality_grade": "B",
+      "review_status": "restored_for_paper_minimum",
+      "restored_for_paper_minimum": true
+    },
+    {
+      "question_id": "Q-HM-103",
+      "node_id": "followup_frequency_record",
+      "major_focus": [
+        "health_management"
+      ],
+      "type": "single_choice",
+      "difficulty": "basic",
+      "stem": "对血压已相对稳定、纳入社区慢病管理的居民开展家庭血压随访，关于测量频次与记录，下列做法正确的是：",
+      "options": {
+        "A": "只在居民自诉不适时测量一次并记录",
+        "B": "要求居民每天测量十次以上，以便掌握全部波动",
+        "C": "建议在相对固定的时段测量，每个时段连续测量 2—3 次、间隔约 1 分钟并完整记录，情况稳定后可适当降低频率",
+        "D": "只记录看起来正常的读数，异常读数复测正常后不再保留"
+      },
+      "answer": "C",
+      "score": 1,
+      "score_rule": "完全匹配标准答案得 1 分，否则 0 分",
+      "explanation_ref": "K-TEXTBOOK-HM-103",
+      "active": true,
+      "quality_grade": "B",
+      "review_status": "restored_for_paper_minimum",
+      "restored_for_paper_minimum": true
+    },
+    {
+      "question_id": "Q-HM-104",
+      "node_id": "health_education_keypoints",
+      "major_focus": [
+        "health_management"
+      ],
+      "type": "single_choice",
+      "difficulty": "basic",
+      "stem": "在社区健康教育活动中向居民讲解家庭血压监测，下列表述最恰当的是：",
+      "options": {
+        "A": "“家里测出来不高，就可以不再关注血压了。”",
+        "B": "“家用血压计的读数可以替代医院检查，不必再就诊。”",
+        "C": "“腕式血压计更准确，可以随意替代上臂式血压计。”",
+        "D": "“建议使用经过验证的上臂式电子血压计和合适袖带，在相对固定的条件下测量并完整记录，就诊时把记录带给医务人员一起看。”"
+      },
+      "answer": "D",
+      "score": 1,
+      "score_rule": "完全匹配标准答案得 1 分，否则 0 分",
+      "explanation_ref": "K-TEXTBOOK-HM-104",
+      "active": true,
+      "quality_grade": "B",
+      "review_status": "restored_for_paper_minimum",
+      "restored_for_paper_minimum": true
+    },
+    {
+      "question_id": "Q-HM-105",
+      "node_id": "followup_medication_record",
+      "major_focus": [
+        "health_management"
+      ],
+      "type": "single_choice",
+      "difficulty": "basic",
+      "stem": "随访中一位居民提到“最近自己把降压药停了”。按随访记录与处置要求，此时最恰当的做法是：",
+      "options": {
+        "A": "只在档案中写“居民自行停药”，不追问原因，也不安排后续",
+        "B": "核实停药的时间、原因和目前有无不适，如实记录，说明不自行停药的重要性，建议其尽快向有资质的医务人员咨询，并约定下次随访",
+        "C": "当场建议居民改服另一种药物，并把这一建议写入随访记录",
+        "D": "认为用药是居民自己的事，随访中不再提及"
+      },
+      "answer": "B",
+      "score": 1,
+      "score_rule": "完全匹配标准答案得 1 分，否则 0 分",
+      "explanation_ref": "K-BP-004",
+      "active": true,
+      "quality_grade": "B",
+      "review_status": "restored_for_paper_minimum",
+      "restored_for_paper_minimum": true
+    },
+    {
+      "question_id": "Q-HM-201",
+      "node_id": "referral_red_flag",
+      "major_focus": [
+        "health_management"
+      ],
+      "type": "single_choice",
+      "difficulty": "intermediate",
+      "stem": "某社区慢病随访训练案例中，一位 68 岁居民纳入高血压随访管理已两年。近三天其家庭自测多在 165—175/100—105 mmHg，今天上午出现胸闷、轻微活动后气短，休息后未见缓解。居民表示“等下周随访时再说”。此时最恰当的处置是：",
+      "options": {
+        "A": "按原计划安排下周随访，届时再一起查看记录",
+        "B": "请居民增加测量次数，先发一份低盐饮食资料，本周不必联系医务人员",
+        "C": "说明这组读数与当前不适已超出一般健康教育的范围，建议立即联系医务人员；若症状加重或出现紧急情况立即拨打 120，并如实记录、按规定交班",
+        "D": "告知居民血压波动很常见，先自行观察两周再决定"
+      },
+      "answer": "C",
+      "score": 1,
+      "score_rule": "完全匹配标准答案得 1 分，否则 0 分",
+      "explanation_ref": "K-BP-005",
+      "active": true,
+      "quality_grade": "B",
+      "review_status": "restored_for_paper_minimum",
+      "restored_for_paper_minimum": true
+    },
+    {
+      "question_id": "Q-HM-202",
+      "node_id": "trend_communication",
+      "major_focus": [
+        "health_management"
+      ],
+      "type": "single_choice",
+      "difficulty": "intermediate",
+      "stem": "某社区随访训练案例中，一位居民近两周的家庭记录多在 138—146/86—92 mmHg，今天上午一次测得 128/80 mmHg。居民说“今天正常了，说明没问题，以后不用管了”。随访者用趋势而非单次读数进行沟通，最恰当的是：",
+      "options": {
+        "A": "认可今天的读数，据此判断血压已得到控制，结束本轮随访",
+        "B": "只把今天这一次 128/80 mmHg 记入档案，其余记录不再分析",
+        "C": "告知居民一次正常即说明问题已经解决，可以暂停随访",
+        "D": "与居民一起查看两周记录的分布和当时的测量条件，说明单次正常不能代表整体水平，并把完整记录带给医务人员评估"
+      },
+      "answer": "D",
+      "score": 1,
+      "score_rule": "完全匹配标准答案得 1 分，否则 0 分",
+      "explanation_ref": "K-TEXTBOOK-HM-202",
+      "active": true,
+      "quality_grade": "B",
+      "review_status": "restored_for_paper_minimum",
+      "restored_for_paper_minimum": true
+    },
+    {
+      "question_id": "Q-HM-203",
+      "node_id": "shared_decision_plan",
+      "major_focus": [
+        "health_management"
+      ],
+      "type": "single_choice",
+      "difficulty": "intermediate",
+      "stem": "某社区随访训练案例中，一位在职居民上次随访约定每日早晚各测量一次，实际一周只测了两次，理由是“太忙，而且怕测多了会紧张”。随访者希望与其商定一个能坚持的随访计划。最恰当的做法是：",
+      "options": {
+        "A": "先询问其具体顾虑和可安排的时间，把“太忙”追问到具体时段，与其商定每周固定几天、在哪个时段测量，请其复述确认，并约定下次回访方式",
+        "B": "再次强调必须每天早晚各测三次，做不到即视为不配合",
+        "C": "认为居民不配合，改为只寄一份测量说明资料，不再安排回访",
+        "D": "由随访者代填几组“看起来合理”的数值，以保证档案完整"
+      },
+      "answer": "A",
+      "score": 1,
+      "score_rule": "完全匹配标准答案得 1 分，否则 0 分",
+      "explanation_ref": "K-BP-002",
+      "active": true,
+      "quality_grade": "B",
+      "review_status": "restored_for_paper_minimum",
+      "restored_for_paper_minimum": true
+    },
+    {
+      "question_id": "Q-HM-205",
+      "node_id": "urgent_symptom_triage",
+      "major_focus": [
+        "health_management"
+      ],
+      "type": "single_choice",
+      "difficulty": "intermediate",
+      "stem": "某社区随访训练案例中，居民在电话随访中述今晨起头痛明显、视物发花并伴恶心，家庭自测 180/110 mmHg，说“我先睡一觉，明天随访再说”。随访者最恰当的处置是：",
+      "options": {
+        "A": "记录数值，按原计划明天上门随访",
+        "B": "建议居民再多测几次，若仍然偏高再考虑就医",
+        "C": "立即说明这是需要紧急处理的情况，建议马上联系医务人员或拨打 120，不要等到次日随访，同时记录通话内容并按规定上报交班",
+        "D": "告知居民属于常见波动，先发送一份饮食资料"
+      },
+      "answer": "C",
+      "score": 1,
+      "score_rule": "完全匹配标准答案得 1 分，否则 0 分",
+      "explanation_ref": "K-BP-005",
+      "active": true,
+      "quality_grade": "B",
+      "review_status": "restored_for_paper_minimum",
+      "restored_for_paper_minimum": true
+    },
+    {
+      "question_id": "Q-CM-206",
+      "node_id": "clin_extra_164",
+      "major_focus": [
+        "clinical_medicine"
+      ],
+      "type": "single_choice",
+      "stem": "眼球感光作用最强的部位为",
+      "options": {
+        "A": "黄斑",
+        "B": "黄斑中央凹",
+        "C": "视神经盘",
+        "D": "视神经盘中央凹",
+        "E": "视网膜虹膜部"
+      },
+      "answer": "B",
+      "score": 1,
+      "score_rule": "完全匹配标准答案得 1 分，否则 0 分",
+      "explanation_ref": "K-CLIN-164",
+      "difficulty": "basic"
+    },
+    {
+      "question_id": "Q-CM-208",
+      "node_id": "clin_extra_166",
+      "major_focus": [
+        "clinical_medicine"
+      ],
+      "type": "single_choice",
+      "stem": "缺血性心脏病最常见的病因是",
+      "options": {
+        "A": "心肌肥厚",
+        "B": "严重贫血",
+        "C": "冠状动脉粥样硬化",
+        "D": "主动脉瓣狭窄",
+        "E": "主动脉瓣关闭不全"
+      },
+      "answer": "C",
+      "score": 1,
+      "score_rule": "完全匹配标准答案得 1 分，否则 0 分",
+      "explanation_ref": "K-CLIN-166",
+      "difficulty": "basic"
+    },
+    {
+      "question_id": "Q-CM-209",
+      "node_id": "clin_extra_167",
+      "major_focus": [
+        "clinical_medicine"
+      ],
+      "type": "single_choice",
+      "stem": "颈内静脉二腹肌淋巴结肿大时，可首先考虑",
+      "options": {
+        "A": "甲状腺癌",
+        "B": "喉癌",
+        "C": "食管癌",
+        "D": "鼻咽癌",
+        "E": "腮腺癌"
+      },
+      "answer": "D",
+      "score": 1,
+      "score_rule": "完全匹配标准答案得 1 分，否则 0 分",
+      "explanation_ref": "K-CLIN-167",
+      "difficulty": "basic"
+    },
+    {
+      "question_id": "Q-CM-210",
+      "node_id": "clin_extra_168",
+      "major_focus": [
+        "clinical_medicine"
+      ],
+      "type": "single_choice",
+      "stem": "膝关节内侧半月板",
+      "options": {
+        "A": "内缘厚，周缘薄",
+        "B": "呈“O”形",
+        "C": "前端有韧带连于胫骨粗隆",
+        "D": "较大，呈“C”型",
+        "E": "前端宽后份窄"
+      },
+      "answer": "D",
+      "score": 1,
+      "score_rule": "完全匹配标准答案得 1 分，否则 0 分",
+      "explanation_ref": "K-CLIN-168",
+      "difficulty": "basic"
+    },
+    {
+      "question_id": "Q-CM-211",
+      "node_id": "clin_extra_169",
+      "major_focus": [
+        "clinical_medicine"
+      ],
+      "type": "single_choice",
+      "stem": "关于环层小体的描述，正确的是",
+      "options": {
+        "A": "感受压觉和振动觉",
+        "B": "圆形，与触觉小体大小相似",
+        "C": "有髓神经纤维穿行于中央",
+        "D": "分布于皮肤真皮乳头内",
+        "E": "薄层结缔组织组成被囊"
+      },
+      "answer": "A",
+      "score": 1,
+      "score_rule": "完全匹配标准答案得 1 分，否则 0 分",
+      "explanation_ref": "K-CLIN-169",
+      "difficulty": "basic"
+    },
+    {
+      "question_id": "Q-CM-212",
+      "node_id": "clin_extra_170",
+      "major_focus": [
+        "clinical_medicine"
+      ],
+      "type": "single_choice",
+      "stem": "胃黏膜分泌内因子的细胞是",
+      "options": {
+        "A": "主细胞",
+        "B": "壁细胞",
+        "C": "黏膜上皮细胞",
+        "D": "未分化细胞",
+        "E": "内分泌细胞"
+      },
+      "answer": "B",
+      "score": 1,
+      "score_rule": "完全匹配标准答案得 1 分，否则 0 分",
+      "explanation_ref": "K-CLIN-170",
+      "difficulty": "basic"
+    },
+    {
+      "question_id": "Q-CM-213",
+      "node_id": "clin_extra_171",
+      "major_focus": [
+        "clinical_medicine"
+      ],
+      "type": "single_choice",
+      "stem": "关于肾实质的描述，错误的是",
+      "options": {
+        "A": "分为肾皮质和肾髓质两部分",
+        "B": "皮质位于浅层，由肾小体和肾小管构成",
+        "C": "髓质位于深部，由 15～20 个肾锥体组成",
+        "D": "肾锥体的尖朝向皮质，称为肾乳头",
+        "E": "皮质伸入肾锥体之间的称为肾柱"
+      },
+      "answer": "D",
+      "score": 1,
+      "score_rule": "完全匹配标准答案得 1 分，否则 0 分",
+      "explanation_ref": "K-CLIN-171",
+      "difficulty": "basic"
+    },
+    {
+      "question_id": "Q-CM-214",
+      "node_id": "clin_extra_172",
+      "major_focus": [
+        "clinical_medicine"
+      ],
+      "type": "single_choice",
+      "stem": "与淋巴结凸相连接的淋巴管是",
+      "options": {
+        "A": "输出淋巴管",
+        "B": "浅淋巴管",
+        "C": "深淋巴管",
+        "D": "输入淋巴管"
+      },
+      "answer": "D",
+      "score": 1,
+      "score_rule": "完全匹配标准答案得 1 分，否则 0 分",
+      "explanation_ref": "K-CLIN-172",
+      "difficulty": "basic"
+    },
+    {
+      "question_id": "Q-TCM-206",
+      "node_id": "tcm_extra_173",
+      "major_focus": [
+        "traditional_chinese_medicine"
+      ],
+      "type": "single_choice",
+      "stem": "下面表述中，体现人与自然关系的是",
+      "options": {
+        "A": "尝贵后贱，可致脱营",
+        "B": "形与神俱，不可分离",
+        "C": "视其外应，以知其内脏",
+        "D": "四变之动，脉与之上下"
+      },
+      "answer": "D",
+      "score": 1,
+      "score_rule": "完全匹配标准答案得 1 分，否则 0 分",
+      "explanation_ref": "K-TCM-173",
+      "difficulty": "basic"
+    },
+    {
+      "question_id": "Q-TCM-207",
+      "node_id": "tcm_extra_174",
+      "major_focus": [
+        "traditional_chinese_medicine"
+      ],
+      "type": "single_choice",
+      "stem": "多出现气逆病变的脏腑是",
+      "options": {
+        "A": "肺、脾、胃",
+        "B": "肝、胃、肺",
+        "C": "肺、脾、胆",
+        "D": "胃、肝、心"
+      },
+      "answer": "B",
+      "score": 1,
+      "score_rule": "完全匹配标准答案得 1 分，否则 0 分",
+      "explanation_ref": "K-TCM-174",
+      "difficulty": "basic"
+    },
+    {
+      "question_id": "Q-TCM-208",
+      "node_id": "tcm_extra_175",
+      "major_focus": [
+        "traditional_chinese_medicine"
+      ],
+      "type": "single_choice",
+      "stem": "下列何种为从治法",
+      "options": {
+        "A": "用热远热",
+        "B": "通因通用",
+        "C": "寒者热之",
+        "D": "补泻兼用"
+      },
+      "answer": "B",
+      "score": 1,
+      "score_rule": "完全匹配标准答案得 1 分，否则 0 分",
+      "explanation_ref": "K-TCM-175",
+      "difficulty": "basic"
+    },
+    {
+      "question_id": "Q-TCM-209",
+      "node_id": "tcm_extra_176",
+      "major_focus": [
+        "traditional_chinese_medicine"
+      ],
+      "type": "single_choice",
+      "stem": "下列关于病、证、症的说法，不正确的是",
+      "options": {
+        "A": "疾病反映的是一种疾病全过程的总体属性、特征和规律",
+        "B": "证反映的是疾病某一阶段或某一类型的病理性质",
+        "C": "证具有时相性特征，也具有空间特征",
+        "D": "症状和体征是构成病和证的基本要素",
+        "E": "症可以反应疾病或症候的本质特征"
+      },
+      "answer": "E",
+      "score": 1,
+      "score_rule": "完全匹配标准答案得 1 分，否则 0 分",
+      "explanation_ref": "K-TCM-176",
+      "difficulty": "basic"
+    },
+    {
+      "question_id": "Q-TCM-210",
+      "node_id": "tcm_extra_177",
+      "major_focus": [
+        "traditional_chinese_medicine"
+      ],
+      "type": "single_choice",
+      "stem": "起居有常属于哪一种养生原则",
+      "options": {
+        "A": "顺应自然",
+        "B": "养性调神",
+        "C": "护肾保精",
+        "D": "调摄饮食",
+        "E": "体魄锻炼"
+      },
+      "answer": "A",
+      "score": 1,
+      "score_rule": "完全匹配标准答案得 1 分，否则 0 分",
+      "explanation_ref": "K-TCM-177",
+      "difficulty": "basic"
+    },
+    {
+      "question_id": "Q-TCM-211",
+      "node_id": "tcm_extra_178",
+      "major_focus": [
+        "traditional_chinese_medicine"
+      ],
+      "type": "single_choice",
+      "stem": "下列经脉中，不与脏腑连属的是",
+      "options": {
+        "A": "太阳经",
+        "B": "厥阴经",
+        "C": "冲脉",
+        "D": "任脉",
+        "E": "带脉"
+      },
+      "answer": "E",
+      "score": 1,
+      "score_rule": "完全匹配标准答案得 1 分，否则 0 分",
+      "explanation_ref": "K-TCM-178",
+      "difficulty": "basic"
+    },
+    {
+      "question_id": "Q-NU-206",
+      "node_id": "nur_extra_173",
+      "major_focus": [
+        "nursing"
+      ],
+      "type": "single_choice",
+      "stem": "下列胰岛D细胞的特点，错误的是",
+      "options": {
+        "A": "数量少，占胰岛细胞总数5%",
+        "B": "分泌生长抑素",
+        "C": "细胞间有缝隙连接",
+        "D": "可抑制A、B、PP细胞的分泌",
+        "E": "分泌胰岛素"
+      },
+      "answer": "E",
+      "score": 1,
+      "score_rule": "完全匹配标准答案得 1 分，否则 0 分",
+      "explanation_ref": "K-NUR-173",
+      "difficulty": "basic"
+    },
+    {
+      "question_id": "Q-NU-207",
+      "node_id": "nur_extra_174",
+      "major_focus": [
+        "nursing"
+      ],
+      "type": "single_choice",
+      "stem": "心脏收缩力增强时，静脉回心血量增加，这主要是因为",
+      "options": {
+        "A": "动脉血压升高",
+        "B": "血流速度加快",
+        "C": "心输出量增加",
+        "D": "舒张期室内压低",
+        "E": "静脉压增高"
+      },
+      "answer": "D",
+      "score": 1,
+      "score_rule": "完全匹配标准答案得 1 分，否则 0 分",
+      "explanation_ref": "K-NUR-174",
+      "difficulty": "basic"
+    },
+    {
+      "question_id": "Q-NU-208",
+      "node_id": "nur_extra_175",
+      "major_focus": [
+        "nursing"
+      ],
+      "type": "single_choice",
+      "stem": "发生右心衰时，引起组织水肿的主要原因",
+      "options": {
+        "A": "毛细血管压力升高",
+        "B": "血浆胶体渗透压降低",
+        "C": "组织液静水压降低",
+        "D": "淋巴回流受阻",
+        "E": "毛细血管通透性增高"
+      },
+      "answer": "A",
+      "score": 1,
+      "score_rule": "完全匹配标准答案得 1 分，否则 0 分",
+      "explanation_ref": "K-NUR-175",
+      "difficulty": "basic"
+    },
+    {
+      "question_id": "Q-NU-209",
+      "node_id": "nur_extra_176",
+      "major_focus": [
+        "nursing"
+      ],
+      "type": "single_choice",
+      "stem": "本体感受器，不存在于",
+      "options": {
+        "A": "骨骼肌",
+        "B": "肌腱",
+        "C": "眼",
+        "D": "内耳",
+        "E": "关节"
+      },
+      "answer": "C",
+      "score": 1,
+      "score_rule": "完全匹配标准答案得 1 分，否则 0 分",
+      "explanation_ref": "K-NUR-176",
+      "difficulty": "basic"
+    },
+    {
+      "question_id": "Q-NU-213",
+      "node_id": "nur_extra_180",
+      "major_focus": [
+        "nursing"
+      ],
+      "type": "single_choice",
+      "stem": "可被银盐染色的纤维是",
+      "options": {
+        "A": "网状纤维",
+        "B": "胶原纤维",
+        "C": "胶原原纤维",
+        "D": "弹性纤维"
+      },
+      "answer": "A",
+      "score": 1,
+      "score_rule": "完全匹配标准答案得 1 分，否则 0 分",
+      "explanation_ref": "K-NUR-180",
+      "difficulty": "basic"
+    },
+    {
+      "question_id": "Q-NU-214",
+      "node_id": "nur_extra_181",
+      "major_focus": [
+        "nursing"
+      ],
+      "type": "single_choice",
+      "stem": "RNA 主要存在于",
+      "options": {
+        "A": "细胞质内",
+        "B": "细胞核内",
+        "C": "线粒体内",
+        "D": "叶绿体内",
+        "E": "溶酶体中"
+      },
+      "answer": "A",
+      "score": 1,
+      "score_rule": "完全匹配标准答案得 1 分，否则 0 分",
+      "explanation_ref": "K-NUR-181",
+      "difficulty": "basic"
+    },
+    {
+      "question_id": "Q-NU-215",
+      "node_id": "nur_extra_182",
+      "major_focus": [
+        "nursing"
+      ],
+      "type": "single_choice",
+      "stem": "肾蒂内主要结构由上向下依次为",
+      "options": {
+        "A": "肾动脉、肾静脉、肾盂",
+        "B": "肾盂、肾动脉、肾静脉",
+        "C": "肾静脉、肾盂、肾动脉",
+        "D": "肾静脉、肾动脉、肾盂",
+        "E": "肾盂、肾静脉、肾动脉"
+      },
+      "answer": "A",
+      "score": 1,
+      "score_rule": "完全匹配标准答案得 1 分，否则 0 分",
+      "explanation_ref": "K-NUR-182",
+      "difficulty": "basic"
+    },
+    {
+      "question_id": "Q-BP-111",
+      "node_id": "diagnostic_test_interpretation",
+      "major_focus": [
+        "other"
+      ],
+      "type": "single_choice",
+      "stem": "某筛查试验敏感度很高但特异度一般。面对一次阴性结果，最严谨的解释是？",
+      "options": {
+        "A": "可无条件排除疾病",
+        "B": "通常可降低患病可能性，但仍需结合验前概率、采样时机和标本质量",
+        "C": "说明该试验几乎没有假阳性",
+        "D": "敏感度只描述无病者中的阴性比例"
+      },
+      "answer": "B",
+      "score": 1,
+      "score_rule": "完全匹配标准答案得1分，否则0分",
+      "explanation_ref": "K-TEXTBOOK-BP-111",
+      "difficulty": "intermediate",
+      "active": true,
+      "quality_grade": "B",
+      "review_status": "restored_for_paper_minimum",
+      "restored_for_paper_minimum": true
+    },
+    {
+      "question_id": "Q-BP-112",
+      "node_id": "decision_capacity_assessment",
+      "major_focus": [
+        "other"
+      ],
+      "type": "single_choice",
+      "stem": "患者能签字并复述操作名称，但无法说明主要风险、替代方案及拒绝后果。关于知情同意，最合适的判断是？",
+      "options": {
+        "A": "签字清楚即可证明具备决策能力",
+        "B": "只要患者同意就无需继续解释",
+        "C": "尚需评估其理解、认识后果、推理和表达选择的能力",
+        "D": "考虑拒绝治疗就等于无决策能力"
+      },
+      "answer": "C",
+      "score": 1,
+      "score_rule": "完全匹配标准答案得1分，否则0分",
+      "explanation_ref": "K-EN-006",
+      "difficulty": "intermediate",
+      "active": true,
+      "quality_grade": "B",
+      "review_status": "restored_for_paper_minimum",
+      "restored_for_paper_minimum": true
+    },
+    {
+      "question_id": "Q-CM-221",
+      "node_id": "arterial_blood_gas_reasoning",
+      "major_focus": [
+        "clinical_medicine"
+      ],
+      "type": "single_choice",
+      "stem": "患者血气示pH 7.29、PaCO₂ 60 mmHg、HCO₃⁻ 28 mmol/L。最合理的初步判断是？",
+      "options": {
+        "A": "原发性代谢性酸中毒",
+        "B": "原发性呼吸性酸中毒，伴有限代偿",
+        "C": "原发性呼吸性碱中毒",
+        "D": "酸碱状态完全正常"
+      },
+      "answer": "B",
+      "score": 1,
+      "score_rule": "完全匹配标准答案得1分，否则0分",
+      "explanation_ref": "K-EN-011",
+      "difficulty": "intermediate",
+      "active": true,
+      "quality_grade": "B",
+      "review_status": "restored_for_paper_minimum",
+      "restored_for_paper_minimum": true
+    },
+    {
+      "question_id": "Q-CM-223",
+      "node_id": "delirium_recognition",
+      "major_focus": [
+        "clinical_medicine"
+      ],
+      "type": "single_choice",
+      "stem": "老年住院患者数小时内出现注意不集中和定向障碍，症状一天内波动。首要临床解释是？",
+      "options": {
+        "A": "正常老化，无需评估",
+        "B": "稳定期痴呆的典型表现",
+        "C": "考虑谵妄并寻找感染、药物及代谢等诱因",
+        "D": "先作精神科定性，再检查躯体原因"
+      },
+      "answer": "C",
+      "score": 1,
+      "score_rule": "完全匹配标准答案得1分，否则0分",
+      "explanation_ref": "K-EN-017",
+      "difficulty": "intermediate",
+      "active": true,
+      "quality_grade": "B",
+      "review_status": "restored_for_paper_minimum",
+      "restored_for_paper_minimum": true
+    },
+    {
+      "question_id": "Q-MT-221",
+      "node_id": "hemolyzed_specimen_review",
+      "major_focus": [
+        "medical_technology"
+      ],
+      "type": "single_choice",
+      "stem": "血钾结果明显升高，但标本存在肉眼溶血且与患者临床表现不符。检验人员最合适的处理是？",
+      "options": {
+        "A": "直接按真实高钾报告，不作备注",
+        "B": "删除结果且不留记录",
+        "C": "按程序评估溶血影响、复核标本与仪器信息，必要时联系临床重新采样",
+        "D": "把结果改到参考区间后发布"
+      },
+      "answer": "C",
+      "score": 1,
+      "score_rule": "完全匹配标准答案得1分，否则0分",
+      "explanation_ref": "K-MT-166",
+      "difficulty": "intermediate",
+      "active": true,
+      "quality_grade": "B",
+      "review_status": "restored_for_paper_minimum",
+      "restored_for_paper_minimum": true
+    },
+    {
+      "question_id": "Q-MT-222",
+      "node_id": "mri_safety_screening",
+      "major_focus": [
+        "medical_technology"
+      ],
+      "type": "single_choice",
+      "stem": "患者准备进行MRI检查，自述体内可能有植入物但型号不清。技术人员首先应？",
+      "options": {
+        "A": "先进入扫描间试扫再判断",
+        "B": "完成植入物信息核实与MRI安全评估，未确认前不贸然扫描",
+        "C": "只要患者无不适即可忽略",
+        "D": "改用最高场强以缩短时间"
+      },
+      "answer": "B",
+      "score": 1,
+      "score_rule": "完全匹配标准答案得1分，否则0分",
+      "explanation_ref": "K-MT-129",
+      "difficulty": "intermediate",
+      "active": true,
+      "quality_grade": "B",
+      "review_status": "restored_for_paper_minimum",
+      "restored_for_paper_minimum": true
+    },
+    {
+      "question_id": "Q-NU-222",
+      "node_id": "medication_reconciliation_transition",
+      "major_focus": [
+        "nursing"
+      ],
+      "type": "single_choice",
+      "stem": "患者出院药单中漏掉长期抗凝药，病历未说明停药原因。护士进行用药重整时应？",
+      "options": {
+        "A": "照抄新药单，不比较既往用药",
+        "B": "让患者自行恢复所有旧药",
+        "C": "逐项比较入院前与出院方案，识别差异并向处方者澄清是否有意",
+        "D": "只核对住院期间新开的药"
+      },
+      "answer": "C",
+      "score": 1,
+      "score_rule": "完全匹配标准答案得1分，否则0分",
+      "explanation_ref": "K-EN-015",
+      "difficulty": "intermediate",
+      "active": true,
+      "quality_grade": "B",
+      "review_status": "restored_for_paper_minimum",
+      "restored_for_paper_minimum": true
+    },
+    {
+      "question_id": "Q-NU-223",
+      "node_id": "sbar_deterioration_handoff",
+      "major_focus": [
+        "nursing"
+      ],
+      "type": "single_choice",
+      "stem": "患者病情恶化时，最符合SBAR的汇报顺序是？",
+      "options": {
+        "A": "建议—情况—背景—评估",
+        "B": "当前情况—相关背景—评估判断—建议或请求",
+        "C": "完整家族史—床号—安慰—结果",
+        "D": "只报生命体征，不说明担忧与请求"
+      },
+      "answer": "B",
+      "score": 1,
+      "score_rule": "完全匹配标准答案得1分，否则0分",
+      "explanation_ref": "K-EN-014",
+      "difficulty": "intermediate",
+      "active": true,
+      "quality_grade": "B",
+      "review_status": "restored_for_paper_minimum",
+      "restored_for_paper_minimum": true
+    },
+    {
+      "question_id": "Q-TCM-222",
+      "node_id": "four_examinations_integration",
+      "major_focus": [
+        "traditional_chinese_medicine"
+      ],
+      "type": "single_choice",
+      "stem": "患者仅凭一项脉象要求确定证型。最符合中医诊断学原则的回应是？",
+      "options": {
+        "A": "单一脉象足以直接定证",
+        "B": "需结合望、闻、问、切信息进行四诊合参，并核对矛盾证据",
+        "C": "只要舌象与脉象任一异常即可处方",
+        "D": "主诉不重要，可省略问诊"
+      },
+      "answer": "B",
+      "score": 1,
+      "score_rule": "完全匹配标准答案得1分，否则0分",
+      "explanation_ref": "K-TCM-117",
+      "difficulty": "intermediate",
+      "active": true,
+      "quality_grade": "B",
+      "review_status": "restored_for_paper_minimum",
+      "restored_for_paper_minimum": true
+    },
+    {
+      "question_id": "Q-RH-223",
+      "node_id": "rehab_goal_progression",
+      "major_focus": [
+        "rehabilitation"
+      ],
+      "type": "single_choice",
+      "stem": "患者希望一个月内独立上下三层楼，但目前只能在监护下站立30秒。最合理的目标制定方式是？",
+      "options": {
+        "A": "直接承诺一个月达到最终目标",
+        "B": "取消患者目标，只采用治疗师意见",
+        "C": "与患者共同分解为可测量的近期目标，设置安全进阶条件并定期复评",
+        "D": "每天增加训练量且不设停止标准"
+      },
+      "answer": "C",
+      "score": 1,
+      "score_rule": "完全匹配标准答案得1分，否则0分",
+      "explanation_ref": "K-RH-COURSE-002",
+      "difficulty": "intermediate",
+      "active": true,
+      "quality_grade": "B",
+      "review_status": "restored_for_paper_minimum",
+      "restored_for_paper_minimum": true
+    },
+    {
+      "question_id": "Q-HM-223",
+      "node_id": "behavior_plan_barriers",
+      "major_focus": [
+        "health_management"
+      ],
+      "type": "single_choice",
+      "stem": "居民因夜班和照护压力无法完成每日健康记录。最符合健康管理原则的调整是？",
+      "options": {
+        "A": "要求固定时点完成，不讨论障碍",
+        "B": "代替居民补填缺失数据",
+        "C": "共同识别可行时段，保留关键指标，设置可持续提醒和复评节点",
+        "D": "立即标记为不依从并终止服务"
+      },
+      "answer": "C",
+      "score": 1,
+      "score_rule": "完全匹配标准答案得1分，否则0分",
+      "explanation_ref": "K-BP-002",
+      "difficulty": "intermediate",
+      "active": true,
+      "quality_grade": "B",
+      "review_status": "restored_for_paper_minimum",
+      "restored_for_paper_minimum": true
+    }
+  ]
+}

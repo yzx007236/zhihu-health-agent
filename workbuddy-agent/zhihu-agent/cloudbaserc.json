@@ -1,0 +1,7 @@
+{
+  "envId": "pretty-camel-d2g0oe3e03341c0a4",
+  "$schema": "https://static.cloudbase.net/cli/cloudbaserc.schema.json",
+  "cloudrun": {
+    "name": "zhihu-mcp"
+  }
+}

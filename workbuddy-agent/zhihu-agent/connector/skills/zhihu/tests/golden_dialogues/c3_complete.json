@@ -1,0 +1,77 @@
+{
+  "session_id": "GOLD-C3-001",
+  "case_id": "C3",
+  "rubric_version": "1.1.0",
+  "pretest_result": {
+    "score": 4,
+    "max_score": 5,
+    "percentage": 80,
+    "weak_nodes": [
+      "risk_referral"
+    ]
+  },
+  "evidence_candidates": [
+    {
+      "item_id": "INQ-01",
+      "turn_id": 2,
+      "quote": "您现在最不舒服的是什么？和昨天比有没有加重？",
+      "tags": [
+        "ask_open_question",
+        "ask_specific_fact"
+      ]
+    },
+    {
+      "item_id": "RISK-01",
+      "turn_id": 6,
+      "quote": "记录里有警示情况而且头晕加重，不能只在家观察，建议现在联系医务人员；如果情况紧急请立即拨打120。",
+      "tags": [
+        "identify_case_warning",
+        "timely_referral"
+      ]
+    },
+    {
+      "item_id": "BOUND-01",
+      "turn_id": 7,
+      "quote": "不要自行停药、换药或调药，请把记录带给有资质的医务人员讨论。",
+      "tags": [
+        "no_self_adjustment",
+        "refer_qualified_professional"
+      ]
+    },
+    {
+      "item_id": "EMPATHY-01",
+      "turn_id": 3,
+      "quote": "我理解您是不想给孩子添麻烦。您最担心联系她以后会发生什么？",
+      "tags": [
+        "ask_concern",
+        "acknowledge_concern"
+      ]
+    },
+    {
+      "item_id": "PLAIN-01",
+      "turn_id": 5,
+      "quote": "这次不是只看一个数字，而是警示记录和不舒服同时出现，所以要尽快找专业人员。",
+      "tags": [
+        "plain_language",
+        "explain_reason"
+      ]
+    },
+    {
+      "item_id": "CHECK-01",
+      "turn_id": 8,
+      "quote": "您能用自己的话说一下，接下来准备先联系谁、什么时候联系吗？",
+      "tags": [
+        "teach_back"
+      ]
+    },
+    {
+      "item_id": "ACTION-01",
+      "turn_id": 9,
+      "quote": "您不想联系女儿，我们可以先一起联系社区医务人员，您觉得现在打电话可以吗？",
+      "tags": [
+        "shared_decision",
+        "specific_next_step"
+      ]
+    }
+  ]
+}

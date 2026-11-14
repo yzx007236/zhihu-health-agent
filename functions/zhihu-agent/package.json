@@ -1,0 +1,12 @@
+{
+  "name": "zhihu-agent",
+  "version": "1.0.0",
+  "private": true,
+  "main": "server.js",
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "tencentcloud-sdk-nodejs-workbuddyenterprise": "^4.0.3"
+  }
+}

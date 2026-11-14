@@ -1,0 +1,20 @@
+{
+  "exact_duplicates": [],
+  "near_duplicates": [
+    {
+      "left": "Q-WM-M27-B-120",
+      "right": "Q-WM-M27-B-121",
+      "similarity": 0.933,
+      "group": "biochemistry",
+      "review_conclusion": "保留：同一病例或共用备选项下的不同作答任务，答案与学习目标不同，不属于重复题。"
+    },
+    {
+      "left": "Q-WM-25-A-079",
+      "right": "Q-WM-25-A-080",
+      "similarity": 0.93,
+      "group": "internal_medicine",
+      "review_conclusion": "保留：同一病例或共用备选项下的不同作答任务，答案与学习目标不同，不属于重复题。"
+    }
+  ],
+  "active_count": 548
+}
