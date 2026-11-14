@@ -376,7 +376,7 @@
       "answer": "A",
       "score": 1,
       "score_rule": "完全匹配标准答案得 1 分，否则 0 分",
-      "explanation_ref": "K-CLIN-137"
+      "explanation_ref": "K-TEXTBOOK-CM-103"
     },
     {
       "question_id": "Q-CM-201",

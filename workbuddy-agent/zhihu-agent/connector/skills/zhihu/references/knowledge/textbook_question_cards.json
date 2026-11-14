@@ -446,6 +446,18 @@
       "textbook_review": "AI 对照教材初核，待教师复核",
       "review_status": "AI初核待教师复核",
       "card_kind": "exam_import"
+    },
+    {
+      "knowledge_id": "K-TEXTBOOK-CM-103",
+      "node_id": "textbook_explanation_q_cm_103",
+      "title": "题目教材解析 Q-CM-103",
+      "claim": "选 A。输液液体混入血样可稀释标本或改变葡萄糖、电解质测定结果，因此采血前应核对输液情况，优先选择未输液的对侧肢体，并按检验要求及时送检。B 和 C 忽视输液污染造成的误差；D 输液刚结束即在同侧采血仍可能受残留液体影响。教材明确不可从静脉输液管中采血；若对侧无法采血，应按所在机构采血规范处理并记录。",
+      "source": "《诊断学》（第10版）",
+      "source_location": "PDF 第 252 页",
+      "textbook_reference": "《诊断学》（第10版），PDF 第 252 页",
+      "textbook_review": "AI 对照教材初核，待教师复核",
+      "review_status": "AI初核待教师复核",
+      "card_kind": "exam_import"
     }
   ]
 }
